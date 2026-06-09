@@ -16,7 +16,7 @@ export default function InsightsPage() {
           <h1 className="text-2xl font-bold text-ink">Insights</h1>
           <p className="text-slate text-sm mt-1">Live research feeding the content. Keep it fresh, then turn an insight into a blog.</p>
         </div>
-        <ActionButton endpoint="/api/refresh-insights" label="Search fresh insights" busyLabel="Searching the web..." />
+        <ActionButton action="refresh-insights" label="Search fresh insights" taskLabel="Search fresh insights" />
       </div>
 
       <div className="grid gap-3">
@@ -27,7 +27,7 @@ export default function InsightsPage() {
                 <span className="text-[11px] font-semibold text-blue">{ins.id} · {ins.section}</span>
                 <h3 className="text-base font-bold text-ink">{ins.title}</h3>
               </div>
-              <ActionButton endpoint="/api/write-blog" payload={{ insightId: ins.id }} label="Write blog" busyLabel="Writing..." variant="ghost" />
+              <ActionButton action="write-blog" payload={{ insightId: ins.id }} label="Write blog" taskLabel={`Blog: ${ins.title.slice(0, 40)}`} variant="ghost" />
             </div>
             <div className="mt-2 text-sm">
               <Markdown md={ins.body.trim()} />

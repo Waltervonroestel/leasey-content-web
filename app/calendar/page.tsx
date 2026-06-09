@@ -38,10 +38,10 @@ export default function CalendarPage() {
                 <p className="text-sm text-ink mt-1 truncate">{s.topic}</p>
               </div>
               <ActionButton
-                endpoint="/api/generate-post"
+                action="generate-post"
                 payload={{ topic: s.topic, voice: voiceKey(s.voice), channel: s.channel }}
                 label="Generate"
-                busyLabel="Writing..."
+                taskLabel={`Post: ${s.topic.slice(0, 40)}`}
               />
             </Card>
           ))}

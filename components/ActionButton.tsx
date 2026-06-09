@@ -1,44 +1,24 @@
 "use client";
 import { useState } from "react";
+import { useJobs } from "./JobsProvider";
 
 interface Props {
-  endpoint: string;
+  // Acción del job (generate-post, write-blog, generate-pr, refresh-insights, refresh-directory, generate-image)
+  action: string;
   payload?: Record<string, unknown>;
   label: string;
-  busyLabel?: string;
+  taskLabel?: string;
   variant?: "primary" | "ghost";
-  onDone?: (data: unknown) => void;
 }
 
-export default function ActionButton({ endpoint, payload, label, busyLabel = "Working...", variant = "primary", onDone }: Props) {
-  const [busy, setBusy] = useState(false);
-  const [msg, setMsg] = useState<string | null>(null);
-  const [err, setErr] = useState(false);
+export default function ActionButton({ action, payload, label, taskLabel, variant = "primary" }: Props) {
+  const { start } = useJobs();
+  const [launched, setLaunched] = useState(false);
 
   async function run() {
-    setBusy(true);
-    setMsg(null);
-    setErr(false);
-    try {
-      const res = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload || {}),
-      });
-      const data = await res.json();
-      if (!res.ok) {
-        setErr(true);
-        setMsg(data.error || `Error ${res.status}`);
-      } else {
-        setMsg(data.path ? `Saved: ${data.path}${data.committed ? " (committed)" : ""}` : "Done");
-        onDone?.(data);
-      }
-    } catch (e) {
-      setErr(true);
-      setMsg(String(e));
-    } finally {
-      setBusy(false);
-    }
+    await start(action, taskLabel || label, payload || {});
+    setLaunched(true);
+    setTimeout(() => setLaunched(false), 2500);
   }
 
   const base =
@@ -48,10 +28,10 @@ export default function ActionButton({ endpoint, payload, label, busyLabel = "Wo
 
   return (
     <span className="inline-flex items-center gap-2">
-      <button onClick={run} disabled={busy} className={`text-sm px-3 py-1.5 rounded-md font-medium disabled:opacity-50 ${base}`}>
-        {busy ? busyLabel : label}
+      <button onClick={run} className={`text-sm px-3 py-1.5 rounded-md font-medium ${base}`}>
+        {label}
       </button>
-      {msg && <span className={`text-xs ${err ? "text-red-600" : "text-teal"}`}>{msg}</span>}
+      {launched && <span className="text-xs text-teal">Started, runs in background</span>}
     </span>
   );
 }

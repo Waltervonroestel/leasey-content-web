@@ -16,8 +16,8 @@ export default function PrPage() {
           <p className="text-slate text-sm mt-1">Write press releases and map property management outlets to pitch them.</p>
         </div>
         <div className="flex gap-2">
-          <ActionButton endpoint="/api/refresh-directory" payload={{ kind: "pm" }} label="Search PM outlets" busyLabel="Searching..." variant="ghost" />
-          <ActionButton endpoint="/api/generate-pr" payload={{ topic: "latest Leasey.AI announcement" }} label="Draft a press release" busyLabel="Writing..." />
+          <ActionButton action="refresh-directory" payload={{ kind: "pm" }} label="Search PM outlets" taskLabel="Search PM outlets" variant="ghost" />
+          <ActionButton action="generate-pr" payload={{ topic: "latest Leasey.AI announcement" }} label="Draft a press release" taskLabel="Press release draft" />
         </div>
       </div>
       <Card>

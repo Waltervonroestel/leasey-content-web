@@ -15,7 +15,7 @@ export default function RedditPage() {
           <h1 className="text-2xl font-bold text-ink">Reddit</h1>
           <p className="text-slate text-sm mt-1">Mapped subreddits and what to write in each. Value first, never a hard pitch.</p>
         </div>
-        <ActionButton endpoint="/api/refresh-directory" payload={{ kind: "reddit" }} label="Search subreddits" busyLabel="Searching..." variant="ghost" />
+        <ActionButton action="refresh-directory" payload={{ kind: "reddit" }} label="Search subreddits" taskLabel="Search subreddits" variant="ghost" />
       </div>
       <Card>
         {directory ? <Markdown md={directory} /> : <p className="text-slate">No subreddit map yet. Click “Search subreddits”.</p>}

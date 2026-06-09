@@ -24,9 +24,9 @@ export default async function DraftDetail({ params }: { params: Promise<{ file: 
 
       <Card className="flex flex-wrap items-center gap-3">
         <span className="text-sm text-slate">Generate image:</span>
-        <ActionButton endpoint="/api/generate-image" payload={{ file: draft.file, kind: "hero" }} label="Data card" busyLabel="Rendering..." variant="ghost" />
-        <ActionButton endpoint="/api/generate-image" payload={{ file: draft.file, kind: "cover" }} label="Blog cover" busyLabel="Rendering..." variant="ghost" />
-        <ActionButton endpoint="/api/generate-image" payload={{ file: draft.file, kind: "carousel-slide" }} label="Carousel slide" busyLabel="Rendering..." variant="ghost" />
+        <ActionButton action="generate-image" payload={{ file: draft.file, kind: "hero" }} label="Data card" taskLabel={`Image (data card): ${draft.name}`} variant="ghost" />
+        <ActionButton action="generate-image" payload={{ file: draft.file, kind: "cover" }} label="Blog cover" taskLabel={`Image (cover): ${draft.name}`} variant="ghost" />
+        <ActionButton action="generate-image" payload={{ file: draft.file, kind: "carousel-slide" }} label="Carousel slide" taskLabel={`Image (carousel): ${draft.name}`} variant="ghost" />
         <span className="text-[11px] text-slate w-full">The brief is built internally from this draft. Output is a PNG in Images.</span>
       </Card>
 

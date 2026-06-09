@@ -8,6 +8,8 @@ export interface TrackedJob {
   summary?: string;
   path?: string;
   error?: string;
+  startedAt: number;
+  misses?: number;
 }
 
 interface Ctx {
@@ -24,12 +26,13 @@ export const useJobs = () => {
 };
 
 const LS_KEY = "leasey_jobs";
+const MAX_MISSES = 6; // ~18s de 404 seguidos => asumimos reinicio de instancia
 
 export default function JobsProvider({ children }: { children: React.ReactNode }) {
   const [jobs, setJobs] = useState<TrackedJob[]>([]);
+  const [, force] = useState(0);
   const seeded = useRef(false);
 
-  // Carga jobs guardados (sobreviven recarga de página).
   useEffect(() => {
     if (seeded.current) return;
     seeded.current = true;
@@ -42,61 +45,96 @@ export default function JobsProvider({ children }: { children: React.ReactNode }
     }
   }, []);
 
-  // Persiste en localStorage.
   useEffect(() => {
     try {
       localStorage.setItem(LS_KEY, JSON.stringify(jobs.slice(0, 30)));
     } catch {}
   }, [jobs]);
 
-  const notify = useCallback((j: TrackedJob) => {
+  const notify = useCallback((title: string, body: string) => {
     try {
       if ("Notification" in window && Notification.permission === "granted") {
-        new Notification(j.status === "done" ? "Task complete" : "Task failed", {
-          body: j.status === "done" ? j.summary || j.label : j.error || j.label,
-        });
+        new Notification(title, { body });
       }
     } catch {}
   }, []);
+
+  // Tick para el contador de tiempo transcurrido.
+  useEffect(() => {
+    const hasRunning = jobs.some((j) => j.status === "running");
+    if (!hasRunning) return;
+    const t = setInterval(() => force((n) => n + 1), 1000);
+    return () => clearInterval(t);
+  }, [jobs]);
 
   // Polling de jobs en running.
   useEffect(() => {
     const running = jobs.filter((j) => j.status === "running");
     if (running.length === 0) return;
-    const t = setInterval(async () => {
+
+    let cancelled = false;
+    async function pollOnce() {
       for (const j of running) {
         try {
-          const res = await fetch(`/api/jobs?id=${j.id}`);
-          if (res.status === 404) continue;
+          const res = await fetch(`/api/jobs?id=${j.id}`, { cache: "no-store" });
+          if (res.status === 404) {
+            setJobs((prev) =>
+              prev.map((p) => {
+                if (p.id !== j.id) return p;
+                const misses = (p.misses || 0) + 1;
+                if (misses >= MAX_MISSES) {
+                  notify("Task interrupted", "The server restarted. Check Drafts, and retry if needed.");
+                  return { ...p, status: "error", error: "Server restarted during the task. Check Drafts, or retry.", misses };
+                }
+                return { ...p, misses };
+              })
+            );
+            continue;
+          }
           const data = await res.json();
           if (data.status === "done" || data.status === "error") {
+            if (cancelled) return;
             setJobs((prev) =>
               prev.map((p) =>
                 p.id === j.id
-                  ? { ...p, status: data.status, summary: data.result?.summary, path: data.result?.path, error: data.error }
+                  ? { ...p, status: data.status, summary: data.result?.summary, path: data.result?.path, error: data.error, misses: 0 }
                   : p
               )
             );
-            notify({ ...j, status: data.status, summary: data.result?.summary, path: data.result?.path, error: data.error });
+            notify(
+              data.status === "done" ? "Task complete" : "Task failed",
+              data.status === "done" ? data.result?.summary || j.label : data.error || j.label
+            );
           }
         } catch {}
       }
-    }, 4000);
-    return () => clearInterval(t);
+    }
+    pollOnce(); // poll inmediato
+    const t = setInterval(pollOnce, 3000);
+    return () => {
+      cancelled = true;
+      clearInterval(t);
+    };
   }, [jobs, notify]);
 
   const start = useCallback(async (action: string, label: string, payload: Record<string, unknown>) => {
-    const res = await fetch("/api/jobs", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action, label, payload }),
-    });
-    const data = await res.json();
-    if (!res.ok) {
-      setJobs((prev) => [{ id: `err-${Date.now()}`, label, status: "error", error: data.error }, ...prev]);
-      return;
+    const optimistic: TrackedJob = { id: `tmp-${Date.now()}`, label, status: "running", startedAt: Date.now() };
+    setJobs((prev) => [optimistic, ...prev]);
+    try {
+      const res = await fetch("/api/jobs", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action, label, payload }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setJobs((prev) => prev.map((p) => (p.id === optimistic.id ? { ...p, status: "error", error: data.error } : p)));
+        return;
+      }
+      setJobs((prev) => prev.map((p) => (p.id === optimistic.id ? { ...p, id: data.id } : p)));
+    } catch (e) {
+      setJobs((prev) => prev.map((p) => (p.id === optimistic.id ? { ...p, status: "error", error: String(e) } : p)));
     }
-    setJobs((prev) => [{ id: data.id, label, status: "running" }, ...prev]);
   }, []);
 
   const clearDone = useCallback(() => setJobs((prev) => prev.filter((j) => j.status === "running")), []);
@@ -107,6 +145,11 @@ export default function JobsProvider({ children }: { children: React.ReactNode }
       <TasksWidget />
     </JobsContext.Provider>
   );
+}
+
+function elapsed(startedAt: number): string {
+  const s = Math.floor((Date.now() - startedAt) / 1000);
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 }
 
 function TasksWidget() {
@@ -127,12 +170,11 @@ function TasksWidget() {
             {jobs.map((j) => (
               <div key={j.id} className="text-xs border border-line rounded-md p-2">
                 <div className="flex items-center gap-2">
-                  <span className={
-                    j.status === "running" ? "text-blue" : j.status === "done" ? "text-teal" : "text-red-600"
-                  }>
+                  <span className={j.status === "running" ? "text-blue" : j.status === "done" ? "text-teal" : "text-red-600"}>
                     {j.status === "running" ? "●" : j.status === "done" ? "✓" : "✕"}
                   </span>
-                  <span className="text-ink font-medium truncate">{j.label}</span>
+                  <span className="text-ink font-medium truncate flex-1">{j.label}</span>
+                  {j.status === "running" && <span className="text-slate tabular-nums">{elapsed(j.startedAt)}</span>}
                 </div>
                 {j.status === "done" && j.path && <div className="text-slate mt-1 truncate">Saved: {j.path}</div>}
                 {j.status === "done" && !j.path && j.summary && <div className="text-slate mt-1">{j.summary}</div>}
@@ -146,9 +188,7 @@ function TasksWidget() {
         onClick={() => setOpen((o) => !o)}
         className="bg-ink text-white text-sm px-4 py-2 rounded-full shadow-lg flex items-center gap-2"
       >
-        <span className={running > 0 ? "animate-pulse" : ""}>
-          {running > 0 ? `${running} running` : "Tasks"}
-        </span>
+        <span className={running > 0 ? "animate-pulse" : ""}>{running > 0 ? `${running} running` : "Tasks"}</span>
       </button>
     </div>
   );

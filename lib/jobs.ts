@@ -1,4 +1,7 @@
+import fs from "fs";
+import path from "path";
 import { runGenerator, GenAction } from "./generators";
+import { contentRoot } from "./content";
 
 export type JobStatus = "running" | "done" | "error";
 export interface Job {
@@ -17,19 +20,43 @@ export interface Job {
 // pierden, pero el resultado ya se persiste a GitHub, así que el draft no se pierde.
 const jobs = new Map<string, Job>();
 
+// Persistencia ligera del registro del job a disco, para sobrevivir reinicios
+// de la instancia (los resultados completados se recuperan tras un restart).
+function jobFile(id: string): string {
+  return path.join(contentRoot(), ".jobs", `${id}.json`);
+}
+function persistJob(job: Job) {
+  try {
+    fs.mkdirSync(path.dirname(jobFile(job.id)), { recursive: true });
+    fs.writeFileSync(jobFile(job.id), JSON.stringify(job));
+  } catch {}
+}
+function loadJob(id: string): Job | undefined {
+  try {
+    return JSON.parse(fs.readFileSync(jobFile(id), "utf8")) as Job;
+  } catch {
+    return undefined;
+  }
+}
+
 // Limpieza: descarta jobs terminados de hace más de 1 hora.
 function gc() {
   const cutoff = Date.now() - 60 * 60 * 1000;
   for (const [id, j] of jobs) if (j.finishedAt && j.finishedAt < cutoff) jobs.delete(id);
 }
 
+// Cola para generaciones pesadas (Agent SDK): una a la vez, para no reventar
+// la memoria de la instancia free (OOM => restart). Las imágenes (sin SDK) no encolan.
+let chain: Promise<void> = Promise.resolve();
+
 export function startJob(action: GenAction, label: string, payload: Record<string, unknown>): Job {
   gc();
   const id = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
   const job: Job = { id, action, label, status: "running", startedAt: Date.now() };
   jobs.set(id, job);
-  // Fire-and-forget: corre fuera del ciclo de la request.
-  (async () => {
+  persistJob(job);
+
+  const work = async () => {
     try {
       const res = await runGenerator(action, payload);
       job.status = "done";
@@ -39,13 +66,20 @@ export function startJob(action: GenAction, label: string, payload: Record<strin
       job.error = String(e instanceof Error ? e.message : e);
     } finally {
       job.finishedAt = Date.now();
+      persistJob(job);
     }
-  })();
+  };
+
+  if (action === "generate-image") {
+    void work(); // ligero, corre de inmediato
+  } else {
+    chain = chain.then(work, work); // serializa las generaciones con IA
+  }
   return job;
 }
 
 export function getJob(id: string): Job | undefined {
-  return jobs.get(id);
+  return jobs.get(id) || loadJob(id);
 }
 
 export function listJobs(): Job[] {

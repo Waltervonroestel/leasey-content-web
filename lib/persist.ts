@@ -42,7 +42,9 @@ async function commitToGitHub(token: string, repo: string, branch: string, repoP
   const putRes = await fetch(apiBase, {
     method: "PUT",
     headers: { ...headers, "Content-Type": "application/json" },
-    body: JSON.stringify({ message: `[auto] update ${repoPath}`, content, branch, sha }),
+    // "[skip render]" evita que el commit dispare un redeploy en Render,
+    // que reiniciaría la instancia y borraría los jobs en memoria en curso.
+    body: JSON.stringify({ message: `[auto][skip render] update ${repoPath}`, content, branch, sha }),
   });
   return putRes.ok;
 }

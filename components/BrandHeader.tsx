@@ -2,11 +2,13 @@ import Link from "next/link";
 
 const nav = [
   { href: "/", label: "Dashboard" },
-  { href: "/status", label: "Estado" },
-  { href: "/calendar", label: "Calendario" },
-  { href: "/drafts", label: "Borradores" },
-  { href: "/signals", label: "Señales" },
-  { href: "/images", label: "Imágenes" },
+  { href: "/status", label: "Status" },
+  { href: "/calendar", label: "Calendar" },
+  { href: "/drafts", label: "Drafts" },
+  { href: "/insights", label: "Insights" },
+  { href: "/images", label: "Images" },
+  { href: "/pr", label: "PR" },
+  { href: "/reddit", label: "Reddit" },
 ];
 
 export default function BrandHeader() {
@@ -19,7 +21,7 @@ export default function BrandHeader() {
           </span>
           <span className="text-xs text-slate hidden sm:inline">Content</span>
         </Link>
-        <nav className="flex items-center gap-1 text-sm">
+        <nav className="flex items-center gap-1 text-sm flex-wrap">
           {nav.map((n) => (
             <Link
               key={n.href}

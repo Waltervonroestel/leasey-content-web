@@ -18,7 +18,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <BrandHeader />
         <main className="flex-1 w-full max-w-6xl mx-auto px-5 py-8">{children}</main>
         <footer className="w-full max-w-6xl mx-auto px-5 py-6 text-xs text-slate border-t border-line mt-8">
-          Leasey.AI Content System · fase 1 (sin GSC/WordPress aún) · los borradores no se publican solos
+          Leasey.AI Content System · phase 1 (GSC and WordPress not connected yet) · drafts are not auto-published
         </footer>
       </body>
     </html>

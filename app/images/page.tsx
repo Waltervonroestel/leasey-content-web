@@ -7,15 +7,15 @@ export default function ImagesPage() {
   const images = listImages();
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold text-ink">Imágenes generadas</h1>
+      <h1 className="text-2xl font-bold text-ink">Generated images</h1>
       <p className="text-slate text-sm">
-        Portadas, gráficos de dato y carruseles renderizados por el agente image-maker (node + sharp).
+        Covers, data cards and carousel slides rendered on the page (node + sharp). The brief is built
+        internally from each draft. Generate them from any draft’s page.
       </p>
       {images.length === 0 ? (
         <Card>
           <p className="text-slate text-sm">
-            Aún no hay imágenes. Genera una con <code className="px-1 bg-bg-2 rounded">/image-brief</code> en el
-            sistema de agentes, luego corre <code className="px-1 bg-bg-2 rounded">npm run sync</code>.
+            No images yet. Open a draft and click a “Generate image” button.
           </p>
         </Card>
       ) : (

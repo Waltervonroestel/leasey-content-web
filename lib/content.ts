@@ -136,6 +136,66 @@ export interface StatusCount {
   count: number;
 }
 
+// --- Calendar slots (parse the markdown tables into actionable rows) ---
+export interface CalendarSlot {
+  date: string;
+  channel: string;
+  topic: string;
+  voice: string;
+  agent: string;
+  source: string;
+  client: string;
+  status: string;
+  raw: string;
+}
+
+export function listCalendarSlots(): CalendarSlot[] {
+  const cal = listDrafts().find((d) => /calendar-/i.test(d.name));
+  if (!cal) return [];
+  const md = safeRead(cal.file) || "";
+  const slots: CalendarSlot[] = [];
+  for (const line of md.split("\n")) {
+    const t = line.trim();
+    // Filas de tabla con datos (no separadores ni encabezados).
+    if (!t.startsWith("|") || t.includes("---") || /Fecha\s*\|/.test(t)) continue;
+    const cells = t.split("|").map((c) => c.trim()).filter((_, i, a) => i > 0 && i < a.length - 1);
+    if (cells.length < 8) continue;
+    const [date, channel, topic, voice, agent, source, client, status] = cells;
+    if (!/jun|jul|ago|sep|Lun|Mié|Vie|Reddit/i.test(date) && channel !== "r/LeaseyAI") continue;
+    slots.push({ date, channel, topic, voice, agent, source, client, status, raw: t });
+  }
+  return slots;
+}
+
+// --- Insights (parsed from signals.md sections) ---
+export interface Insight {
+  id: string;
+  title: string;
+  body: string;
+  section: string;
+}
+
+export function listInsights(): Insight[] {
+  const md = safeRead("context/signals.md") || "";
+  const insights: Insight[] = [];
+  let section = "";
+  const lines = md.split("\n");
+  let current: Insight | null = null;
+  for (const line of lines) {
+    const sec = line.match(/^##\s+(.*)/);
+    if (sec) { section = sec[1].trim(); continue; }
+    const head = line.match(/^###\s+([A-Z]\d+)\.\s+(.*)/);
+    if (head) {
+      if (current) insights.push(current);
+      current = { id: head[1], title: head[2].trim(), body: "", section };
+      continue;
+    }
+    if (current) current.body += line + "\n";
+  }
+  if (current) insights.push(current);
+  return insights;
+}
+
 export function statusSummary(): { total: number; counts: StatusCount[] } {
   const status = safeRead("output/STATUS.md") || "";
   const labels = ["BORRADOR", "QA-OK", "APROBADO", "PUBLICADO"];

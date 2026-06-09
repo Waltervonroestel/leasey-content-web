@@ -14,8 +14,8 @@ export default function DraftsPage() {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-2xl font-bold text-ink">Borradores</h1>
-        <p className="text-slate text-sm mt-1">{drafts.length} piezas en output/. No se publican solas.</p>
+        <h1 className="text-2xl font-bold text-ink">Drafts</h1>
+        <p className="text-slate text-sm mt-1">{drafts.length} pieces in output/. Not auto-published.</p>
       </div>
       {Object.entries(groups).map(([date, items]) => (
         <div key={date}>

@@ -19,21 +19,21 @@ export default function Dashboard() {
       <div>
         <h1 className="text-2xl font-bold text-ink">Content Dashboard</h1>
         <p className="text-slate text-sm mt-1">
-          Estado del sistema de contenido de Leasey.AI. Lee los borradores, el calendario y las señales del
-          repo. No publica: los borradores se suben a mano.
+          State of the Leasey.AI content system. Reads drafts, the calendar and insights from the repo. It does
+          not publish: drafts are uploaded by hand.
         </p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Stat label="Piezas en tablero" value={total} accent />
-        <Stat label="Borradores en output" value={drafts.length} />
-        <Stat label="Imágenes generadas" value={images.length} />
-        <Stat label="Canales activos" value={Object.keys(byChannel).length} />
+        <Stat label="Pieces tracked" value={total} accent />
+        <Stat label="Drafts in output" value={drafts.length} />
+        <Stat label="Images generated" value={images.length} />
+        <Stat label="Active channels" value={Object.keys(byChannel).length} />
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
         <Card>
-          <SectionTitle href="/status" cta="Ver tablero">Estado</SectionTitle>
+          <SectionTitle href="/status" cta="View board">Status</SectionTitle>
           <div className="flex flex-wrap gap-2">
             {counts.map((c) => (
               <span key={c.status} className="flex items-center gap-2 text-sm">
@@ -44,7 +44,7 @@ export default function Dashboard() {
         </Card>
 
         <Card>
-          <SectionTitle href="/drafts" cta="Ver borradores">Por canal</SectionTitle>
+          <SectionTitle href="/drafts" cta="View drafts">By channel</SectionTitle>
           <div className="flex flex-col gap-1.5 text-sm">
             {Object.entries(byChannel)
               .sort((a, b) => b[1] - a[1])
@@ -59,7 +59,7 @@ export default function Dashboard() {
       </div>
 
       <div>
-        <SectionTitle href="/drafts" cta="Todos">Borradores recientes</SectionTitle>
+        <SectionTitle href="/drafts" cta="All">Recent drafts</SectionTitle>
         <div className="grid md:grid-cols-2 gap-3">
           {recent.map((d) => (
             <Link key={d.file} href={`/drafts/${encodeURIComponent(d.file)}`}>

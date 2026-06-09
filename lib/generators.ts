@@ -69,6 +69,7 @@ export async function runGenerator(action: GenAction, payload: Record<string, un
       const out = await runClaude({
         system: systemPrompt("Operator-facing blog post, 400-800 words, hook in first two sentences, one internal link to a Leasey service/tool page, demo CTA. Insight-led with the source named in the text."),
         prompt: `Write a blog post built on this insight:\n\nTitle: ${insight.title}\n\nDetails:\n${insight.body}\n\nLead with the datapoint and its source, develop the operator problem, connect to a Leasey positioning pillar, end with a demo CTA. Output only the final post in Markdown, starting with an SEO title line.`,
+        maxTokens: 4096,
       });
       const rel = `output/${today()}/blog-${insight.id}-${slug(insight.title)}.md`;
       const file = `Generated from insight ${insight.id}\nStatus: DRAFT, run editor-qa\n\n---\n\n${out}`;
@@ -91,7 +92,8 @@ export async function runGenerator(action: GenAction, payload: Record<string, un
       const out = await runClaude({
         system: systemPrompt("You are the news-researcher. Find FRESH insights (last 30-60 days) on PropTech, leasing automation, AI in real estate, rent regulation and vacancy in Canada/US, and competitor moves. Each insight: title, source URL + date, why it matters to property managers, suggested content angle, Leasey connection. English. No invented numbers."),
         prompt: `Search the web for fresh, relevant insights for Leasey.AI. Return 3 to 5 NEW insights NOT already covered below, formatted as Markdown sections like '### N9. Title' with source URLs. Do not repeat existing ones.\n\nEXISTING:\n${current.slice(0, 6000)}`,
-        allowedTools: ["WebSearch", "WebFetch"],
+        webSearch: true,
+        maxTokens: 4096,
       });
       const updated = current.includes("## Competitors")
         ? current.replace("## Competitors", `${out.trim()}\n\n## Competitors`)
@@ -110,7 +112,8 @@ export async function runGenerator(action: GenAction, payload: Record<string, un
       const out = await runClaude({
         system: systemPrompt("You are the distribution researcher. English, factual, with real URLs. No invented outlets."),
         prompt: `${task}\n\nReturn an updated Markdown directory, keeping useful existing entries and adding new ones with sources. Current file:\n\n${current.slice(0, 6000)}`,
-        allowedTools: ["WebSearch", "WebFetch"],
+        webSearch: true,
+        maxTokens: 4096,
       });
       const res = await saveContentFile(rel, out.trim() + "\n");
       return { ok: true, path: rel, committed: res.committed, summary: `${isPm ? "PM outlets" : "Subreddits"} directory refreshed` };

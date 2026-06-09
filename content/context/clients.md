@@ -3,10 +3,11 @@
 Usar SIEMPRE escenarios concretos. Estos son reales y verificados.
 
 ## Clientes y pilots
+(Nota: contactos internos de ventas removidos de este archivo por ser repo público. Si se necesitan, viven en el CRM, no aquí.)
 - TEREZ (Cochrane, AB): rental de lujo de 154 unidades, parte de la comunidad Greystone de Ocgrow Group. Pilot de performance de 60 días. Gestionado por SunPeak Property Management.
-- Goldwynn Residences: cliente con testimonial y case study. Contacto: Carlos Torrubia, Director of Marketing. Case study en /resources/testimonials/how-goldwynn-adopted-leasey-ai-for-multifamily-leasing-automation/
-- Three Shores: cliente activo de suscripción. Contacto: Josh.
-- Apartment Hub: cliente activo de suscripción. Contacto: Mark Porter.
+- Goldwynn Residences: cliente con testimonial y case study público. Case study en /resources/testimonials/how-goldwynn-adopted-leasey-ai-for-multifamily-leasing-automation/
+- Three Shores: cliente activo de suscripción.
+- Apartment Hub: cliente activo de suscripción.
 
 ## Testimonios públicos del sitio (citables)
 - Diego Mendoza, Century21: "Leasey.AI has transformed our leasing process... user-friendly, intuitive and time-saving."

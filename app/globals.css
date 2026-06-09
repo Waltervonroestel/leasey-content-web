@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Leasey es una marca clara/tech. Neutralizamos el dark mode automático. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Paleta Leasey.AI (tech blue/teal). Hex oficiales por confirmar (ver brand.md). */
+:root {
+  --bg: #f6f8fb;
+  --bg-2: #eef3f8;
+  --ink: #0f1b2d;
+  --blue: #1f6feb;
+  --blue-hover: #1659c7;
+  --teal: #0ea5a4;
+  --slate: #5b6b7f;
+  --line: rgba(31, 111, 235, 0.14);
+  --card: #ffffff;
+
+  --background: var(--bg);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-ink: var(--ink);
+  --color-blue: var(--blue);
+  --color-blue-hover: var(--blue-hover);
+  --color-teal: var(--teal);
+  --color-slate: var(--slate);
+  --color-line: var(--line);
+  --color-card: var(--card);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background:
+    radial-gradient(1100px 560px at 100% 0%, #ffffff 0%, transparent 60%),
+    linear-gradient(160deg, var(--bg) 0%, var(--bg-2) 100%);
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.prose-leasey h1, .prose-leasey h2, .prose-leasey h3 { color: var(--ink); font-weight: 700; margin: 1rem 0 0.5rem; }
+.prose-leasey h1 { font-size: 1.5rem; }
+.prose-leasey h2 { font-size: 1.2rem; }
+.prose-leasey p, .prose-leasey li { color: #2b3a4d; line-height: 1.6; margin: 0.4rem 0; }
+.prose-leasey table { border-collapse: collapse; width: 100%; margin: 0.8rem 0; font-size: 0.85rem; }
+.prose-leasey th, .prose-leasey td { border: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
+.prose-leasey th { background: var(--bg-2); }
+.prose-leasey code { background: var(--bg-2); padding: 0.1rem 0.3rem; border-radius: 4px; font-size: 0.85em; }
+.prose-leasey a { color: var(--blue); text-decoration: underline; }

@@ -1,119 +1,119 @@
-# Calendario editorial de 90 días — Leasey.AI
-Generado: 2026-06-08 | Ventana: 8 jun 2026 a 6 sep 2026 (13 semanas)
-Fuentes cruzadas: context/repressed-backlog.md, context/signals.md, context/products.md, context/clients.md
+# 90-day editorial calendar — Leasey.AI
+Generated: 2026-06-08 | Window: Jun 8 to Sep 6 2026 (13 weeks)
+Cross-referenced: context/repressed-backlog.md, context/signals.md, context/products.md, context/clients.md
 
-## Resumen ejecutivo
-El trimestre tiene tres corrientes que se refuerzan:
-1. Vaciar el backlog reprimido de 2025 (prioridad 1 de Walter): sindicación, mensajería, Discrepancy AI, verificación de ID, Calendar v2.0, billing, y las 5 partnerships.
-2. Montar sobre la actualidad mientras está fresca: el mercado canadiense se enfría (vacancia 5.1%, Calgary 7.3%), ShowMojo y Entrata validan el agente IA, y Fair Housing es el miedo legal del enterprise. Estas señales caducan, van temprano.
-3. Construir autoridad de diferenciación honesta frente a ShowMojo, Tenant Turner, los PMS incumbentes y Showdigs, siempre desde el valor para el property manager.
+## Executive summary
+The quarter has three reinforcing currents:
+1. Clear the 2025 repressed backlog (Walter's priority 1): syndication, messaging, Discrepancy AI, ID verification, Calendar v2.0, billing, and the 5 partnerships.
+2. Ride current events while fresh: the Canadian market is cooling (vacancy 5.1%, Calgary 7.3%), ShowMojo and Entrata validate the AI agent, and Fair Housing is the enterprise's legal fear. These signals expire, run them early.
+3. Build honest differentiation authority vs ShowMojo, Tenant Turner, the incumbent PMS and Showdigs, always from the value to the property manager.
 
-Balance de voces: Carlos lleva mercado, relación y reflexión de fundador; Juan leva producto y precisión técnica. Cada blog ancla a un cliente real (TEREZ, Goldwynn, Three Shores, Apartment Hub) y lleva al menos un enlace interno.
+Voice balance: Carlos leads market, relationship and founder reflection; Juan leads product and technical precision. Each blog anchors to a real client (TEREZ, Goldwynn, Three Shores, Apartment Hub) and carries at least one internal link.
 
-Conteo por canal (aprox): LinkedIn 39 posts (3/sem), Blog 16 posts, Reddit 4 changelogs, Comunidad oportunista.
+Channel count (approx): LinkedIn 39 posts (3/week), Blog 16 posts, Reddit 4 changelogs, Community opportunistic.
 
-## Calendario semana por semana
+## Week-by-week calendar
 
-### Semana 1 — Lun 8 jun
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 1 — Mon Jun 8
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 8 jun | LinkedIn | Vacancia sube y rentas bajan en Canadá: la palanca que sí controlas es la velocidad de leasing | Carlos | linkedin-carlos | Señal N1 | TEREZ | Pendiente |
-| Mié 10 jun | Blog | Qué hacer cuando la vacancia sube y las rentas caen (velocidad de leasing) | Empresa/Carlos | blog-writer | Señal N1 | TEREZ | Pendiente |
-| Vie 12 jun | LinkedIn | Reflexión fundador: construir para un mercado que se enfría | Carlos | linkedin-carlos | Señal N1 | TEREZ | Pendiente |
+| Mon Jun 8 | LinkedIn | Vacancy up and rents down in Canada: the lever you control is leasing speed | Carlos | linkedin-carlos | Signal N1 | TEREZ | Pending |
+| Wed Jun 10 | Blog | What to do when vacancy rises and rents fall (leasing speed) | Company/Carlos | blog-writer | Signal N1 | TEREZ | Pending |
+| Fri Jun 12 | LinkedIn | Founder reflection: building for a cooling market | Carlos | linkedin-carlos | Signal N1 | TEREZ | Pending |
 
-### Semana 2 — Lun 15 jun
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 2 — Mon Jun 15
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 15 jun | LinkedIn | El 80% de lo que pregunta un prospecto es predecible: eso automatiza Liza | Juan | linkedin-juan | Señal N3 | Goldwynn | Pendiente |
-| Mié 17 jun | Blog | Sindicación directa a Facebook Marketplace (lanzamiento del backlog) | Juan | blog-writer | Backlog | Apartment Hub | Pendiente |
-| Vie 19 jun | LinkedIn | Manejar el volumen de Facebook Marketplace sin abrir Facebook | Carlos | linkedin-carlos | Backlog | Apartment Hub | Pendiente |
+| Mon Jun 15 | LinkedIn | 80% of what a prospect asks is predictable: that is what Liza automates | Juan | linkedin-juan | Signal N3 | Goldwynn | Pending |
+| Wed Jun 17 | Blog | Direct syndication to Facebook Marketplace (backlog launch) | Juan | blog-writer | Backlog | Apartment Hub | Pending |
+| Fri Jun 19 | LinkedIn | Handle Facebook Marketplace volume without opening Facebook | Carlos | linkedin-carlos | Backlog | Apartment Hub | Pending |
 
-### Semana 3 — Lun 22 jun
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 3 — Mon Jun 22
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 22 jun | LinkedIn | Un chat widget con IA no es un agente de leasing. La diferencia importa | Juan | linkedin-juan | Señal N2 | [VERIFICAR] | Pendiente |
-| Mié 24 jun | Blog | Scheduling vs leasing de punta a punta (diferenciación honesta) | Juan | blog-writer | Señal N2 / C1 | Three Shores | Pendiente |
-| Vie 26 jun | LinkedIn | Reflexión fundador: por qué no construimos solo un scheduler | Carlos | linkedin-carlos | Señal N2 | Three Shores | Pendiente |
+| Mon Jun 22 | LinkedIn | An AI chat widget is not a leasing agent. The difference matters | Juan | linkedin-juan | Signal N2 | [VERIFY] | Pending |
+| Wed Jun 24 | Blog | Scheduling vs end-to-end leasing (honest differentiation) | Juan | blog-writer | Signal N2 / C1 | Three Shores | Pending |
+| Fri Jun 26 | LinkedIn | Founder reflection: why we did not build just a scheduler | Carlos | linkedin-carlos | Signal N2 | Three Shores | Pending |
 
-### Semana 4 — Lun 29 jun
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 4 — Mon Jun 29
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 29 jun | LinkedIn | Insight: 65% de residentes prefieren leasing digital | Carlos | linkedin-carlos | Señal N3 | Goldwynn | Pendiente |
-| Mié 1 jul | Blog | Sistema de mensajería centralizada (lanzamiento del backlog) | Juan | blog-writer | Backlog | Three Shores | Pendiente |
-| Vie 3 jul | LinkedIn | Product moment: toda la conversación con el lead en un solo hilo | Juan | linkedin-juan | Backlog | Three Shores | Pendiente |
-| Reddit | r/LeaseyAI | Calendar View v2.0 (split layout y overlap tooltips) | changelog | reddit-changelog | Backlog Reddit | n/a | Pendiente |
+| Mon Jun 29 | LinkedIn | Insight: 65% of residents prefer digital leasing | Carlos | linkedin-carlos | Signal N3 | Goldwynn | Pending |
+| Wed Jul 1 | Blog | Centralized messaging system (backlog launch) | Juan | blog-writer | Backlog | Three Shores | Pending |
+| Fri Jul 3 | LinkedIn | Product moment: the whole lead conversation in one thread | Juan | linkedin-juan | Backlog | Three Shores | Pending |
+| Reddit | r/LeaseyAI | Calendar View v2.0 (split layout and overlap tooltips) | changelog | reddit-changelog | Reddit backlog | n/a | Pending |
 
-### Semana 5 — Lun 6 jul
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 5 — Mon Jul 6
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 6 jul | LinkedIn | El riesgo legal oculto de la IA en leasing: Fair Housing | Carlos | linkedin-carlos | Señal N4 | [VERIFICAR] | Pendiente |
-| Mié 8 jul | Blog | IA en leasing y Fair Housing: qué exigirle a tu vendor antes de ir en vivo | Empresa | blog-writer | Señal N4 | [VERIFICAR] | Pendiente |
-| Vie 10 jul | LinkedIn | Discrepancy AI: detectar inconsistencias sin negar oportunidades | Juan | linkedin-juan | Backlog | [VERIFICAR] | Pendiente |
+| Mon Jul 6 | LinkedIn | The hidden legal risk of AI in leasing: Fair Housing | Carlos | linkedin-carlos | Signal N4 | [VERIFY] | Pending |
+| Wed Jul 8 | Blog | AI in leasing and Fair Housing: what to demand from your vendor before going live | Company | blog-writer | Signal N4 | [VERIFY] | Pending |
+| Fri Jul 10 | LinkedIn | Discrepancy AI: catch inconsistencies without denying opportunities | Juan | linkedin-juan | Backlog | [VERIFY] | Pending |
 
-### Semana 6 — Lun 13 jul
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 6 — Mon Jul 13
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 13 jul | LinkedIn | No necesitas cambiar de PMS para automatizar tu leasing | Juan | linkedin-juan | Señal C3 | Goldwynn | Pendiente |
-| Mié 15 jul | Blog | Discrepancy AI: cómo marca fraude e inconsistencias en aplicaciones | Juan | blog-writer | Backlog | [VERIFICAR] | Pendiente |
-| Vie 17 jul | LinkedIn | Reflexión fundador: integrarse encima del PMS, no pelear con él | Carlos | linkedin-carlos | Señal C3 | Goldwynn | Pendiente |
-| Reddit | r/LeaseyAI | Verificación de ID para showings y aplicaciones | changelog | reddit-changelog | Backlog Reddit | n/a | Pendiente |
+| Mon Jul 13 | LinkedIn | You do not need to switch PMS to automate your leasing | Juan | linkedin-juan | Signal C3 | Goldwynn | Pending |
+| Wed Jul 15 | Blog | Discrepancy AI: how it flags fraud and inconsistencies in applications | Juan | blog-writer | Backlog | [VERIFY] | Pending |
+| Fri Jul 17 | LinkedIn | Founder reflection: integrate on top of the PMS, do not fight it | Carlos | linkedin-carlos | Signal C3 | Goldwynn | Pending |
+| Reddit | r/LeaseyAI | ID verification for showings and applications | changelog | reddit-changelog | Reddit backlog | n/a | Pending |
 
-### Semana 7 — Lun 20 jul
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 7 — Mon Jul 20
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 20 jul | LinkedIn | El leasing canadiense necesita un stack pensado para Canadá | Carlos | linkedin-carlos | Señal C2 | TEREZ | Pendiente |
-| Mié 22 jul | Blog | Partnership SingleKey: screening canadiense dentro de Leasey | Juan | blog-writer | Backlog | TEREZ | Pendiente |
-| Vie 24 jul | LinkedIn | Product moment: verificación de ID biométrica en showings | Juan | linkedin-juan | Backlog | [VERIFICAR] | Pendiente |
+| Mon Jul 20 | LinkedIn | Canadian leasing needs a stack built for Canada | Carlos | linkedin-carlos | Signal C2 | TEREZ | Pending |
+| Wed Jul 22 | Blog | SingleKey partnership: Canadian screening inside Leasey | Juan | blog-writer | Backlog | TEREZ | Pending |
+| Fri Jul 24 | LinkedIn | Product moment: biometric ID verification at showings | Juan | linkedin-juan | Backlog | [VERIFY] | Pending |
 
-### Semana 8 — Lun 27 jul
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 8 — Mon Jul 27
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 27 jul | LinkedIn | Insight: cada día de vacancia cuesta más en mercado blando | Carlos | linkedin-carlos | Señal N1 | TEREZ | Pendiente |
-| Mié 29 jul | Blog | Partnership Rental Beast: ampliando la red de sindicación | Juan | blog-writer | Backlog | Apartment Hub | Pendiente |
-| Vie 31 jul | LinkedIn | Sindicación a 48+ marketplaces con un clic | Juan | linkedin-juan | Producto | Apartment Hub | Pendiente |
-| Reddit | r/LeaseyAI | Showing confirmation dashboard (SMS a confirmation link) | changelog | reddit-changelog | Backlog Reddit | n/a | Pendiente |
+| Mon Jul 27 | LinkedIn | Insight: every vacancy day costs more in a soft market | Carlos | linkedin-carlos | Signal N1 | TEREZ | Pending |
+| Wed Jul 29 | Blog | Rental Beast partnership: expanding the syndication network | Juan | blog-writer | Backlog | Apartment Hub | Pending |
+| Fri Jul 31 | LinkedIn | Syndication to 48+ marketplaces with one click | Juan | linkedin-juan | Product | Apartment Hub | Pending |
+| Reddit | r/LeaseyAI | Showing confirmation dashboard (SMS to confirmation link) | changelog | reddit-changelog | Reddit backlog | n/a | Pending |
 
-### Semana 9 — Lun 3 ago
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 9 — Mon Aug 3
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 3 ago | LinkedIn | Automatizar el showing vs tercerizarlo: tu costo por unidad al crecer | Juan | linkedin-juan | Señal C4 | Three Shores | Pendiente |
-| Mié 5 ago | Blog | Smart Route Planner y recordatorios anti no-show | Juan | blog-writer | Producto | Three Shores | Pendiente |
-| Vie 7 ago | LinkedIn | Reflexión fundador: escalar leasing sin sumar headcount | Carlos | linkedin-carlos | Producto | Three Shores | Pendiente |
+| Mon Aug 3 | LinkedIn | Automating the showing vs outsourcing it: your cost per unit as you grow | Juan | linkedin-juan | Signal C4 | Three Shores | Pending |
+| Wed Aug 5 | Blog | Smart Route Planner and anti no-show reminders | Juan | blog-writer | Product | Three Shores | Pending |
+| Fri Aug 7 | LinkedIn | Founder reflection: scaling leasing without adding headcount | Carlos | linkedin-carlos | Product | Three Shores | Pending |
 
-### Semana 10 — Lun 10 ago
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 10 — Mon Aug 10
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 10 ago | LinkedIn | Insight: el lease-up que no puede esperar (154 unidades en 60 días) | Carlos | linkedin-carlos | Cliente | TEREZ | Pendiente |
-| Mié 12 ago | Blog | Cómo Goldwynn adoptó Leasey para automatizar su leasing (case study) | Empresa | blog-writer | Cliente | Goldwynn | Pendiente |
-| Vie 14 ago | LinkedIn | Partnership Duuo: seguro de inquilinos integrado (Canadá) | Juan | linkedin-juan | Backlog | [VERIFICAR] | Pendiente |
-| Reddit | r/LeaseyAI | Billing tab update (filtros, columnas, descarga de invoices) | changelog | reddit-changelog | Backlog Reddit | n/a | Pendiente |
+| Mon Aug 10 | LinkedIn | Insight: the lease-up that cannot wait (154 units in 60 days) | Carlos | linkedin-carlos | Client | TEREZ | Pending |
+| Wed Aug 12 | Blog | How Goldwynn adopted Leasey to automate its leasing (case study) | Company | blog-writer | Client | Goldwynn | Pending |
+| Fri Aug 14 | LinkedIn | Duuo partnership: integrated tenant insurance (Canada) | Juan | linkedin-juan | Backlog | [VERIFY] | Pending |
+| Reddit | r/LeaseyAI | Billing tab update (filters, columns, invoice download) | changelog | reddit-changelog | Reddit backlog | n/a | Pending |
 
-### Semana 11 — Lun 17 ago
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 11 — Mon Aug 17
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 17 ago | LinkedIn | Product moment: Smart Leases y eSignature nativo | Juan | linkedin-juan | Backlog | [VERIFICAR] | Pendiente |
-| Mié 19 ago | Blog | Smart Leases: autocompletar documentos y firmar sin DocuSign | Juan | blog-writer | Producto | [VERIFICAR] | Pendiente |
-| Vie 21 ago | LinkedIn | Reflexión fundador: de listing a firma en una sola plataforma | Carlos | linkedin-carlos | Producto | Goldwynn | Pendiente |
+| Mon Aug 17 | LinkedIn | Product moment: Smart Leases and native eSignature | Juan | linkedin-juan | Backlog | [VERIFY] | Pending |
+| Wed Aug 19 | Blog | Smart Leases: auto-fill documents and sign without DocuSign | Juan | blog-writer | Product | [VERIFY] | Pending |
+| Fri Aug 21 | LinkedIn | Founder reflection: from listing to signature on one platform | Carlos | linkedin-carlos | Product | Goldwynn | Pending |
 
-### Semana 12 — Lun 24 ago
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 12 — Mon Aug 24
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 24 ago | LinkedIn | Insight: refrescar señales de mercado Q3 (revisar vacancia actualizada) | Carlos | linkedin-carlos | [REFRESCAR N1] | TEREZ | Pendiente |
-| Mié 26 ago | Blog | Partnership Sure / Duuo: seguro de inquilinos US y Canadá | Juan | blog-writer | Backlog | [VERIFICAR] | Pendiente |
-| Vie 28 ago | LinkedIn | Partnership DoorInsight: property intelligence | Juan | linkedin-juan | Backlog | [VERIFICAR] | Pendiente |
+| Mon Aug 24 | LinkedIn | Insight: refresh Q3 market signals (check updated vacancy) | Carlos | linkedin-carlos | [REFRESH N1] | TEREZ | Pending |
+| Wed Aug 26 | Blog | Sure / Duuo partnership: tenant insurance US and Canada | Juan | blog-writer | Backlog | [VERIFY] | Pending |
+| Fri Aug 28 | LinkedIn | DoorInsight partnership: property intelligence | Juan | linkedin-juan | Backlog | [VERIFY] | Pending |
 
-### Semana 13 — Lun 31 ago
-| Fecha | Canal | Tema / Título de trabajo | Voz | Agente | Fuente | Cliente ancla | Estado |
+### Week 13 — Mon Aug 31
+| Date | Channel | Topic / working title | Voice | Agent | Source | Anchor client | Status |
 |---|---|---|---|---|---|---|---|
-| Lun 31 ago | LinkedIn | Recap de trimestre: qué cambió en automatización de leasing | Carlos | linkedin-carlos | Evergreen | Varios | Pendiente |
-| Mié 2 sep | Blog | Spring 2025 product update, revisitado: todo lo enviado este año | Juan | blog-writer | Backlog | Varios | Pendiente |
-| Vie 4 sep | LinkedIn | Reflexión fundador: un año construyendo la capa de leasing | Carlos | linkedin-carlos | Evergreen | Varios | Pendiente |
+| Mon Aug 31 | LinkedIn | Quarter recap: what changed in leasing automation | Carlos | linkedin-carlos | Evergreen | Various | Pending |
+| Wed Sep 2 | Blog | Spring 2025 product update, revisited: everything shipped this year | Juan | blog-writer | Backlog | Various | Pending |
+| Fri Sep 4 | LinkedIn | Founder reflection: a year building the leasing layer | Carlos | linkedin-carlos | Evergreen | Various | Pending |
 
-## Huecos y verificaciones antes de ejecutar
-- `[VERIFICAR]` Fair Housing (S5): confirmar con producto qué decisiones del screening requieren human review hoy, para no sobreprometer. Leasey ya tiene research publicado, enlazarlo.
-- `[VERIFICAR]` clientes ancla marcados: varios slots de partnerships y features (ID, Smart Leases, seguros) necesitan un cliente real que los use, o se quedan sin anclar. Pedir a Carlos.
-- `[REFRESCAR N1]` antes de Semana 12 (24 ago): correr `news-researcher` de nuevo para tener cifras de vacancia Q2/Q3 2026 frescas. Las de este calendario son Q1 2026.
-- Las 4 partnerships sin case study (Rental Beast, DoorInsight, Duuo, Sure) deberían confirmarse con marketing antes de anunciarse como vivas.
-- ShowMojo AI sigue en beta: si sale de beta o cambia, ajustar el ángulo de Semana 3.
+## Gaps and checks before executing
+- `[VERIFY]` Fair Housing (W5): confirm with product which screening decisions require human review today, so we do not overpromise. Leasey already has published research, link it.
+- `[VERIFY]` anchor clients flagged: several partnership and feature slots (ID, Smart Leases, insurance) need a real client that uses them, or they stay unanchored. Ask Carlos.
+- `[REFRESH N1]` before Week 12 (Aug 24): run news-researcher again for fresh Q2/Q3 2026 vacancy numbers. This calendar's are Q1 2026.
+- The 4 partnerships without a case study (Rental Beast, DoorInsight, Duuo, Sure) should be confirmed with marketing before being announced as live.
+- ShowMojo AI is still in beta: if it leaves beta or changes, adjust the Week 3 angle.
 
-Cada slot se ejecuta después con su comando: `/publish-repressed`, `/linkedin-week`, `/reddit-post`. Este archivo es el plan, no el contenido final.
+Each slot is then executed with its command: `/publish-repressed`, `/linkedin-week`, `/reddit-post`. This file is the plan, not the final content.

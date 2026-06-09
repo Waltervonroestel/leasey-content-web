@@ -1,32 +1,32 @@
-# STATUS — Tablero de contenido Leasey.AI
+# STATUS — Leasey.AI content board
 
-Índice vivo de todo lo que el sistema produce. Estados: BORRADOR > QA-OK > APROBADO (por Walter/founder) > PUBLICADO. Actualizar al generar, aprobar o publicar una pieza. El agente/comando `/status` ayuda a mantenerlo.
+Living index of everything the system produces. Statuses: DRAFT > QA-OK > APPROVED (by Walter/founder) > PUBLISHED. Update when a piece is generated, approved or published. The `/status` command helps maintain it.
 
-Leyenda canal: LI-C (LinkedIn Carlos), LI-J (LinkedIn Juan), LI-CO (LinkedIn empresa), BLOG (operator), BLOG-R (renter), RED (Reddit), COM (comunidad), PR (press release), CAL (calendario), SEO (briefs), VIS (brief visual), PERF (reporte desempeño).
+Channel legend: LI-C (LinkedIn Carlos), LI-J (LinkedIn Juan), LI-CO (LinkedIn Company), BLOG (operator), BLOG-R (renter), RED (Reddit), COM (community), PR (press release), CAL (calendar), SEO (briefs), VIS (image brief), PERF (performance report).
 
-## Activo
+## Active
 
-| Pieza | Canal | Estado | Fecha gen | Fecha pub | Notas |
+| Piece | Channel | Status | Generated | Published | Notes |
 |---|---|---|---|---|---|
-| calendar-90-days.md | CAL | APROBADO | 2026-06-08 | n/a | Plan 8 jun a 6 sep |
-| linkedin-carlos-vacancia-mercado-canadiense.md | LI-C | QA-OK | 2026-06-08 | | Semana 1 lun. Pendiente revisión Carlos |
-| linkedin-juan-liza-80-por-ciento.md | LI-J | QA-OK | 2026-06-08 | | Semana 1 mié. Pendiente revisión Juan |
-| linkedin-carlos-construir-mercado-frio.md | LI-C | QA-OK | 2026-06-08 | | Semana 1 vie. Pendiente revisión Carlos |
+| calendar-90-days.md | CAL | APPROVED | 2026-06-08 | n/a | Plan Jun 8 to Sep 6 |
+| linkedin-carlos-vacancia-mercado-canadiense.md | LI-C | QA-OK | 2026-06-08 | | Week 1 Mon. Pending Carlos review |
+| linkedin-juan-liza-80-por-ciento.md | LI-J | QA-OK | 2026-06-08 | | Week 1 Wed. Pending Juan review |
+| linkedin-carlos-construir-mercado-frio.md | LI-C | QA-OK | 2026-06-08 | | Week 1 Fri. Pending Carlos review |
 
-## Research / insumos (no se publican)
+## Research / inputs (not published)
 
-| Archivo | Tipo | Estado | Fecha | Notas |
+| File | Type | Status | Date | Notes |
 |---|---|---|---|---|
-| context/signals.md | Research | VIGENTE | 2026-06-08 | N1-N8. Refrescar antes de semana 12 |
-| context/positioning.md | Posicionamiento | VIGENTE | 2026-06-08 | 5 pilares con datos |
+| context/signals.md | Research | CURRENT | 2026-06-08 | N1-N8. Refresh before week 12 |
+| context/positioning.md | Positioning | CURRENT | 2026-06-08 | 5 pillars with data |
 
-## Backlog inmediato (del calendario, sin generar aún)
-- Semana 2: Facebook Marketplace syndication (blog Juan + LI Carlos)
-- Semana 3: widget vs agente (LI Juan + blog), founder voice (Carlos)
-- Reddit pendientes: Calendar v2.0, ID verification, Showing confirmation, Billing tab
+## Immediate backlog (from the calendar, not generated yet)
+- Week 2: Facebook Marketplace syndication (blog Juan + LI Carlos)
+- Week 3: widget vs agent (LI Juan + blog), founder voice (Carlos)
+- Pending Reddit: Calendar v2.0, ID verification, Showing confirmation, Billing tab
 
-## Convención
-Al generar una pieza nueva: agregar fila con estado BORRADOR.
-Tras editor-qa: pasar a QA-OK.
-Tras visto bueno de Walter/founder: APROBADO.
-Tras subirla a mano: PUBLICADO + fecha pub. Luego registrar métricas en `context/metrics-log.md`.
+## Convention
+When generating a new piece: add a row with status DRAFT.
+After editor-qa: move to QA-OK.
+After Walter/founder sign-off: APPROVED.
+After uploading by hand: PUBLISHED + publish date. Then log metrics in `context/metrics-log.md`.

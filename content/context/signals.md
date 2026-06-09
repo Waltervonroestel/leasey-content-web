@@ -1,95 +1,95 @@
-# Señales (research vivo)
+# Signals (live research)
 
-Este archivo lo alimentan los agentes `news-researcher` y `competitor-analyst`. Es la materia prima de actualidad para el `calendar-planner` y los escritores. Las señales caducan: lo de hace más de 60 días, archivarlo o borrarlo.
+Fed by the `news-researcher` and `competitor-analyst` agents (and the "Search fresh insights" button on the dashboard). Raw material for the `calendar-planner` and the writers. Signals expire: anything older than 60 days, archive or delete.
 
-Cada ítem lleva su fuente (URL) y fecha. Nada sin fuente. Lo no confirmado va con `[VERIFICAR]`.
+Each item carries its source (URL) and date. Nothing without a source. Unconfirmed items get `[VERIFY]`.
 
-Última actualización: 2026-06-08 (refresh news-researcher: añadidos N5 a N8 con datos de adopción, demanda y nuevo entrante).
+Last update: 2026-06-08 (news-researcher refresh: added N5 to N8 with adoption, demand and new-entrant data).
 
-## Noticias / actualidad
+## News / current
 
-### N1. Mercado canadiense se enfría: vacancia al 5.1%, rentas en nuevas firmas caen -1.0%
-- Fuente: Yardi Q1 2026 / StoreysCanada, ene-abr 2026. https://www.yardi.com/news/press-releases/rent-growth-hits-4-year-low-in-q1-2026/ y https://storeys.com/canada-rent-yardi-january-2026/
-- Dato: vacancia nacional 5.1% (noveno trimestre al alza). Calgary 7.3%, Edmonton 6.2% son las más altas. Rent growth anual 2.7% (mínimo en 4 años); lease-over-lease en nuevas firmas -1.0%.
-- Por qué le importa al ICP: en un mercado blando, cada día de vacancia cuesta más y el property manager ya no puede esperar a que los leads lleguen solos. Velocidad de respuesta y volumen de showings se vuelven la diferencia entre llenar o no.
-- Ángulo de contenido: blog "Qué hacer cuando la vacancia sube y las rentas bajan: la palanca que sí controlas (velocidad de leasing)". Anclar a TEREZ (Cochrane, AB, al lado de Calgary que está al 7.3%). Voz: Carlos (observación de mercado) en LinkedIn lunes; blog completo.
-- Conexión con Leasey: "llena vacancias hasta 60% más rápido" y respuesta a inquiries 100% (vs 30-40% manual), de products.md. ENLACE NATURAL con el cliente TEREZ del mismo corredor de Calgary.
+### N1. Canadian market cooling: vacancy at 5.1%, new-lease rents fall -1.0%
+- Source: Yardi Q1 2026 / Storeys Canada, Jan-Apr 2026. https://www.yardi.com/news/press-releases/rent-growth-hits-4-year-low-in-q1-2026/ and https://storeys.com/canada-rent-yardi-january-2026/
+- Data: national vacancy 5.1% (ninth straight rise). Calgary 7.3%, Edmonton 6.2% are the highest. Rent growth 2.7% annual (4-year low); lease-over-lease on new leases -1.0% nationally.
+- Why it matters to the ICP: in a soft market every vacancy day costs more and the property manager can no longer wait for leads to arrive. Response speed and showing volume become the difference between filling or not.
+- Content angle: blog "What to do when vacancy rises and rents fall: the lever you do control (leasing speed)". Anchor to TEREZ (Cochrane, AB, next to Calgary at 7.3%). Voice: Carlos (market observation) on LinkedIn Monday; full blog.
+- Leasey connection: "fills vacancies up to 60% faster" and 100% inquiry response (vs 30-40% manual), from products.md. NATURAL LINK to the TEREZ client in the same Calgary corridor.
 
-### N2. ShowMojo lanza su AI Virtual Agent (beta) en abril 2026
-- Fuente: ShowMojo / Manila Times / GlobeNewswire, 7 abr 2026. https://www.manilatimes.net/2026/04/07/tmt-newswire/globenewswire/showmojo-unveils-ai-virtual-agent-beta-to-help-property-managers-book-more-tours/2315405
-- Dato: ShowMojo (competidor "solo scheduling") ahora añade un AI chat widget para responder y calificar leads 24/7. Reconocen que su automatización histórica era "script-based" y los showings dependían de un call center.
-- Por qué le importa al ICP: el mercado valida que el agente IA 24/7 es ahora mesa de juego, no diferenciador exótico. La pregunta del PM ya no es "¿IA sí o no?" sino "¿qué tan completo es el agente?".
-- Ángulo de contenido: blog "Un chat widget con IA no es lo mismo que un agente de leasing. La diferencia importa." Voz: Juan (precisión técnica). Diferenciar: Liza es teléfono Y chat, agente conversacional completo, no widget; y Leasey suma sindicación + screening + documentos + firma, no solo scheduling.
-- Conexión con Leasey: diferenciador de products.md "Liza no es un chatbot, es un agente conversacional completo" + stack all-in-one de listing a firma.
+### N2. ShowMojo launches its AI Virtual Agent (beta) in April 2026
+- Source: ShowMojo / Manila Times / GlobeNewswire, Apr 7 2026. https://www.manilatimes.net/2026/04/07/tmt-newswire/globenewswire/showmojo-unveils-ai-virtual-agent-beta-to-help-property-managers-book-more-tours/2315405
+- Data: ShowMojo (a "scheduling-only" competitor) now adds an AI chat widget to answer and qualify leads 24/7. They admit their historical automation was "script-based" and showings relied on a call center.
+- Why it matters to the ICP: the market validates that a 24/7 AI agent is now table-stakes, not an exotic differentiator. The PM's question is no longer "AI yes or no?" but "how complete is the agent?".
+- Content angle: blog "An AI chat widget is not a leasing agent. The difference matters." Voice: Juan (technical precision). Differentiate: Liza is phone AND chat, a full conversational agent, not a widget; and Leasey adds syndication + screening + documents + signature, not just scheduling.
+- Leasey connection: differentiator from products.md "Liza is not a chatbot, it is a full conversational agent" + all-in-one stack from listing to signature.
 
-### N3. Entrata lanza "primer PMS agéntico" con 100+ agentes IA (marzo 2026); Findigs levanta $32M Serie C
-- Fuente: Multifamily Executive / Propmodo, mar 2026. https://propmodo.com/how-proptechs-biggest-platforms-are-taking-different-approaches-to-ai-agents/
-- Dato: consolidación de plataformas y dinero entrando fuerte (30-50% del VC de proptech ahora va a IA, vs ~20% el año pasado). 65% de residentes prefieren leasing digital. ~80% de las necesidades del prospecto caen en escenarios finitos que la IA maneja bien.
-- Por qué le importa al ICP: los incumbentes grandes (Entrata, AppFolio) empujan IA dentro del PMS. El mid-market necesita saber por qué una capa especializada y rápida de implementar gana a un PMS pesado.
-- Ángulo de contenido: LinkedIn miércoles (product moment), voz Juan: "El 80% de lo que pregunta un prospecto es predecible. Eso es exactamente lo que Liza automatiza." Blog opcional sobre capa de leasing vs PMS todo-en-uno.
-- Conexión con Leasey: diferenciador "se integra encima del PMS, no compite" + "implementación en un día" vs PMS pesados.
+### N3. Entrata launches "first agentic PMS" with 100+ AI agents (March 2026); Findigs raises $32M Series C
+- Source: Multifamily Executive / Propmodo, Mar 2026. https://propmodo.com/how-proptechs-biggest-platforms-are-taking-different-approaches-to-ai-agents/
+- Data: platform consolidation and money pouring in (30-50% of proptech VC now goes to AI, vs ~20% last year). 65% of residents prefer digital leasing. ~80% of prospect needs fall into finite scenarios AI handles well.
+- Why it matters to the ICP: the big incumbents (Entrata, AppFolio) push AI inside the PMS. The mid-market needs to know why a specialized, fast-to-implement layer beats a heavy PMS.
+- Content angle: LinkedIn Wednesday (product moment), voice Juan: "80% of what a prospect asks is predictable. That is exactly what Liza automates." Optional blog on leasing layer vs all-in-one PMS.
+- Leasey connection: differentiator "integrates on top of the PMS, does not compete" + "implemented in a day" vs heavy PMS.
 
-### N4. El riesgo legal oculto de las herramientas de leasing con IA: Fair Housing
-- Fuente: Multifamily Dive / Spencer Fane / Law360, 2026. https://www.multifamilydive.com/news/ai-leasing-tools-hidden-legal-risk-ada-compliance/817626/
-- Dato: casos reales (Harbor Group screening de voucher holders; DOJ vs RealPage por pricing algorítmico, con Greystar y otros añadidos como co-demandados en 2025). La mayoría de contratos de vendors de IA ponen la carga de compliance sobre el property manager, no sobre el software.
-- Por qué le importa al ICP: es el miedo número uno del enterprise PM al adoptar IA. Quien lo aborde con honestidad y un enfoque human-in-the-loop gana confianza.
-- Ángulo de contenido: blog de autoridad "IA en leasing y Fair Housing: lo que un operador debe exigirle a su vendor antes de ir en vivo". Voz: empresa o Carlos. NOTA: Leasey ya tiene research publicado sobre esto (leasey.ai/resources/research/multi-jurisdictional-fair-housing-compliance... y .../fair-housing-act-algorithmic-screening-constraints/). Enlazar a esas piezas. Posible post de Reddit honesto sobre límites y human review.
-- Conexión con Leasey: diferenciador Canadian-first (regulación provincial) + screening que marca inconsistencias/fraude pero con revisión. [VERIFICAR con producto qué decisiones requieren human review hoy].
+### N4. The hidden legal risk of AI leasing tools: Fair Housing
+- Source: Multifamily Dive / Spencer Fane / Law360, 2026. https://www.multifamilydive.com/news/ai-leasing-tools-hidden-legal-risk-ada-compliance/817626/
+- Data: real cases (Harbor Group screening out voucher holders; DOJ vs RealPage over algorithmic pricing, with Greystar and others added as co-defendants in 2025). Most AI vendor contracts put the compliance burden on the property manager, not the software.
+- Why it matters to the ICP: it is the enterprise PM's number-one fear when adopting AI. Whoever addresses it honestly and human-in-the-loop wins trust.
+- Content angle: authority blog "AI in leasing and Fair Housing: what an operator should demand from a vendor before going live". Voice: company or Carlos. NOTE: Leasey already has published research on this (leasey.ai/resources/research/multi-jurisdictional-fair-housing-compliance... and .../fair-housing-act-algorithmic-screening-constraints/). Link to those pieces. Possible honest Reddit post on limits and human review.
+- Leasey connection: Canadian-first differentiator (provincial regulation) + screening that flags inconsistencies/fraud but with review. [VERIFY with product which decisions require human review today].
 
-### N5. AI en leasing ya es table-stakes: 94% de operadores la adoptan, con ROI medible
-- Fuente: Frontdesk Research "2026 State of AI in Multifamily" y Propmodo, 2026. https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai
-- Datos (oro para posicionamiento):
-  - 94% de los operadores multifamily están implementando o planeando IA en 2026.
-  - 77% redujeron opex; 85% subieron la conversión lead-to-lease.
-  - Propiedades con AI leasing agents responden en 2 a 4 minutos (vs horas o días manual) y reportan +45% en conversión lead-to-lease.
-  - Ahorros documentados de 10+ horas/semana por propiedad.
-- Por qué le importa al ICP: la conversación ya no es "¿IA sí o no?" (eso está decidido) sino "¿cuál y qué tan completa?". Quien no adopta queda atrás de su competencia directa.
-- Ángulo de contenido: blog/LinkedIn con ROI duro. Voz Juan (cifras) o Carlos (insight de mercado). Pilar 2 (agent not widget) + Pilar 1 (speed). El "+45% conversión" y "2 a 4 min" son ganchos potentísimos.
-- Conexión Leasey: Liza responde 24/7 al instante (100% de inquiries), exactamente el comportamiento que produce ese ROI.
+### N5. AI in leasing is now table-stakes: 94% of operators adopt it, with measurable ROI
+- Source: Frontdesk Research "2026 State of AI in Multifamily" and Propmodo, 2026. https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai
+- Data (gold for positioning):
+  - 94% of multifamily operators are implementing or planning AI in 2026.
+  - 77% cut opex; 85% lifted lead-to-lease conversion.
+  - Properties with AI leasing agents respond in 2 to 4 minutes (vs hours or days manual) and report +45% lead-to-lease conversion.
+  - Documented savings of 10+ hours/week per property.
+- Why it matters to the ICP: the conversation is no longer "AI yes or no?" (that is decided) but "which one and how complete?". Whoever does not adopt falls behind their direct competition.
+- Content angle: blog/LinkedIn with hard ROI. Voice Juan (numbers) or Carlos (market insight). Pillar 2 (agent not widget) + Pillar 1 (speed). The "+45% conversion" and "2 to 4 min" are very strong hooks.
+- Leasey connection: Liza responds 24/7 instantly (100% of inquiries), exactly the behavior that produces that ROI.
 
-### N6. Integración con sistemas existentes es la barrera #1 de adopción (por encima de ROI y training)
-- Fuente: Frontdesk Research / Propmodo, 2026. https://propmodo.com/what-the-data-shows-about-the-biggest-trends-in-multifamily-property-management/
-- Dato: el principal freno para adoptar tecnología en multifamily NO es el costo ni el ROI ni la falta de training, es la integración con los sistemas que el operador ya usa.
-- Por qué le importa al ICP: el PM tiene Yardi/Buildium/RealPage y no quiere migrar todo. El miedo a "otro sistema que no habla con el mío" es real.
-- Ángulo de contenido: blog "No necesitas cambiar de PMS para automatizar tu leasing". Voz Juan. Pilar 3 (all-in-one) y Pilar 4. Este dato es perfecto para Leasey.
-- Conexión Leasey: se integra ENCIMA del PMS (Yardi sync bidireccional, Buildium, Rent Manager), implementación en un día. Convierte la barrera #1 del mercado en el diferenciador de Leasey.
+### N6. Integration with existing systems is the #1 adoption barrier (above ROI and training)
+- Source: Frontdesk Research / Propmodo, 2026. https://propmodo.com/what-the-data-shows-about-the-biggest-trends-in-multifamily-property-management/
+- Data: the main brake to adopting technology in multifamily is NOT cost, ROI or lack of training, it is integration with the systems the operator already uses.
+- Why it matters to the ICP: the PM has Yardi/Buildium/RealPage and does not want to migrate everything. The fear of "another system that does not talk to mine" is real.
+- Content angle: blog "You do not need to switch PMS to automate your leasing". Voice Juan. Pillar 3 (all-in-one) and Pillar 4. This datapoint is perfect for Leasey.
+- Leasey connection: integrates ON TOP of the PMS (Yardi two-way sync, Buildium, Rent Manager), implemented in a day. Turns the market's #1 barrier into Leasey's differentiator.
 
-### N7. Causa de fondo del enfriamiento canadiense: primera caída poblacional desde la 2GM
-- Fuente: StatCan / RBC Economics / BMO via CMT, mar-may 2026. https://www.rbc.com/en/economics/canadian-analysis/featured-analysis/insights/canadas-population-downturn-rising-supply-to-keep-apartment-rents-in-check/ y https://www.canadianmortgagetrends.com/2026/05/rents-are-falling-as-canadas-rental-supply-wave-hits-the-market-bmo-says/
-- Datos: residentes no permanentes cayeron de 3.149M (oct 2024) a 2.676M (ene 2026), más de 470K menos. Toronto perdió ~80K residentes en 2025, Vancouver ~21K. Crecimiento poblacional cae a 0.9% y se estanca en 2026. Ontario y BC los más golpeados (absorbían a los temporales, sobre todo estudiantes que rentan).
-- Por qué le importa al ICP: explica POR QUÉ la vacancia sube. La demanda que antes llegaba sola se evaporó. El operador ahora compite de verdad por cada inquilino.
-- Ángulo de contenido: blog de contexto "Por qué tu vacancia subió, y qué hacer al respecto". Voz Carlos. Pilar 1 (speed) + Pilar 4 (Canadian-first, esto es 100% dinámica canadiense).
-- Conexión Leasey: cuando la demanda no sobra, ganar cada lead importa más; respuesta instantánea y volumen sin headcount.
+### N7. Root cause of the Canadian cooling: first population decline since WWII
+- Source: StatCan / RBC Economics / BMO via CMT, Mar-May 2026. https://www.rbc.com/en/economics/canadian-analysis/featured-analysis/insights/canadas-population-downturn-rising-supply-to-keep-apartment-rents-in-check/ and https://www.canadianmortgagetrends.com/2026/05/rents-are-falling-as-canadas-rental-supply-wave-hits-the-market-bmo-says/
+- Data: non-permanent residents fell from 3.149M (Oct 2024) to 2.676M (Jan 2026), more than 470K fewer. Toronto lost ~80K residents in 2025, Vancouver ~21K. Population growth falls to 0.9% and stalls in 2026. Ontario and BC hardest hit (they absorbed temporary residents, mostly students who rent).
+- Why it matters to the ICP: it explains WHY vacancy is rising. The demand that used to arrive on its own evaporated. The operator now truly competes for every tenant.
+- Content angle: context blog "Why your vacancy went up, and what to do about it". Voice Carlos. Pillar 1 (speed) + Pillar 4 (Canadian-first, this is 100% Canadian dynamics).
+- Leasey connection: when demand is not abundant, winning every lead matters more; instant response and volume without headcount.
 
-### N8. Nuevo entrante canadiense: Propurti (Edmonton, AB) lanza plataforma con IA (may 2026)
-- Fuente: GlobeNewswire, 8 may 2026. https://www.globenewswire.com/news-release/2026/05/08/3290798/0/en/propurti-geeks-incorporated-to-officially-launch-ai-powered-property-management-platform-at-macewan-university-on-may-9-2026.html
-- Dato: Propurti lanza un PMS con workflows de IA (Aurora tours virtuales, Lexi descripciones, Paige scheduling) en Edmonton. Otro jugador canadiense entrando al espacio. VC global de proptech llegó a $16.7B en 2025 (+67.9% YoY).
-- Por qué le importa al ICP: el espacio canadiense se calienta en competidores. Leasey necesita reforzar su ventaja de incumbente con clientes reales y profundidad de producto.
-- Ángulo de contenido: NO contenido directo (no darle aire a un competidor nuevo). Usar internamente para reforzar mensajes de diferenciación y profundidad. [VERIFICAR] alcance real de Propurti antes de cualquier comparación.
-- Conexión Leasey: profundidad probada (clientes TEREZ, Goldwynn), agente Liza maduro, all-in-one de listing a firma.
+### N8. New Canadian entrant: Propurti (Edmonton, AB) launches AI platform (May 2026)
+- Source: GlobeNewswire, May 8 2026. https://www.globenewswire.com/news-release/2026/05/08/3290798/0/en/propurti-geeks-incorporated-to-officially-launch-ai-powered-property-management-platform-at-macewan-university-on-may-9-2026.html
+- Data: Propurti launches a PMS with AI workflows (Aurora virtual tours, Lexi descriptions, Paige scheduling) in Edmonton. Another Canadian player entering the space. Global proptech VC hit $16.7B in 2025 (+67.9% YoY).
+- Why it matters to the ICP: the Canadian space is heating up with competitors. Leasey needs to reinforce its incumbent advantage with real clients and product depth.
+- Content angle: NOT direct content (do not give air to a new competitor). Use internally to reinforce differentiation and depth messages. [VERIFY] Propurti's real scope before any comparison.
+- Leasey connection: proven depth (TEREZ, Goldwynn clients), mature Liza agent, all-in-one from listing to signature.
 
-## Competidores / ideas
+## Competitors / ideas
 
-### C1. ShowMojo (solo scheduling, ahora con AI widget beta)
-- Tema que empujan: conversión de lead a showing (citan 54% lead-to-showing), respuesta after-hours (70% de prospectos buscan fuera de horario).
-- Hueco/oportunidad: su IA es un widget de chat en web; su modelo histórico fue script + call center. No cubren sindicación, screening, documentos ni firma.
-- Diferenciador de Leasey: Liza (teléfono + chat, agente completo) y stack all-in-one de listing a firma. Implementación en un día.
-- Idea de contenido: blog comparativo honesto "scheduling vs leasing de punta a punta", voz Juan. Sin denigrar: enmarcar en qué necesita el PM mid-market que maneja volumen de Facebook Marketplace.
+### C1. ShowMojo (scheduling-only, now with AI widget beta)
+- Theme they push: lead-to-showing conversion (they cite 54% lead-to-showing), after-hours response (70% of prospects search after hours).
+- Gap/opportunity: their AI is a web chat widget; their historical model was script + call center. They do not cover syndication, screening, documents or signature.
+- Leasey differentiator: Liza (phone + chat, full agent) and all-in-one stack from listing to signature. Implemented in a day.
+- Content idea: honest comparison blog "scheduling vs end-to-end leasing", voice Juan. No bashing: frame it around what the mid-market PM handling Facebook Marketplace volume needs.
 
 ### C2. Tenant Turner (self-showing, US single-family)
-- Tema que empujan: self-showing y lockbox para single-family US.
-- Hueco/oportunidad: presencia canadiense débil, enfoque single-family, inbound menos profundo.
-- Diferenciador de Leasey: Canadian-first (plataformas y screening canadienses: SingleKey, Kijiji) y multifamily. Liza atiende inbound más profundo.
-- Idea de contenido: ángulo "por qué el leasing canadiense necesita un stack pensado para Canadá", voz Carlos (contexto Colombia/Canadá natural). Anclar a un cliente canadiense (TEREZ / Goldwynn).
+- Theme they push: self-showing and lockbox for US single-family.
+- Gap/opportunity: weak Canadian presence, single-family focus, shallower inbound.
+- Leasey differentiator: Canadian-first (Canadian platforms and screening: SingleKey, Kijiji) and multifamily. Liza handles deeper inbound.
+- Content idea: angle "why Canadian leasing needs a stack built for Canada", voice Carlos (natural Colombia/Canada context). Anchor to a Canadian client (TEREZ / Goldwynn).
 
-### C3. AppFolio / Buildium / Entrata (PMS incumbentes que empujan IA propia)
-- Tema que empujan: IA embebida dentro del PMS (Entrata "agentic PMS" 100+ agentes; AppFolio "Real Estate Performance Management").
-- Hueco/oportunidad: pesados, lentos de implementar, pensados para enterprise; el mid-market que crece rápido necesita algo que corra encima sin migrar todo.
-- Diferenciador de Leasey: se integra encima del PMS (Yardi, Buildium, Rent Manager), no compite; implementación en un día.
-- Idea de contenido: blog "No necesitas cambiar de PMS para automatizar tu leasing", voz Juan. Anclar a Goldwynn (setup rápido por propiedad, testimonial de Carlos Torrubia).
+### C3. AppFolio / Buildium / Entrata (incumbent PMS pushing their own AI)
+- Theme they push: AI embedded inside the PMS (Entrata "agentic PMS" 100+ agents; AppFolio "Real Estate Performance Management").
+- Gap/opportunity: heavy, slow to implement, built for enterprise; the fast-growing mid-market needs something that runs on top without migrating everything.
+- Leasey differentiator: integrates on top of the PMS (Yardi, Buildium, Rent Manager), does not compete; implemented in a day.
+- Content idea: blog "You do not need to switch PMS to automate your leasing", voice Juan. Anchor to Goldwynn (fast per-property setup, Carlos Torrubia testimonial).
 
-### C4. Showdigs (showings on-demand con agentes humanos)
-- Tema que empujan: red de agentes humanos para showings on-demand; publican comparativas (TenantTurner vs ShowMojo) para captar búsquedas.
-- Hueco/oportunidad: dependen de humanos para el showing (costo y escala), no automatizan el agente conversacional completo.
-- Diferenciador de Leasey: Leasey automatiza el showing (Showing Scheduler + Smart Route Planner + recordatorios anti no-show), no lo terceriza.
-- Idea de contenido: ángulo de escala "automatizar el showing vs tercerizarlo: qué pasa con tu costo por unidad cuando creces". Voz Juan o Carlos.
+### C4. Showdigs (on-demand showings with human agents)
+- Theme they push: a network of human agents for on-demand showings; they publish comparisons (TenantTurner vs ShowMojo) to capture searches.
+- Gap/opportunity: they depend on humans for the showing (cost and scale), they do not automate the full conversational agent.
+- Leasey differentiator: Leasey automates the showing (Showing Scheduler + Smart Route Planner + anti no-show reminders), does not outsource it.
+- Content idea: scale angle "automating the showing vs outsourcing it: what happens to your cost per unit as you grow". Voice Juan or Carlos.

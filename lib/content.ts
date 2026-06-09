@@ -157,11 +157,11 @@ export function listCalendarSlots(): CalendarSlot[] {
   for (const line of md.split("\n")) {
     const t = line.trim();
     // Filas de tabla con datos (no separadores ni encabezados).
-    if (!t.startsWith("|") || t.includes("---") || /Fecha\s*\|/.test(t)) continue;
+    if (!t.startsWith("|") || t.includes("---") || /Date\s*\|/.test(t)) continue;
     const cells = t.split("|").map((c) => c.trim()).filter((_, i, a) => i > 0 && i < a.length - 1);
     if (cells.length < 8) continue;
     const [date, channel, topic, voice, agent, source, client, status] = cells;
-    if (!/jun|jul|ago|sep|Lun|Mié|Vie|Reddit/i.test(date) && channel !== "r/LeaseyAI") continue;
+    if (!/jun|jul|aug|sep|mon|wed|fri|reddit/i.test(date) && channel !== "r/LeaseyAI") continue;
     slots.push({ date, channel, topic, voice, agent, source, client, status, raw: t });
   }
   return slots;

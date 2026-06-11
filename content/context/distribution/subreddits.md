@@ -18,6 +18,10 @@ Golden rule (from style-rules): value first, product mention max once and only i
 - For r/LeaseyAI: use reddit-changelog for product updates from the backlog.
 - Match the subreddit tone: r/Landlord and r/RealEstateInvesting are the most vendor-skeptical; r/PropertyManagement is the warmest fit.
 
+## Also target (from the onboarding guide)
+- Reddit: r/RealEstateTechnology (PropTech-friendly audience).
+- Facebook Groups: Property Management Network, Canadian Property Managers, Landlords of Canada, Apartment Owners Association. Same rules: value first, one Leasey mention max, never direct promo.
+
 ## Notes / refresh
 - Canadian subs: r/canadahousing, r/OntarioLandlord (tenant-heavy, be careful), [VERIFICAR fit].
 - Always read subreddit rules before posting. Many ban self-promotion outright.

@@ -17,7 +17,9 @@ Rules:
   - Canada national vacancy 5.1% in Q1 2026, ninth straight quarterly rise; Calgary 7.3%, Edmonton 6.2% (Yardi Q1 2026). https://www.yardi.com/news/press-releases/rent-growth-hits-4-year-low-in-q1-2026/
   - Annual rent growth 2.7% (4-year low); lease-over-lease on new leases -1.0% nationally.
   - 70% of prospects search after hours (ShowMojo). A lead not answered at night goes cold.
+  - 60%+ of leads go with the first property to respond (industry studies, per Leasey onboarding guide [VERIFY original source before citing externally]). The response-time arms race is real.
   - Typical manual response rate 30-40% vs 100% automated (products.md).
+  - Centralized leasing trend: large operators are consolidating from on-site agents to centralized leasing teams (onboarding guide). This is Leasey's core enterprise use case.
 - Leasey connection: Liza 24/7, instant response, fills vacancies up to 60% faster.
 
 ### Pillar 2: An agent, not a widget

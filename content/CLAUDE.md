@@ -31,7 +31,10 @@ TODO el contenido publicable (blogs, posts de LinkedIn, Reddit, comunidad, calen
 - Todo borrador pasa por el agente editor-qa antes de considerarse terminado.
 
 ## Fuente de verdad
-Cuando el sitio (leasey.ai) y cualquier otro documento difieran en cifras o features, gana el sitio. Los hechos vigentes están en `context/products.md`.
+Cuando el sitio (leasey.ai) y cualquier otro documento difieran en cifras o features, gana el sitio. Los hechos vigentes están en `context/products.md`. (Ej.: el onboarding guide dice "40+ marketplaces"; el sitio dice 48+. Usar 48+.)
+
+## Regla de arquitectura de contenido (del onboarding guide)
+El contenido nuevo de Walter va a BLOG, PRESS o LINKEDIN. Nunca a la librería de resource pages (esas son SEO-first, escritas para Google, y las dirige el SEO specialist). Los blog posts son para property managers humanos; esa es nuestra cancha.
 
 ## Dónde se guarda el output
 Todos los borradores van a `output/AAAA-MM-DD/` con un nombre descriptivo. Cada archivo incluye los metadatos para subirlo (título SEO, meta description, slug, enlaces internos, hashtags, perfil destino) según el canal.

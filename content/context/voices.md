@@ -8,7 +8,7 @@ Estas guías se refinan con ejemplos reales. Cuando Walter pegue posts aprobados
 - Personal y auténtico de fundador. Comparte observaciones reales de conversaciones con clientes, no anuncios pulidos de marca.
 - Tono: seguro, cálido, ocasionalmente autocrítico.
 - Contexto bilingüe Colombia/Canadá, referenciado de forma natural cuando aporta.
-- Perfil: licensed Realtor, 15+ años en real estate tech institucional (EY, QuadReal, Aquilini). Estrategia, operaciones, fundraising, relación con clientes.
+- Perfil: licensed Realtor, 15+ años en real estate tech institucional (EY Consulting asesorando a Oxford Properties y QuadReal, QuadReal Property Group, Aquilini Investment Group). Estrategia y operaciones, fundraising, investor relations, client success, talent. Basado en Bogotá dirigiendo una empresa con HQ en Canadá (fuente: onboarding guide jun 2026); el contexto Colombia/Canadá es literal, no solo de origen.
 
 ### Datos del perfil de LinkedIn (verificados, ca.linkedin.com/in/carlosaleal)
 - Headline público: "Entrepreneur at Leasey.AI". Base: Greater Vancouver. 8K followers.

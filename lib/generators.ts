@@ -30,8 +30,8 @@ function needsToken(action: GenAction): boolean {
 const VOICE_GUIDE: Record<string, string> = {
   carlos: "Voice: Carlos Leal (COO). Direct opener, short paragraphs, founder observation. First person.",
   juan: "Voice: Juan Leal (CEO/CPO). Technical precision, ~60 words, lead with a product or industry datapoint.",
-  company: "Voice: Leasey.AI company page. Institutional but direct, 'we' not 'I'.",
-  blog: "Operator-facing blog post, 400-800 words, hook in first two sentences, one internal link, demo CTA.",
+  company: "Voice: Leasey.AI company page, matching the B2B blog voice (see B2B voice reference in context): open with the operator's pain or a question, second person, concrete benefits, no hype, soft schedule-a-call close.",
+  blog: "Operator-facing blog post matching the leasey.ai/blog voice (see B2B voice reference in context): question/pain hook in the first lines, second person, action-oriented H2/H3, numbered steps or tips, Leasey woven in organically, one internal link, dedicated closing section naming Leasey + 'Schedule a call' demo CTA. 400-800 words.",
 };
 
 function briefFromDraft(body: string, name: string, kind: string): ImageSpec {
@@ -79,7 +79,7 @@ export async function runGenerator(action: GenAction, payload: Record<string, un
     case "generate-pr": {
       const { topic, outlet } = payload as { topic: string; outlet?: string };
       const out = await runClaude({
-        system: systemPrompt("Press release. Inverted pyramid: headline + subhead, dateline (New York/Vancouver/Toronto), lead paragraph, market context with a sourced datapoint, detail anchored to a real client, founder quote (Juan for product/tech, Carlos for strategy), boilerplate About Leasey.AI, press contact [VERIFY]. English, no em-dashes."),
+        system: systemPrompt("Press release. Inverted pyramid: headline + subhead, dateline (New York/Vancouver/Toronto), lead paragraph, market context with a sourced datapoint, detail anchored to a real client, founder quote (Juan for product/tech, Carlos for strategy), boilerplate About Leasey.AI, press contact [VERIFY]. Register: the leasey.ai B2B blog voice in third person, concrete benefit language, zero hyperbole; warmth lives in the quotes. English, no em-dashes."),
         prompt: `Write a press release about: ${topic}.${outlet ? ` Target outlet: ${outlet}.` : ""} For unconfirmed partnerships, mark [VERIFY partnership status]. Output only the press release.`,
       });
       const rel = `output/${today()}/press-release-${slug(topic)}.md`;

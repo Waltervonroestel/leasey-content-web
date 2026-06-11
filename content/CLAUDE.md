@@ -44,6 +44,7 @@ Todos los borradores van a `output/AAAA-MM-DD/` con un nombre descriptivo. Cada 
 - `context/style-rules.md` — formatos por canal y reglas de calidad
 - `context/signals.md` — research vivo: noticias y análisis de competidores (lo alimentan news-researcher y competitor-analyst)
 - `context/blog-voice-reference.md` — guía de voz renter-facing (B2C), del análisis de blog.leasey.ai. Es la voz activa del agente blog-renter.
+- `context/b2b-voice-reference.md` — guía de voz B2B del blog real de leasey.ai/blog. Voz ACTIVA de blog-writer, press-release y linkedin-company (segunda persona, problema-solución, profesional sin hype, CTA "schedule a call").
 - `context/positioning.md` — los 5 pilares de posicionamiento de Leasey y los datos reales que respaldan cada uno. Base del enfoque insight-led.
 
 ## Dos funnels: operator-facing y renter-facing

@@ -5,6 +5,7 @@ import { readFileMd } from "./content";
 export function systemPrompt(extra = ""): string {
   const parts = [
     readFileMd("CLAUDE.md"),
+    readFileMd("context/b2b-voice-reference.md"),
     readFileMd("context/products.md"),
     readFileMd("context/positioning.md"),
     readFileMd("context/clients.md"),

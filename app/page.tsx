@@ -1,4 +1,4 @@
-import { listDrafts, listImages, statusSummary } from "@/lib/content";
+import { listDrafts, listImages, statusSummary, signalsMeta, listInsights } from "@/lib/content";
 import { Card, Stat, Badge, SectionTitle } from "@/components/ui";
 import Link from "next/link";
 
@@ -13,6 +13,11 @@ export default function Dashboard() {
     return acc;
   }, {});
   const recent = drafts.slice(0, 6);
+  const meta = signalsMeta();
+  const insights = listInsights();
+  const insightCounts = insights.reduce<Record<string, number>>((a, i) => { a[i.freshness] = (a[i.freshness] || 0) + 1; return a; }, {});
+  const freshLabel = meta.freshness === "fresh" ? "Fresh" : meta.freshness === "aging" ? "Aging" : meta.freshness === "stale" ? "STALE" : "No date";
+  const freshColor = meta.freshness === "fresh" ? "text-teal" : meta.freshness === "aging" ? "text-yellow-700" : meta.freshness === "stale" ? "text-red-600" : "text-slate";
 
   return (
     <div className="flex flex-col gap-8">
@@ -30,6 +35,20 @@ export default function Dashboard() {
         <Stat label="Images generated" value={images.length} />
         <Stat label="Active channels" value={Object.keys(byChannel).length} />
       </div>
+
+      <Card className="flex items-center justify-between flex-wrap gap-3 border-l-4 border-l-blue">
+        <div className="flex flex-col">
+          <span className="text-xs uppercase tracking-wide text-slate">Data freshness · priority #1</span>
+          <span className="text-sm text-ink mt-1">
+            Signals last refreshed <strong>{meta.lastRefreshed || "unknown"}</strong>
+            {meta.lastRefreshedAgeDays != null && <> · <span className={freshColor}>{freshLabel}</span> ({meta.lastRefreshedAgeDays}d ago)</>}
+          </span>
+          <span className="text-xs text-slate mt-1">
+            Insights: <span className="text-teal">{insightCounts.fresh || 0} fresh</span> · <span className="text-yellow-700">{insightCounts.aging || 0} aging</span> · <span className="text-red-600">{insightCounts.stale || 0} stale</span> · <span className="text-slate">{insightCounts.undated || 0} undated</span>
+          </span>
+        </div>
+        <Link href="/insights" className="text-sm text-blue hover:text-blue-hover whitespace-nowrap">Review insights →</Link>
+      </Card>
 
       <div className="grid md:grid-cols-2 gap-6">
         <Card>

@@ -4,7 +4,9 @@ import { NextRequest, NextResponse } from "next/server";
 // Credenciales en env: DASHBOARD_USER / DASHBOARD_PASSWORD.
 // Sin ellas (ej. local) no exige login.
 export function proxy(request: NextRequest) {
-  if (request.nextUrl.pathname === "/api/health") return NextResponse.next();
+  // health y cron pasan sin Basic Auth (cron usa x-cron-secret).
+  const open = ["/api/health", "/api/cron"];
+  if (open.includes(request.nextUrl.pathname)) return NextResponse.next();
 
   const user = process.env.DASHBOARD_USER;
   const pass = process.env.DASHBOARD_PASSWORD;
@@ -26,5 +28,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|api/health).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|api/health|api/cron).*)"],
 };

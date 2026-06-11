@@ -168,32 +168,73 @@ export function listCalendarSlots(): CalendarSlot[] {
 }
 
 // --- Insights (parsed from signals.md sections) ---
+export type Freshness = "fresh" | "aging" | "stale" | "undated";
+
 export interface Insight {
   id: string;
   title: string;
   body: string;
   section: string;
+  date?: string; // YYYY-MM-DD del source
+  ageDays?: number;
+  freshness: Freshness;
+}
+
+function computeFreshness(dateStr?: string): { ageDays?: number; freshness: Freshness } {
+  if (!dateStr) return { freshness: "undated" };
+  const d = new Date(dateStr + "T00:00:00Z");
+  if (isNaN(d.getTime())) return { freshness: "undated" };
+  const ageDays = Math.floor((Date.now() - d.getTime()) / (1000 * 60 * 60 * 24));
+  let freshness: Freshness;
+  if (ageDays <= 30) freshness = "fresh";
+  else if (ageDays <= 90) freshness = "aging";
+  else freshness = "stale";
+  return { ageDays, freshness };
+}
+
+export interface SignalsMeta {
+  lastRefreshed?: string;
+  lastRefreshedAgeDays?: number;
+  freshness: Freshness;
+}
+
+export function signalsMeta(): SignalsMeta {
+  const md = safeRead("context/signals.md") || "";
+  const m = md.match(/last_refreshed:\s*(\d{4}-\d{2}-\d{2})/i);
+  const date = m ? m[1] : undefined;
+  const f = computeFreshness(date);
+  return { lastRefreshed: date, lastRefreshedAgeDays: f.ageDays, freshness: f.freshness };
 }
 
 export function listInsights(): Insight[] {
   const md = safeRead("context/signals.md") || "";
-  const insights: Insight[] = [];
+  const insights: Omit<Insight, "freshness" | "ageDays">[] = [];
   let section = "";
   const lines = md.split("\n");
-  let current: Insight | null = null;
+  let current: Omit<Insight, "freshness" | "ageDays"> | null = null;
   for (const line of lines) {
     const sec = line.match(/^##\s+(.*)/);
-    if (sec) { section = sec[1].trim(); continue; }
+    if (sec) {
+      section = sec[1].trim();
+      continue;
+    }
     const head = line.match(/^###\s+([A-Z]\d+)\.\s+(.*)/);
     if (head) {
       if (current) insights.push(current);
       current = { id: head[1], title: head[2].trim(), body: "", section };
       continue;
     }
-    if (current) current.body += line + "\n";
+    if (current) {
+      const dm = line.match(/^-\s*date:\s*(\d{4}-\d{2}-\d{2})/i);
+      if (dm && !current.date) current.date = dm[1];
+      current.body += line + "\n";
+    }
   }
   if (current) insights.push(current);
-  return insights;
+  return insights.map((i) => {
+    const f = computeFreshness(i.date);
+    return { ...i, ageDays: f.ageDays, freshness: f.freshness };
+  });
 }
 
 export function statusSummary(): { total: number; counts: StatusCount[] } {

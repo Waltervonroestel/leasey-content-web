@@ -18,6 +18,15 @@ Cómo se aplica por canal (el detalle está en `context/style-rules.md`):
 ## Idioma
 TODO el contenido publicable (blogs, posts de LinkedIn, Reddit, comunidad, calendario de títulos de trabajo) se escribe en INGLÉS. La audiencia de Leasey es property managers e inquilinos en Canadá y Estados Unidos. Las instrucciones de los agentes, los archivos de `context/` y los reportes internos pueden quedar en español (idioma de trabajo de Walter), pero el output que se publica es siempre en inglés.
 
+## Prioridad número uno: FRESH DATA
+Walter's standing rule: data freshness beats everything else. The biggest weakness of generated content is stale data. Therefore:
+- Every insight in `context/signals.md` carries a `date:` field (when the source was published) AND the system tracks when the signals file was last refreshed.
+- A datapoint older than 90 days is **stale** and must be re-verified or replaced before publishing. The editor-qa rejects pieces that lean on stale data.
+- A datapoint older than 30 days shows as a "warning" badge in the dashboard but can still be used.
+- The dashboard shows the age of every insight and the global last-refresh date prominently.
+- A weekly cron auto-runs `refresh-insights` + `refresh-directory` (PM outlets and subreddits) so the freshness gets maintained without manual prompting.
+- When a writer agent (blog-writer, linkedin-*, press-release) is about to generate and detects that all available data is >30 days old, it should mention this in its output and prefer a fresher angle.
+
 ## Reglas no negociables (aplican a TODO contenido publicable)
 - TODO el contenido publicable es en INGLÉS (ver sección Idioma).
 - NUNCA usar em-dashes. Usar comas, paréntesis o puntos.

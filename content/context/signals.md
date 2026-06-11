@@ -4,11 +4,15 @@ Fed by the `news-researcher` and `competitor-analyst` agents (and the "Search fr
 
 Each item carries its source (URL) and date. Nothing without a source. Unconfirmed items get `[VERIFY]`.
 
-Last update: 2026-06-08 (news-researcher refresh: added N5 to N8 with adoption, demand and new-entrant data).
+**Freshness is the #1 priority of the system.** Every insight must have a `date: YYYY-MM-DD` line (publication date of the source). The dashboard reads this and badges insights by age: <30d = FRESH, 30-90d = AGING, >90d = STALE. Stale insights are blocked from new content by editor-qa.
+
+last_refreshed: 2026-06-08 (full refresh: N1-N8)
+next_auto_refresh: weekly via cron
 
 ## News / current
 
 ### N1. Canadian market cooling: vacancy at 5.1%, new-lease rents fall -1.0%
+- date: 2026-04-01
 - Source: Yardi Q1 2026 / Storeys Canada, Jan-Apr 2026. https://www.yardi.com/news/press-releases/rent-growth-hits-4-year-low-in-q1-2026/ and https://storeys.com/canada-rent-yardi-january-2026/
 - Data: national vacancy 5.1% (ninth straight rise). Calgary 7.3%, Edmonton 6.2% are the highest. Rent growth 2.7% annual (4-year low); lease-over-lease on new leases -1.0% nationally.
 - Why it matters to the ICP: in a soft market every vacancy day costs more and the property manager can no longer wait for leads to arrive. Response speed and showing volume become the difference between filling or not.
@@ -16,6 +20,7 @@ Last update: 2026-06-08 (news-researcher refresh: added N5 to N8 with adoption, 
 - Leasey connection: "fills vacancies up to 60% faster" and 100% inquiry response (vs 30-40% manual), from products.md. NATURAL LINK to the TEREZ client in the same Calgary corridor.
 
 ### N2. ShowMojo launches its AI Virtual Agent (beta) in April 2026
+- date: 2026-04-07
 - Source: ShowMojo / Manila Times / GlobeNewswire, Apr 7 2026. https://www.manilatimes.net/2026/04/07/tmt-newswire/globenewswire/showmojo-unveils-ai-virtual-agent-beta-to-help-property-managers-book-more-tours/2315405
 - Data: ShowMojo (a "scheduling-only" competitor) now adds an AI chat widget to answer and qualify leads 24/7. They admit their historical automation was "script-based" and showings relied on a call center.
 - Why it matters to the ICP: the market validates that a 24/7 AI agent is now table-stakes, not an exotic differentiator. The PM's question is no longer "AI yes or no?" but "how complete is the agent?".
@@ -23,6 +28,7 @@ Last update: 2026-06-08 (news-researcher refresh: added N5 to N8 with adoption, 
 - Leasey connection: differentiator from products.md "Liza is not a chatbot, it is a full conversational agent" + all-in-one stack from listing to signature.
 
 ### N3. Entrata launches "first agentic PMS" with 100+ AI agents (March 2026); Findigs raises $32M Series C
+- date: 2026-03-15
 - Source: Multifamily Executive / Propmodo, Mar 2026. https://propmodo.com/how-proptechs-biggest-platforms-are-taking-different-approaches-to-ai-agents/
 - Data: platform consolidation and money pouring in (30-50% of proptech VC now goes to AI, vs ~20% last year). 65% of residents prefer digital leasing. ~80% of prospect needs fall into finite scenarios AI handles well.
 - Why it matters to the ICP: the big incumbents (Entrata, AppFolio) push AI inside the PMS. The mid-market needs to know why a specialized, fast-to-implement layer beats a heavy PMS.
@@ -30,6 +36,7 @@ Last update: 2026-06-08 (news-researcher refresh: added N5 to N8 with adoption, 
 - Leasey connection: differentiator "integrates on top of the PMS, does not compete" + "implemented in a day" vs heavy PMS.
 
 ### N4. The hidden legal risk of AI leasing tools: Fair Housing
+- date: 2026-03-20
 - Source: Multifamily Dive / Spencer Fane / Law360, 2026. https://www.multifamilydive.com/news/ai-leasing-tools-hidden-legal-risk-ada-compliance/817626/
 - Data: real cases (Harbor Group screening out voucher holders; DOJ vs RealPage over algorithmic pricing, with Greystar and others added as co-defendants in 2025). Most AI vendor contracts put the compliance burden on the property manager, not the software.
 - Why it matters to the ICP: it is the enterprise PM's number-one fear when adopting AI. Whoever addresses it honestly and human-in-the-loop wins trust.
@@ -37,6 +44,7 @@ Last update: 2026-06-08 (news-researcher refresh: added N5 to N8 with adoption, 
 - Leasey connection: Canadian-first differentiator (provincial regulation) + screening that flags inconsistencies/fraud but with review. [VERIFY with product which decisions require human review today].
 
 ### N5. AI in leasing is now table-stakes: 94% of operators adopt it, with measurable ROI
+- date: 2026-04-15
 - Source: Frontdesk Research "2026 State of AI in Multifamily" and Propmodo, 2026. https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai
 - Data (gold for positioning):
   - 94% of multifamily operators are implementing or planning AI in 2026.
@@ -48,6 +56,7 @@ Last update: 2026-06-08 (news-researcher refresh: added N5 to N8 with adoption, 
 - Leasey connection: Liza responds 24/7 instantly (100% of inquiries), exactly the behavior that produces that ROI.
 
 ### N6. Integration with existing systems is the #1 adoption barrier (above ROI and training)
+- date: 2026-04-10
 - Source: Frontdesk Research / Propmodo, 2026. https://propmodo.com/what-the-data-shows-about-the-biggest-trends-in-multifamily-property-management/
 - Data: the main brake to adopting technology in multifamily is NOT cost, ROI or lack of training, it is integration with the systems the operator already uses.
 - Why it matters to the ICP: the PM has Yardi/Buildium/RealPage and does not want to migrate everything. The fear of "another system that does not talk to mine" is real.
@@ -55,6 +64,7 @@ Last update: 2026-06-08 (news-researcher refresh: added N5 to N8 with adoption, 
 - Leasey connection: integrates ON TOP of the PMS (Yardi two-way sync, Buildium, Rent Manager), implemented in a day. Turns the market's #1 barrier into Leasey's differentiator.
 
 ### N7. Root cause of the Canadian cooling: first population decline since WWII
+- date: 2026-05-15
 - Source: StatCan / RBC Economics / BMO via CMT, Mar-May 2026. https://www.rbc.com/en/economics/canadian-analysis/featured-analysis/insights/canadas-population-downturn-rising-supply-to-keep-apartment-rents-in-check/ and https://www.canadianmortgagetrends.com/2026/05/rents-are-falling-as-canadas-rental-supply-wave-hits-the-market-bmo-says/
 - Data: non-permanent residents fell from 3.149M (Oct 2024) to 2.676M (Jan 2026), more than 470K fewer. Toronto lost ~80K residents in 2025, Vancouver ~21K. Population growth falls to 0.9% and stalls in 2026. Ontario and BC hardest hit (they absorbed temporary residents, mostly students who rent).
 - Why it matters to the ICP: it explains WHY vacancy is rising. The demand that used to arrive on its own evaporated. The operator now truly competes for every tenant.
@@ -62,6 +72,7 @@ Last update: 2026-06-08 (news-researcher refresh: added N5 to N8 with adoption, 
 - Leasey connection: when demand is not abundant, winning every lead matters more; instant response and volume without headcount.
 
 ### N8. New Canadian entrant: Propurti (Edmonton, AB) launches AI platform (May 2026)
+- date: 2026-05-08
 - Source: GlobeNewswire, May 8 2026. https://www.globenewswire.com/news-release/2026/05/08/3290798/0/en/propurti-geeks-incorporated-to-officially-launch-ai-powered-property-management-platform-at-macewan-university-on-may-9-2026.html
 - Data: Propurti launches a PMS with AI workflows (Aurora virtual tours, Lexi descriptions, Paige scheduling) in Edmonton. Another Canadian player entering the space. Global proptech VC hit $16.7B in 2025 (+67.9% YoY).
 - Why it matters to the ICP: the Canadian space is heating up with competitors. Leasey needs to reinforce its incumbent advantage with real clients and product depth.

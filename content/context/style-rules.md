@@ -8,8 +8,13 @@ El objetivo número uno es llevar a la gente a agendar un demo. Todo contenido c
 - Comunidad: valor primero. Mención a Leasey máximo una vez y solo si es relevante. El demo vive en el perfil, no en el comentario.
 
 ## Reglas no negociables (todos los canales)
-- TODO el contenido publicable se escribe en INGLÉS (audiencia US/Canadá). Contexto e instrucciones internas pueden ir en español, el output no.
-- NUNCA usar em-dashes. Comas, paréntesis o puntos.
+- TODO el contenido publicable se escribe en INGLÉS (audiencia US/Canadá).
+- **British English** es el estándar (palabras como "neighbourhood", "organised", "centralise", "behaviour"). Confirmado por la Brand Voice Guidelines oficial de Leasey.
+- **Oxford comma** obligatoria. Confirmado por la Brand Voice Guidelines.
+- Después de dos puntos (excepto antes de un nombre propio), la siguiente palabra va en minúscula.
+- Brand stylization: **Leasey.AI** (L mayúscula, "easey" minúsculas, "AI" mayúsculas). El dominio "leasey.ai" solo en URLs.
+- Contexto e instrucciones internas pueden ir en español, el output no.
+- NUNCA usar em-dashes. Comas, paréntesis o puntos. (La guideline de 2023 los permitía con espacios; Walter decidió que el sistema no los usa.)
 - Todo contenido conecta con Leasey y apunta al demo según su canal (ver KPI máximo arriba).
 - INSIGHT-LED con ATRIBUCIÓN: cada dato/insight nombra su fuente en el texto (ej. "per Yardi's Q1 2026 report"). Blog puede enlazar; LinkedIn/Reddit nombra. Cifras propias de Leasey son self-sourced. Detalle y pilares en `context/positioning.md`.
 - Cada blog post enlaza a al menos una página de servicio o herramienta.

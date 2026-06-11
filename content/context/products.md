@@ -2,8 +2,20 @@
 
 Si algo aquí contradice otro documento, gana esto (viene del sitio leasey.ai).
 
-## One-liner
-Leasey.AI es el asistente de leasing con IA 24/7 que califica leads, agenda tours y hace seguimiento automáticamente, para que los property managers se concentren en cerrar.
+## One-liner (canonical, from the onboarding guide)
+Leasey.AI helps property managers fill vacancies up to 60% faster with 70% less manual effort, using AI-powered automation across every step of the leasing funnel.
+
+## Legal entity
+Leasey is operated by **Silver Homes Technology Inc.**, founded in 2023 by Juan Leal (CEO/CPO) and Carlos Leal (COO). Headquartered in Canada; Carlos currently based in Bogotá running a Canadian-HQ company.
+
+## Stage and business model
+- Post-revenue, venture-backed (DMZ Ventures). Currently raising Seed via SAFE.
+- 100% of client acquisition is inbound through SEO and content. **Zero ad spend, zero outbound.**
+- SaaS subscription: ~$1.50–$5/door/month, or flat ~$499/month for smaller portfolios.
+- Performance-based pilot model for enterprise (e.g. TEREZ: 0.5 month's rent per signed lease attributable to Leasey).
+- **No free trial.** Paid pilots on monthly terms for a limited number of units.
+- Current focus: Canada and US. UK/Europe planned for 2026.
+- Platform UI is English; Liza (chat + phone agent) supports English, Spanish, French and more.
 
 ## KPI máximo y CTA canónico
 El KPI número uno de TODO el contenido es llevar al lector a agendar un demo de la plataforma. Cada pieza debe conectar con Leasey y, según el canal, abrir un camino hacia el demo.
@@ -47,3 +59,14 @@ Yardi (sync bidireccional), Buildium, Rent Manager, SingleKey (screening Canadá
 - Showdigs: showings on-demand con agentes humanos. Leasey automatiza el showing, no lo terceriza.
 
 Diferenciadores núcleo: Canadian-first (regulación provincial, plataformas y screening canadienses), agente IA Liza, stack all-in-one de listing a firma, automatización de Facebook Marketplace, implementación en un día.
+
+## Implementation reality (from SEO knowledge base)
+- **No PMS integration required** to start (it runs standalone or integrated).
+- 2-3 onboarding sessions with Customer Success to go live.
+- 24/7 email support; each account gets a dedicated account manager.
+
+## Target markets (from onboarding guide, Part 5)
+- **Canada:** vacancia ~1.5% en major cities 2023-24 ahora subiendo. Key Leasey markets: Vancouver, Calgary (TEREZ está aquí), Toronto, Edmonton, Ottawa. Institutional REITs como ICP enterprise: **CAPREIT, Killam, Boardwalk, QuadReal, Minto**. Carlos viene de QuadReal y Aquilini, conexiones reales.
+- **US:** 44M renter households; multifamily vacancy 8.3% late 2024 (NMHC). Key markets: Houston, Phoenix, Atlanta, Dallas, Denver. Mercado más tech-forward y más competitivo en PropTech.
+- ICP por tamaño: multifamily owners/operators (apartment buildings y communities, **100+ doors**); SFR y build-to-rent portfolios (**100+ homes**); third-party leasing companies.
+- NOT for now: commercial, industrial, single-family individual landlords con menos de 100 unidades.

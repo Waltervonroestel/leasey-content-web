@@ -4,10 +4,18 @@ Usar SIEMPRE escenarios concretos. Estos son reales y verificados.
 
 ## Clientes y pilots
 (Nota: contactos internos de ventas removidos de este archivo por ser repo público. Si se necesitan, viven en el CRM, no aquí.)
-- TEREZ (Cochrane, AB): rental de lujo de 154 unidades, parte de la comunidad Greystone de Ocgrow Group. Pilot de performance de 60 días. Gestionado por SunPeak Property Management.
-- Goldwynn Residences: cliente con testimonial y case study público. Case study en /resources/testimonials/how-goldwynn-adopted-leasey-ai-for-multifamily-leasing-automation/
-- Three Shores: cliente activo de suscripción.
-- Apartment Hub: cliente activo de suscripción.
+- **TEREZ** (Cochrane, AB): 154-unit luxury rental, parte de la comunidad Greystone de Ocgrow Group. **60-day performance pilot** (0.5 month's rent por lease atribuible a Leasey). Gestionado por SunPeak Property Management.
+- **Goldwynn Residences**: testimonial + case study público. Case study: /resources/testimonials/how-goldwynn-adopted-leasey-ai-for-multifamily-leasing-automation/
+- **Three Shores**: cliente activo de suscripción.
+- **Apartment Hub**: cliente activo de suscripción.
+
+## Operator anchors (concretas, del onboarding guide)
+Carlos exige anclar TODO contenido a un escenario operativo real. Estos son los patrones a reutilizar:
+- "154-unit lease-up in 60 days" (TEREZ)
+- "Leasing agents handling 80+ showings per week"
+- "No-shows dropped 40% after confirmation links" (showing confirmation dashboard)
+- Mid-market mostly: 100+ doors (multifamily) o 100+ homes (SFR/BTR)
+- Institutional Canadian REITs como referencia de escala enterprise: CAPREIT, Killam, Boardwalk, QuadReal, Minto (Carlos viene de QuadReal y Aquilini)
 
 ## Testimonios públicos del sitio (citables)
 - Diego Mendoza, Century21: "Leasey.AI has transformed our leasing process... user-friendly, intuitive and time-saving."

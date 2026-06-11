@@ -48,6 +48,9 @@ Todos los borradores van a `output/AAAA-MM-DD/` con un nombre descriptivo. Cada 
 - `context/signals.md` — research vivo: noticias y análisis de competidores (lo alimentan news-researcher y competitor-analyst)
 - `context/blog-voice-reference.md` — guía de voz renter-facing (B2C), del análisis de blog.leasey.ai. Es la voz activa del agente blog-renter.
 - `context/b2b-voice-reference.md` — guía de voz B2B del blog real de leasey.ai/blog. Voz ACTIVA de blog-writer, press-release y linkedin-company (segunda persona, problema-solución, profesional sin hype, CTA "schedule a call").
+- `context/walter-role.md` — rol exacto, deadlines (Jun 30 / Aug 29) y responsabilidades de Walter según el Onboarding Guide oficial de junio 2026.
+- `context/aeo-faq.md` — el answer-set canónico para AEO (Q&A oficial del SEO Knowledge Base). Si una respuesta sobre Leasey contradice este file, gana este file.
+- `context/historical-voice-do-not-replicate.md` — la voz "goofy" del antiguo agency (2023). Solo referencia: NO replicar. Lo que sí carry-forward (British English, Oxford comma, "Leasey.AI" cap) está en style-rules.
 - `context/positioning.md` — los 5 pilares de posicionamiento de Leasey y los datos reales que respaldan cada uno. Base del enfoque insight-led.
 
 ## Dos funnels: operator-facing y renter-facing

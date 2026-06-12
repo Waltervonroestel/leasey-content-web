@@ -13,9 +13,8 @@ export default function RedditPage() {
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
           <h1 className="text-2xl font-bold text-ink">Reddit</h1>
-          <p className="text-slate text-sm mt-1">Mapped subreddits and what to write in each. Value first, never a hard pitch.</p>
+          <p className="text-slate text-sm mt-1">Mapped subreddits and what to write in each. Value first, never a hard pitch. The map refreshes from Claude Code.</p>
         </div>
-        <ActionButton action="refresh-directory" payload={{ kind: "reddit" }} label="Search subreddits" taskLabel="Search subreddits" variant="ghost" />
       </div>
       <Card>
         {directory ? <Markdown md={directory} /> : <p className="text-slate">No subreddit map yet. Click “Search subreddits”.</p>}

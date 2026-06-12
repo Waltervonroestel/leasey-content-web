@@ -13,11 +13,7 @@ export default function PrPage() {
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
           <h1 className="text-2xl font-bold text-ink">Press Releases</h1>
-          <p className="text-slate text-sm mt-1">Write press releases and map property management outlets to pitch them.</p>
-        </div>
-        <div className="flex gap-2">
-          <ActionButton action="refresh-directory" payload={{ kind: "pm" }} label="Search PM outlets" taskLabel="Search PM outlets" variant="ghost" />
-          <ActionButton action="generate-pr" payload={{ topic: "latest Leasey.AI announcement" }} label="Draft a press release" taskLabel="Press release draft" />
+          <p className="text-slate text-sm mt-1">Mapped property management outlets. Press releases are drafted in Claude Code and committed here.</p>
         </div>
       </div>
       <Card>

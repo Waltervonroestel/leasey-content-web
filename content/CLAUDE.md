@@ -18,6 +18,17 @@ Cómo se aplica por canal (el detalle está en `context/style-rules.md`):
 ## Idioma
 TODO el contenido publicable (blogs, posts de LinkedIn, Reddit, comunidad, calendario de títulos de trabajo) se escribe en INGLÉS. La audiencia de Leasey es property managers e inquilinos en Canadá y Estados Unidos. Las instrucciones de los agentes, los archivos de `context/` y los reportes internos pueden quedar en español (idioma de trabajo de Walter), pero el output que se publica es siempre en inglés.
 
+## JERARQUÍA DE FUENTES DE VERDAD (no negociable)
+Los documentos oficiales de los founders ganan sobre cualquier otra regla del sistema. En orden:
+
+1. **Leasey.AI Onboarding Guide (Jun 2026)** — fuente principal. Define la voz, los ICPs, los reprimidos, las deadlines, las reglas de comunidad, qué publicar y qué no.
+2. **Leasey.AI Brand Voice Guidelines (oficial, del agency En Algun Lugar)** — define tipografía (British English, Oxford comma, stylization "Leasey.AI") y reglas de copy por canal.
+3. **Leasey.AI SEO Knowledge Base** — define el answer-set canónico (qué es Leasey, qué no es, ICP, pricing).
+4. **leasey.ai/blog (el blog real B2B)** — define la voz operativa para blog/PR/company LinkedIn.
+5. Reglas que el sistema deduce o que Walter improvisa en runtime van DEBAJO de todo lo anterior. Si contradicen una fuente oficial, gana la fuente oficial.
+
+Cuando una regla mía contradiga una de las fuentes de arriba, la regla mía se descarta. Si una fuente de arriba contradice a otra, gana la más nueva (el Onboarding Guide es de Jun 2026 y refleja la postura actual de los founders).
+
 ## Prioridad número uno: FRESH DATA
 Walter's standing rule: data freshness beats everything else. The biggest weakness of generated content is stale data. Therefore:
 - Every insight in `context/signals.md` carries a `date:` field (when the source was published) AND the system tracks when the signals file was last refreshed.

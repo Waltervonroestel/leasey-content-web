@@ -36,10 +36,9 @@ export default function InsightsPage() {
         <div>
           <h1 className="text-2xl font-bold text-ink">Insights</h1>
           <p className="text-slate text-sm mt-1">
-            Live research feeding the content. <strong>Freshness is the #1 priority of the system.</strong> Refresh weekly (auto via cron) or anytime here.
+            Live research feeding the content. <strong>Freshness is the #1 priority of the system.</strong> Refresh runs from Claude Code; new insights commit straight to this repo.
           </p>
         </div>
-        <ActionButton action="refresh-insights" label="Search fresh insights" taskLabel="Search fresh insights" />
       </div>
 
       <Card className="flex items-center justify-between flex-wrap gap-3">
@@ -70,13 +69,6 @@ export default function InsightsPage() {
                 </div>
                 <h3 className="text-base font-bold text-ink mt-1">{ins.title}</h3>
               </div>
-              <ActionButton
-                action="write-blog"
-                payload={{ insightId: ins.id }}
-                label="Write blog"
-                taskLabel={`Blog from ${ins.id}`}
-                variant="ghost"
-              />
             </div>
             <div className="mt-2 text-sm">
               <Markdown md={ins.body.trim()} />

@@ -20,7 +20,7 @@ export default function CalendarPage() {
     <div className="flex flex-col gap-4">
       <div>
         <h1 className="text-2xl font-bold text-ink">Editorial Calendar</h1>
-        <p className="text-slate text-sm mt-1">90-day plan. Click “Generate” to draft any slot. Drafts land in output and are not auto-published.</p>
+        <p className="text-slate text-sm mt-1">90-day plan. Drafts are generated in Claude Code and committed here.</p>
       </div>
 
       {slots.length === 0 ? (
@@ -37,12 +37,6 @@ export default function CalendarPage() {
                 </div>
                 <p className="text-sm text-ink mt-1 truncate">{s.topic}</p>
               </div>
-              <ActionButton
-                action="generate-post"
-                payload={{ topic: s.topic, voice: voiceKey(s.voice), channel: s.channel }}
-                label="Generate"
-                taskLabel={`Post: ${s.topic.slice(0, 40)}`}
-              />
             </Card>
           ))}
         </div>

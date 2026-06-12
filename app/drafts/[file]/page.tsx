@@ -22,14 +22,6 @@ export default async function DraftDetail({ params }: { params: Promise<{ file: 
         <span className="text-xs text-slate">{draft.dateFolder}</span>
       </div>
 
-      <Card className="flex flex-wrap items-center gap-3">
-        <span className="text-sm text-slate">Generate image:</span>
-        <ActionButton action="generate-image" payload={{ file: draft.file, kind: "hero" }} label="Data card" taskLabel={`Image (data card): ${draft.name}`} variant="ghost" />
-        <ActionButton action="generate-image" payload={{ file: draft.file, kind: "cover" }} label="Blog cover" taskLabel={`Image (cover): ${draft.name}`} variant="ghost" />
-        <ActionButton action="generate-image" payload={{ file: draft.file, kind: "carousel-slide" }} label="Carousel slide" taskLabel={`Image (carousel): ${draft.name}`} variant="ghost" />
-        <span className="text-[11px] text-slate w-full">The brief is built internally from this draft. Output is a PNG in Images.</span>
-      </Card>
-
       {Object.keys(draft.meta).length > 0 && (
         <Card className="text-xs text-slate">
           {Object.entries(draft.meta).map(([k, v]) => (

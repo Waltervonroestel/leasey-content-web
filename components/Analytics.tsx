@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from "recharts";
+import AnalysisSummary from "@/components/AnalysisSummary";
 
 const PALETTE = ["#1f6feb", "#0ea5a4", "#2563eb", "#14b8a6", "#3b82f6", "#0891b2", "#60a5fa", "#5b6b7f", "#1659c7", "#0f766e"];
 const RANGES = [7, 14, 28, 90];
@@ -149,6 +150,9 @@ export default function Analytics() {
         <Stat label="CTR" value={`${((totals?.ctr || 0) * 100).toFixed(1)}%`} />
         <Stat label="Avg position" value={(totals?.avgPos || 0).toFixed(1)} />
       </div>
+
+      {/* Análisis: qué significan los números, qué hacer y por qué */}
+      <AnalysisSummary days={days} />
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <ChartCard title="Clicks by page" subtitle={`Last ${days} days · top pages`}>

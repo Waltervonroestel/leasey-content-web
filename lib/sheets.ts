@@ -73,3 +73,44 @@ export const sheetUrls = () => ({
   calendar: `https://docs.google.com/spreadsheets/d/${CALENDAR_SHEET_ID}/edit`,
   optimisation: `https://docs.google.com/spreadsheets/d/${OPTIMISATION_SHEET_ID}/edit`,
 });
+
+// ── Write helpers ────────────────────────────────────────────────────────────
+// Ensures a sheet tab exists, then appends rows to it.
+async function ensureSheet(spreadsheetId: string, title: string) {
+  const s = sheetsClient();
+  const meta = await s.spreadsheets.get({ spreadsheetId });
+  const exists = (meta.data.sheets || []).some((sh) => sh.properties?.title === title);
+  if (!exists) {
+    await s.spreadsheets.batchUpdate({
+      spreadsheetId,
+      requestBody: { requests: [{ addSheet: { properties: { title } } }] },
+    });
+  }
+}
+
+export async function appendToSheet(spreadsheetId: string, tabTitle: string, rows: (string | number)[][]) {
+  if (!sheetsConfigured()) return;
+  await ensureSheet(spreadsheetId, tabTitle);
+  const s = sheetsClient();
+  await s.spreadsheets.values.append({
+    spreadsheetId,
+    range: `${tabTitle}!A:Z`,
+    valueInputOption: "USER_ENTERED",
+    requestBody: { values: rows },
+  });
+  // Bust cache
+  CACHE.delete(`log:${spreadsheetId}:${tabTitle}`);
+}
+
+export async function readSheetTab(spreadsheetId: string, tabTitle: string): Promise<string[][]> {
+  if (!sheetsConfigured()) return [];
+  return cached(`log:${spreadsheetId}:${tabTitle}`, async () => {
+    try {
+      const s = sheetsClient();
+      const r = await s.spreadsheets.values.get({ spreadsheetId, range: `${tabTitle}!A:Z` });
+      return (r.data.values || []) as string[][];
+    } catch {
+      return [];
+    }
+  }) as Promise<string[][]>;
+}

@@ -52,17 +52,50 @@ function Stat({ label, value }: { label: string; value: string }) {
   );
 }
 
+type TrendRow = { query?: string; impressions: number; clicks: number; position: number; imprDelta: number; clickDelta: number; posDelta: number };
+function TrendCard({ title, subtitle, rows, positive }: { title: string; subtitle: string; rows: TrendRow[]; positive: boolean }) {
+  return (
+    <div className="border border-line bg-white rounded-xl p-4 shadow-sm">
+      <h3 className="font-semibold text-sm text-ink">{title}</h3>
+      <p className="text-xs text-slate mb-2">{subtitle}</p>
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="text-left text-slate text-xs border-b border-line">
+            <th className="py-1">Query</th><th>Impr.</th><th>Δ Impr.</th><th>Pos</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r, i) => (
+            <tr key={i} className="border-b border-line/50">
+              <td className="py-1.5 text-ink truncate max-w-[180px]">{r.query}</td>
+              <td>{r.impressions.toLocaleString()}</td>
+              <td className={positive ? "text-emerald-600" : "text-rose-600"}>{r.imprDelta >= 0 ? "+" : ""}{r.imprDelta.toLocaleString()}</td>
+              <td>#{r.position.toFixed(1)}</td>
+            </tr>
+          ))}
+          {rows.length === 0 && <tr><td colSpan={4} className="py-3 text-slate text-xs">No data.</td></tr>}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+type IntentCount = { intent: string; queries: number; impressions: number; clicks: number };
+
 export default function Analytics() {
   const [days, setDays] = useState(28);
   const [data, setData] = useState<{ connected: boolean; rows?: PageRow[]; totals?: { clicks: number; impressions: number; ctr: number; avgPos: number } } | null>(null);
   const [clusters, setClusters] = useState<Cluster[]>([]);
   const [other, setOther] = useState<{ impressions: number } | null>(null);
+  const [intentCounts, setIntentCounts] = useState<IntentCount[]>([]);
+  const [trends, setTrends] = useState<{ rising: TrendRow[]; declining: TrendRow[] } | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
     fetch(`/api/gsc?days=${days}`).then((r) => r.json()).then(setData).catch(() => setData({ connected: false })).finally(() => setLoading(false));
     fetch(`/api/gsc/clusters?days=90`).then((r) => r.json()).then((d) => { setClusters(d.clusters || []); setOther(d.other || null); }).catch(() => {});
+    fetch(`/api/gsc/intel?days=${days}`).then((r) => r.json()).then((d) => { setIntentCounts(d.intentCounts || []); setTrends(d.trends || null); }).catch(() => {});
   }, [days]);
 
   if (loading && !data) return <p className="text-slate text-sm">Loading...</p>;
@@ -95,6 +128,7 @@ export default function Analytics() {
   const clusterImpr = clusters.map((c) => ({ name: c.name, value: c.impressions }));
   if (other && other.impressions > 0) clusterImpr.push({ name: "other queries", value: other.impressions });
   const clusterClicks = clusters.filter((c) => c.clicks > 0).map((c) => ({ name: c.name, value: c.clicks }));
+  const intentData = intentCounts.map((c) => ({ name: c.intent, value: c.impressions }));
 
   return (
     <div className="flex flex-col gap-5">
@@ -123,10 +157,18 @@ export default function Analytics() {
         <ChartCard title="Demand by topic (impressions)" subtitle="Queries grouped by topic · 90 days">
           <Donut data={clusterImpr} />
         </ChartCard>
-        <ChartCard title="Clicks by topic" subtitle="What is actually converting · 90 days">
-          <Donut data={clusterClicks} />
+        <ChartCard title="Search intent mix" subtitle="Impressions by query intent · where the demand sits in the funnel">
+          <Donut data={intentData} />
         </ChartCard>
       </div>
+
+      {/* Trends: what is rising and declining */}
+      {trends && (trends.rising.length > 0 || trends.declining.length > 0) && (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <TrendCard title="Rising queries" subtitle={`Impressions up vs the previous ${days} days`} rows={trends.rising} positive />
+          <TrendCard title="Declining queries" subtitle={`Impressions down vs the previous ${days} days`} rows={trends.declining} positive={false} />
+        </div>
+      )}
 
       <div className="bg-white border border-line rounded-xl p-4">
         <h3 className="font-semibold text-sm text-ink mb-2">Topics by demand</h3>

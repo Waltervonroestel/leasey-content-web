@@ -1,13 +1,12 @@
-import { listDrafts, listImages, statusSummary, signalsMeta, listInsights } from "@/lib/content";
-import { Card, Stat, Badge, SectionTitle } from "@/components/ui";
+import { listDrafts, signalsMeta, listInsights, listCalendarSlots } from "@/lib/content";
+import { Card, Stat, SectionTitle } from "@/components/ui";
 import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
 export default function Dashboard() {
   const drafts = listDrafts();
-  const images = listImages();
-  const { total, counts } = statusSummary();
+  const calendar = listCalendarSlots();
   const byChannel = drafts.reduce<Record<string, number>>((acc, d) => {
     acc[d.channel] = (acc[d.channel] || 0) + 1;
     return acc;
@@ -30,10 +29,10 @@ export default function Dashboard() {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Stat label="Pieces tracked" value={total} accent />
+        <Stat label="Calendar slots" value={calendar.length} accent />
         <Stat label="Drafts in output" value={drafts.length} />
-        <Stat label="Images generated" value={images.length} />
         <Stat label="Active channels" value={Object.keys(byChannel).length} />
+        <Stat label="Insights tracked" value={listInsights().length} />
       </div>
 
       <Card className="flex items-center justify-between flex-wrap gap-3 border-l-4 border-l-blue">
@@ -50,16 +49,28 @@ export default function Dashboard() {
         <Link href="/insights" className="text-sm text-blue hover:text-blue-hover whitespace-nowrap">Review insights →</Link>
       </Card>
 
+      <div className="grid md:grid-cols-3 gap-4">
+        <Card>
+          <SectionTitle href="/calendar" cta="Open">Editorial calendar</SectionTitle>
+          <p className="text-sm text-slate">The 95-piece calendar across 90 days, mapped to pillars, phases and Google Docs.</p>
+        </Card>
+        <Card>
+          <SectionTitle href="/optimise" cta="Open">Optimise old content</SectionTitle>
+          <p className="text-sm text-slate">723 published URLs with cluster, target pillar, suggested action and owner. Read-only.</p>
+        </Card>
+        <Card>
+          <SectionTitle href="/ideas" cta="Open">New content ideas</SectionTitle>
+          <p className="text-sm text-slate">GSC demand + pillar gaps turned into briefs. Suggestions only.</p>
+        </Card>
+      </div>
+
       <div className="grid md:grid-cols-2 gap-6">
         <Card>
-          <SectionTitle href="/status" cta="View board">Status</SectionTitle>
-          <div className="flex flex-wrap gap-2">
-            {counts.map((c) => (
-              <span key={c.status} className="flex items-center gap-2 text-sm">
-                <Badge label={c.status} /> <span className="text-slate">{c.count}</span>
-              </span>
-            ))}
-          </div>
+          <SectionTitle href="/reports" cta="View reports">What to write next</SectionTitle>
+          <p className="text-sm text-slate">
+            Reports reads every Search Console query, classifies it by intent and opportunity, and turns it into a
+            concrete content recommendation. Start there to decide the next blog.
+          </p>
         </Card>
 
         <Card>

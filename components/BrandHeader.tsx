@@ -2,15 +2,14 @@ import Link from "next/link";
 
 const nav = [
   { href: "/", label: "Dashboard" },
+  { href: "/calendar", label: "Calendar" },
+  { href: "/optimise", label: "Optimise" },
+  { href: "/ideas", label: "Ideas" },
   { href: "/analytics", label: "Analytics" },
   { href: "/reports", label: "Reports" },
-  { href: "/status", label: "Status" },
-  { href: "/calendar", label: "Calendar" },
   { href: "/drafts", label: "Drafts" },
   { href: "/insights", label: "Insights" },
-  { href: "/images", label: "Images" },
   { href: "/pr", label: "PR" },
-  { href: "/reddit", label: "Reddit" },
 ];
 
 export default function BrandHeader() {

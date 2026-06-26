@@ -5,7 +5,7 @@ import { Card } from "@/components/ui";
 
 type SiteRow = [string, string, string, string, string, string]; // date, name, url, category, relevance, notes
 type HistResp = { connected: boolean; rows: SiteRow[] };
-type GenResp = { ok?: boolean; count?: number; sites?: { name: string; url: string; category: string; relevance: string; notes: string }[]; error?: string };
+type GenResp = { ok?: boolean; queued?: boolean; error?: string };
 
 const CATEGORY_COLOURS: Record<string, string> = {
   "Proptech Media":    "bg-blue/10 text-blue border-blue/30",
@@ -40,6 +40,7 @@ export default function PRView() {
   const [hist, setHist] = useState<SiteRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [generating, setGenerating] = useState(false);
+  const [queued, setQueued] = useState(false);
   const [error, setError] = useState("");
   const [filter, setFilter] = useState("");
 
@@ -58,7 +59,7 @@ export default function PRView() {
       const r = await fetch("/api/pr/generate", { method: "POST" });
       const d: GenResp = await r.json();
       if (d.error) setError(d.error);
-      else await loadHistory();
+      else setQueued(true);
     } catch (e) {
       setError(String(e));
     } finally {
@@ -82,23 +83,27 @@ export default function PRView() {
         </div>
         <button
           onClick={generate}
-          disabled={generating}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-ink text-white text-sm font-medium hover:bg-ink/80 disabled:opacity-50 transition-colors whitespace-nowrap"
+          disabled={generating || queued}
+          className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${queued ? "bg-emerald-600 text-white" : "bg-ink text-white hover:bg-ink/80 disabled:opacity-50"}`}
         >
           {generating ? (
-            <><span className="inline-block w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />Searching…</>
+            <><span className="inline-block w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />Añadiendo…</>
+          ) : queued ? (
+            <>✓ En cola — corre el script en Claude Code</>
           ) : (
-            <><span aria-hidden>✦</span> Find new publication sites</>
+            <><span aria-hidden>✦</span> Buscar nuevos sitios de publicación</>
           )}
         </button>
       </div>
 
-      {error && (
-        <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-          {error.includes("ANTHROPIC_API_KEY") ? (
-            <>Add <code className="font-mono">ANTHROPIC_API_KEY</code> to your Render environment variables to enable AI generation.</>
-          ) : error}
+      {queued && (
+        <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
+          Tarea añadida a la Writing Queue. Para generar los sitios, corre en Claude Code:
+          <code className="block mt-1 font-mono text-xs bg-emerald-100 px-2 py-1 rounded">node scripts/process-content-queue.mjs</code>
         </div>
+      )}
+      {error && (
+        <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">{error}</div>
       )}
 
       {hist.length > 0 && (

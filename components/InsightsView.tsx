@@ -6,7 +6,7 @@ import { PILLAR_META, pillarCodeFrom, type PillarCode } from "@/lib/pillarStyle"
 
 type InsightRow = [string, string, string, string, string]; // date, title, summary, sources, pillar
 type HistResp = { connected: boolean; rows: InsightRow[] };
-type GenResp = { ok?: boolean; count?: number; insights?: { title: string; summary: string; pillar: string; sources: string }[]; error?: string };
+type GenResp = { ok?: boolean; queued?: boolean; error?: string };
 
 function PillarBadge({ code }: { code: PillarCode }) {
   const m = PILLAR_META[code];
@@ -36,6 +36,7 @@ export default function InsightsView() {
   const [hist, setHist] = useState<InsightRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [generating, setGenerating] = useState(false);
+  const [queued, setQueued] = useState(false);
   const [error, setError] = useState("");
 
   const loadHistory = () =>
@@ -52,8 +53,8 @@ export default function InsightsView() {
     try {
       const r = await fetch("/api/insights/generate", { method: "POST" });
       const d: GenResp = await r.json();
-      if (d.error) { setError(d.error); }
-      else { await loadHistory(); }
+      if (d.error) setError(d.error);
+      else setQueued(true);
     } catch (e) {
       setError(String(e));
     } finally {
@@ -77,23 +78,27 @@ export default function InsightsView() {
         </div>
         <button
           onClick={generate}
-          disabled={generating}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-ink text-white text-sm font-medium hover:bg-ink/80 disabled:opacity-50 transition-colors whitespace-nowrap"
+          disabled={generating || queued}
+          className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${queued ? "bg-emerald-600 text-white" : "bg-ink text-white hover:bg-ink/80 disabled:opacity-50"}`}
         >
           {generating ? (
-            <><span className="inline-block w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />Generating…</>
+            <><span className="inline-block w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />Añadiendo a la cola…</>
+          ) : queued ? (
+            <>✓ En cola — corre el script en Claude Code</>
           ) : (
-            <><span aria-hidden>✦</span> Generate new insights</>
+            <><span aria-hidden>✦</span> Generar nuevos insights</>
           )}
         </button>
       </div>
 
-      {error && (
-        <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-          {error.includes("ANTHROPIC_API_KEY") ? (
-            <>Add <code className="font-mono">ANTHROPIC_API_KEY</code> to your Render environment variables to enable AI generation.</>
-          ) : error}
+      {queued && (
+        <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
+          Tarea añadida a la Writing Queue en Google Sheets. Para generar los insights, corre en Claude Code:
+          <code className="block mt-1 font-mono text-xs bg-emerald-100 px-2 py-1 rounded">node scripts/process-content-queue.mjs</code>
         </div>
+      )}
+      {error && (
+        <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">{error}</div>
       )}
 
       {loading ? (

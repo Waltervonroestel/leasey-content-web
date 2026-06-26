@@ -1,6 +1,6 @@
 # Render blueprint para Leasey Content Dashboard (servicio web Next.js).
-# Las variables de entorno (DASHBOARD_USER / DASHBOARD_PASSWORD) se configuran
-# en el dashboard de Render. GSC y WordPress se añaden en fase 2.
+# Las variables de entorno (GOOGLE_*, CALENDAR_SHEET_ID, OPTIMISATION_SHEET_ID,
+# GSC_SITE_URL) se configuran en el dashboard de Render. Sin contraseña: acceso abierto.
 services:
   - type: web
     name: leasey-content-web

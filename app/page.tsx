@@ -11,7 +11,6 @@ export default function Dashboard() {
     acc[d.channel] = (acc[d.channel] || 0) + 1;
     return acc;
   }, {});
-  const recent = drafts.slice(0, 6);
   const meta = signalsMeta();
   const insights = listInsights();
   const insightCounts = insights.reduce<Record<string, number>>((a, i) => { a[i.freshness] = (a[i.freshness] || 0) + 1; return a; }, {});
@@ -74,7 +73,7 @@ export default function Dashboard() {
         </Card>
 
         <Card>
-          <SectionTitle href="/drafts" cta="View drafts">By channel</SectionTitle>
+          <SectionTitle href="/ideas" cta="Open ideas">Drafts by channel</SectionTitle>
           <div className="flex flex-col gap-1.5 text-sm">
             {Object.entries(byChannel)
               .sort((a, b) => b[1] - a[1])
@@ -86,24 +85,6 @@ export default function Dashboard() {
               ))}
           </div>
         </Card>
-      </div>
-
-      <div>
-        <SectionTitle href="/drafts" cta="All">Recent drafts</SectionTitle>
-        <div className="grid md:grid-cols-2 gap-3">
-          {recent.map((d) => (
-            <Link key={d.file} href={`/drafts/${encodeURIComponent(d.file)}`}>
-              <Card className="hover:border-blue/40 transition-colors">
-                <div className="flex items-center justify-between gap-2">
-                  <span className="text-sm font-semibold text-ink truncate">{d.name}</span>
-                  <span className="text-[11px] text-blue whitespace-nowrap">{d.channel}</span>
-                </div>
-                <p className="text-xs text-slate mt-1.5 line-clamp-2">{d.body.trim().slice(0, 140)}</p>
-                <span className="text-[11px] text-slate mt-2 block">{d.dateFolder}</span>
-              </Card>
-            </Link>
-          ))}
-        </div>
       </div>
     </div>
   );

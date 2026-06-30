@@ -59,7 +59,7 @@ export const NAV_TABS: NavTab[] = [
     label: "Insights",
     icon: "🔍",
     description: "Insights de mercado generados desde GSC + los 6 pilares — para informar la estrategia de contenido y el ángulo de cada pieza.",
-    group: "Build",
+    group: "Analyse",
   },
   {
     href: "/pr",

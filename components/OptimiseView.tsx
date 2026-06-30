@@ -6,7 +6,8 @@ import type { OptRow } from "@/lib/sheets";
 import { PILLAR_META, pillarCodeFrom, type PillarCode } from "@/lib/pillarStyle";
 
 type ClusterRow = { cluster: string; urls: number; clicks: number; impressions: number; dead: number; deadRatio: number; high: number; med: number; score: number };
-type Resp = { connected: boolean; count?: number; rows?: OptRow[]; clusters?: ClusterRow[]; pillars?: Record<string, number>; sheet?: string };
+type LinkSuggestion = { url: string; reason: string };
+type Resp = { connected: boolean; count?: number; rows?: OptRow[]; clusters?: ClusterRow[]; pillars?: Record<string, number>; linkMap?: Record<string, LinkSuggestion[]>; sheet?: string };
 
 const PRIORITY_ORDER = ["High", "Medium", "Low", "Low (deprioritise)"];
 const PRIORITY_META: Record<string, { label: string; ring: string; dot: string; bg: string; text: string }> = {
@@ -30,7 +31,7 @@ function FilterPill({ active, count, label, onClick, colour }: { active: boolean
   );
 }
 
-function URLCard({ r }: { r: OptRow }) {
+function URLCard({ r, links }: { r: OptRow; links?: LinkSuggestion[] }) {
   const code = pillarCodeFrom(r.primary) as PillarCode;
   const meta = PILLAR_META[code];
   const prio = PRIORITY_META[r.priority] || PRIORITY_META["Low"];
@@ -76,12 +77,27 @@ function URLCard({ r }: { r: OptRow }) {
             <span className="text-[10px] text-slate">Owner: <span className="text-ink">{r.owner}</span></span>
           )}
         </div>
+
+        {/* Internal links del mismo cluster */}
+        {links && links.length > 0 && (
+          <div className="border-t border-line pt-2.5 flex flex-col gap-1">
+            <span className="text-[10px] uppercase tracking-wide text-slate">Internal links sugeridos</span>
+            <ul className="flex flex-col gap-0.5">
+              {links.map((l, i) => (
+                <li key={i} className="text-[11px] text-slate flex items-baseline gap-1.5">
+                  <a href={`https://www.leasey.ai${l.url}`} target="_blank" rel="noreferrer" className="text-blue hover:underline truncate min-w-0 flex-1 font-mono">{l.url}</a>
+                  <span className="text-[10px] opacity-70 whitespace-nowrap">{l.reason}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
-function ClusterPanel({ cluster, rows }: { cluster: string; rows: OptRow[] }) {
+function ClusterPanel({ cluster, rows, linkMap }: { cluster: string; rows: OptRow[]; linkMap?: Record<string, LinkSuggestion[]> }) {
   const [open, setOpen] = useState(false);
   const high = rows.filter((r) => r.priority === "High").length;
   const med = rows.filter((r) => r.priority === "Medium").length;
@@ -108,7 +124,7 @@ function ClusterPanel({ cluster, rows }: { cluster: string; rows: OptRow[] }) {
       </button>
       {open && (
         <div className="p-4 border-t border-line bg-bg-soft/30 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          {rows.slice(0, 24).map((r, i) => <URLCard key={i} r={r} />)}
+          {rows.slice(0, 24).map((r, i) => <URLCard key={i} r={r} links={linkMap?.[r.url]} />)}
           {rows.length > 24 && <div className="text-xs text-slate p-2">{rows.length - 24} more URLs — refine filters above.</div>}
         </div>
       )}
@@ -179,12 +195,17 @@ export default function OptimiseView() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-bold text-ink">Optimise old content</h1>
-        <p className="text-slate text-sm mt-1">
-          {rows.length} published URLs classified into clusters and mapped to the 6 positioning pillars, each with a suggested action and owner.
-          {data.sheet && (<> &middot; <a href={data.sheet} target="_blank" rel="noreferrer" className="text-blue hover:underline">Open the source sheet</a></>)}
-        </p>
+      <div className="flex items-start justify-between flex-wrap gap-3">
+        <div>
+          <h1 className="text-2xl font-bold text-ink">Optimise old content</h1>
+          <p className="text-slate text-sm mt-1">
+            {rows.length} published URLs classified into clusters and mapped to the 6 positioning pillars, each with a suggested action and owner.
+            {data.sheet && (<> &middot; <a href={data.sheet} target="_blank" rel="noreferrer" className="text-blue hover:underline">Open the source sheet</a></>)}
+          </p>
+        </div>
+        <a href="/api/export/optimise" className="text-xs px-3 py-1.5 rounded-lg border border-line text-slate hover:text-ink hover:border-ink/40 transition-colors whitespace-nowrap">
+          ⬇ Descargar CSV
+        </a>
       </div>
 
       {/* Stat strip */}
@@ -241,7 +262,7 @@ export default function OptimiseView() {
             <span className="text-xs text-slate">{highImpact.length} high-priority pages bleeding impressions</span>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {highImpact.map((r, i) => <URLCard key={i} r={r} />)}
+            {highImpact.map((r, i) => <URLCard key={i} r={r} links={data?.linkMap?.[r.url]} />)}
           </div>
         </section>
       )}
@@ -254,7 +275,7 @@ export default function OptimiseView() {
         </div>
         <div className="flex flex-col gap-2">
           {byCluster.map(([cluster, rs]) => (
-            <ClusterPanel key={cluster} cluster={cluster} rows={rs} />
+            <ClusterPanel key={cluster} cluster={cluster} rows={rs} linkMap={data?.linkMap} />
           ))}
         </div>
       </section>

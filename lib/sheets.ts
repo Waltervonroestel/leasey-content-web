@@ -29,18 +29,23 @@ export type CalendarRow = {
   month: number; week: number; date: string; day: string;
   channel: string; voice: string; title: string;
   pillar: string; phase: string; status: string; docLink: string;
+  sheetRow: number; // 1-based row number in the spreadsheet (incl. header row at 1)
 };
 export async function listCalendarRows(): Promise<CalendarRow[]> {
   if (!CALENDAR_SHEET_ID || !sheetsConfigured()) return [];
   return cached(`cal:${CALENDAR_SHEET_ID}`, async () => {
     const r = await sheetsClient().spreadsheets.values.get({ spreadsheetId: CALENDAR_SHEET_ID, range: "Sheet1!A:L" });
-    const rows = (r.data.values || []).slice(1);
-    return rows
-      .filter((row) => row[2]) // has date
-      .map((row) => ({
+    const allRows = (r.data.values || []);
+    // Map preserving the original sheet row (header at row 1, data starts at row 2)
+    return allRows
+      .slice(1)
+      .map((row, i) => ({ row, sheetRow: i + 2 }))
+      .filter(({ row }) => row[2]) // has date
+      .map(({ row, sheetRow }) => ({
         month: +(row[0] || 0), week: +(row[1] || 0), date: row[2] || "", day: row[3] || "",
         channel: row[4] || "", voice: row[5] || "", title: row[6] || "",
         pillar: row[7] || "", phase: row[8] || "", status: row[9] || "", docLink: row[10] || "",
+        sheetRow,
       }))
       .sort((a, b) => (a.date < b.date ? -1 : 1));
   });

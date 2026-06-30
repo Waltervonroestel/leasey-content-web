@@ -140,12 +140,17 @@ export default function IdeasView() {
             Generadas desde la demanda real de GSC + gaps de pilar + solapamiento con el calendario. Dale a <span className="text-ink font-medium">Escribir en el sistema</span> para encolar una idea; luego corre <code className="text-[11px] bg-bg-soft px-1 py-0.5 rounded">node scripts/process-content-queue.mjs</code> en Claude Code.
           </p>
         </div>
-        <div className="flex bg-bg-soft rounded-lg p-0.5">
-          {[28, 90].map((d) => (
-            <button key={d} onClick={() => setDays(d as 28 | 90)} className={`text-xs px-2.5 py-1 rounded-md ${days === d ? "bg-white text-ink shadow-sm" : "text-slate"}`}>
-              {d}d
-            </button>
-          ))}
+        <div className="flex items-center gap-2">
+          <div className="flex bg-bg-soft rounded-lg p-0.5">
+            {[28, 90].map((d) => (
+              <button key={d} onClick={() => setDays(d as 28 | 90)} className={`text-xs px-2.5 py-1 rounded-md ${days === d ? "bg-white text-ink shadow-sm" : "text-slate"}`}>
+                {d}d
+              </button>
+            ))}
+          </div>
+          <a href={`/api/export/ideas?days=${days}`} className="text-xs px-3 py-1.5 rounded-lg border border-line text-slate hover:text-ink hover:border-ink/40 transition-colors whitespace-nowrap">
+            ⬇ CSV
+          </a>
         </div>
       </div>
 

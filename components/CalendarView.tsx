@@ -31,11 +31,38 @@ function FilterPill({ active, count, label, onClick, colour }: { active: boolean
   );
 }
 
+const STATUS_OPTIONS = ["Idea", "Escrito", "Programado", "Publicado"] as const;
+const STATUS_COLOUR: Record<string, string> = {
+  "": "bg-slate-100 text-slate",
+  "Idea": "bg-slate-100 text-slate",
+  "Escrito": "bg-blue/10 text-blue",
+  "Programado": "bg-amber-50 text-amber-700",
+  "Publicado": "bg-emerald-50 text-emerald-700",
+};
+
 function PieceCard({ row, isToday, isPast }: { row: CalRow; isToday: boolean; isPast: boolean }) {
   const code = pillarCodeFrom(row.positioningPillar || "") as PillarCode;
   const meta = PILLAR_META[code];
   const phase = PHASE_LABEL[row.phase] || row.phase || "—";
   const phaseClr = PHASE_COLOUR[row.phase] || "bg-bg-soft text-slate";
+  const [status, setStatus] = useState(row.status || "");
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState(false);
+
+  async function updateStatus(next: string) {
+    const target = status === next ? "" : next; // toggle off
+    setSaving(true); setError(false);
+    const prev = status;
+    setStatus(target);
+    try {
+      const r = await fetch("/api/calendar/update", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sheetRow: row.sheetRow, status: target }),
+      });
+      if (!r.ok) throw new Error();
+    } catch { setStatus(prev); setError(true); setTimeout(() => setError(false), 2000); }
+    finally { setSaving(false); }
+  }
 
   return (
     <div className={`relative group rounded-xl border bg-white p-4 transition-shadow hover:shadow-md ${isPast ? "opacity-60" : "border-line"}`}>
@@ -67,6 +94,24 @@ function PieceCard({ row, isToday, isPast }: { row: CalRow; isToday: boolean; is
           </span>
           <span className={`text-[10px] px-1.5 py-0.5 rounded ${phaseClr}`}>{phase}</span>
           <span className="text-[10px] text-slate ml-auto">{row.voice}</span>
+        </div>
+
+        {/* Status quick-update */}
+        <div className="flex items-center gap-1 flex-wrap pt-1 border-t border-line">
+          <span className="text-[10px] text-slate uppercase tracking-wide mr-1">Status</span>
+          {STATUS_OPTIONS.map((s) => (
+            <button
+              key={s}
+              onClick={() => updateStatus(s)}
+              disabled={saving}
+              className={`text-[10px] px-1.5 py-0.5 rounded transition-colors ${
+                status === s ? STATUS_COLOUR[s] + " font-medium" : "text-slate hover:bg-bg-soft"
+              }`}
+            >
+              {s}
+            </button>
+          ))}
+          {error && <span className="text-[10px] text-rose-600 ml-1">error</span>}
         </div>
       </div>
     </div>
@@ -152,12 +197,17 @@ export default function CalendarView() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-bold text-ink">Editorial calendar</h1>
-        <p className="text-slate text-sm mt-1">
-          {rows.length} pieces planned across the 90-day window, mapped to the 6 positioning pillars.
-          {data.sheet && (<> &middot; <a href={data.sheet} target="_blank" rel="noreferrer" className="text-blue hover:underline">Open the source sheet</a></>)}
-        </p>
+      <div className="flex items-start justify-between flex-wrap gap-3">
+        <div>
+          <h1 className="text-2xl font-bold text-ink">Editorial calendar</h1>
+          <p className="text-slate text-sm mt-1">
+            {rows.length} pieces planned across the 90-day window, mapped to the 6 positioning pillars.
+            {data.sheet && (<> &middot; <a href={data.sheet} target="_blank" rel="noreferrer" className="text-blue hover:underline">Open the source sheet</a></>)}
+          </p>
+        </div>
+        <a href="/api/export/calendar" className="text-xs px-3 py-1.5 rounded-lg border border-line text-slate hover:text-ink hover:border-ink/40 transition-colors whitespace-nowrap">
+          ⬇ Descargar CSV
+        </a>
       </div>
 
       <Card className="!p-4">

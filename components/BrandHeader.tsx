@@ -1,19 +1,5 @@
 import Link from "next/link";
-
-const nav = [
-  { href: "/", label: "Dashboard" },
-  { href: "/calendar", label: "Calendar" },
-  { href: "/optimise", label: "Optimise" },
-  { href: "/ideas", label: "Ideas" },
-  { href: "/analytics", label: "Analytics" },
-  { href: "/alerts", label: "Alerts" },
-  { href: "/title-fixes", label: "Title fixes" },
-  { href: "/competitors", label: "Competitors" },
-  { href: "/publish", label: "Publish" },
-  { href: "/reports", label: "Reports" },
-  { href: "/insights", label: "Insights" },
-  { href: "/pr", label: "PR" },
-];
+import { NAV_TABS } from "@/lib/navMeta";
 
 export default function BrandHeader() {
   return (
@@ -26,10 +12,11 @@ export default function BrandHeader() {
           <span className="text-xs text-slate hidden sm:inline">Content</span>
         </Link>
         <nav className="flex items-center gap-1 text-sm flex-wrap">
-          {nav.map((n) => (
+          {NAV_TABS.map((n) => (
             <Link
               key={n.href}
               href={n.href}
+              title={n.description}
               className="px-3 py-1.5 rounded-md text-slate hover:text-ink hover:bg-bg-2 transition-colors"
             >
               {n.label}

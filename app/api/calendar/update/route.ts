@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
 import { google } from "googleapis";
-import { sheetsConfigured } from "@/lib/sheets";
+import { sheetsConfigured, CALENDAR_TAB } from "@/lib/sheets";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 const SHEET_ID = process.env.CALENDAR_SHEET_ID || "";
-const STATUS_COL = "J"; // Status column in Sheet1
+const STATUS_COL = "J"; // Status column in the calendar tab
 
 function sheetsClient() {
   const o = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET);
@@ -26,7 +26,7 @@ export async function POST(req: Request) {
   const s = sheetsClient();
   await s.spreadsheets.values.update({
     spreadsheetId: SHEET_ID,
-    range: `Sheet1!${STATUS_COL}${sheetRow}`,
+    range: `${CALENDAR_TAB}!${STATUS_COL}${sheetRow}`,
     valueInputOption: "USER_ENTERED",
     requestBody: { values: [[status]] },
   });

@@ -2,6 +2,9 @@ import { google } from "googleapis";
 
 const CALENDAR_SHEET_ID = process.env.CALENDAR_SHEET_ID || "";
 const OPTIMISATION_SHEET_ID = process.env.OPTIMISATION_SHEET_ID || "";
+// Tab name within the Calendar spreadsheet. Override with CALENDAR_TAB env var
+// if you rename it in Google Sheets.
+export const CALENDAR_TAB = process.env.CALENDAR_TAB || "content calendar";
 
 function sheetsClient() {
   const o = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET);
@@ -34,7 +37,7 @@ export type CalendarRow = {
 export async function listCalendarRows(): Promise<CalendarRow[]> {
   if (!CALENDAR_SHEET_ID || !sheetsConfigured()) return [];
   return cached(`cal:${CALENDAR_SHEET_ID}`, async () => {
-    const r = await sheetsClient().spreadsheets.values.get({ spreadsheetId: CALENDAR_SHEET_ID, range: "Sheet1!A:L" });
+    const r = await sheetsClient().spreadsheets.values.get({ spreadsheetId: CALENDAR_SHEET_ID, range: `${CALENDAR_TAB}!A:L` });
     const allRows = (r.data.values || []);
     // Map preserving the original sheet row (header at row 1, data starts at row 2)
     return allRows

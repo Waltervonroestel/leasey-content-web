@@ -96,14 +96,16 @@ function PieceCard({ row, isToday, isPast }: { row: CalRow; isToday: boolean; is
           <span className="text-[10px] text-slate ml-auto">{row.voice}</span>
         </div>
 
-        {/* Publish to WordPress — disponible en todas las piezas */}
-        <a
-          href={`/publish?title=${encodeURIComponent(row.title)}${row.docLink ? `&doc=${encodeURIComponent(row.docLink)}` : ""}`}
-          className="flex items-center justify-center gap-1.5 text-[11px] px-2 py-1.5 rounded-lg border border-line bg-white text-ink hover:border-ink/40 hover:bg-bg-soft transition-colors mt-1 font-medium"
-        >
-          <span aria-hidden>📝</span>
-          <span>Publicar a WordPress</span>
-        </a>
+        {/* Publish to WordPress — solo para piezas de Blog */}
+        {channelGroup(row.channel) === "Blog" && (
+          <a
+            href={`/publish?title=${encodeURIComponent(row.title)}${row.docLink ? `&doc=${encodeURIComponent(row.docLink)}` : ""}`}
+            className="flex items-center justify-center gap-1.5 text-[11px] px-2 py-1.5 rounded-lg border border-line bg-white text-ink hover:border-ink/40 hover:bg-bg-soft transition-colors mt-1 font-medium"
+          >
+            <span aria-hidden>📝</span>
+            <span>Publicar a WordPress</span>
+          </a>
+        )}
 
         {/* Status quick-update */}
         <div className="flex items-center gap-1 flex-wrap pt-1 border-t border-line">

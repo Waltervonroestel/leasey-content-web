@@ -21,11 +21,22 @@ export default function PublishView() {
   const [publishing, setPublishing] = useState(false);
   const [result, setResult] = useState<{ link: string; id: number } | null>(null);
   const [error, setError] = useState<string>("");
+  const [docLink, setDocLink] = useState<string>("");
 
   const loadStatus = () =>
     fetch("/api/wordpress/status").then((r) => r.json()).then(setStatus).catch((e) => setStatus({ connected: false, error: String(e) }));
 
-  useEffect(() => { loadStatus(); }, []);
+  useEffect(() => {
+    loadStatus();
+    // Prefill from query params (e.g. when arriving from a Calendar piece)
+    if (typeof window !== "undefined") {
+      const p = new URLSearchParams(window.location.search);
+      const t = p.get("title");
+      const d = p.get("doc");
+      if (t) setTitle(t);
+      if (d) setDocLink(d);
+    }
+  }, []);
 
   async function publish() {
     if (!title.trim() || !content.trim()) return;
@@ -69,6 +80,17 @@ export default function PublishView() {
           Los posts se publican siempre como <span className="text-ink font-medium">borrador</span> — los revisas en WP-admin antes de hacerlos públicos.
         </p>
       </div>
+
+      {/* Hint when arriving from Calendar with a Google Doc link */}
+      {docLink && (
+        <div className="rounded-lg border border-blue/30 bg-blue/5 px-4 py-3 text-sm text-ink flex items-center gap-3 flex-wrap">
+          <span>📄 Esta pieza tiene un Google Doc con el contenido.</span>
+          <a href={docLink} target="_blank" rel="noreferrer" className="text-blue hover:underline font-medium">
+            Abrir el doc →
+          </a>
+          <span className="text-xs text-slate ml-auto">Copia el contenido del doc y pégalo en el composer.</span>
+        </div>
+      )}
 
       {/* Composer */}
       <Card>

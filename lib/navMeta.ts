@@ -98,6 +98,13 @@ export const NAV_TABS: NavTab[] = [
     description: "Composer para crear un borrador directo en WordPress (leasey.ai). Soporta markdown. Los posts se publican siempre como draft — los revisas en WP-admin antes de salir al público.",
     group: "Publish",
   },
+  {
+    href: "/guidelines",
+    label: "Guidelines",
+    icon: "📖",
+    description: "El playbook maestro de AEO — las 5 reglas no negociables (respuesta directa, hook con dato/entidad, cita fuentes, FAQ 40-60 palabras, KB canónica), templates por canal, alineación de pilares y checklist pre-publicación.",
+    group: "Plan",
+  },
 ];
 
 // Orden de aparición en el nav: respeta el array de arriba.

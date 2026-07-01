@@ -180,7 +180,6 @@ Every piece leads with **one** of the six positioning pillars ([`positioning.md`
 | **Carlos Leal (Founder)** | Operator-first, direct, deals in specifics. Talks like a COO. | [`b2b-voice-reference.md`](./b2b-voice-reference.md) |
 | **Juan Leal (Founder)** | Product-thinker, pattern-spotter, more reflective. Talks like a CEO. | [`b2b-voice-reference.md`](./b2b-voice-reference.md) |
 | **Leasey.AI (Company)** | Neutral, informative, product-forward, no first person. | [`brand.md`](./brand.md) |
-| **Walter (personal LinkedIn, not Leasey channels)** | Colombian Spanish, self-deprecating, story-first, invented metaphors, peer-level vulnerability. | (memory `user_walter_voice`) |
 
 Also see [`ai-tells-do-not-use.md`](./ai-tells-do-not-use.md) — a list of AI cliché phrases banned in Leasey.AI content. "In today's fast-paced world," "delve into," "unlock the power of," "the digital age," etc.
 

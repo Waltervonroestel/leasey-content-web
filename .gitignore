@@ -10,7 +10,8 @@ Thumbs.db
 /.vercel
 
 .jobs/
-# SÍ se versiona: las definiciones de los agentes son el sistema de reglas que
-# la web muestra en /rules.
+# Solo la config local de este repo. El snapshot en content/.claude/ SÍ se
+# versiona: las definiciones de los agentes son el sistema de reglas que la
+# web muestra en /rules.
 /.claude/
 tsconfig.tsbuildinfo

@@ -3,7 +3,8 @@
 <h1>Leasey.AI vs ShowMojo vs Funnel Leasing: where the leasing stack actually divides</h1>
 
 
-<p>ShowMojo launched its AI Virtual Agent beta in April 2026, signalling that even scheduling-first vendors recognise the leasing automation market is moving toward full-funnel AI (ShowMojo, 2026). If you are evaluating leasing operations tools in 2026, three names get raised in different buyer conversations: Leasey.AI, ShowMojo, and Funnel Leasing. They cover different parts of the funnel. Here is the honest comparison.</p>
+<p>ShowMojo launched its AI Virtual Agent beta in April 2026, signalling that even scheduling-first vendors recognise the leasing automation market is moving toward full-funnel AI (ShowMojo, 2026). If you are evaluating leasing operations tools in 2026, three names get raised in different buyer conversations: Leasey.AI, ShowMojo, and Funnel Leasing. They cover different parts of the funnel. 
+Here is the honest comparison.</p>
 
 
 <h2>What Each One Actually Is</h2>
@@ -12,13 +13,19 @@
 <p>Understanding the core design intent of each product is more important than comparing feature lists. These three tools were built for different primary use cases, and evaluating them as interchangeable leads to the wrong purchase.</p>
 
 
-<p><strong>ShowMojo</strong> is a tour scheduling and self-touring platform. Its core competency is self-tours via lockbox or smart-lock integration: prospects book a tour, get a one-time access code, tour the property unattended. Founded in 2012, ShowMojo has twelve years of product maturity on the self-tour mechanic specifically. Widely used in single-family rental (SFR) operations. According to ShowMojo (https://hello.showmojo.com/blog/property-management-takeaways-and-tips/), 70% of prospects search online for rental units outside normal business hours, which is precisely why the self-tour model exists: it lets prospects tour without an on-site agent.</p>
+<p><strong>ShowMojo</strong> is a tour scheduling and self-touring platform. Its core competency is self-tours via lockbox or smart-lock integration: prospects book a tour, get a one-time access code, tour the property unattended. Founded in 2012, ShowMojo has twelve years of product maturity on the self-tour mechanic specifically. Widely used in single-family rental (SFR) operations. 
+According to ShowMojo, 70% of prospects search online for rental units outside normal business hours, which is precisely why the self-tour model exists: it lets prospects tour without an on-site agent.</p>
 
 
 <p><strong>Funnel Leasing</strong> is a multifamily-focused CRM with marketing automation, lead nurture, and lead-to-lease attribution. Strong in pipeline reporting and marketing ROI tracking. Less about autonomous agent conversation, more about giving the marketing and leasing teams shared visibility into where leads come from and how they convert. Funnel is the tool you buy when your primary question is "where are our best leads actually coming from" rather than "how do we respond faster."</p>
+"Leasey has become a core part of how we run leasing. It keeps our leads organized, makes it easy to track every conversation, and streamlines appointment scheduling so nothing gets missed. Since using it, our response time and follow-through have improved, and our leasing workflow is more consistent and efficient."
+David Betesh, Rockwell Properties LLC
 
 
-<p><strong>Leasey.AI</strong> is an AI-native leasing automation platform covering the full funnel: listing syndication to 48+ marketplaces, AI lead qualification across SMS, email, and Facebook Marketplace, autonomous tour scheduling with showing confirmation workflows, tenant screening, application processing, and lease signing. Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone. Founded 2023, Vancouver-headquartered, mid-market multifamily focus.</p>
+
+
+<p><strong>Leasey.AI</strong> is an AI-native leasing automation platform covering the full funnel: listing syndication to 48+ marketplaces, AI lead qualification across SMS, email, and Facebook Marketplace, autonomous tour scheduling with showing confirmation workflows, tenant screening, application processing, and lease signing. Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS. 
+Founded 2023, Vancouver-headquartered, mid-market multifamily focus.</p>
 
 
 <h2>Where ShowMojo Wins</h2>
@@ -33,7 +40,7 @@
 <p><strong>Operators using lockbox-style smart locks (RemoteLock, August, Yale, and similar).</strong> ShowMojo's hardware integrations for one-time access codes and prospect identity verification at the door are deep and mature.</p>
 
 
-<p><strong>Self-touring as a marketing differentiator.</strong> The "tour any time" pitch to prospects works in markets where renters value schedule flexibility and the units are suitable for unattended access. According to the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026). Self-touring directly addresses that friction.</p>
+<p><strong>Self-touring as a marketing differentiator.</strong> The "tour any time" pitch to prospects works in markets where renters value schedule flexibility and the units are suitable for unattended access. According to the Rently 2026 Renter Touring Expectations Report, 47% of renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026). Self-touring directly addresses that friction.</p>
 
 
 <h2>Where Funnel Leasing Wins</h2>
@@ -108,7 +115,8 @@
 <h2>The Market Context</h2>
 
 
-<p>The Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) Industry Report found that 94% of property managers plan to adopt AI tools (Frontdesk AI, 2026). AI adoption rose from 21% to 34% year over year (AppFolio, 2025). US vacancy sat at 4.8% in Q1 2026 (CBRE, 2026), with roughly 323,000 units forecast for delivery (Yardi Matrix, 2026). In this environment, choosing the right leasing tool is a yield protection decision. The DOJ's settlement with RealPage in November 2025 and Greystar's $7 million settlement in August 2025 add a compliance dimension: fair housing liability for AI-driven decisions is now a regulatory reality (DOJ, 2025).</p>
+<p>The Frontdesk Research's 2026 State of Multifamily AI report Industry Report found that 94% of property managers plan to adopt AI tools (Frontdesk AI, 2026). AI adoption rose from 21% to 34% year over year (AppFolio, 2025). US vacancy sat at 4.8% in Q1 2026 (CBRE, 2026), with roughly 323,000 units forecast for delivery (Yardi Matrix, 2026). In this environment, choosing the right leasing tool is a yield protection decision. 
+The DOJ's settlement with RealPage in November 2025 and Greystar's $7 million settlement in August 2025 add a compliance dimension: fair housing liability for AI-driven decisions is now a regulatory reality (DOJ, 2025).</p>
 
 
 <p>Leasey.AI compresses vacancies 60% faster on average, reduces leasing team effort by approximately 70%, and automates around 90% of routine tasks, at approximately $1.50 to $5 per door per month or roughly $499 per month (Leasey.AI, 2026).</p>
@@ -138,10 +146,17 @@
 
 
 <h3>What is the best leasing automation stack for 2026?</h3>
-<p>The best stack depends on your portfolio type and primary bottleneck. For mid-market multifamily wanting full-funnel automation: Leasey.AI as the core platform. Add ShowMojo if self-touring is operationally important. Add Funnel if marketing attribution depth is a priority. The seven-question buyer test helps clarify which tools your portfolio actually needs.</p>
+<p>The best stack depends on your portfolio type and primary bottleneck. For mid-market multifamily wanting full-funnel automation: Leasey.AI as the core platform. Add ShowMojo if self-touring is operationally important. Add Funnel if marketing attribution depth is a priority. 
+The seven-question buyer test helps clarify which tools your portfolio actually needs.</p>
 
 
 <p>If you want a walkthrough against your specific portfolio, <a href="https://leasey.ai/get-started">schedule a call</a>.</p>
 
 
 <p><em>Written by Juan Leal, CEO and CPO at Leasey.AI.</em></p>
+
+
+Related reading
+Funnelleasing Vs Leasey Ai: https://www.leasey.ai/resources/funnelleasing-vs-leasey-ai/
+Future Leasing Automation Property Management: https://www.leasey.ai/resources/future-leasing-automation-property-management/
+6 Benefits Of Automated Property Management Unlock Efficiency By Streamlining Your Leasing Process: https://www.leasey.ai/blog/6-benefits-of-automated-property-management-unlock-efficiency-by-streamlining-your-leasing-process/

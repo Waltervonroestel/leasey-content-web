@@ -3,10 +3,11 @@
 Handle Facebook Marketplace volume without ever opening Facebook
 
 
-That sentence sounds small until you sit with what Facebook Marketplace actually is for rentals in 2026. According to the AppFolio 2025 Property Management Benchmark Report (https://naahq.org/flat-rents-ai-adoption-2025-appfolio-property-management-benchmark-report-reveals-key-trends), 85% of operators using AI tools have seen measurable improvements in lead-to-lease conversion, and marketing and leasing are the categories where AI adoption is moving fastest. Marketplace is one of the channels where that AI agent earns its keep.
+That sentence sounds small until you sit with what Facebook Marketplace is for rentals in 2026. According to the Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai), 85% of operators using AI tools have seen measurable improvements in lead-to-lease conversion, and marketing and leasing are the categories where AI adoption is moving fastest. Marketplace is one of the channels where that AI agent earns its keep.
 
 
-The problem has always been the same: it is a great channel and a terrible operations tool. Every step has to happen on Facebook itself. Responding to inquiries means actually opening Facebook. Marking a unit as rented means deleting the post manually.
+The problem has always been the same: it is a great channel and a terrible operations tool. Every step has to happen on Facebook itself. Responding to inquiries means actually opening Facebook. 
+Marking a unit as rented means deleting the post manually.
 
 
 Direct Facebook Marketplace syndication shipped on Leasey.AI this week. Post from inside Leasey, respond inside Leasey, mark rented inside Leasey. The unit on Marketplace updates in the background.

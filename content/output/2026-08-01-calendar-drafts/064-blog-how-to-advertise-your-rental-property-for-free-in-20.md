@@ -3,7 +3,9 @@
 <h1>How to advertise your rental property for free in 2026 (and which channels actually work)</h1>
 
 
-<p>According to the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of US renters chose a less-than-ideal rental simply because it was easier to find and tour. That single statistic rewrites the playbook on free rental advertising. If you are advertising a rental property in 2026 and want to avoid paid listing fees, the answer is not "post everywhere and hope." Some free channels are still the best in the market; others are noise. This is the honest list, sorted by how well they actually fill units.</p>
+<p>Two people booked a Wednesday tour. One shows up. The other stopped answering on Tuesday and you will never know why. 
+According to the Rently 2026 Renter Touring Expectations Report, 47% of US renters chose a less-than-ideal rental simply because it was easier to find and tour. That single statistic rewrites the playbook on free rental advertising. If you are advertising a rental property in 2026 and want to avoid paid listing fees, the answer is not "post everywhere and hope." 
+Some free channels are still the best in the market; others are noise. This is the honest list, sorted by how well they actually fill units.</p>
 
 
 <h2>The Two Free Channels That Still Move Units</h2>
@@ -15,16 +17,22 @@
 <h3>Facebook Marketplace</h3>
 
 
-<p>Facebook Marketplace is the single highest-intent free rental channel in US secondary markets (Austin, Phoenix, Tampa, Charlotte, Dallas, Atlanta) and across Canada. It is free, it has scale, and it rewards fast response. According to ShowMojo (https://hello.showmojo.com/blog/property-management-takeaways-and-tips/), 70% of prospects search online for rental units outside normal business hours. That means the Marketplace lead that arrives at 11pm and waits until 9am has usually already toured with someone else.</p>
+<p>Facebook Marketplace is the single highest-intent free rental channel in US secondary markets (Austin, Phoenix, Tampa, Charlotte, Dallas, Atlanta) and across Canada. It is free, it has scale, and it rewards fast response. According to ShowMojo, 70% of prospects search online for rental units outside normal business hours. That means the Marketplace lead that arrives at 11pm and waits until 9am has usually already toured with someone else.</p>
 
 
-<p>The catch is the workflow. Posting one listing by hand is fine; running 50 doors across a turnover season is not. You need three things working together: direct syndication so listings post automatically and come down the moment a unit is leased, after-hours response so you capture the evening and weekend leads, and auto-removal so you do not leave rented units cluttering the platform. Half the bad reputation Marketplace gets is from operators who leave rented units listed. Prospects call about ghost listings, the platform deprioritises you, and your brand suffers.</p>
+<p>The catch is the workflow. Posting one listing by hand is fine; running 50 doors across a turnover season is not. You need three things working together: direct syndication so listings post automatically and come down the moment a unit is leased, after-hours response so you capture the evening and weekend leads, and auto-removal so you do not leave rented units cluttering the platform. Half the bad reputation Marketplace gets is from operators who leave rented units listed. 
+"Leasey.AI has been extremely helpful in managing our rental units, from lead handling to scheduling showings. Their team went above and beyond during onboarding, and the dashboard is simple and intuitive. We're saving hours every week on showing coordination while also filtering out unqualified applicants. We highly recommend Leasey.AI for listing syndication and showing coordination."
+Justin Rogers, The Rockingham Group
+
+
+Prospects call about ghost listings, the platform deprioritises you, and your brand suffers.</p>
 
 
 <h3>Kijiji (Canada) and Craigslist (US)</h3>
 
 
-<p>Kijiji is a real channel in most Canadian markets, especially Toronto, Vancouver, Calgary, and Edmonton. Craigslist still moves units in older US markets and for off-market or owner-operator listings. Neither matches Marketplace volume, but both convert when the listing is honest and the response is fast. The key with both platforms is frequency of re-posting and speed of reply. A listing refreshed weekly with a sub-five-minute response rate outperforms a listing refreshed monthly with a next-day reply.</p>
+<p>Kijiji is a real channel in most Canadian markets, especially Toronto, Vancouver, Calgary, and Edmonton. Craigslist still moves units in older US markets and for off-market or owner-operator listings. Neither matches Marketplace volume, but both convert when the listing is honest and the response is fast. The key with both platforms is frequency of re-posting and speed of reply. 
+A listing refreshed weekly with a sub-five-minute response rate outperforms a listing refreshed monthly with a next-day reply.</p>
 
 
 <h2>The Free Channels That Mostly Do Not Work for Portfolios</h2>
@@ -57,7 +65,7 @@
 <p>Three things separate operators who fill units off free channels from operators who post and ghost. These are not optional extras; they are the operational minimum for free channels to convert at portfolio scale.</p>
 
 
-<p><strong>1. Direct syndication, not manual posting.</strong> Posting 50 listings across Marketplace and Kijiji by hand is a full-time job during turnover season. Automating syndication so that listings publish, update, and remove themselves when units lease is what turns free channels from a time sink into a real acquisition channel. According to the Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) Industry Report, 94% of property managers plan to adopt AI tools in their operations (Frontdesk AI, 2026). Syndication automation is one of the most immediate applications.</p>
+<p><strong>1. Direct syndication, not manual posting.</strong> Posting 50 listings across Marketplace and Kijiji by hand is a full-time job during turnover season. Automating syndication so that listings publish, update, and remove themselves when units lease is what turns free channels from a time sink into a real acquisition channel. According to the Frontdesk Research's 2026 State of Multifamily AI report Industry Report, 94% of property managers plan to adopt AI tools in their operations (Frontdesk AI, 2026). Syndication automation is one of the most immediate applications.</p>
 
 
 <p><strong>2. After-hours response.</strong> ShowMojo's data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025). If you are not responding to those leads within minutes, the prospect who messaged you at 9pm has already scheduled a tour with the operator who did. An AI agent that replies in seconds with your qualification questions is the cheapest way to capture evening and weekend demand. Research consistently shows that 60% or more of renters go with the first operator who responds meaningfully (industry benchmark, 2025).</p>
@@ -78,7 +86,7 @@
 <h2>How Leasey.AI Handles the Free Channels</h2>
 
 
-<p>Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone.</p>
+<p>Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS.</p>
 
 
 <p>Leasey.AI ships with direct syndication to 48+ marketplaces including Facebook Marketplace, Kijiji, and Realtor.ca (in Canada), plus an AI agent (Liza) that responds 24/7 with your own qualification questions, schedules tours, and removes the listing the moment a unit is leased. Liza achieves 100% response rate across all channels. The point is not "be cheaper than paid"; it is that the free channels are still the best, and the workflow around them is what most operators get wrong.</p>
@@ -119,3 +127,9 @@
 
 
 <p><em>Written by Juan Leal, CEO and CPO at Leasey.AI.</em></p>
+
+
+Related reading
+Advertise Rental Property For Free Strategies: https://www.leasey.ai/resources/advertise-rental-property-for-free-strategies/
+Changing Locks On Rental Property: https://www.leasey.ai/resources/changing-locks-on-rental-property/
+1031 Exchange Rental Investment Portfolios: https://www.leasey.ai/resources/1031-exchange-rental-investment-portfolios/

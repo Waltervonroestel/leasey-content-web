@@ -6,7 +6,6 @@ FOR IMMEDIATE RELEASE
 Leasey.AI joins Rental Beast network for cross-marketplace listing reach
 
 
-Leasey.AI joins Rental Beast network for cross-marketplace listing reach
 
 
 Leasey.AI, the AI-native leasing automation platform for property managers, today announced a partnership with Rental Beast, expanding cross-marketplace syndication for every operator on the Leasey.AI platform. With the integration live, a single publish on Leasey.AI now syndicates to dozens of rental marketplaces, including those that previously required manual posting such as Kijiji, Facebook Marketplace, and PadMapper.
@@ -18,13 +17,15 @@ The partnership addresses what has been a persistent operational pain for mid-ma
 "For years the trade-off was either clean MLS-based syndication with narrow reach, or broad reach through manual posting," said Juan Leal, CEO and CPO of Leasey.AI. "Most operators ended up doing both, and most of them had orphaned listings somewhere. Rental Beast lets us solve that with one workflow. One publish, edits sync back, no tabs."
 
 
-According to the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of renters have chosen or seriously considered a less-than-ideal rental simply because it was easier to find and tour. Reach across rental marketplaces directly affects whether a renter sees the listing in the first place. The Rental Beast integration enables that reach without the operational cost.
+According to the Rently 2026 Renter Touring Expectations Report, 47% of renters have chosen or seriously considered a less-than-ideal rental simply because it was easier to find and tour. Reach across rental marketplaces directly affects whether a renter sees the listing in the first place. The Rental Beast integration enables that reach without the operational cost.
 
 
+About Rental Beast
+[LO SUMINISTRA RENTAL BEAST. No redactar internamente ni sacarlo de una búsqueda web. Cada parte aprueba el párrafo que la describe: es práctica estándar de prensa y es lo único que evita publicar datos incorrectos sobre la empresa del socio. Pedirlo junto con su cita en la misma ronda de aprobación.]
 About Leasey.AI
 
 
-Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases in Canada and the United States. Leasey.AI is not a PMS. It is a front-office leasing automation and CRM layer that sits on top of existing PMS tools or runs standalone, automating listing syndication, lead pre-qualification, showing scheduling, tenant screening, and lease signing. The company is headquartered in Vancouver, with offices in New York and Toronto.
+Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. It works for operators with recurring leases in Canada and the United States. Leasey.AI is not a PMS. It handles the front of the funnel, on top of an existing PMS or on its own, automating listing syndication, lead pre-qualification, showing scheduling, tenant screening, and lease signing. The company is headquartered in Vancouver, with offices in New York and Toronto.
 
 
 Media contact

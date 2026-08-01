@@ -9,7 +9,7 @@ For a developer on a tight pro forma, the difference between filling a building 
 We learned that math working with TEREZ in Cochrane, AB. A 154-unit luxury rental in the Greystone community of Ocgrow Group, managed by SunPeak Property Management. Leasey.AI ran the funnel during their 60-day performance pilot.
 
 
-The result: lease-up at 60 days, attribution at 0.5 months of rent per lease (the contracted performance fee). Done in a Canadian market where, per CMHC's 2025 Rental Market Report (https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2025/canadas-vacancy-rate-rises-amid-historically-high-rental-construction), vacancy has been ticking up across most metros.
+The result: lease-up at 60 days, attribution at 0.5 months of rent per lease (the contracted performance fee). Done in a Canadian market where, per CMHC's 2025 Rental Market Report, vacancy has been ticking up across most metros.
 
 
 Lease-up speed is not a marketing number. It is a financial one.

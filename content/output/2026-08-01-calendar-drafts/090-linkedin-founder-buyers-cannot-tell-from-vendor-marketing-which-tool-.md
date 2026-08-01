@@ -9,4 +9,5 @@ Take Leasey vs ShowMojo, the comparison we get asked weekly. ShowMojo is a tour 
 They are not better-or-worse versions of each other. They own different parts of the funnel.
 
 
-The honest buyer move is to evaluate the problem first, then the tool. If self-tours via lockbox is your bottleneck, ShowMojo. If full-funnel AI automation is your bottleneck, Leasey. Some portfolios genuinely need both.
+The honest buyer move is to evaluate the problem first, then the tool. If self-tours via lockbox is your bottleneck, ShowMojo. If full-funnel AI automation is your bottleneck, Leasey. 
+Some portfolios genuinely need both.

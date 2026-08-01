@@ -38,7 +38,7 @@ Reglas del blog:
 - 400 a 800 palabras.
 - Hook en las primeras dos frases.
 - Un solo argumento por post.
-- CTA específico al final, orientado al KPI máximo: agendar un demo (CTA canónico en `context/products.md`). Si el tema no encaja con un demo directo, CTA secundario a un feature, al case study de Goldwynn o a un recurso de research. Nunca cerrar sin camino a Leasey.
+- CTA específico al final, orientado al KPI máximo: agendar un demo (CTA canónico en `context/products.md`). Si el tema no encaja con un demo directo, CTA secundario a un feature o a un recurso de research. **No al case study de Goldwynn: esa página devuelve 410 desde antes del 1 de agosto de 2026, junto con toda la sección de casos.** Cualquier CTA se resuelve contra el sitio vivo antes de escribirlo. Nunca cerrar sin camino a Leasey.
 - Al menos un enlace interno a una página de servicio o de herramienta (proponer la URL más relevante de `context/products.md`).
 - **Al menos un enlace externo, deep-link al recurso exacto.** No al home del dominio ni a una página de categoría. Un artículo sin enlaces externos no es un artículo limpio: es un artículo que nadie puede revisar.
 - **Toda cita de cliente, verbatim de `context/testimonials-tracker.md`.** Subcadena literal y contigua. Ya se cortó una cita de una clienta real en la coma para poner punto, lo que le atribuyó una frase que no dijo.

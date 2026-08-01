@@ -4,10 +4,14 @@
 <h1>Fair Housing and AI tenant screening in the US: what the DOJ vs RealPage settlement means for your stack</h1>
 
 
-<p>The US Department of Justice filed an antitrust action against RealPage in August 2024 over algorithmic rent pricing, expanded it in January 2025 to add Greystar and five other large landlords as co-defendants, and saw both Greystar (August 2025, $7 million) and RealPage (November 2025) settle. If you operate rentals in the United States and you use any automated tool in screening or pricing, those proceedings changed your risk calculus. Here is what actually matters for your stack.</p>
+<p>The US Department of Justice filed an antitrust action against RealPage in August 2024 over algorithmic rent pricing, expanded it in January 2025 to add Greystar and five other large landlords as co-defendants, and saw both Greystar (August 2025, $7 million) and RealPage (November 2025) settle. If you operate rentals in the United States and you use any automated tool in screening or pricing, those proceedings changed your risk calculus.</p>
 
 
-<p>Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone.</p>
+<p>Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS.</p>
+"Leasey has been a game changer for me. Centralized ad placement, custom questions so I get quality leads and icing on cake is, automated facebook messenger communication."
+Tarun Chopra, 847 Ray LLC
+
+
 
 
 <h2>What Happened in the DOJ vs RealPage Case?</h2>
@@ -25,7 +29,7 @@
 <p>The US Fair Housing Act prohibits discrimination on protected characteristics including race, colour, national origin, religion, sex, familial status, and disability. The risk with AI screening is not the screening itself; it is when a tool surfaces or acts on inferences it should not, in a way the operator cannot explain or audit.</p>
 
 
-<p>According to TransUnion's research on synthetic identity fraud (https://newsroom.transunion.com/transunion-research-highlights-power-of-public-data-in-uncovering-33b-synthetic-identity-threat/), US lenders faced $3.3 billion in synthetic identity fraud exposure for the year ending 2024.. US operators need verification and screening tools that are both fraud-effective and fair-housing-clean. Those two requirements are not in tension if the tool is built correctly.</p>
+<p>According to TransUnion's research on synthetic identity fraud, US lenders faced $3.3 billion in synthetic identity fraud exposure for the year ending 2024. US operators need verification and screening tools that are both fraud-effective and fair-housing-clean. Those two requirements are not in tension if the tool is built correctly.</p>
 
 
 <p>The defensible design is simple: the tool verifies facts and surfaces a binary result, and the operator makes the decision on information they had access to anyway. A tool that infers protected characteristics and nudges a decision is a liability. A tool that confirms identity or returns a clean credit and background result is not.</p>
@@ -58,7 +62,7 @@
 <p>This architecture matters because the DOJ vs RealPage proceedings established that automated tools which aggregate, infer, or act on information beyond what individual operators would independently access create antitrust and fair housing exposure. The fix is not to avoid automation; it is to build automation that gives operators factual outputs without inference or nudging.</p>
 
 
-<p>According to the AppFolio 2025 Property Management Benchmark Report (https://naahq.org/flat-rents-ai-adoption-2025-appfolio-property-management-benchmark-report-reveals-key-trends), AI adoption in property management jumped from 21% in 2024 to 34% in 2025. As adoption accelerates, the distinction between defensible and indefensible tool design will determine which platforms survive the next enforcement cycle and which create liability for their users.</p>
+<p>According to the AppFolio 2025 Property Management Benchmark Report, AI adoption in property management jumped from 21% in 2024 to 34% in 2025. As adoption accelerates, the distinction between defensible and indefensible tool design will determine which platforms survive the next enforcement cycle and which create liability for their users.</p>
 
 
 <h2>How Does Leasey.AI Approach Fair Housing Compliance?</h2>
@@ -79,7 +83,7 @@
 <p>The DOJ vs RealPage settlements are not the end of enforcement; they are the beginning of a pattern. US operators should audit every automated tool in their leasing and screening stack against the three questions above. Any tool that cannot clearly answer those questions is a candidate for replacement before the next enforcement action targets the screening layer rather than the pricing layer.</p>
 
 
-<p>According to a Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) survey, 94% of property management firms have adopted or are actively adopting AI tools. The speed of adoption means that many operators have added tools without evaluating their fair housing implications. The DOJ vs RealPage proceedings made that evaluation urgent.</p>
+<p>According to a Frontdesk Research's 2026 State of Multifamily AI report survey, 94% of property management firms have adopted or are actively adopting AI tools. The speed of adoption means that many operators have added tools without evaluating their fair housing implications. The DOJ vs RealPage proceedings made that evaluation urgent.</p>
 
 
 <h2>Frequently Asked Questions</h2>
@@ -114,3 +118,7 @@
 
 <p>Written by Juan Leal, CEO and CPO at Leasey.AI.</p>
 </body></html>
+Related reading
+Fair Housing Act Algorithmic Screening Constraints: https://www.leasey.ai/resources/research/fair-housing-act-algorithmic-screening-constraints/
+Tenant Screening: https://www.leasey.ai/tenant-screening/
+Background Check Costs Apartments Tenant Screening Pricing Fees: https://www.leasey.ai/resources/background-check-costs-apartments-tenant-screening-pricing-fees/

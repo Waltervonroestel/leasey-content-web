@@ -7,3 +7,6 @@ We embedded SingleKey directly into Leasey.AI this week. Application submits, sc
 
 
 Small change. Real time back.
+
+
+The coordinator used to copy the applicant into a second tool, wait, download a PDF and attach it by hand. That is four steps that no longer exist.

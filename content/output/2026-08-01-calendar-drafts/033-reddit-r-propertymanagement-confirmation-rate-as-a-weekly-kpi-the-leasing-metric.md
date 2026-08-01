@@ -6,7 +6,7 @@ Confirmation rate as a weekly KPI: the leasing metric most teams do not track an
 Most teams I talk to track booked tours, attended tours, and application rate. Very few track confirmation rate explicitly: of all booked tours, what percentage of prospects actively reconfirmed in the 24 hours before the showing.
 
 
-I have been tracking this across operations for a few years and the pattern is consistent: tours with active reconfirmation attend at meaningfully higher rates than tours that do not. The Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations) makes the broader point: 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to tour. Friction kills follow-through.
+I have been tracking this across operations for a few years and the pattern is consistent: tours with active reconfirmation attend at meaningfully higher rates than tours that do not. The Rently 2026 Renter Touring Expectations Report makes the broader point: 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to tour. Friction kills follow-through.
 
 
 Three things that move confirmation rate up:

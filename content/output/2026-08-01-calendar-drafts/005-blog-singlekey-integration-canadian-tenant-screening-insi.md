@@ -3,13 +3,15 @@
 SingleKey integration: Canadian tenant screening inside the leasing funnel, with the report on the same screen as the application
 
 
-CMHC's 2025 Rental Market Report (https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2025/canadas-vacancy-rate-rises-amid-historically-high-rental-construction) (published December 2025) puts the national vacancy rate at 3.1% in 2025, up from 2.2% in 2024, with Vancouver reaching 3.7 percent (its highest since 1988) and Calgary stable at 5 percent. In a market where demand is softening, every day an application sits unprocessed is a day your unit stays vacant and your pro forma bleeds.
+Every day a unit sits empty in Vancouver costs more than the rent it is not collecting. In a loosening market, that day is easier to lose and harder to win back. 
+CMHC's 2025 Rental Market Report (published December 2025) puts the national vacancy rate at 3.1% in 2025, up from 2.2% in 2024, with Vancouver reaching 3.7 percent (its highest since 1988) and Calgary stable at 5 percent. In a market where demand is softening, every day an application sits unprocessed is a day your unit stays vacant and your pro forma bleeds.
 
 
 That is why we shipped SingleKey natively inside Leasey.AI. No more tab switching, CSV exports, or reconciling screening PDFs against application files. The report now lives on the same screen as the application.
 
 
-This post explains what the integration does, why we chose SingleKey specifically for Canadian operators, and what changes in your day-to-day leasing workflow.
+
+
 
 
 
@@ -46,7 +48,7 @@ First, Canadian credit bureau coverage. SingleKey pulls from both Equifax and Tr
 Second, provincial ID verification. Canadian provinces issue their own identification documents, and SingleKey's verification engine handles provincial IDs natively rather than defaulting to US driver's licence formats. This matters for operators in Quebec (where the SAAQ licence differs from other provinces) and for applicants who hold provincial photo ID cards rather than passports.
 
 
-Third, landlord-contacted rental history. Instead of relying on tenant-submitted references (which are easy to fabricate), SingleKey contacts previous landlords directly. In a market where TransUnion's research on synthetic identity fraud (https://newsroom.transunion.com/transunion-research-highlights-power-of-public-data-in-uncovering-33b-synthetic-identity-threat/) puts synthetic identity fraud exposure at $3.3 billion for the year ending 2024, independent verification of rental history is not optional.
+Third, landlord-contacted rental history. Instead of relying on tenant-submitted references (which are easy to fabricate), SingleKey contacts previous landlords directly. In a market where TransUnion's research on synthetic identity fraud puts synthetic identity fraud exposure at $3.3 billion for the year ending 2024, independent verification of rental history is not optional.
 
 
 Leasey.AI's positioning pillar here is P4: Canadian-first. Most leasing tools treat Canada as a footnote to their US product. Leasey.AI is built for Canadian regulation, Canadian platforms (Kijiji, Realtor.ca), and Canadian screening from the ground up, with US coverage layered on top rather than the other way around.
@@ -80,7 +82,7 @@ Carlos Torrubia, Director of Marketing at Goldwynn Residences (Nassau), describe
 How does this fit into the broader Leasey.AI platform?
 
 
-Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. It is not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone.
+Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. It is not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS.
 
 
 The SingleKey integration is one piece of a stack that covers the full leasing funnel:
@@ -134,7 +136,7 @@ SingleKey verifies Canadian credit history (Equifax and TransUnion Canada), gove
 Is Leasey.AI a property management system?
 
 
-No. Leasey.AI is a front-office leasing automation and CRM layer that sits on top of existing PMS tools like Yardi, Buildium, or Rent Manager, or runs standalone. It handles the funnel from listing to signed lease; the PMS handles rent collection and active-lease management after the signature.
+No. Leasey.AI handles the front of the funnel and runs on top of Yardi, Buildium or Rent Manager, or on its own. It handles the funnel from listing to signed lease; the PMS handles rent collection and active-lease management after the signature.
 
 
 
@@ -151,3 +153,9 @@ Schedule a call with Leasey.AI to see how it works for your portfolio: leasey.ai
 
 
 Written by Juan Leal, CEO and CPO at Leasey.AI.
+
+
+Related reading
+Leasey Ai Singlekey Tenant Screening: https://www.leasey.ai/press/leasey-ai-singlekey-tenant-screening/
+Tenant Screening: https://www.leasey.ai/tenant-screening/
+Background Check Costs Apartments Tenant Screening Pricing Fees: https://www.leasey.ai/resources/background-check-costs-apartments-tenant-screening-pricing-fees/

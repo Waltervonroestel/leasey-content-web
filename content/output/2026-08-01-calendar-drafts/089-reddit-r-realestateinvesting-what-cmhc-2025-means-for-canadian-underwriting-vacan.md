@@ -1,6 +1,6 @@
 <!-- fila 89 | 2026-10-17 | Reddit (r/RealEstateInvesting) | P4 Canadian-first | Ph1 Unaware | doc 1AcaJJ-2vXdGGQZruB2y09obqWqR2spXhEQ-ppMz1cJI -->
 
-What CMHC's 2025 Rental Market Report (https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2025/canadas-vacancy-rate-rises-amid-historically-high-rental-construction) means for Canadian underwriting
+What CMHC's 2025 Rental Market Report means for Canadian underwriting
 
 
 The CMHC 2025 Rental Market Report (published December 2025) showed vacancy rising across all major Canadian metros for the first time in years:

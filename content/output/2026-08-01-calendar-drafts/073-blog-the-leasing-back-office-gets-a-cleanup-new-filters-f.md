@@ -3,7 +3,9 @@
 <h1>The leasing back-office gets a cleanup: new filters, faster invoice downloads, fewer reconciliation tickets</h1>
 
 
-<p>According to the AppFolio 2025 Property Management Benchmark Report (https://naahq.org/flat-rents-ai-adoption-2025-appfolio-property-management-benchmark-report-reveals-key-trends), AI adoption in property management rose from 21% to 34% year over year. Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) separately found that 85% of adopters report measurable lead-to-lease improvements. But while most of that adoption targets the front of the leasing funnel, the back-office reconciliation workflow quietly consumes three to six hours per portfolio per month for the mid-market property managers we work with. Most of that time is not analytical work. It is the friction of pulling transaction lists from one tool, exporting invoices from another, and stitching them together for the accounting team.</p>
+<p>A prospect enquires at 21:40 on a Sunday. If nobody answers until Monday morning, that lead has already toured somewhere else. That gap is why the tooling conversation changed this year. 
+According to the AppFolio 2025 Property Management Benchmark Report, AI adoption in property management rose from 21% to 34% year over year, and Frontdesk Research's 2026 State of Multifamily AI report found that 85% of adopters report measurable lead-to-lease improvements. But while most of that adoption targets the front of the leasing funnel, the back-office reconciliation workflow quietly consumes three to six hours per portfolio per month for the mid-market property managers we work with. 
+Most of that time is not analytical work. It is the friction of pulling transaction lists from one tool, exporting invoices from another, and stitching them together for the accounting team.</p>
 
 
 <p>The new Billing tab on Leasey.AI is the back-office release that closes that gap.</p>
@@ -42,16 +44,17 @@
 <h2>Why Back-Office Friction Affects Leasing Capacity</h2>
 
 
-<p>Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Most of our releases target the leasing funnel directly: syndication to 48+ marketplaces, AI lead qualification through Liza (our 24/7 AI agent), tour scheduling, screening, and signing.</p>
+<p>Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Most of our releases target the leasing funnel directly: syndication to 48+ marketplaces, AI lead qualification through Liza (our 24/7 AI agent), tour scheduling, screening, and signing.</p>
 
 
-<p>But back-office friction directly affects leasing capacity. A property manager spending six hours a month on reconciliation is spending six hours not on lease-up. In a market where Canada's rental vacancy reached 5.1% in Q1 2026 (Yardi, 2026) and US multifamily vacancy sat at 4.8% (CBRE, 2026), every operational hour recovered shows up in leasing throughput. The Frontdesk AI 2026 Industry Report found that 94% of property managers plan to adopt AI tools across their operations (Frontdesk AI, 2026). That adoption is not limited to the front office; back-office automation is part of the same operational thesis.</p>
+<p>But back-office friction directly affects leasing capacity. A property manager spending six hours a month on reconciliation is spending six hours not on lease-up. In a market where Canada's rental vacancy reached 5.1% in Q1 2026 (Yardi, 2026) and US multifamily vacancy sat at 4.8% (CBRE, 2026), every operational hour recovered shows up in leasing throughput. The Frontdesk AI 2026 Industry Report found that 94% of property managers plan to adopt AI tools across their operations (Frontdesk AI, 2026). 
+That adoption is not limited to the front office; back-office automation is part of the same operational thesis.</p>
 
 
 <h2>How This Fits the Leasey.AI Platform</h2>
 
 
-<p>Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone. The Billing tab extends that layer into the financial operations that sit between leasing and accounting, without attempting to replace your PMS or your accounting software.</p>
+<p>Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS. The Billing tab extends that layer into the financial operations that sit between leasing and accounting, without attempting to replace your PMS or your accounting software.</p>
 
 
 <p>The design principle is that Leasey.AI handles the leasing lifecycle end to end: from listing syndication across 48+ channels, through Liza's 24/7 lead qualification and tour scheduling, to screening, application processing, signing, and now billing reconciliation. Each step connects to the next. A transaction in the Billing tab links back to the application, the screening result, the tour, and the original lead. That chain of context is what makes the audit trail meaningful rather than just a log of edits.</p>
@@ -61,9 +64,13 @@
 
 
 <p>For a mid-market property manager running 200 to 500 doors, the Billing tab changes month-end from a multi-hour reconciliation project to a filtered review. The specific time savings depend on your current workflow, but the operators in our beta group reported cutting reconciliation time by 60% to 80%. That is three to five hours per month recovered, per portfolio.</p>
+"Leasey.AI has transformed our leasing process, creating significant efficiencies by automating prospect handling. It's user-friendly, intuitive and time-saving."
+Diego Mendoza, Century21
 
 
-<p>Across a year, that is 36 to 60 hours of property manager time redirected from administrative friction to leasing activity. In a market where the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations) found that 47% of renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026), those recovered hours translate directly into faster lease-up and fewer lost prospects.</p>
+
+
+<p>Across a year, that is 36 to 60 hours of property manager time redirected from administrative friction to leasing activity. In a market where the Rently 2026 Renter Touring Expectations Report found that 47% of renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026), those recovered hours translate directly into faster lease-up and fewer lost prospects.</p>
 
 
 <h2>What Comes Next</h2>
@@ -76,7 +83,7 @@
 
 
 <h3>Does Leasey.AI replace my property management software?</h3>
-<p>No. Leasey.AI is a front-office leasing automation and CRM layer that sits on top of existing PMS tools like Yardi, Buildium, and Rent Manager, or runs standalone. The Billing tab handles leasing-related financial operations between your leasing workflow and your accounting system, without replacing either your PMS or your accounting platform.</p>
+<p>No. Leasey.AI handles the front of the funnel and runs on top of Yardi, Buildium or Rent Manager, or on its own. The Billing tab handles leasing-related financial operations between your leasing workflow and your accounting system, without replacing either your PMS or your accounting platform.</p>
 
 
 <h3>What accounting integrations does the Billing tab support?</h3>
@@ -103,3 +110,9 @@
 
 
 <p><em>Written by Juan Leal, CEO and CPO at Leasey.AI.</em></p>
+
+
+Related reading
+Adding Leasing Automation Layer Yardi Realpage Faster Roi: https://www.leasey.ai/resources/adding-leasing-automation-layer-yardi-realpage-faster-roi/
+Future Leasing Automation Property Management: https://www.leasey.ai/resources/future-leasing-automation-property-management/
+6 Benefits Of Automated Property Management Unlock Efficiency By Streamlining Your Leasing Process: https://www.leasey.ai/blog/6-benefits-of-automated-property-management-unlock-efficiency-by-streamlining-your-leasing-process/

@@ -6,7 +6,7 @@ Confirmation rate is the leasing KPI most operators do not measure, and it is th
 If your tour confirmation rate is low, the slots that no-show are dead calendar capacity. No staffing change fixes that. Only workflow does.
 
 
-The Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations) puts the bigger picture clearly: 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to tour. Tour friction is one of the strongest predictors of lost leases.
+The Rently 2026 Renter Touring Expectations Report puts the bigger picture clearly: 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to tour. Tour friction is one of the strongest predictors of lost leases.
 
 
 Add confirmation rate to your weekly leasing review. Track it, work on it, measure it monthly.

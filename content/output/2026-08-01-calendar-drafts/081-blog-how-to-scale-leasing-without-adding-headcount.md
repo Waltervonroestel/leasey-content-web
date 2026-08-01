@@ -3,19 +3,22 @@
 <h1>How to scale leasing without adding headcount</h1>
 
 
-<p>According to the AppFolio 2025 Property Management Benchmark Report (https://naahq.org/flat-rents-ai-adoption-2025-appfolio-property-management-benchmark-report-reveals-key-trends), AI adoption in property management rose from 21% in 2024 to 34% in 2025, and 85% of AI adopters reported measurable lead-to-lease improvements (AppFolio, 2025). The driver is not novelty. It is the economics of absorbing leasing volume without scaling the team. Every growing property manager hits the same wall: leasing volume outruns the team. The default fix is to hire. The better fix, in most cases, is to remove the work that did not need a human in the first place.</p>
+<p>A prospect enquires at 21:40 on a Sunday. If nobody answers until Monday morning, that lead has already toured somewhere else. That gap is why the tooling conversation changed this year. 
+According to the AppFolio 2025 Property Management Benchmark Report, AI adoption in property management rose from 21% in 2024 to 34% in 2025, and 85% of AI adopters reported measurable lead-to-lease improvements (AppFolio, 2025). The driver is not novelty. It is the economics of absorbing leasing volume without scaling the team. 
+Every growing property manager hits the same wall: leasing volume outruns the team. The default fix is to hire. The better fix, in most cases, is to remove the work that did not need a human in the first place.</p>
 
 
 <h2>Why Hiring Is the Expensive Fix</h2>
 
 
-<p>Hiring for leasing volume is structurally inefficient because leasing volume is spiky. It peaks with the season (back-to-school), with portfolio growth, and with turnover cycles. If you staff for the peak, you carry idle payroll the rest of the year. If you staff for the average, you lose leads at the peak. Neither is efficient, and both get worse as you add buildings.</p>
+<p>Hiring for leasing volume is structurally inefficient because leasing volume is spiky. It peaks with the season (back-to-school), with portfolio growth, and with turnover cycles. If you staff for the peak, you carry idle payroll the rest of the year. If you staff for the average, you lose leads at the peak. 
+Neither is efficient, and both get worse as you add buildings.</p>
 
 
 <p>A leasing coordinator in a major Canadian or US metro costs $45,000 to $55,000 per year fully loaded. That coordinator handles roughly 100 to 150 active leads per month during peak season, spending the majority of their time on repetitive volume work: first responses, qualification questions, tour scheduling, and listing maintenance. In a market where Canada's vacancy reached 5.1% in Q1 2026 (Yardi, 2026) and US vacancy sat at 4.8% (CBRE, 2026), the volume of inbound inquiries is rising as prospects shop more units before committing. More inquiries per lease means more coordinator hours per signed lease.</p>
 
 
-<p>The Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) Industry Report found that 94% of property managers plan to adopt AI tools in their operations (Frontdesk AI, 2026). The adoption curve is driven by this exact staffing math: the cost of handling rising volume with headcount is unsustainable for mid-market operators.</p>
+<p>The Frontdesk Research's 2026 State of Multifamily AI report Industry Report found that 94% of property managers plan to adopt AI tools in their operations (Frontdesk AI, 2026). The adoption curve is driven by this exact staffing math: the cost of handling rising volume with headcount is unsustainable for mid-market operators.</p>
 
 
 <h2>What Actually Consumes Leasing Capacity</h2>
@@ -24,16 +27,21 @@
 <p>Before hiring, look at where coordinator hours actually go. Most leasing teams discover that the majority of their time is consumed by five categories of work, none of which require human judgment.</p>
 
 
-<p><strong>1. First response to inquiries.</strong> Especially repetitive qualification questions that follow the same script every time. "How many bedrooms? Do you have pets? When is your move-in date?" These questions need to be asked, but they do not need to be asked by a person.</p>
+<p><strong>1. First response to inquiries.</strong> Especially repetitive qualification questions that follow the same script every time. "How many bedrooms? Do you have pets? When is your move-in date?" 
+These questions need to be asked, but they do not need to be asked by a person.</p>
 
 
 <p><strong>2. After-hours leads that pile up overnight.</strong> ShowMojo's scheduling data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025). Research consistently indicates that 60% or more of renters go with the first operator who responds meaningfully. Every lead that sits unanswered from 6pm to 9am is a lead your competitor captured.</p>
 
 
-<p><strong>3. Tour scheduling, rescheduling, and no-show follow-up.</strong> According to the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026). Tour logistics are a conversion bottleneck, but the back-and-forth of scheduling is pure volume work.</p>
+<p><strong>3. Tour scheduling, rescheduling, and no-show follow-up.</strong> According to the Rently 2026 Renter Touring Expectations Report, 47% of renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026). Tour logistics are a conversion bottleneck, but the back-and-forth of scheduling is pure volume work.</p>
 
 
 <p><strong>4. Maintaining listings across multiple marketplaces.</strong> Posting, updating, and removing listings across Facebook Marketplace, Kijiji, Apartments.com, and other channels is a manual time sink that scales linearly with portfolio size. At 200 doors, it is a part-time job. At 500 doors, it is a full-time one.</p>
+"The most valuable impact of leasey.AI on my leasing workflow has been the ability to communicate with leads 24/7 with the help of AI. It has greatly streamlined the process through automation of lead communication, especially via Facebook Marketplace."
+Jaycy Pierre, AEDN
+
+
 
 
 <p><strong>5. Chasing conversations scattered across SMS, email, and Marketplace.</strong> A single prospect might text, email, and message on Facebook Marketplace, creating three disconnected threads that the coordinator has to reconcile manually. Cross-channel context collapse wastes coordinator time and creates a fragmented prospect experience.</p>
@@ -84,7 +92,7 @@
 <h2>How Leasey.AI Fits This Model</h2>
 
 
-<p>Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone.</p>
+<p>Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS.</p>
 
 
 <p>The platform handles the full volume layer: syndication to 48+ marketplaces, Liza's 24/7 AI lead qualification and tour scheduling, showing confirmation workflows, screening, application processing, and lease signing. Leasey.AI compresses vacancies 60% faster on average (Leasey.AI, 2026). Your team handles what it should: the qualified pipeline, the judgment calls, and the relationships.</p>
@@ -121,3 +129,9 @@
 
 
 <p><em>Written by Juan Leal, CEO and CPO at Leasey.AI.</em></p>
+
+
+Related reading
+Adding Leasing Automation Layer Yardi Realpage Faster Roi: https://www.leasey.ai/resources/adding-leasing-automation-layer-yardi-realpage-faster-roi/
+Scale Leasing Operations Without Hiring: https://www.leasey.ai/benefits/scale-leasing-operations-without-hiring/
+Future Leasing Automation Property Management: https://www.leasey.ai/resources/future-leasing-automation-property-management/

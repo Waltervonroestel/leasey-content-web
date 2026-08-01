@@ -3,7 +3,9 @@
 <h1>The real ROI of leasing automation: a days-on-market model property managers can actually run</h1>
 
 
-<p>CMHC's 2025 Rental Market Report (https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2025/canadas-vacancy-rate-rises-amid-historically-high-rental-construction) (published December 2025) showed vacancy rising across every major Canadian metro: Vancouver hit 3.7% (its highest since 1988), Edmonton rose to 3.8%, Toronto reached 3%, and Calgary sat at 5% (CMHC, 2025). By Q1 2026, national vacancy had climbed to 5.1% with Calgary at 7.3% and rent growth slowing to a four-year low of 2.7% (Yardi, 2026). Every leasing software vendor claims ROI. Few show you the math. This is the model property managers can actually run against their own portfolio, anchored in a real Canadian lease-up.</p>
+<p>Every day a unit sits empty in Vancouver costs more than the rent it is not collecting. In a loosening market, that day is easier to lose and harder to win back. 
+CMHC's 2025 Rental Market Report (published December 2025) showed vacancy rising across every major Canadian metro: Vancouver hit 3.7% (its highest since 1988), Edmonton rose to 3.8%, Toronto reached 3%, and Calgary sat at 5% (CMHC, 2025). By Q1 2026, national vacancy had climbed to 5.1% with Calgary at 7.3% and rent growth slowing to a four-year low of 2.7% (Yardi, 2026). Every leasing software vendor claims ROI. 
+Few show you the math. This is the model property managers can actually run against their own portfolio, anchored in a real Canadian lease-up.</p>
 
 
 <h2>ROI in Leasing Is a Days-on-Market Calculation</h2>
@@ -36,19 +38,24 @@
 <h3>1. Listing Reach</h3>
 
 
-<p>Per the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to find and tour (Rently, 2026). If a renter never sees your listing, reach is your ceiling. Syndication to 48+ marketplaces, including Facebook Marketplace, Kijiji, Apartments.com, Zillow, and Realtor.ca, ensures your units are visible where prospects are actually searching. Manual posting across these channels is operationally impractical at portfolio scale.</p>
+<p>Per the Rently 2026 Renter Touring Expectations Report, 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to find and tour (Rently, 2026). If a renter never sees your listing, reach is your ceiling. Syndication to 48+ marketplaces, including Facebook Marketplace, Kijiji, Apartments.com, Zillow, and Realtor.ca, ensures your units are visible where prospects are actually searching. Manual posting across these channels is operationally impractical at portfolio scale.</p>
 
 
 <h3>2. Response Speed</h3>
 
 
-<p>Per the AppFolio 2025 Property Management Benchmark Report (https://naahq.org/flat-rents-ai-adoption-2025-appfolio-property-management-benchmark-report-reveals-key-trends), AI adoption in property management rose from 21% to 34% year over year, and 85% of AI adopters reported measurable lead-to-lease conversion improvements (AppFolio, 2025). The first place that improvement shows is response speed at the hours your team is not staffed. ShowMojo's scheduling data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025). Research consistently indicates that 60% or more of renters go with the first operator who responds meaningfully. An AI agent responding in seconds at 11pm captures leads that a next-morning reply does not.</p>
+<p>Per the AppFolio 2025 Property Management Benchmark Report, AI adoption in property management rose from 21% to 34% year over year. Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) found 85% of AI adopters reporting measurable lead-to-lease conversion improvements (AppFolio, 2025). The first place that improvement shows is response speed at the hours your team is not staffed. ShowMojo's scheduling data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025). Research consistently indicates that 60% or more of renters go with the first operator who responds meaningfully. 
+An AI agent responding in seconds at 11pm captures leads that a next-morning reply does not.</p>
 
 
 <h3>3. Tour Follow-Through</h3>
 
 
 <p>Tours with an active reconfirmation workflow attend at meaningfully higher rates than tours without one. Removing no-shows is recovered tour capacity at zero added lead cost. The Rently report makes the case directly: tour friction is one of the most common reasons a renter chooses a different listing (Rently, 2026). Automated showing confirmation eliminates the manual follow-up that coordinators spend hours on each week.</p>
+"Leasey has made a big difference for our leasing process. Scheduling showings used to be a major challenge, especially with no-shows, but we're now seeing far more people actually attend our tours. In just a few months, we've already signed several leases through Leasey, and the platform has kept our team consistently busy. Overall, we've seen huge improvements on our leasing flow."
+Robyn Lockhart, Aquilini Investment Group
+
+
 
 
 <p>Stack the three and operations does what a rent cut was supposed to do, without giving up yield.</p>
@@ -78,7 +85,8 @@
 <p>We ran the leasing operations for the TEREZ lease-up in Cochrane, AB: 154 luxury units in the Greystone community of Ocgrow Group, managed by SunPeak Property Management. The pilot was a 60-day performance contract at 0.5 months of rent per lease, attributable to Leasey.AI.</p>
 
 
-<p>Full lease-up at 60 days, no price concessions, no marketing budget increase. The variable was operational: syndication reach, response speed, and tour follow-through. The three levers above. For a developer running a tight pro forma in a softening market, the gap between 60 days and 90 days on a building that size is a financial line, not a marketing one. The TEREZ result demonstrates that operational speed is not theoretical; it is a measurable, repeatable outcome when the three levers are automated.</p>
+<p>Full lease-up at 60 days, no price concessions, no marketing budget increase. The variable was operational: syndication reach, response speed, and tour follow-through. The three levers above. For a developer running a tight pro forma in a softening market, the gap between 60 days and 90 days on a building that size is a financial line, not a marketing one. 
+The TEREZ result demonstrates that operational speed is not theoretical; it is a measurable, repeatable outcome when the three levers are automated.</p>
 
 
 <h2>How to Run the ROI Model on Your Portfolio</h2>
@@ -99,13 +107,13 @@
 <p><strong>4. Compare that recovered yield against the cost of the automation layer.</strong> At approximately $1.50 to $5 per door per month, or roughly $499 per month (Leasey.AI, 2026), the recovered yield is typically several multiples of the platform cost for mid-market operators.</p>
 
 
-<p>For most mid-market operators, the recovered yield is several multiples of the platform cost, which is why leasing automation reads as yield protection rather than expense. The Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) Industry Report found that 94% of property managers plan to adopt AI tools (Frontdesk AI, 2026). The ROI math is the reason.</p>
+<p>For most mid-market operators, the recovered yield is several multiples of the platform cost, which is why leasing automation reads as yield protection rather than expense. The Frontdesk Research's 2026 State of Multifamily AI report Industry Report found that 94% of property managers plan to adopt AI tools (Frontdesk AI, 2026). The ROI math is the reason.</p>
 
 
 <h2>How Leasey.AI Delivers the ROI</h2>
 
 
-<p>Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone.</p>
+<p>Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS.</p>
 
 
 <p>The platform automates all three levers simultaneously: syndication to 48+ marketplaces, Liza (the 24/7 AI agent) for instant response and qualification across SMS, email, and Facebook Marketplace with 100% response rate, and showing confirmation workflows for tour follow-through. Leasey.AI compresses vacancies 60% faster on average, reduces leasing team effort by approximately 70%, and automates around 90% of routine leasing tasks (Leasey.AI, 2026).</p>
@@ -142,3 +150,9 @@
 
 
 <p><em>Written by Juan Leal, CEO and CPO at Leasey.AI.</em></p>
+
+
+Related reading
+Future Leasing Automation Property Management: https://www.leasey.ai/resources/future-leasing-automation-property-management/
+Benefits Leasing Automation Property Managers: https://www.leasey.ai/resources/benefits-leasing-automation-property-managers/
+Adding Leasing Automation Layer Yardi Realpage Faster Roi: https://www.leasey.ai/resources/adding-leasing-automation-layer-yardi-realpage-faster-roi/

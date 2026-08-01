@@ -15,7 +15,7 @@ Dashboard view surfaces tours where the prospect has not reconfirmed within 4 ho
 Why we built it
 
 
-Tour no-shows are one of the most persistent leasing inefficiencies. Tours that get an active reconfirmation workflow attend at meaningfully higher rates than tours that do not. The Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations) (May 2026) makes the broader point: 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to tour. Friction kills follow-through.
+Tour no-shows are one of the most persistent leasing inefficiencies. Tours that get an active reconfirmation workflow attend at meaningfully higher rates than tours that do not. The Rently 2026 Renter Touring Expectations Report (May 2026) makes the broader point: 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to tour. Friction kills follow-through.
 
 
 Limitations

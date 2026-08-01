@@ -3,7 +3,8 @@
 <h1>AI leasing agent vs chat widget vs scheduling tool: a buyer's framework for property managers</h1>
 
 
-<p>Julia Lambert of RET Ventures, quoted by Insights by Blueprint in March 2026 (https://insightsbyblueprint.com/2026/03/30/where-ai-is-falling-short-in-multifamily-leasing-and-where-its-headed-next/), estimates that roughly 80% of inbound prospect needs fall into scenarios AI can handle. It is an industry estimate, not a measurement (Propmodo, 2026). Yet the gap between what vendors call "AI leasing" and what that label actually delivers has never been wider. If you are evaluating leasing automation tools in 2026, you have probably been told a dozen times that the product you are looking at uses AI. That word, by itself, does almost nothing for your purchasing decision. This is a framework for what to actually evaluate.</p>
+<p>Julia Lambert of RET Ventures, quoted by Insights by Blueprint in March 2026, estimates that roughly 80% of inbound prospect needs fall into scenarios AI can handle. It is an industry estimate, not a measurement (Propmodo, 2026). Yet the gap between what vendors call "AI leasing" and what that label actually delivers has never been wider. 
+If you are evaluating leasing automation tools in 2026, you have probably been told a dozen times that the product you are looking at uses AI. That word, by itself, does almost nothing for your purchasing decision. This is a framework for what to actually evaluate.</p>
 
 
 <h2>The Three Categories That Get Called "AI Leasing"</h2>
@@ -15,19 +16,22 @@
 <h3>Category 1: Chat Widget</h3>
 
 
-<p>A bot embedded in the website or rental marketplace that answers questions from a static knowledge base. "What are the pet policies?" "Is parking included?" Useful for surfacing information that would otherwise require a phone call or email. Not an agent: it does not act, it does not schedule, it does not qualify. It retrieves answers from a preset database and presents them in a conversational interface. If the prospect asks something outside the knowledge base, the widget either fails silently or hands off to a human with no context.</p>
+<p>A bot embedded in the website or rental marketplace that answers questions from a static knowledge base. "What are the pet policies?" "Is parking included?" Useful for surfacing information that would otherwise require a phone call or email. 
+Not an agent: it does not act, it does not schedule, it does not qualify. It retrieves answers from a preset database and presents them in a conversational interface. If the prospect asks something outside the knowledge base, the widget either fails silently or hands off to a human with no context.</p>
 
 
 <h3>Category 2: Scheduling Tool with a Conversational Interface</h3>
 
 
-<p>A bot that walks a prospect through a linear flow: "What is your name? What are you looking for? When can you tour?" Then drops the result into a calendar. Useful for booking. Not an agent: it does not maintain context across channels, it does not qualify leads beyond hardcoded questions, and it does not handle the post-booking workflow (confirmations, reschedules, no-show follow-up). ShowMojo launched its AI Virtual Agent beta in April 2026 (ShowMojo, 2026), signalling that even scheduling-first vendors recognise the market is moving beyond this category.</p>
+<p>A bot that walks a prospect through a linear flow: "What is your name? What are you looking for? When can you tour?" Then drops the result into a calendar. 
+Useful for booking. Not an agent: it does not maintain context across channels, it does not qualify leads beyond hardcoded questions, and it does not handle the post-booking workflow (confirmations, reschedules, no-show follow-up). ShowMojo launched its AI Virtual Agent beta in April 2026 (ShowMojo, 2026), signalling that even scheduling-first vendors recognise the market is moving beyond this category.</p>
 
 
 <h3>Category 3: AI Leasing Agent</h3>
 
 
-<p>Handles lead qualification using operator-defined criteria. Maintains context across SMS, email, and marketplace messengers. Schedules tours, reschedules them, confirms them. Hands off to a human only when the conversation moves outside its scope or when the operator wants a touchpoint. This is the category Liza on Leasey.AI sits in. An agent in this category handles roughly 90% of routine leasing tasks autonomously (Leasey.AI, 2026), responding 24/7 with 100% response rate across all channels.</p>
+<p>Handles lead qualification using operator-defined criteria. Maintains context across SMS, email, and marketplace messengers. Schedules tours, reschedules them, confirms them. Hands off to a human only when the conversation moves outside its scope or when the operator wants a touchpoint. 
+This is the category Liza on Leasey.AI sits in. An agent in this category handles roughly 90% of routine leasing tasks autonomously (Leasey.AI, 2026), responding 24/7 with 100% response rate across all channels.</p>
 
 
 <h2>The Seven-Question Buyer Test</h2>
@@ -39,13 +43,15 @@
 <h3>1. Cross-Channel Context</h3>
 
 
-<p>"If a prospect texts us about a unit, then follows up on Facebook Marketplace, does your agent know it is the same prospect?" Category 1 and 2: usually no. The prospect starts a fresh conversation on each channel. Category 3: yes. The agent maintains a unified prospect profile across SMS, email, and marketplace messengers. In a market where ShowMojo data shows 70% of inquiries arrive after hours (ShowMojo, 2025), prospects often reach out on whichever channel is most convenient at the moment. An agent that loses context between channels loses conversions.</p>
+<p>"If a prospect texts us about a unit, then follows up on Facebook Marketplace, does your agent know it is the same prospect?" Category 1 and 2: usually no. The prospect starts a fresh conversation on each channel. Category 3: yes. The agent maintains a unified prospect profile across SMS, email, and marketplace messengers. 
+In a market where ShowMojo data shows 70% of inquiries arrive after hours (ShowMojo, 2025), prospects often reach out on whichever channel is most convenient at the moment. An agent that loses context between channels loses conversions.</p>
 
 
 <h3>2. Custom Qualification</h3>
 
 
-<p>"Can the agent ask my custom qualification questions and route based on the answers, or only the questions you preset?" Category 1 and 2: usually preset. The bot asks what the vendor programmed, not what your portfolio needs. Category 3: configurable per operator. Your qualification criteria, your routing rules, your deal-breakers.</p>
+<p>"Can the agent ask my custom qualification questions and route based on the answers, or only the questions you preset?" Category 1 and 2: usually preset. The bot asks what the vendor programmed, not what your portfolio needs. Category 3: configurable per operator. 
+Your qualification criteria, your routing rules, your deal-breakers.</p>
 
 
 <h3>3. Autonomous Scheduling</h3>
@@ -57,19 +63,26 @@
 <h3>4. Reschedule and Confirmation</h3>
 
 
-<p>"Does the agent handle the reschedule flow end to end, or does it route to a human?" Category 1 and 2: routes to a human, breaking the automation chain. Category 3: handles reschedules, sends confirmations, follows up on no-shows, all without human intervention. According to the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026). Tour friction is a conversion killer.</p>
+<p>"Does the agent handle the reschedule flow end to end, or does it route to a human?" Category 1 and 2: routes to a human, breaking the automation chain. Category 3: handles reschedules, sends confirmations, follows up on no-shows, all without human intervention. According to the Rently 2026 Renter Touring Expectations Report, 47% of renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026). 
+Tour friction is a conversion killer.</p>
 
 
 <h3>5. Latency</h3>
 
 
-<p>"What is the response latency at 11pm on a Saturday?" Category 1: instant but FAQ-only. If the question is not in the knowledge base, silence. Category 2: usually instant for the booking flow. Category 3: instant, contextual, and capable of handling the full qualification and scheduling conversation. Research indicates 60% or more of renters go with the first operator who responds meaningfully. Latency at off-hours is where the categories separate most visibly.</p>
+<p>"What is the response latency at 11pm on a Saturday?" Category 1: instant but FAQ-only. If the question is not in the knowledge base, silence. Category 2: usually instant for the booking flow. 
+Category 3: instant, contextual, and capable of handling the full qualification and scheduling conversation. Research indicates 60% or more of renters go with the first operator who responds meaningfully. Latency at off-hours is where the categories separate most visibly.</p>
 
 
 <h3>6. Fair Housing Liability</h3>
 
 
-<p>"If the agent makes a fair housing mistake, who is liable?" The answer should be clear: the vendor, with documented training data and an explicit escalation policy. Most Category 1 and 2 vendors push liability to the operator. The DOJ's settlement with RealPage in November 2025 and Greystar's $7 million settlement in August 2025 make this question non-optional (DOJ, 2025). The PropTech market's consolidation around AI claims means category clarity is no longer a marketing exercise. It is a compliance exercise.</p>
+<p>"If the agent makes a fair housing mistake, who is liable?" The answer should be clear: the vendor, with documented training data and an explicit escalation policy. Most Category 1 and 2 vendors push liability to the operator. The DOJ's settlement with RealPage in November 2025 and Greystar's $7 million settlement in August 2025 make this question non-optional (DOJ, 2025). 
+"The team was extremely responsive to our questions, training was thorough and covered all key areas, and setting up showings by property was quick and convenient. The platform itself is very intuitive and easy to use."
+Carlos Torrubia, Director of Marketing at Goldwynn Residences
+
+
+The PropTech market's consolidation around AI claims means category clarity is no longer a marketing exercise. It is a compliance exercise.</p>
 
 
 <h3>7. Human Handoff</h3>
@@ -84,7 +97,7 @@
 <h2>Why Category Clarity Matters More in 2026</h2>
 
 
-<p>The AI adoption curve in property management is accelerating. According to the AppFolio 2025 Benchmark Report, adoption rose from 21% to 34% year over year (AppFolio, 2025), and the Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) Industry Report found that 94% of property managers plan to adopt AI tools (Frontdesk AI, 2026). As adoption rises, so does the noise. More vendors claim "AI leasing" while delivering Category 1 or 2 products at Category 3 pricing.</p>
+<p>The AI adoption curve in property management is accelerating. According to the AppFolio 2025 Benchmark Report, adoption rose from 21% to 34% year over year (AppFolio, 2025), and the Frontdesk Research's 2026 State of Multifamily AI report Industry Report found that 94% of property managers plan to adopt AI tools (Frontdesk AI, 2026). As adoption rises, so does the noise. More vendors claim "AI leasing" while delivering Category 1 or 2 products at Category 3 pricing.</p>
 
 
 <p>The regulatory environment compounds the urgency. The DOJ's enforcement guidance on automated tools in housing, the same guidance behind the RealPage proceedings, means that operators are liable for the decisions their AI tools make. If your "AI leasing agent" is actually a chat widget with no fair housing training, no escalation policy, and no audit trail, you are carrying compliance risk you may not have priced into the purchase.</p>
@@ -96,7 +109,7 @@
 <h2>Where Leasey.AI Sits</h2>
 
 
-<p>Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone.</p>
+<p>Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS.</p>
 
 
 <p>Liza, the AI agent on Leasey.AI, is Category 3. She maintains cross-channel context across SMS, email, and Facebook Marketplace. She qualifies leads with your custom criteria, schedules and reschedules tours autonomously, confirms showings, and hands off to your team with full conversation context. The platform syndicates to 48+ marketplaces, achieves 100% response rate 24/7, and compresses vacancies 60% faster on average (Leasey.AI, 2026). Pricing runs at approximately $1.50 to $5 per door per month, or roughly $499 per month.</p>
@@ -133,3 +146,9 @@
 
 
 <p><em>Written by Juan Leal, CEO and CPO at Leasey.AI.</em></p>
+
+
+Related reading
+Centralized Leasing Impact Leasing Agents: https://www.leasey.ai/resources/centralized-leasing-impact-leasing-agents/
+Tenant Income Qualification Calculator: https://www.leasey.ai/resources/tools/tenant-income-qualification-calculator/
+Security Deposit Calculator Free Tool: https://www.leasey.ai/resources/tools/security-deposit-calculator-free-tool/

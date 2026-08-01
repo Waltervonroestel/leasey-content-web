@@ -6,7 +6,8 @@ Founder reflection: what shipped this quarter, and what it tells you about where
 What it tells me about where leasing is going:
 
 
-The big competitive moat in PropTech for the next 3 years is not features. It is integration. The operators winning are the ones whose tools talk to each other natively. The operators losing are the ones still paying tools to make their tools talk to each other.
+The big competitive moat in PropTech for the next 3 years is not features. It is integration. The operators winning are the ones whose tools talk to each other natively. 
+The operators losing are the ones still paying tools to make their tools talk to each other.
 
 
 Every one of our Q3 releases was a piece of that thesis. Native screening, native syndication, native messaging, native verification. No middleware tax.

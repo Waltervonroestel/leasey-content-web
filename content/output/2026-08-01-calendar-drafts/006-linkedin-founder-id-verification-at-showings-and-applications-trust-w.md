@@ -10,7 +10,7 @@ The two reasons we shipped this:
 
 
 1. Tour-related security incidents (showings to bad actors) are rising, particularly in luxury and student rentals.
-2. Application fraud is rising. According to TransUnion's research on synthetic identity fraud (https://newsroom.transunion.com/transunion-research-highlights-power-of-public-data-in-uncovering-33b-synthetic-identity-threat/), US lenders faced $3.3 billion in synthetic identity fraud exposure for the year ending 2024.. Rental applications fall in the same risk surface.
+2. Application fraud is rising. According to TransUnion's research on synthetic identity fraud, US lenders faced $3.3 billion in synthetic identity fraud exposure for the year ending 2024. Rental applications fall in the same risk surface.
 
 
 The product win is not the verification itself. It is that the verification adds 90 seconds, not 15 minutes. Trust without funnel friction.

@@ -3,7 +3,8 @@
 <h1>Lease-up in an oversupplied US market: why speed beats price in the Sun Belt</h1>
 
 
-<p>CBRE's Q1 2026 multifamily report (https://www.cbre.com/insights/figures/q1-2026-us-multifamily-figures) pegged US vacancy at 4.8%, down 20 basis points from Q4 2025 as absorption finally outpaced completions for the first time in three quarters (CBRE, 2026). But the relief is sharply uneven. Austin rents declined 7.2% year over year, Denver fell 4.8%, and Phoenix dropped 4.5% (Yardi Matrix, Q2 2025). If you are leasing up or filling vacancy in the Sun Belt, the instinct is to cut rent. The better lever is speed. Here is the math.</p>
+<p>CBRE's Q1 2026 multifamily report pegged US vacancy at 4.8%, down 20 basis points from Q4 2025 as absorption finally outpaced completions for the first time in three quarters (CBRE, 2026). But the relief is sharply uneven. Austin rents declined 7.2% year over year, Denver fell 4.8%, and Phoenix dropped 4.5% (Yardi Matrix, Q2 2025). 
+If you are leasing up or filling vacancy in the Sun Belt, the instinct is to cut rent. The better lever is speed. Here is the math.</p>
 
 
 <h2>The US Supply Picture in 2026</h2>
@@ -42,16 +43,21 @@
 <h3>1. Listing Reach</h3>
 
 
-<p>Per the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of US renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026). In an oversupplied market, if a renter does not see your listing, reach is your ceiling. Syndication to 48+ marketplaces, including Facebook Marketplace, Apartments.com, Zillow, and local channels, ensures your units are visible where prospects are actually searching. Manual posting across these channels is operationally impractical at scale; automated syndication is the baseline.</p>
+<p>Per the Rently 2026 Renter Touring Expectations Report, 47% of US renters chose a less-than-ideal rental because it was easier to find and tour (Rently, 2026). In an oversupplied market, if a renter does not see your listing, reach is your ceiling. Syndication to 48+ marketplaces, including Facebook Marketplace, Apartments.com, Zillow, and local channels, ensures your units are visible where prospects are actually searching. Manual posting across these channels is operationally impractical at scale; automated syndication is the baseline.</p>
+"Leasey.AI has been extremely helpful in managing our rental units, from lead handling to scheduling showings. Their team went above and beyond during onboarding, and the dashboard is simple and intuitive. We're saving hours every week on showing coordination while also filtering out unqualified applicants. We highly recommend Leasey.AI for listing syndication and showing coordination."
+Justin Rogers, The Rockingham Group
+
+
 
 
 <h3>2. Response Speed</h3>
 
 
-<p>ShowMojo's scheduling data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025). Research consistently indicates that 60% or more of renters go with the first operator who responds meaningfully. In an oversupplied market, the prospect who messages you at 9pm is also messaging three competitors. The operator who responds in seconds with qualification questions and tour availability captures that lead. The operator who responds the next morning does not.</p>
+<p>ShowMojo's scheduling data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025). Research consistently indicates that 60% or more of renters go with the first operator who responds meaningfully. In an oversupplied market, the prospect who messages you at 9pm is also messaging three competitors. The operator who responds in seconds with qualification questions and tour availability captures that lead. 
+The operator who responds the next morning does not.</p>
 
 
-<p>Per the AppFolio 2025 Benchmark Report, 85% of AI adopters report lead-to-lease improvements, and the first place it shows is response speed at hours your team is not staffed (AppFolio, 2025). AI adoption in property management rose from 21% in 2024 to 34% in 2025 (AppFolio, 2025), driven primarily by the economics of capturing after-hours demand.</p>
+<p>Per the Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai), 85% of AI adopters report lead-to-lease improvements, and the first place it shows is response speed at hours your team is not staffed (AppFolio, 2025). AI adoption in property management rose from 21% in 2024 to 34% in 2025 (AppFolio, 2025), driven primarily by the economics of capturing after-hours demand.</p>
 
 
 <h3>3. Tour Follow-Through</h3>
@@ -78,13 +84,13 @@
 <p>The supply wave is easing nationally but the local effects in Austin, Denver, Phoenix, Tampa, and Raleigh will persist through 2026 and into 2027. Operators who default to price concessions are giving up yield that compounds over the lease term. Operators who compress days-on-market through operations protect that yield while filling at the same speed.</p>
 
 
-<p>The Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) Industry Report found that 94% of property managers plan to adopt AI tools in their operations (Frontdesk AI, 2026). In oversupplied markets, that adoption is not optional; it is the operational difference between protecting yield and giving it away.</p>
+<p>The Frontdesk Research's 2026 State of Multifamily AI report Industry Report found that 94% of property managers plan to adopt AI tools in their operations (Frontdesk AI, 2026). In oversupplied markets, that adoption is not optional; it is the operational difference between protecting yield and giving it away.</p>
 
 
 <h2>How Leasey.AI Automates the Three Levers</h2>
 
 
-<p>Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone.</p>
+<p>Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS.</p>
 
 
 <p>Leasey.AI automates all three levers simultaneously: syndication to 48+ marketplaces for maximum listing reach, Liza (the 24/7 AI agent) for instant response and qualification across SMS, email, and Marketplace, and showing confirmation workflows for tour follow-through. The platform achieves 100% response rate, compresses vacancies 60% faster on average, and reduces leasing team effort by approximately 70%, with around 90% of routine tasks automated (Leasey.AI, 2026). Pricing runs at approximately $1.50 to $5 per door per month, or roughly $499 per month.</p>
@@ -121,3 +127,9 @@
 
 
 <p><em>Written by Juan Leal, CEO and CPO at Leasey.AI.</em></p>
+
+
+Related reading
+Frequently Asked Questions About Facebook Marketplace For Rental Properties: https://www.leasey.ai/blog/frequently-asked-questions-about-facebook-marketplace-for-rental-properties/
+Find Hidden Gems Facebook Marketplace Rentals: https://www.leasey.ai/resources/find-hidden-gems-facebook-marketplace-rentals/
+The Property Managers Complete Guide To Facebook Marketplace For Rental Properties: https://www.leasey.ai/blog/the-property-managers-complete-guide-to-facebook-marketplace-for-rental-properties/

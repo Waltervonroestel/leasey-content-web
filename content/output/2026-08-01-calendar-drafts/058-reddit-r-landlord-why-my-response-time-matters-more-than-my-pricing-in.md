@@ -6,7 +6,7 @@ Why my response time matters more than my pricing in 2026 (with some data and a 
 Used to be that pricing was my main lever. Lower rent, fill faster. The math has shifted.
 
 
-Per the AppFolio 2025 Property Management Benchmark Report (https://naahq.org/flat-rents-ai-adoption-2025-appfolio-property-management-benchmark-report-reveals-key-trends), AI adoption in property management jumped from 21% in 2024 to 34% in 2025. 85% of operators using AI reported measurable lead-to-lease improvements. The 67% of executives expecting early adopters to keep a durable advantage are probably right. For a small landlord the takeaway is simpler: the bar on response speed has just stepped up across the industry.
+Per the AppFolio 2025 Property Management Benchmark Report, AI adoption in property management jumped from 21% in 2024 to 34% in 2025. 85% of operators using AI reported measurable lead-to-lease improvements. The 67% of executives expecting early adopters to keep a durable advantage are probably right. For a small landlord the takeaway is simpler: the bar on response speed has just stepped up across the industry.
 
 
 What I changed in my workflow:

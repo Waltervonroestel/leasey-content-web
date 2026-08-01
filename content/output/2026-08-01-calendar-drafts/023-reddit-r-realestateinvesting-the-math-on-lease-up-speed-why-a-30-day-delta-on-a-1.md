@@ -12,10 +12,10 @@ For developers running tight first-year pro forma, the speed-vs-price trade-off 
 Three operational levers that actually move days-on-market:
 
 
-1. Listing reach. Per the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to find and tour. Presence on the channels renters actually use is non-negotiable.
+1. Listing reach. Per the Rently 2026 Renter Touring Expectations Report, 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to find and tour. Presence on the channels renters actually use is non-negotiable.
 
 
-2. Response speed. Per the AppFolio 2025 Property Management Benchmark Report (https://naahq.org/flat-rents-ai-adoption-2025-appfolio-property-management-benchmark-report-reveals-key-trends), AI adoption in PM jumped from 21% to 34% YoY, with 85% of AI adopters reporting lead-to-lease conversion improvements. The first place that shows is response speed at the hours your team is not staffed.
+2. Response speed. Per the AppFolio 2025 Property Management Benchmark Report, AI adoption in PM jumped from 21% to 34% YoY. Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) found 85% of AI adopters reporting lead-to-lease conversion improvements. The first place that shows is response speed at the hours your team is not staffed.
 
 
 3. Tour follow-through. Tours that get an active reconfirmation workflow attend at meaningfully higher rates than tours that do not.

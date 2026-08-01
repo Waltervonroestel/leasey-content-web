@@ -4,10 +4,12 @@
 <h1>ID verification for showings and applications: how AI helps you stay compliant without becoming the bottleneck</h1>
 
 
-<p>According to TransUnion's research on synthetic identity fraud (https://newsroom.transunion.com/transunion-research-highlights-power-of-public-data-in-uncovering-33b-synthetic-identity-threat/), US lenders faced $3.3 billion in synthetic identity fraud exposure for the year ending 2024.. Rental applications sit in the same risk surface. Bad actors submit fabricated identity documents and fake pay stubs, often for short-term sublet schemes or downstream scams using the verified rental address. The question for leasing teams is no longer whether to verify identity, but how to do it without adding friction that kills your conversion rate.</p>
+<p>The application looks clean. Name, employer, income, references, all consistent. The person does not exist. 
+According to TransUnion's research on synthetic identity fraud, US lenders faced $3.3 billion in synthetic identity fraud exposure for the year ending 2024. Rental applications sit in the same risk surface. Bad actors submit fabricated identity documents and fake pay stubs, often for short-term sublet schemes or downstream scams using the verified rental address. 
+The question for leasing teams is no longer whether to verify identity, but how to do it without adding friction that kills your conversion rate.</p>
 
 
-<p>Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone.</p>
+<p>Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS.</p>
 
 
 <h2>Why Does ID Verification Matter More in 2026?</h2>
@@ -19,7 +21,7 @@
 <p>Beyond fraud, security incidents at showings (assaults, theft, harassment) have risen, particularly in luxury units, student rentals, and any context where the prospect knows the unit will be empty during the tour. Most leasing teams have wanted to verify identity for years. The reason they did not was operational, not philosophical: traditional verification added 10 to 20 minutes to the funnel, and most prospects walked.</p>
 
 
-<p>According to Yardi's Q1 2026 national vacancy data (https://www.yardi.com/news/press-releases/rent-growth-hits-4-year-low-in-q1-2026/), Canadian vacancy reached 5.1%, while CBRE's Q1 2026 report (https://www.cbre.com/insights/figures/q1-2026-us-multifamily-figures) places US vacancy at 4.8%. In a market where every vacant day is carrying cost, adding friction to the funnel is a risk. But so is letting unverified prospects into empty units. The solution is verification that takes 90 seconds, not 20 minutes.</p>
+<p>According to Yardi's Q1 2026 national vacancy data, Canadian vacancy reached 5.1%, while CBRE's Q1 2026 report places US vacancy at 4.8%. In a market where every vacant day is carrying cost, adding friction to the funnel is a risk. But so is letting unverified prospects into empty units. The solution is verification that takes 90 seconds, not 20 minutes.</p>
 
 
 <h2>How Does ID Verification Work on Leasey.AI?</h2>
@@ -40,7 +42,8 @@
 <h2>How Does This Stay Fair-Housing-Compliant?</h2>
 
 
-<p>This is where the conversation gets nuanced, and where Leasey.AI has been deliberate. ID verification does not gate access based on the contents of the ID. It verifies that the person matches the ID. The system does not surface name, ethnicity, age, or address to the operator differently based on the document's contents. The operator sees one of three statuses: verified, not verified, or pending. That is it.</p>
+<p>This is where the conversation gets nuanced, and where Leasey.AI has been deliberate. ID verification does not gate access based on the contents of the ID. It verifies that the person matches the ID. The system does not surface name, ethnicity, age, or address to the operator differently based on the document's contents. 
+The operator sees one of three statuses: verified, not verified, or pending. That is it.</p>
 
 
 <p>That distinction matters under fair housing rules in both Canada and the United States. The DOJ's antitrust action against RealPage, filed in August 2024 and expanded in January 2025 to add Greystar and five other landlords as co-defendants, raised the bar on what automated tools in housing can do without creating legal exposure. Greystar settled in August 2025 for $7 million and agreed to stop using software that aligns rent prices using competitively sensitive information. RealPage settled in November 2025.</p>
@@ -52,7 +55,7 @@
 <h2>What About Physical Safety at Showings?</h2>
 
 
-<p>Physical safety is the less-discussed but equally important reason for ID verification at showings. When a prospect books a tour, the leasing agent or coordinator is meeting a stranger in an empty unit. According to ShowMojo (https://hello.showmojo.com/blog/property-management-takeaways-and-tips/), 70% of prospects search online for rental units outside normal business hours, which means many tours are booked for times when building staff may be minimal.</p>
+<p>Physical safety is the less-discussed but equally important reason for ID verification at showings. When a prospect books a tour, the leasing agent or coordinator is meeting a stranger in an empty unit. According to ShowMojo, 70% of prospects search online for rental units outside normal business hours, which means many tours are booked for times when building staff may be minimal.</p>
 
 
 <p>ID verification before the showing creates accountability. The prospect knows their identity is on file before they arrive. This does not eliminate risk, but it materially changes the calculus for bad actors who rely on anonymity. For luxury units, student rentals, and lease-up properties with high foot traffic from unknown prospects, this layer of accountability has become a baseline expectation from leasing staff.</p>
@@ -61,13 +64,18 @@
 <h2>How Does ID Verification Fit Into the Broader Leasing Workflow?</h2>
 
 
-<p>On Leasey.AI, ID verification is not a standalone add-on. It connects to the full leasing funnel. When Liza qualifies a lead and schedules a tour, the verification link is part of the confirmation flow. The prospect receives the SMS confirmation with the verification step embedded. If they complete verification, the tour is confirmed. If they do not, the tour surfaces as unverified in the Showing Confirmation Dashboard, and the coordinator decides how to proceed.</p>
+<p>On Leasey.AI, ID verification is not a standalone add-on. It connects to the full leasing funnel. When Liza qualifies a lead and schedules a tour, the verification link is part of the confirmation flow. The prospect receives the SMS confirmation with the verification step embedded. 
+"Leasey has made a big difference for our leasing process. Scheduling showings used to be a major challenge, especially with no-shows, but we're now seeing far more people actually attend our tours. In just a few months, we've already signed several leases through Leasey, and the platform has kept our team consistently busy. Overall, we've seen huge improvements on our leasing flow."
+Robyn Lockhart, Aquilini Investment Group
+
+
+If they complete verification, the tour is confirmed. If they do not, the tour surfaces as unverified in the Showing Confirmation Dashboard, and the coordinator decides how to proceed.</p>
 
 
 <p>At the application stage, the verified identity carries forward. The screening report (SingleKey for Canadian operators, standard US screening for US operators) references the same verified identity. This creates an auditable chain from first contact through lease signing, which matters for compliance and for dispute resolution.</p>
 
 
-<p>According to the AppFolio 2025 Property Management Benchmark Report (https://naahq.org/flat-rents-ai-adoption-2025-appfolio-property-management-benchmark-report-reveals-key-trends), AI adoption jumped from 21% to 34% year over year. As more operators adopt AI leasing tools, the verification layer becomes the differentiator between platforms that take trust seriously and those that optimise only for speed.</p>
+<p>According to the AppFolio 2025 Property Management Benchmark Report, AI adoption jumped from 21% to 34% year over year. As more operators adopt AI leasing tools, the verification layer becomes the differentiator between platforms that take trust seriously and those that optimise only for speed.</p>
 
 
 <h2>What Does ID Verification Cost?</h2>
@@ -108,3 +116,7 @@
 
 <p>Written by Juan Leal, CEO and CPO at Leasey.AI.</p>
 </body></html>
+Related reading
+Proof Income Requirements Rentals Documentation Verification Standards Accepted: https://www.leasey.ai/resources/proof-income-requirements-rentals-documentation-verification-standards-accepted/
+Biometric Id Verification Prevents Rental Application Fraud Cases: https://www.leasey.ai/resources/biometric-id-verification-prevents-rental-application-fraud-cases/
+Bank Statement Verification Tools Detect Tenant Application Fraud: https://www.leasey.ai/resources/bank-statement-verification-tools-detect-tenant-application-fraud/

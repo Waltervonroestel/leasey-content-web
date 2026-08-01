@@ -5,7 +5,7 @@ Usar SIEMPRE escenarios concretos. Estos son reales y verificados.
 ## Clientes y pilots
 (Nota: contactos internos de ventas removidos de este archivo por ser repo público. Si se necesitan, viven en el CRM, no aquí.)
 - **TEREZ** (Cochrane, AB): 154-unit luxury rental, parte de la comunidad Greystone de Ocgrow Group. **60-day performance pilot** (0.5 month's rent por lease atribuible a Leasey). Gestionado por SunPeak Property Management.
-- **Goldwynn Residences**: testimonial + case study público. Case study: /resources/testimonials/how-goldwynn-adopted-leasey-ai-for-multifamily-leasing-automation/
+- **Goldwynn Residences**: testimonial citable en `context/testimonials-tracker.md`. **El case study público ya no existe**: `/resources/testimonials/how-goldwynn-adopted-leasey-ai-for-multifamily-leasing-automation/` devuelve 410, comprobado el 1 de agosto de 2026. No enlazarlo desde ningún contenido. Toda la sección de casos está caída: `/case-studies/` da 410 y `/resources/testimonials/` da 404, y el contenido no está en WordPress ni siquiera en la papelera.
 - **Three Shores**: cliente activo de suscripción.
 - **Apartment Hub**: cliente activo de suscripción.
 

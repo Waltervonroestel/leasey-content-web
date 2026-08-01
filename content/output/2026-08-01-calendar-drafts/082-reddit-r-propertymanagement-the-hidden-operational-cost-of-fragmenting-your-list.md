@@ -21,7 +21,7 @@ That fragmentation has three cumulative operational costs that almost nobody tra
 3. Status drift. Rented units stay posted because no one remembers to delete them across every channel. Prospects call about units that are gone, the leasing team wastes time qualifying dead leads.
 
 
-Per the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of renters chose a less-than-ideal rental simply because it was easier to find. The reverse is also true: if your status drift is leaving stale listings up, renters are seeing the wrong information and competitors are getting the conversion.
+Per the Rently 2026 Renter Touring Expectations Report, 47% of renters chose a less-than-ideal rental simply because it was easier to find. The reverse is also true: if your status drift is leaving stale listings up, renters are seeing the wrong information and competitors are getting the conversion.
 
 
 Three questions that help size the operational debt:

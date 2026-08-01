@@ -3,7 +3,8 @@
 <h1>What to do when vacancy rises and rents fall: the lever you do control is leasing speed</h1>
 
 
-<p>Canada's rental vacancy rate reached 5.1% in Q1 2026 according to Yardi, with Calgary leading at 7.3% and national rent growth slowing to 2.7%, a four-year low (Yardi, 2026). CMHC's 2025 Rental Market Report (https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2025/canadas-vacancy-rate-rises-amid-historically-high-rental-construction) (published December 2025) showed Vancouver at 3.7% vacancy (its highest since 1988), Edmonton at 3.8%, Toronto at 3%, and Calgary at 5% (CMHC, 2025). Rent growth slowed nationally, driven by historically high rental completions outpacing demand. For a property manager, that is the macro you cannot change. So what do you actually do?</p>
+<p>Canada's rental vacancy rate reached 5.1% in Q1 2026 according to Yardi, with Calgary leading at 7.3% and national rent growth slowing to 2.7%, a four-year low (Yardi, 2026). CMHC's 2025 Rental Market Report (published December 2025) showed Vancouver at 3.7% vacancy (its highest since 1988), Edmonton at 3.8%, Toronto at 3%, and Calgary at 5% (CMHC, 2025). Rent growth slowed nationally, driven by historically high rental completions outpacing demand. 
+For a property manager, that is the macro you cannot change. So what do you actually do?</p>
 
 
 <h2>The Two Levers, and Which One You Control</h2>
@@ -45,13 +46,14 @@
 <h3>1. Listing Reach</h3>
 
 
-<p>According to the Rently 2026 Renter Touring Expectations Report (https://rently.com/blog/2026-renter-touring-expectations), 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to find and tour (Rently, 2026). Presence on the channels renters actually search is non-negotiable. In Canadian markets, that means Facebook Marketplace, Kijiji, and Realtor.ca at minimum, plus the broader ILS channels. Syndication to 48+ marketplaces ensures your units are visible where prospects are looking, not just where your team has time to post manually.</p>
+<p>According to the Rently 2026 Renter Touring Expectations Report, 47% of renters chose or seriously considered a less-than-ideal rental simply because it was easier to find and tour (Rently, 2026). Presence on the channels renters actually search is non-negotiable. In Canadian markets, that means Facebook Marketplace, Kijiji, and Realtor.ca at minimum, plus the broader ILS channels. Syndication to 48+ marketplaces ensures your units are visible where prospects are looking, not just where your team has time to post manually.</p>
 
 
 <h3>2. Response Speed</h3>
 
 
-<p>According to the AppFolio 2025 Property Management Benchmark Report (https://naahq.org/flat-rents-ai-adoption-2025-appfolio-property-management-benchmark-report-reveals-key-trends), AI adoption in property management rose from 21% in 2024 to 34% in 2025, and 85% of AI adopters reported measurable lead-to-lease conversion improvements (AppFolio, 2025). The first place that improvement shows is response speed at hours your team is not staffed. ShowMojo's scheduling data indicates 70% of rental inquiries arrive after business hours (ShowMojo, 2025), and research consistently shows that 60% or more of renters go with the first operator who responds meaningfully. In a rising-vacancy market, the prospect messaging you at 10pm is also messaging your competitors. Seconds matter.</p>
+<p>According to the AppFolio 2025 Property Management Benchmark Report, AI adoption in property management rose from 21% in 2024 to 34% in 2025. Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) found 85% of AI adopters reporting measurable lead-to-lease conversion improvements (AppFolio, 2025). The first place that improvement shows is response speed at hours your team is not staffed. ShowMojo's scheduling data indicates 70% of rental inquiries arrive after business hours (ShowMojo, 2025), and research consistently shows that 60% or more of renters go with the first operator who responds meaningfully. In a rising-vacancy market, the prospect messaging you at 10pm is also messaging your competitors. 
+Seconds matter.</p>
 
 
 <h3>3. Tour Follow-Through</h3>
@@ -70,21 +72,26 @@
 
 
 <p>We hit 60 days at full lease-up, no price concessions, no marketing budget increase. The variable was operational: syndication reach, response speed, and tour follow-through. The three levers above. For a developer running a tight pro forma in a softening Canadian market, the difference between hitting 60 days and 90 days on a building this size is a financial line, not a marketing one.</p>
+"Leasey has become a core part of how we run leasing. It keeps our leads organized, makes it easy to track every conversation, and streamlines appointment scheduling so nothing gets missed. Since using it, our response time and follow-through have improved, and our leasing workflow is more consistent and efficient."
+David Betesh, Rockwell Properties LLC
+
+
 
 
 <h2>The US Market Faces the Same Dynamic</h2>
 
 
-<p>The leasing speed thesis is not Canada-specific. US multifamily vacancy sat at 4.8% in Q1 2026 (CBRE, 2026), with Sun Belt markets absorbing the heaviest supply wave. Austin rents declined 7.2% year over year, Denver fell 4.8%, and Phoenix dropped 4.5% (Yardi Matrix, Q2 2025). Yardi Matrix forecasts roughly 323,000 US deliveries in 2026, down from the 477,000-unit annual average of 2023 to 2025 (Yardi Matrix, 2026). Supply is easing, but operators in oversupplied metros face the same choice: cut price or compress days-on-market through operations.</p>
+<p>The leasing speed thesis is not Canada-specific. US multifamily vacancy sat at 4.8% in Q1 2026 (CBRE, 2026), with Sun Belt markets absorbing the heaviest supply wave. Austin rents declined 7.2% year over year, Denver fell 4.8%, and Phoenix dropped 4.5% (Yardi Matrix, Q2 2025). Yardi Matrix forecasts roughly 323,000 US deliveries in 2026, down from the 477,000-unit annual average of 2023 to 2025 (Yardi Matrix, 2026). 
+Supply is easing, but operators in oversupplied metros face the same choice: cut price or compress days-on-market through operations.</p>
 
 
-<p>The Frontdesk Research's 2026 State of Multifamily AI report (https://www.myaifrontdesk.com/multifamily/reports/2026-state-of-multifamily-ai) Industry Report found that 94% of property managers plan to adopt AI tools in their operations (Frontdesk AI, 2026). In a rising-vacancy environment on both sides of the border, that adoption is driven by the economics of protecting yield through speed rather than giving it away through concessions.</p>
+<p>The Frontdesk Research's 2026 State of Multifamily AI report Industry Report found that 94% of property managers plan to adopt AI tools in their operations (Frontdesk AI, 2026). In a rising-vacancy environment on both sides of the border, that adoption is driven by the economics of protecting yield through speed rather than giving it away through concessions.</p>
 
 
 <h2>How Leasey.AI Automates the Three Levers</h2>
 
 
-<p>Leasey.AI is a cloud-based residential leasing automation platform that simplifies the end-to-end lease lifecycle for organisations that manage recurring leases. Not a PMS. Leasey is a front-office leasing automation and CRM layer that sits on top of existing PMS tools (Yardi, Buildium, Rent Manager) or runs standalone.</p>
+<p>Leasey.AI answers the enquiry, qualifies the lead, books the showing, runs the screening and gets the lease signed. Not a PMS. Leasey handles the front of the funnel. It runs on top of Yardi, Buildium or Rent Manager, or on its own if you have no PMS.</p>
 
 
 <p>The platform automates all three operational levers: syndication to 48+ marketplaces for listing reach, Liza (the 24/7 AI agent) for instant response and qualification across SMS, email, and Facebook Marketplace, and showing confirmation workflows for tour follow-through. Liza achieves 100% response rate at any hour. The platform compresses vacancies 60% faster on average and reduces leasing team effort by approximately 70%, with around 90% of routine tasks automated (Leasey.AI, 2026). Pricing runs at approximately $1.50 to $5 per door per month, or roughly $499 per month.</p>
@@ -121,3 +128,9 @@
 
 
 <p><em>Written by Juan Leal, CEO and CPO at Leasey.AI.</em></p>
+
+
+Related reading
+Elevator Access Control Apartment Buildings: https://www.leasey.ai/resources/elevator-access-control-apartment-buildings/
+Ai Powered Leasing Automation Cuts Vacancy Periods Significantly: https://www.leasey.ai/resources/ai-powered-leasing-automation-cuts-vacancy-periods-significantly/
+Door Contact Sensors Access Control: https://www.leasey.ai/resources/door-contact-sensors-access-control/

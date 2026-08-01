@@ -1,0 +1,195 @@
+{
+ "missing": [
+  "Focus keyword",
+  "Secondary keywords",
+  "Target URL o slug",
+  "Meta title",
+  "Meta description",
+  "Enlaces internos"
+ ],
+ "noDemand": [],
+ "collisions": [
+  {
+   "date": "2026-08-05",
+   "title": "SingleKey integration: Canadian tenant screening inside the leasing funnel, with the report on the same screen as the application",
+   "url": "/resources/report-rent-payments-credit-bureaus-tenant-history-building/",
+   "imp": 4705,
+   "pos": 68.8
+  },
+  {
+   "date": "2026-08-08",
+   "title": "Leasey.AI vs AppFolio: full PMS vs leasing layer, and when you actually need which",
+   "url": "/resources/appfolio-vs-leasey-ai/",
+   "imp": 414,
+   "pos": 14.7
+  },
+  {
+   "date": "2026-08-12",
+   "title": "Rental Beast partnership: how cross-marketplace syndication actually works, and why it matters for vacancy days",
+   "url": "/resources/facebook-marketplace-rental-automation-single-click-property-syndication/",
+   "imp": 440,
+   "pos": 11.1
+  },
+  {
+   "date": "2026-08-13",
+   "title": "The best property management software in 2026: 8 options actually worth comparing",
+   "url": "/blog/whats-the-best-property-management-software-4-popular-options/",
+   "imp": 78269,
+   "pos": 16
+  },
+  {
+   "date": "2026-08-15",
+   "title": "Leasey.AI vs Buildium: small-portfolio PMS vs AI leasing layer",
+   "url": "/resources/buildium-vs-leasey-ai/",
+   "imp": 391,
+   "pos": 10.9
+  },
+  {
+   "date": "2026-08-19",
+   "title": "Direct Facebook Marketplace syndication: stop posting one listing at a time, and stop missing leads at midnight",
+   "url": "/blog/frequently-asked-questions-about-facebook-marketplace-for-rental-properties/",
+   "imp": 19281,
+   "pos": 5.7
+  },
+  {
+   "date": "2026-08-20",
+   "title": "Facebook Marketplace for US property managers: the highest-intent channel in secondary markets",
+   "url": "/blog/frequently-asked-questions-about-facebook-marketplace-for-rental-properties/",
+   "imp": 19281,
+   "pos": 5.7
+  },
+  {
+   "date": "2026-08-22",
+   "title": "Leasey.AI vs Yardi: enterprise PMS breadth vs AI leasing depth (and the Canadian angle)",
+   "url": "/resources/yardi-voyager-vs-leasey-ai/",
+   "imp": 342,
+   "pos": 13.8
+  },
+  {
+   "date": "2026-08-26",
+   "title": "Direct Zillow syndication for property managers: how it works, where it fits in your funnel, and the syndication problem it solves",
+   "url": "/blog/the-property-managers-complete-guide-to-facebook-marketplace-for-rental-properties/",
+   "imp": 8937,
+   "pos": 10.9
+  },
+  {
+   "date": "2026-09-02",
+   "title": "Centralised messaging: every lead conversation in one thread, across SMS, email, and Facebook Marketplace",
+   "url": "/blog/frequently-asked-questions-about-facebook-marketplace-for-rental-properties/",
+   "imp": 19281,
+   "pos": 5.7
+  },
+  {
+   "date": "2026-09-05",
+   "title": "Leasey.AI vs EliseAI: AI leasing in enterprise vs mid-market multifamily",
+   "url": "/resources/apartment-companies-10000-doors-need-from-enterprise-leasing-software-vendors/",
+   "imp": 181,
+   "pos": 5
+  },
+  {
+   "date": "2026-09-09",
+   "title": "Showing confirmation dashboard: kill the no-show with one SMS link (and why the workflow matters more than the feature)",
+   "url": "/resources/insights/short-term-rentals-like-airbnb-can-sometimes-benefit-local-economies-more-than-long-term-leases/",
+   "imp": 1976,
+   "pos": 25.4
+  },
+  {
+   "date": "2026-09-10",
+   "title": "Lease.ai, leasey.ai, leaseai: what an AI leasing platform actually is in 2026",
+   "url": "/resources/simplifyem-vs-leasey-ai/",
+   "imp": 987,
+   "pos": 7
+  },
+  {
+   "date": "2026-09-12",
+   "title": "The benefits of leasing automation for property managers: reduce vacancy, scale without headcount, respond 24/7",
+   "url": "/blog/the-property-managers-complete-guide-to-facebook-marketplace-for-rental-properties/",
+   "imp": 8937,
+   "pos": 10.9
+  },
+  {
+   "date": "2026-09-17",
+   "title": "Fair Housing and AI tenant screening in the US: what the DOJ vs RealPage settlement means for your stack",
+   "url": "/tenant-screening/",
+   "imp": 1349,
+   "pos": 21
+  },
+  {
+   "date": "2026-09-19",
+   "title": "Centralised leasing explained: what it is, and when a mid-market operator actually needs it",
+   "url": "/resources/national-operators-100-locations-require-cloud-based-leasing-coordination-systems/",
+   "imp": 31,
+   "pos": 11.4
+  },
+  {
+   "date": "2026-09-23",
+   "title": "The rebuilt Calendar: split layout and overlap tooltips, because leasing teams live in the calendar",
+   "url": "/resources/key-roles-centralized-leasing-teams/",
+   "imp": 141,
+   "pos": 15.3
+  },
+  {
+   "date": "2026-09-24",
+   "title": "How to advertise your rental property for free in 2026 (and which channels actually work)",
+   "url": "/blog/the-property-managers-complete-guide-to-facebook-marketplace-for-rental-properties/",
+   "imp": 8937,
+   "pos": 10.9
+  },
+  {
+   "date": "2026-09-26",
+   "title": "How to choose property management software in 2026: a buyer framework for property managers",
+   "url": "/blog/whats-the-best-property-management-software-4-popular-options/",
+   "imp": 78269,
+   "pos": 16
+  },
+  {
+   "date": "2026-09-30",
+   "title": "The leasing back-office gets a cleanup: new filters, faster invoice downloads, fewer reconciliation tickets",
+   "url": "/resources/adding-leasing-automation-layer-yardi-realpage-faster-roi/",
+   "imp": 196,
+   "pos": 14.3
+  },
+  {
+   "date": "2026-10-07",
+   "title": "What to do when vacancy rises and rents fall: the lever you do control is leasing speed",
+   "url": "/resources/reducing-vacancy-rates-leasing-automation/",
+   "imp": 122,
+   "pos": 9.3
+  },
+  {
+   "date": "2026-10-10",
+   "title": "How to scale leasing without adding headcount",
+   "url": "/resources/adding-leasing-automation-layer-yardi-realpage-faster-roi/",
+   "imp": 196,
+   "pos": 14.3
+  },
+  {
+   "date": "2026-10-14",
+   "title": "AI leasing agent vs chat widget vs scheduling tool: a buyer's framework for property managers",
+   "url": "/blog/the-property-managers-complete-guide-to-facebook-marketplace-for-rental-properties/",
+   "imp": 8937,
+   "pos": 10.9
+  },
+  {
+   "date": "2026-10-15",
+   "title": "Leasey.AI vs EliseAI vs Knock CRM: AI leasing agents for multifamily, honestly compared",
+   "url": "/resources/funnelleasing-vs-leasey-ai/",
+   "imp": 100,
+   "pos": 14.2
+  },
+  {
+   "date": "2026-10-17",
+   "title": "The real ROI of leasing automation: a days-on-market model property managers can actually run",
+   "url": "/blog/the-property-managers-complete-guide-to-facebook-marketplace-for-rental-properties/",
+   "imp": 8937,
+   "pos": 10.9
+  },
+  {
+   "date": "2026-10-21",
+   "title": "Leasey.AI vs ShowMojo vs Funnel Leasing: where the leasing stack actually divides",
+   "url": "/resources/future-leasing-automation-property-management/",
+   "imp": 1182,
+   "pos": 24.3
+  }
+ ]
+}

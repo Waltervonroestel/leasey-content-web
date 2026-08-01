@@ -1,0 +1,68 @@
+
+==============================================
+GSC SNAPSHOT
+==============================================
+Site:    https://www.leasey.ai/
+Range:   2026-05-15 -> 2026-06-12 (28 days)
+Clicks:  705
+Impr.:   151.426
+CTR:     0.47%
+Avg pos: 16.5
+
+--- TOPIC CLUSTERS (by impressions) ---
+  Vacancy & market             impr=  1053  clicks=   6  queries=80
+  Leasing automation           impr=   256  clicks=   2  queries=6
+  Facebook Marketplace         impr=   154  clicks=   9  queries=16
+  Listing syndication          impr=    94  clicks=   1  queries=7
+  Canada                       impr=    32  clicks=   1  queries=1
+  Pricing & ROI                impr=    19  clicks=   2  queries=4
+  PMS integration              impr=     1  clicks=   0  queries=1
+  Tenant screening             impr=     1  clicks=   0  queries=1
+  (other queries)              impr=  7081  clicks= 238  queries=384
+
+--- STRIKING DISTANCE (pos 5-20, ≥20 impr) ---
+  pos 10.4  impr  755  ctr  0.8%   lease ai
+  pos  8.2  impr  405  ctr  7.4%   leasey
+  pos 10.6  impr  392  ctr  6.6%   what is the best property management software
+  pos 10.0  impr  376  ctr  0.0%   3x rent calculator
+  pos  8.4  impr  162  ctr  1.2%   leadsy ai
+  pos  7.7  impr  106  ctr  2.8%   leaseai
+  pos  8.4  impr   90  ctr  8.9%   leasy
+  pos 14.6  impr   73  ctr  1.4%   rental security deposit calculator
+  pos 11.7  impr   43  ctr  2.3%   property management software in usa
+  pos  6.3  impr   41  ctr  2.4%   alease ai
+  pos 12.6  impr   41  ctr  0.0%   3x the rent calculator
+  pos  8.4  impr   32  ctr  3.1%   lease transfer toronto
+  pos  6.9  impr   28  ctr  0.0%   "retta isännöinti oy" acquisition or acquires or acquired -site:crunchbase.com -site:pitchbook.com -site:mergr.com -site:tracxn.com -site:cbinsights.com -site:zoominfo.com -site:dealroom.co -site:mergermarket.com -site:capitaliq.com -site:northdata.com -site:grokipedia.com -site:owler.com -site:linkedin.com -site:facebook.com -site:instagram.com -site:twitter.com -site:x.com -site:reddit.com -site:youtube.com -site:tiktok.com -site:pinterest.com -site:quora.com -site:wikipedia.org -site:glassdoor.com -site:indeed.com -site:jooble.org -site:expertini.com -site:jobly.fi
+  pos  9.0  impr   26  ctr  3.8%   security deposit interest calculator nj
+  pos  7.0  impr   22  ctr  4.5%   facebook marketplace map
+
+--- UNTAPPED (≥50 impr, ≤1 click) ---
+  impr  376  pos 10.0  3x rent calculator
+  impr  214  pos 80.7  1031 exchange real estate
+  impr  174  pos 20.0  leasing ai
+  impr  123  pos 46.8  accounting software for property management
+  impr   95  pos 41.1  ai property management software
+  impr   94  pos 51.8  ach rent payments
+  impr   92  pos 79.3  1031 tax exchange
+  impr   73  pos 14.6  rental security deposit calculator
+  impr   73  pos 77.7  1031 exchange properties
+  impr   72  pos 22.2  rental syndication
+  impr   70  pos 26.4  automated leasing
+  impr   65  pos 80.0  1031 investment properties
+  impr   62  pos 85.1  1031 exchange investment property
+  impr   54  pos 85.3  1031 exchange reit
+  impr   53  pos 76.5  1031 exchange replacement property
+
+--- TOP PAGES ---
+  clicks  251  impr  5873  https://www.leasey.ai/
+  clicks   39  impr 30604  https://www.leasey.ai/blog/whats-the-best-property-management-software-4-popular-options/
+  clicks   25  impr  8138  https://www.leasey.ai/blog/frequently-asked-questions-about-facebook-marketplace-for-rental-properties/
+  clicks   23  impr  1867  https://www.leasey.ai/resources/toronto-lease-takeover-navigation/
+  clicks   22  impr  6302  https://www.leasey.ai/resources/find-hidden-gems-facebook-marketplace-rentals/
+  clicks   21  impr  3123  https://www.leasey.ai/resources/tools/security-deposit-calculator-free-tool/
+  clicks   12  impr  3210  https://www.leasey.ai/blog/the-property-managers-complete-guide-to-facebook-marketplace-for-rental-properties/
+  clicks   10  impr   560  https://www.leasey.ai/resources/news/bcfsa-strict-penalties-unlicensed-property-management/
+  clicks   10  impr  1166  https://www.leasey.ai/resources/proof-income-requirements-rentals-documentation-verification-standards-accepted/
+  clicks    7  impr  1339  https://www.leasey.ai/marketplace-syndication/
+

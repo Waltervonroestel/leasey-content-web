@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img"
+     aria-label="Five-step process flowchart for implementing centralised leasing: audit, define scope, choose technology, staff and train, measure and iterate">
+  <rect width="1200" height="800" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1200" height="6" fill="#00B4D8"/>
+
+  <text x="600" y="66" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#00B4D8" letter-spacing="1.6" text-anchor="middle">IMPLEMENTATION</text>
+  <text x="600" y="104" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="29" font-weight="700" fill="#172640" text-anchor="middle">Five steps to centralised leasing</text>
+
+  
+  <rect x="250" y="150" width="700" height="92" rx="12" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.5"/>
+  <rect x="250" y="150" width="6" height="92" rx="3" fill="#00B4D8"/>
+  <circle cx="300" cy="196" r="21" fill="#172640"/>
+  <text x="300" y="203" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="340" y="190" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#172640">Audit your current workflow</text>
+  <text x="340" y="216" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="14.5" fill="#5E6B7A">Map every touchpoint from first enquiry to signed lease.</text>
+  <path d="M 600 242 L 600 266 M 590 256 L 600 268 L 610 256"
+         fill="none" stroke="#00B4D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="250" y="268" width="700" height="92" rx="12" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.5"/>
+  <rect x="250" y="268" width="6" height="92" rx="3" fill="#00B4D8"/>
+  <circle cx="300" cy="314" r="21" fill="#172640"/>
+  <text x="300" y="321" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="340" y="308" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#172640">Define what centralises</text>
+  <text x="340" y="334" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="14.5" fill="#5E6B7A">Leasing moves to the hub. Resident experience stays on-site.</text>
+  <path d="M 600 360 L 600 384 M 590 374 L 600 386 L 610 374"
+         fill="none" stroke="#00B4D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="250" y="386" width="700" height="92" rx="12" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.5"/>
+  <rect x="250" y="386" width="6" height="92" rx="3" fill="#00B4D8"/>
+  <circle cx="300" cy="432" r="21" fill="#172640"/>
+  <text x="300" y="439" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <text x="340" y="426" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#172640">Choose your technology stack</text>
+  <text x="340" y="452" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="14.5" fill="#5E6B7A">Syndication, AI response, scheduling, screening, eSignature.</text>
+  <path d="M 600 478 L 600 502 M 590 492 L 600 504 L 610 492"
+         fill="none" stroke="#00B4D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="250" y="504" width="700" height="92" rx="12" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.5"/>
+  <rect x="250" y="504" width="6" height="92" rx="3" fill="#00B4D8"/>
+  <circle cx="300" cy="550" r="21" fill="#172640"/>
+  <text x="300" y="557" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+  <text x="340" y="544" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#172640">Staff the hub and train</text>
+  <text x="340" y="570" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="14.5" fill="#5E6B7A">A property playbook per community, so any agent can speak to any unit.</text>
+  <path d="M 600 596 L 600 620 M 590 610 L 600 622 L 610 610"
+         fill="none" stroke="#00B4D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="250" y="622" width="700" height="92" rx="12" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.5"/>
+  <rect x="250" y="622" width="6" height="92" rx="3" fill="#00B4D8"/>
+  <circle cx="300" cy="668" r="21" fill="#172640"/>
+  <text x="300" y="675" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <text x="340" y="662" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#172640">Measure and iterate</text>
+  <text x="340" y="688" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="14.5" fill="#5E6B7A">Track the KPIs, then adjust staffing, scripts, and tooling.</text>
+  
+
+  <path d="M 250 668 L 170 668 L 170 196 L 244 196"
+        fill="none" stroke="#5E6B7A" stroke-width="2" stroke-dasharray="6 5"/>
+  <path d="M 234 188 L 246 196 L 234 204" fill="none" stroke="#5E6B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="163" y="436" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#5E6B7A"
+        text-anchor="middle" transform="rotate(-90 163 436)">QUARTERLY REVIEW</text>
+</svg>

@@ -1,0 +1,641 @@
+{
+ "conFuente": [
+  {
+   "file": "010-blog-id-verification-for-showings-and-applications-how-ai.md",
+   "val": "70%",
+   "line": "<p>Physical safety is the less-discussed but equally important reason for ID verification at showings. When a prospect books a tour, the leasing agent or coordinator is meeting a stranger in an empty unit. According to ShowMojo's research, 70% of rental search happens after hours, which means many tours are booked for times when building staff may be minimal.</p>"
+  },
+  {
+   "file": "021-blog-leasey-ai-and-buildium-where-each-one-wins-and-what-.md",
+   "val": "70%",
+   "line": "Leasey.AI is the right call when your leasing volume has grown to the point where manual lead response and tour coordination is the bottleneck, not bookkeeping. According to ShowMojo, 70% of rental prospects search after business hours, and 60% or more go with the first responder. If your team is staffed nine to five and leads are arriving at 11pm, the gap between your response time and a competitor's is where you lose the lease."
+  },
+  {
+   "file": "025-blog-direct-facebook-marketplace-syndication-stop-posting.md",
+   "val": "70%",
+   "line": "Facebook Marketplace is increasingly where mid-market operators find their highest-intent leads, particularly in Canadian metros and US secondary markets such as Austin, Phoenix, Tampa, and Charlotte. The platform accepts enquiries at all hours and rewards fast response, which makes it uniquely punishing for teams that rely on manual workflows. According to ShowMojo, 70% of rental prospects search after business hours, and 60% or more go with the first responder. If your leasing team is staffed nine to five, the leads that find you at 11pm get a reply at 9am the next morning. By then, three competitors have responded faster, and the prospect has booked a tour with one of them."
+  },
+  {
+   "file": "025-blog-direct-facebook-marketplace-syndication-stop-posting.md",
+   "val": "67%",
+   "line": "Two things shift when operators move from manual Marketplace operations to direct syndication with an AI agent. Response time drops from \"next business morning\" to within minutes, at any hour. This matters because the AppFolio 2025 Benchmark Report found that 67% of surveyed executives expect early AI adopters to maintain a durable competitive advantage. Qualified lead share improves because the agent filters with your custom criteria before a lead lands in the pipeline, reducing coordinator time spent on unqualified enquiries."
+  },
+  {
+   "file": "025-blog-direct-facebook-marketplace-syndication-stop-posting.md",
+   "val": "60%",
+   "line": "Liza responds within minutes of receiving an enquiry, at any hour. According to ShowMojo, 60% or more of rental prospects go with the first responder, so speed directly affects whether you win or lose the lead."
+  },
+  {
+   "file": "028-blog-facebook-marketplace-for-us-property-managers-the-hi.md",
+   "val": "70%",
+   "line": "In the major coastal metros, Zillow and Apartments.com dominate renter search. In Sun Belt and secondary markets such as Austin, Phoenix, Tampa, Charlotte, Dallas, and Atlanta, Facebook Marketplace punches far above its weight as a rental channel. It is where a large share of working renters actually search, especially after hours. According to ShowMojo, 70% of rental prospects search after business hours, and 60% or more go with the first responder. For operators in oversupplied Sun Belt markets where every day on market costs real money, being slow or absent on Marketplace is not a minor gap. It is the gap."
+  },
+  {
+   "file": "028-blog-facebook-marketplace-for-us-property-managers-the-hi.md",
+   "val": "94%",
+   "line": "For a US operator in an oversupplied Sun Belt market, capturing the after-hours Marketplace lead is one of the cheapest ways to compress days-on-market. The Frontdesk Research 2026 survey found that 94% of residential operators have adopted or are actively piloting AI tools, with 77% reporting measurable operating expense reductions and 85% reporting conversion improvements."
+  },
+  {
+   "file": "030-reddit-r-realestatetechnology-after-three-years-of-looking-at-multifamily-lead-dat.md",
+   "val": "21%",
+   "line": "1. AI adoption is moving the floor. The AppFolio 2025 Property Management Benchmark Report shows AI adoption in PM jumped from 21% (2024) to 34% (2025), with marketing and leasing leading the curve. 85% of operators using AI report measurable lead-to-lease conversion gains. The channels where AI matters most are the high-volume, late-hour ones, and Marketplace sits at the top of that list for most mid-market portfolios."
+  },
+  {
+   "file": "032-blog-leasey-ai-and-yardi-where-each-one-wins-and-what-we-.md",
+   "val": "70%",
+   "line": "Leasey.AI is the right call when you run Yardi (or another enterprise PMS) and want to automate the leasing funnel on top of it without waiting for the suite's leasing roadmap. According to ShowMojo, 70% of rental prospects search after business hours, and 60% or more go with the first responder. If your bottleneck is leasing speed, including lead response, no-show recovery, syndication, and AI conversation, a focused leasing layer addresses that constraint faster than a broad PMS can."
+  },
+  {
+   "file": "032-blog-leasey-ai-and-yardi-where-each-one-wins-and-what-we-.md",
+   "val": "60%",
+   "line": "The most common reason is leasing speed. Yardi's leasing module is functional but not AI-native. Leasey.AI's AI agent, Liza, responds to every lead within minutes, 24/7, in three languages. According to ShowMojo, 60% or more of prospects go with the first responder."
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "323,000",
+   "line": "<p>The US multifamily market is absorbing the biggest supply wave in decades, with the Sun Belt bearing the heaviest impact. According to Yardi Matrix, 2026 deliveries are forecast at roughly 323,000 units, down about a third from the 477,000-unit annual average of 2023 to 2025 (Yardi Matrix, 2026). Supply is easing nationally, but in the metros that overbuilt, operators are still competing hard for every lease.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "2,200",
+   "line": "<p>Take a $2,200 per month unit. Compare two responses:</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "2,100",
+   "line": "<p>The operational lever is worth roughly $2,100 per unit per year over the price lever, at the same days-on-market. For a 200-unit portfolio, that is approximately $420,000 per year of recovered yield, achieved through operations rather than pricing. In a market where asking rents are forecast to grow only 2.3% in 2026 (Yardi Matrix, 2026), there is no margin to give away.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "85%",
+   "line": "<p>Per the AppFolio 2025 Benchmark Report, 85% of AI adopters report lead-to-lease improvements, and the first place it shows is response speed at hours your team is not staffed (AppFolio, 2025). AI adoption in property management rose from 21% in 2024 to 34% in 2025 (AppFolio, 2025), driven primarily by the economics of capturing after-hours demand.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "477,000",
+   "line": "<p>The US absorbed its largest supply wave in decades, with 2023 to 2025 averaging 477,000 annual deliveries. While 2026 deliveries are easing to roughly 323,000 units according to Yardi Matrix, Sun Belt markets that overbuilt (Austin, Denver, Phoenix) are still absorbing excess supply. National vacancy sat at 4.8% in Q1 2026 per CBRE.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "2,200",
+   "line": "<p>Rent cuts follow the lease for its entire term, making them a permanent yield reduction. Compressing days-on-market through operations (faster response, broader reach, better tour follow-through) fills units at the same speed without surrendering income. For a $2,200 unit, the operational lever is worth roughly $2,100 per year more than an 8% rent cut.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "8%",
+   "line": "<p>Leasing automation platforms like Leasey.AI run approximately $1.50 to $5 per door per month. An 8% rent concession on a $2,200 unit costs $2,112 per year in lost yield. For a 200-unit portfolio, the automation cost is a fraction of the $420,000 annual yield difference between operational speed and price concessions.</p>"
+  },
+  {
+   "file": "046-blog-leasey-ai-vs-eliseai-ai-leasing-in-enterprise-vs-mid.md",
+   "val": "80%",
+   "line": "<p>According to a Propmodo report from March 2026, approximately 80% of prospect needs can now be handled by AI in leasing workflows. The question is not whether to adopt AI leasing, but which tool matches your portfolio profile.</p>"
+  },
+  {
+   "file": "046-blog-leasey-ai-vs-eliseai-ai-leasing-in-enterprise-vs-mid.md",
+   "val": "94%",
+   "line": "<p>According to a Frontdesk AI 2026 survey, 94% of property management firms have adopted or are adopting AI tools. ShowMojo launched an AI Virtual Agent beta in April 2026, acknowledging the limits of script-based and call centre approaches. The market has moved past the question of whether to adopt AI leasing.</p>"
+  },
+  {
+   "file": "049-blog-showing-confirmation-dashboard-kill-the-no-show-with.md",
+   "val": "4.8%",
+   "line": "<p>According to CBRE's Q1 2026 US multifamily market report, US vacancy stands at 4.8%. In a market where every vacant day is carrying cost against debt service, losing a third of your booked tours to no-shows is a measurable financial leak. Every tour that does not happen is a day your vacant unit stays vacant, and a prospect who likely toured a competitor instead.</p>"
+  },
+  {
+   "file": "049-blog-showing-confirmation-dashboard-kill-the-no-show-with.md",
+   "val": "70%",
+   "line": "<p>Tours that are not actively reconfirmed turn into no-shows. Tours that get a friction-free reminder show up. According to ShowMojo's research, 70% of rental search happens after hours. Many of those after-hours bookings are made impulsively, and without a confirmation touchpoint, the prospect forgets or double-books by the time the tour date arrives.</p>"
+  },
+  {
+   "file": "050-blog-lease-ai-leasey-ai-leaseai-what-an-ai-leasing-platfo.md",
+   "val": "70%",
+   "line": "<p>Second, an AI agent that responds in seconds, at any hour, in the renter's channel of choice. Not a chatbot on the website; an agent that replies on the inbound channel (SMS, Facebook Messenger, email) with your custom qualification questions. According to ShowMojo's research, 70% of rental search happens after hours. An agent that only works 9 to 5 loses the majority of those leads.</p>"
+  },
+  {
+   "file": "050-blog-lease-ai-leasey-ai-leaseai-what-an-ai-leasing-platfo.md",
+   "val": "80%",
+   "line": "<p>Third, ask how it handles Facebook Marketplace and (if you have Canadian assets) Realtor.ca and Kijiji. Most US-built tools answer \"we syndicate to Zillow and Apartments.com.\" That is a 2018 answer. According to Propmodo's March 2026 reporting, approximately 80% of prospect needs can now be handled by AI in leasing workflows, but only if the AI is present on the channels where prospects actually search.</p>"
+  },
+  {
+   "file": "050-blog-lease-ai-leasey-ai-leaseai-what-an-ai-leasing-platfo.md",
+   "val": "80%",
+   "line": "<p>An AI leasing agent handles the repetitive front-of-funnel work: responding to enquiries, qualifying leads, scheduling tours, and sending confirmations. According to Propmodo (March 2026), approximately 80% of prospect needs can be handled by AI. The coordinator's role shifts to managing qualified pipeline and closing leases rather than chasing initial responses.</p>"
+  },
+  {
+   "file": "053-blog-the-benefits-of-leasing-automation-for-property-mana.md",
+   "val": "80%",
+   "line": "<p>According to a Propmodo report from March 2026, approximately 80% of prospect needs can now be handled by AI in leasing workflows. That percentage represents the operational capacity that an AI agent adds without a single hire. For a mid-market operator adding 50 to 100 doors per year, leasing automation means the leasing function scales with the portfolio rather than requiring a new coordinator for every new building.</p>"
+  },
+  {
+   "file": "053-blog-the-benefits-of-leasing-automation-for-property-mana.md",
+   "val": "70%",
+   "line": "<p>A disproportionate share of rental search happens after hours. According to ShowMojo's research, 70% of rental search activity occurs outside business hours. The channels that reward speed, Facebook Marketplace especially, punish a team that only works 9 to 5.</p>"
+  },
+  {
+   "file": "053-blog-the-benefits-of-leasing-automation-for-property-mana.md",
+   "val": "94%",
+   "line": "<p>According to a Frontdesk AI 2026 survey, 94% of property management firms have adopted or are actively adopting AI tools. The market consensus has shifted from \"should we adopt AI\" to \"which AI tool matches our operation.\" ShowMojo's launch of an AI Virtual Agent beta in April 2026 confirmed that even established showing platforms now recognise that script-based and call centre approaches cannot match the speed and consistency of AI agents.</p>"
+  },
+  {
+   "file": "053-blog-the-benefits-of-leasing-automation-for-property-mana.md",
+   "val": "1,000",
+   "line": "<p>Leasey.AI is priced at $1.50 to $5 per door per month, making it accessible for mid-market operators running 50 to 1,000 doors. Compare that to the cost of a single leasing coordinator's salary, benefits, and turnover costs, and the unit economics become clear.</p>"
+  },
+  {
+   "file": "053-blog-the-benefits-of-leasing-automation-for-property-mana.md",
+   "val": "1,500",
+   "line": "<p>The ROI calculation is straightforward: if leasing automation recovers even a few vacancy days per unit per year, the cost per door is paid back many times over. For a 200-unit portfolio where the average monthly rent is $1,500, each vacancy day costs roughly $50 per unit. Recovering five vacancy days across the portfolio in a quarter more than covers the annual cost of the platform.</p>"
+  },
+  {
+   "file": "053-blog-the-benefits-of-leasing-automation-for-property-mana.md",
+   "val": "80%",
+   "line": "<p>Leasing automation handles the repetitive front-of-funnel tasks that consume most of a coordinator's day. According to Propmodo (March 2026), approximately 80% of prospect needs can be handled by AI. The coordinator's role shifts from chasing responses to managing qualified pipeline and closing leases.</p>"
+  },
+  {
+   "file": "057-blog-centralised-leasing-explained-what-it-is-and-when-a-.md",
+   "val": "80%",
+   "line": "<p>According to a Propmodo report from March 2026, approximately 80% of prospect needs can now be handled by AI in leasing workflows. Centralised leasing is the operating model that makes that AI coverage consistent across an entire portfolio rather than building-by-building.</p>"
+  },
+  {
+   "file": "057-blog-centralised-leasing-explained-what-it-is-and-when-a-.md",
+   "val": "70%",
+   "line": "<p>If you run a single building with steady volume, per-property leasing is fine. The case for centralising strengthens with every building you add to the portfolio. According to ShowMojo's research, 70% of rental search happens after hours. For multi-building operators, providing consistent after-hours coverage across every property without per-building night staff is one of the clearest economic arguments for centralisation.</p>"
+  },
+  {
+   "file": "057-blog-centralised-leasing-explained-what-it-is-and-when-a-.md",
+   "val": "94%",
+   "line": "<p>According to a Frontdesk AI 2026 survey, 94% of property management firms have adopted or are actively adopting AI tools. Centralised leasing is the operating model that makes AI adoption portfolio-wide rather than property-by-property, which is where the scaling economics actually materialise.</p>"
+  },
+  {
+   "file": "057-blog-centralised-leasing-explained-what-it-is-and-when-a-.md",
+   "val": "80%",
+   "line": "<p>Centralised leasing shifts coordinators from chasing initial responses building by building to managing qualified pipeline across the portfolio. According to Propmodo (March 2026), approximately 80% of prospect needs can be handled by AI. The coordinator role becomes more strategic and less reactive.</p>"
+  },
+  {
+   "file": "061-blog-the-rebuilt-calendar-split-layout-and-overlap-toolti.md",
+   "val": "70%",
+   "line": "<p>This matters because rescheduling is one of the most common calendar operations. According to ShowMojo's research, 70% of rental search happens after hours. Many after-hours bookings need to be adjusted once the leasing team reviews the next day's schedule. Drag-to-reschedule turns what was a multi-step process (check availability, call or message the prospect, wait for confirmation, update the calendar) into a single drag action with automated follow-up.</p>"
+  },
+  {
+   "file": "064-blog-how-to-advertise-your-rental-property-for-free-in-20.md",
+   "val": "70%",
+   "line": "<p>Facebook Marketplace is the single highest-intent free rental channel in US secondary markets (Austin, Phoenix, Tampa, Charlotte, Dallas, Atlanta) and across Canada. It is free, it has scale, and it rewards fast response. According to ShowMojo's scheduling data, 70% of rental inquiries arrive after business hours (ShowMojo, 2025). That means the Marketplace lead that arrives at 11pm and waits until 9am has usually already toured with someone else.</p>"
+  },
+  {
+   "file": "064-blog-how-to-advertise-your-rental-property-for-free-in-20.md",
+   "val": "40%",
+   "line": "<p>For a 200-unit portfolio with 40% annual turnover, the difference between a $300 average cost-per-lease on paid channels and a near-zero cost on free channels with automated operations represents roughly $24,000 per year in recovered marketing budget. That figure alone often covers the cost of a leasing automation platform.</p>"
+  },
+  {
+   "file": "064-blog-how-to-advertise-your-rental-property-for-free-in-20.md",
+   "val": "47%",
+   "line": "<p>Focus on Facebook Marketplace and Kijiji (Canada) or Craigslist (US) as your primary free channels. Automate syndication so listings publish and remove themselves. Respond to inquiries within minutes, especially after hours. According to Rently's 2026 report, 47% of renters chose less-than-ideal rentals because they were easier to find and tour.</p>"
+  },
+  {
+   "file": "069-blog-how-to-choose-property-management-software-in-2026-a.md",
+   "val": "80%",
+   "line": "<p>If a vendor claims an \"AI leasing agent,\" test it with these seven questions before signing. According to Propmodo's 2026 industry analysis, approximately 80% of routine leasing needs can now be handled by AI (Propmodo, 2026). But the gap between a genuine AI agent and a glorified chat widget is enormous. These questions reveal the difference fast.</p>"
+  },
+  {
+   "file": "073-blog-the-leasing-back-office-gets-a-cleanup-new-filters-f.md",
+   "val": "5.1%",
+   "line": "<p>But back-office friction directly affects leasing capacity. A property manager spending six hours a month on reconciliation is spending six hours not on lease-up. In a market where Canada's rental vacancy reached 5.1% in Q1 2026 (Yardi, 2026) and US multifamily vacancy sat at 4.8% (CBRE, 2026), every operational hour recovered shows up in leasing throughput. The Frontdesk AI 2026 Industry Report found that 94% of property managers plan to adopt AI tools across their operations (Frontdesk AI, 2026). That adoption is not limited to the front office; back-office automation is part of the same operational thesis.</p>"
+  },
+  {
+   "file": "073-blog-the-leasing-back-office-gets-a-cleanup-new-filters-f.md",
+   "val": "60%",
+   "line": "<p>For a mid-market property manager running 200 to 500 doors, the Billing tab changes month-end from a multi-hour reconciliation project to a filtered review. The specific time savings depend on your current workflow, but the operators in our beta group reported cutting reconciliation time by 60% to 80%. That is three to five hours per month recovered, per portfolio.</p>"
+  },
+  {
+   "file": "073-blog-the-leasing-back-office-gets-a-cleanup-new-filters-f.md",
+   "val": "60%",
+   "line": "<p>Beta operators reported cutting reconciliation time by 60% to 80%, recovering three to five hours per portfolio per month. The exact savings depend on your current workflow complexity, portfolio size, and how much manual export-and-reformat work your team currently performs during month-end close.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "2,200",
+   "line": "<p>Take a $2,200 per month unit in a market where vacancy has just stepped up. Calgary at 7.3% and national vacancy at 5.1% (Yardi, 2026) mean average days-on-market is lengthening. The operator's instinct is to drop the rent. The math says hold the rent and shorten days-on-market instead.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "8%",
+   "line": "<p><strong>Option A: Lower the rent 8% to $2,024 to fill faster.</strong> Annualised income (one turn per year, twelve months of rent at the lower price): $24,288.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "2,100",
+   "line": "<p>The leasing speed lever is worth roughly $2,100 per unit per year over the price lever, at the same days-on-market. For a 200-unit portfolio, that is $420,000 per year of recovered yield, achieved through operations rather than pricing. These are illustrative numbers to show the shape of the calculation. Run them with your own rent and turnover data.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "2,100",
+   "line": "<p>Rent cuts follow the lease for its entire term, making them a permanent yield reduction. Compressing days-on-market through operational improvements (listing reach, response speed, tour follow-through) fills units at the same speed without surrendering income. The operational lever is worth roughly $2,100 per unit per year more than an 8% rent cut on a $2,200 unit.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "8%",
+   "line": "<p>A unit filled in 22 days at full rent produces more annualised income than a unit filled at a discounted rent, because vacancy days are a one-time cost while rent discounts recur monthly. For a 200-unit portfolio, the difference between operational speed and an 8% concession is approximately $420,000 per year in recovered yield.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "8%",
+   "line": "<p>Leasey.AI runs at approximately $1.50 to $5 per door per month, or roughly $499 per month for mid-market portfolios. Compare that against the yield difference: an 8% rent concession on a 200-unit portfolio costs roughly $420,000 per year. The automation platform typically pays for itself within the first month of operation.</p>"
+  },
+  {
+   "file": "079-linkedin-company-vacancy-is-up-across-every-canadian-metro-what-actua.md",
+   "val": "47%",
+   "line": "The mechanism is operational: response speed, listing reach across the channels renters actually use (per Rently 2026, 47% of renters have settled for a less-than-ideal rental simply because it was easier to tour), and tour follow-through."
+  },
+  {
+   "file": "081-blog-how-to-scale-leasing-without-adding-headcount.md",
+   "val": "45,000",
+   "line": "<p>A leasing coordinator in a major Canadian or US metro costs $45,000 to $55,000 per year fully loaded. That coordinator handles roughly 100 to 150 active leads per month during peak season, spending the majority of their time on repetitive volume work: first responses, qualification questions, tour scheduling, and listing maintenance. In a market where Canada's vacancy reached 5.1% in Q1 2026 (Yardi, 2026) and US vacancy sat at 4.8% (CBRE, 2026), the volume of inbound inquiries is rising as prospects shop more units before committing. More inquiries per lease means more coordinator hours per signed lease.</p>"
+  },
+  {
+   "file": "081-blog-how-to-scale-leasing-without-adding-headcount.md",
+   "val": "40%",
+   "line": "<p>For a 300-unit portfolio with 40% annual turnover, that is 120 lease events per year. At an average of 8 to 10 coordinator hours per lease (inquiry through signing), you are looking at 960 to 1,200 coordinator hours per year on the leasing cycle. Automating 70% of that effort recovers 670 to 840 hours per year, which is roughly equivalent to one-third of a full-time coordinator's capacity.</p>"
+  },
+  {
+   "file": "081-blog-how-to-scale-leasing-without-adding-headcount.md",
+   "val": "45,000",
+   "line": "<p>Leasey.AI runs at approximately $1.50 to $5 per door per month, or roughly $499 per month. A leasing coordinator costs $45,000 to $55,000 per year fully loaded. The platform recovers the equivalent of roughly one-third of a coordinator's capacity for a fraction of the salary cost, and scales without additional hires.</p>"
+  },
+  {
+   "file": "085-blog-ai-leasing-agent-vs-chat-widget-vs-scheduling-tool-a.md",
+   "val": "80%",
+   "line": "<p>According to Propmodo's 2026 industry analysis, approximately 80% of routine leasing needs can now be handled by AI (Propmodo, 2026). Yet the gap between what vendors call \"AI leasing\" and what that label actually delivers has never been wider. If you are evaluating leasing automation tools in 2026, you have probably been told a dozen times that the product you are looking at uses AI. That word, by itself, does almost nothing for your purchasing decision. This is a framework for what to actually evaluate.</p>"
+  },
+  {
+   "file": "086-blog-leasey-ai-vs-eliseai-vs-knock-crm-ai-leasing-agents-.md",
+   "val": "1,000",
+   "line": "<p><strong>Mid-market multifamily portfolios (roughly 50 to 1,000 doors).</strong> The platform is designed for operators who need enterprise-grade automation without enterprise-grade complexity or pricing. At approximately $1.50 to $5 per door per month, or roughly $499 per month (Leasey.AI, 2026), the economics work for mid-market operators.</p>"
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "2,200",
+   "line": "<p>Take a $2,200 per month unit in a Canadian market where days-on-market has lengthened due to rising vacancy. Compare two responses:</p>"
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "2,100",
+   "line": "<p>The operational lever is worth roughly $2,100 per unit per year over the price lever, at the same days-on-market. Across a 200-unit portfolio, that is roughly $420,000 per year of yield protected through operations rather than pricing.</p>"
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "2,200",
+   "line": "<p>ROI per unit equals vacancy days removed multiplied by daily rent multiplied by annual turnover events. Sum across the portfolio and compare against platform cost. A 10 to 18 day improvement on a $2,200 unit with one annual turn recovers roughly $700 to $1,300 per unit per year. Most mid-market operators see multiples of the platform cost in recovered yield.</p>"
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "2,200",
+   "line": "<p>In many cases, yes. Compressing days-on-market through operational speed (listing reach, response speed, tour follow-through) fills units at comparable speed to rent cuts without surrendering yield. For a $2,200 unit, the operational lever is worth roughly $2,100 per year more than an 8% rent concession. The math favours operations over price.</p>"
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "2,200",
+   "line": "<p>Most mid-market operators see payback within the first month of operation. At approximately $499 per month for the platform, a single unit that fills 15 days faster at $2,200 monthly rent recovers roughly $1,100 in vacancy cost. One faster lease typically covers more than two months of platform cost for the entire portfolio.</p>"
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "45,000",
+   "line": "<p>A leasing coordinator costs $45,000 to $55,000 per year fully loaded and handles 100 to 200 doors. Leasey.AI at $1.50 to $5 per door per month automates approximately 90% of routine tasks, effectively extending the same coordinator's capacity to 300 to 500 doors. The automation costs a fraction of a hire while delivering 24/7 coverage.</p>"
+  },
+  {
+   "file": "092-blog-leasey-ai-vs-showmojo-vs-funnel-leasing-where-the-le.md",
+   "val": "70%",
+   "line": "<p><strong>ShowMojo</strong> is a tour scheduling and self-touring platform. Its core competency is self-tours via lockbox or smart-lock integration: prospects book a tour, get a one-time access code, tour the property unattended. Founded in 2012, ShowMojo has twelve years of product maturity on the self-tour mechanic specifically. Widely used in single-family rental (SFR) operations. According to ShowMojo's own data, 70% of rental inquiries arrive after business hours (ShowMojo, 2025), which is precisely why the self-tour model exists: it lets prospects tour without an on-site agent.</p>"
+  },
+  {
+   "file": "092-blog-leasey-ai-vs-showmojo-vs-funnel-leasing-where-the-le.md",
+   "val": "60%",
+   "line": "<p>Leasey.AI compresses vacancies 60% faster on average, reduces leasing team effort by approximately 70%, and automates around 90% of routine tasks, at approximately $1.50 to $5 per door per month or roughly $499 per month (Leasey.AI, 2026).</p>"
+  }
+ ],
+ "sinFuente": [
+  {
+   "file": "014-reddit-r-leaseyai-leasey-ai-id-verification-biometric-check-for-showin.md",
+   "val": "0.2%",
+   "line": "* Liveness detection rejects 0.2% of legitimate users (poor lighting, low-quality phone camera). Manual retry available."
+  },
+  {
+   "file": "017-blog-the-best-property-management-software-in-2026-8-opti.md",
+   "val": "5,000",
+   "line": "Entrata is the enterprise multifamily incumbent with deep customisation, reliable analytics, and big-portfolio pricing. It serves institutional operators with internal IT teams who can manage the implementation complexity. Best for operators with 5,000+ units and dedicated technology staff, not for mid-market owner-operators."
+  },
+  {
+   "file": "024-linkedin-company-ai-adoption-in-property-management-jumped-from-21-to.md",
+   "val": "85%",
+   "line": "Of operators using AI, 85% report measurable improvements in lead-to-lease conversion. Marketing and leasing are the categories adopting fastest."
+  },
+  {
+   "file": "032-blog-leasey-ai-and-yardi-where-each-one-wins-and-what-we-.md",
+   "val": "4.8%",
+   "line": "Yardi is a full property management system with decades of market presence, built for breadth. It covers accounting, operations, investment management, senior living, commercial, and residential, with a leasing component inside a much larger suite (Voyager, Breeze, RentCafe, and more). Yardi is an enterprise platform that runs the entire operation and even operates its own listing network and industry media, including Yardi Matrix, which reported US multifamily vacancy at 4.8% in Q1 2026 (CBRE/Yardi Matrix). For enterprise operators standardising an entire portfolio on one system, Yardi is the established choice."
+  },
+  {
+   "file": "032-blog-leasey-ai-and-yardi-where-each-one-wins-and-what-we-.md",
+   "val": "5.1%",
+   "line": "This is where the comparison sharpens. Yardi is a global enterprise platform; its strength is breadth, not Canadian leasing specificity. Yardi reported Canadian vacancy at 5.1% in Q1 2026, with Calgary reaching 7.3% and annual rent growth slowing to 2.7%, a four-year low. In a softening Canadian market, leasing speed becomes the differentiator between filling a unit in two weeks and carrying vacancy for six."
+  },
+  {
+   "file": "033-reddit-r-propertymanagement-confirmation-rate-as-a-weekly-kpi-the-leasing-metric.md",
+   "val": "15%",
+   "line": "Operational impact I have seen: confirmation rate moves from low-70s to mid-80s after adopting this workflow. Translates to roughly 13 to 15% more attended tours from the same lead volume."
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "4.8%",
+   "line": "<p>CBRE's Q1 2026 multifamily report pegged US vacancy at 4.8%, down 20 basis points from Q4 2025 as absorption finally outpaced completions for the first time in three quarters (CBRE, 2026). But the relief is sharply uneven. Austin rents declined 7.2% year over year, Denver fell 4.8%, and Phoenix dropped 4.5% (Yardi Matrix, Q2 2025). If you are leasing up or filling vacancy in the Sun Belt, the instinct is to cut rent. The better lever is speed. Here is the math.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "39%",
+   "line": "<p>In Q2 2025, 39% of the 69 markets CBRE tracks had negative year-over-year rent growth, up from 26% a quarter earlier (CBRE, 2025). The biggest declines clustered in Sun Belt markets that absorbed the most new construction: Austin, Denver, Phoenix, Tampa, and Raleigh. For operators in these metros, the question is not whether the market is soft. It is what to do about it without surrendering yield.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "8%",
+   "line": "<p><strong>Option A: Lower the rent 8% to $2,024 to fill faster.</strong> Annualised income at the lower rent: roughly $24,288.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "2,200",
+   "line": "<p><strong>Option B: Hold the rent at $2,200 and compress days-on-market through operations.</strong> Annualised income: roughly $26,400.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "70%",
+   "line": "<p>ShowMojo's scheduling data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025). Research consistently indicates that 60% or more of renters go with the first operator who responds meaningfully. In an oversupplied market, the prospect who messages you at 9pm is also messaging three competitors. The operator who responds in seconds with qualification questions and tour availability captures that lead. The operator who responds the next morning does not.</p>"
+  },
+  {
+   "file": "035-blog-lease-up-in-an-oversupplied-us-market-why-speed-beat.md",
+   "val": "7.2%",
+   "line": "<p>Austin led year-over-year rent declines at negative 7.2%, followed by Denver at negative 4.8% and Phoenix at negative 4.5%, according to Yardi Matrix Q2 2025 data. Tampa and Raleigh also experienced significant softening. These Sun Belt markets absorbed the most new multifamily construction during the 2023 to 2025 supply wave.</p>"
+  },
+  {
+   "file": "038-reddit-r-realestateinvesting-underwriting-us-multifamily-in-the-oversupply-why-i-.md",
+   "val": "4.8%",
+   "line": "The data (CBRE / Yardi Matrix): US multifamily vacancy at 4.8% in Q1 2026. Sounds fine nationally, but it hides the Sun Belt. In Q2 2025, 39% of the 69 markets CBRE tracks had negative year-over-year rent growth. Austin (-7.2%), Denver (-4.8%), and Phoenix (-4.5%) led the declines. Supply is easing (2026 deliveries ~323K, down a third from the 2023-2025 average of 477K), but the metros that overbuilt are still grinding through it."
+  },
+  {
+   "file": "038-reddit-r-realestateinvesting-underwriting-us-multifamily-in-the-oversupply-why-i-.md",
+   "val": "2.3%",
+   "line": "3. Leasing automation reads as yield protection, not expense. Every day of compressed days-on-market is recovered revenue. In a market with 2.3% forecast rent growth, that math gets compelling fast."
+  },
+  {
+   "file": "046-blog-leasey-ai-vs-eliseai-ai-leasing-in-enterprise-vs-mid.md",
+   "val": "5,000",
+   "line": "<p>EliseAI excels at multi-week lead nurture sequences with voice escalation, handling complex enterprise workflows where the autoresponder integration with the PMS is the primary buying requirement. If you run a 5,000-door portfolio on AppFolio or Yardi Voyager and your biggest need is a voice and text autoresponder that plugs into your existing stack, EliseAI has built years of integrations for that use case.</p>"
+  },
+  {
+   "file": "046-blog-leasey-ai-vs-eliseai-ai-leasing-in-enterprise-vs-mid.md",
+   "val": "1,000",
+   "line": "<li>Mid-market multifamily operators running roughly 50 to 1,000 doors who need one platform covering the entire leasing workflow.</li>"
+  },
+  {
+   "file": "046-blog-leasey-ai-vs-eliseai-ai-leasing-in-enterprise-vs-mid.md",
+   "val": "3,000",
+   "line": "<p>This is not a common configuration, but it exists in operators managing both 3,000-door urban high-rises and scattered 100-door suburban portfolios under one umbrella.</p>"
+  },
+  {
+   "file": "046-blog-leasey-ai-vs-eliseai-ai-leasing-in-enterprise-vs-mid.md",
+   "val": "1,000",
+   "line": "<li>Is your portfolio 50 to 1,000 doors and growing, or 5,000+ doors and stable? Mid-market growth portfolios fit Leasey.AI's model. Enterprise-scale stable portfolios fit EliseAI's.</li>"
+  },
+  {
+   "file": "049-blog-showing-confirmation-dashboard-kill-the-no-show-with.md",
+   "val": "66%",
+   "line": "<p>For most mid-market property managers, the honest answer sits between 66% and 72%. Roughly a third of every leasing coordinator's calendar is dead time, occupied by prospects who booked but never confirmed and never showed up. That is not a staffing problem. It is a confirmation workflow problem.</p>"
+  },
+  {
+   "file": "053-blog-the-benefits-of-leasing-automation-for-property-mana.md",
+   "val": "25%",
+   "line": "<p>Leasing automation pays off specifically when the leasing funnel is where you are losing time or leases. The signals: your response time to new leads is measured in hours rather than minutes, your no-show rate exceeds 25%, your lead volume spikes seasonally and your team cannot absorb it, or you are growing and do not want to add a coordinator for every new property.</p>"
+  },
+  {
+   "file": "053-blog-the-benefits-of-leasing-automation-for-property-mana.md",
+   "val": "1,000",
+   "line": "<p>Yes. Leasing automation is particularly effective for portfolios of 50 to 1,000 doors where hiring dedicated leasing staff for every property is not economically viable. The AI agent provides enterprise-level response speed and consistency at mid-market pricing, scaling up during busy seasons without additional headcount.</p>"
+  },
+  {
+   "file": "064-blog-how-to-advertise-your-rental-property-for-free-in-20.md",
+   "val": "70%",
+   "line": "<p><strong>2. After-hours response.</strong> ShowMojo's data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025). If you are not responding to those leads within minutes, the prospect who messaged you at 9pm has already scheduled a tour with the operator who did. An AI agent that replies in seconds with your qualification questions is the cheapest way to capture evening and weekend demand. Research consistently shows that 60% or more of renters go with the first operator who responds meaningfully (industry benchmark, 2025).</p>"
+  },
+  {
+   "file": "064-blog-how-to-advertise-your-rental-property-for-free-in-20.md",
+   "val": "70%",
+   "line": "<p>The most common reason is slow response time, not poor listing quality. ShowMojo data shows 70% of inquiries arrive after hours. If you reply the next morning, the prospect has likely already engaged with a faster operator. Automated after-hours response and fresh, regularly updated listings solve most reach and conversion problems on free platforms.</p>"
+  },
+  {
+   "file": "064-blog-how-to-advertise-your-rental-property-for-free-in-20.md",
+   "val": "60%",
+   "line": "<p>Speed-to-fill depends on three operational levers: listing reach across high-intent channels, sub-minute response time to inquiries regardless of hour, and tour confirmation workflows that reduce no-shows. Leasey.AI compresses vacancies 60% faster on average by automating all three levers simultaneously across the leasing funnel.</p>"
+  },
+  {
+   "file": "069-blog-how-to-choose-property-management-software-in-2026-a.md",
+   "val": "70%",
+   "line": "<p><strong>Losing leads to slow response, especially after hours?</strong> You need AI lead automation (leasing layer). ShowMojo's scheduling data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025), and research consistently indicates that 60% or more of renters go with the first operator who responds meaningfully.</p>"
+  },
+  {
+   "file": "069-blog-how-to-choose-property-management-software-in-2026-a.md",
+   "val": "5.1%",
+   "line": "<p>If you operate in Canada, most US-built tools are weaker on Canadian screening (credit bureaus, provincial IDs), Canadian marketplaces (Realtor.ca, Kijiji), and Canadian compliance (RTA/RTB). Canada's rental vacancy rate reached 5.1% in Q1 2026 (Yardi, 2026), with Calgary at 7.3% and national rent growth at a four-year low of 2.7% (Yardi, 2026). In a softening market, a Canadian-first tool can do more for days-on-market than a larger US-centric platform that lacks native integrations for your market.</p>"
+  },
+  {
+   "file": "069-blog-how-to-choose-property-management-software-in-2026-a.md",
+   "val": "4.8%",
+   "line": "<p>Similarly, if you operate in US Sun Belt markets, be aware that vacancy dynamics vary sharply by metro. US multifamily vacancy sat at 4.8% in Q1 2026 (CBRE, 2026), but Austin saw rents decline 7.2%, Denver 4.8%, and Phoenix 4.5% year over year (Yardi Matrix, Q2 2025). Your software choice should reflect where your specific operational friction sits, not a national average.</p>"
+  },
+  {
+   "file": "069-blog-how-to-choose-property-management-software-in-2026-a.md",
+   "val": "60%",
+   "line": "<p>For context, Leasey.AI compresses vacancies 60% faster on average and reduces leasing team effort by approximately 70%, with around 90% of routine tasks automated (Leasey.AI, 2026). Run the ROI calculation against your own days-on-market and team hours before comparing sticker prices.</p>"
+  },
+  {
+   "file": "069-blog-how-to-choose-property-management-software-in-2026-a.md",
+   "val": "21%",
+   "line": "<p>AI adoption in property management rose from 21% to 34% year over year (AppFolio, 2025), and 94% of operators plan to adopt AI tools (Frontdesk AI, 2026). The practical impact is that leasing automation now handles lead qualification, tour scheduling, and showing confirmation autonomously, making the \"AI buyer test\" essential for any purchasing decision.</p>"
+  },
+  {
+   "file": "073-blog-the-leasing-back-office-gets-a-cleanup-new-filters-f.md",
+   "val": "90%",
+   "line": "<p>The Billing tab is the first of several back-office releases planned for Q3 and Q4 2026. We are building toward a workflow where the entire path from lead to signed lease to first payment to accounting integration runs through one platform, with the AI agent handling the volume work and the property manager handling the judgment work. Leasey.AI currently automates approximately 90% of routine leasing tasks, compresses vacancies 60% faster on average, and reduces leasing team effort by roughly 70% (Leasey.AI, 2026). The Billing tab extends that automation into the financial close process.</p>"
+  },
+  {
+   "file": "073-blog-the-leasing-back-office-gets-a-cleanup-new-filters-f.md",
+   "val": "5.1%",
+   "line": "<p>Every hour a property manager spends on reconciliation is an hour not spent on lease-up activity. In markets where vacancy is rising, specifically Canada at 5.1% and the US at 4.8% in Q1 2026, recovering back-office hours directly increases leasing capacity. The connection between operational efficiency and days-on-market is measurable and consistent.</p>"
+  },
+  {
+   "file": "076-linkedin-company-us-sun-belt-operators-are-competing-on-days-on-marke.md",
+   "val": "4.8%",
+   "line": "Per CBRE and Yardi Matrix: vacancy at 4.8% in Q1 2026, but 39% of the 69 markets CBRE tracks had negative year-over-year rent growth in Q2 2025. The steepest declines: Austin -7.2%, Denver -4.8%, Phoenix -4.5%."
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "8%",
+   "line": "<p><strong>Lever 1: Price.</strong> Lower asking rent to fill faster, accept lower yield. This is the default response in a soft market, and it has a permanent cost. A rent reduction follows the lease for its entire term. If you drop rent 8% to fill a unit two weeks faster, you carry that discount for twelve months.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "2,200",
+   "line": "<p><strong>Option B: Hold the rent at $2,200 and improve operations to fill at the same speed.</strong> Annualised income: $26,400.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "4.8%",
+   "line": "<p>The leasing speed thesis is not Canada-specific. US multifamily vacancy sat at 4.8% in Q1 2026 (CBRE, 2026), with Sun Belt markets absorbing the heaviest supply wave. Austin rents declined 7.2% year over year, Denver fell 4.8%, and Phoenix dropped 4.5% (Yardi Matrix, Q2 2025). Yardi Matrix forecasts roughly 323,000 US deliveries in 2026, down from the 477,000-unit annual average of 2023 to 2025 (Yardi Matrix, 2026). Supply is easing, but operators in oversupplied metros face the same choice: cut price or compress days-on-market through operations.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "5.1%",
+   "line": "<p>Historically high rental completions are outpacing demand across major Canadian metros. Canada's vacancy reached 5.1% in Q1 2026 with Calgary at 7.3% according to Yardi. CMHC's 2025 report showed Vancouver at 3.7% (highest since 1988), Edmonton at 3.8%, and Toronto at 3%. Rent growth slowed nationally to a four-year low of 2.7%.</p>"
+  },
+  {
+   "file": "077-blog-what-to-do-when-vacancy-rises-and-rents-fall-the-lev.md",
+   "val": "60%",
+   "line": "<p>A 10 to 18 day compression is a realistic range depending on your starting baseline. The TEREZ lease-up achieved full occupancy of 154 luxury units in 60 days with no price concessions. Leasey.AI compresses vacancies 60% faster on average by automating syndication, AI response, and tour confirmation simultaneously across the leasing funnel.</p>"
+  },
+  {
+   "file": "078-linkedin-founder-the-us-supply-wave-is-a-leasing-operations-problem-d.md",
+   "val": "2.3%",
+   "line": "With 2026 US asking rents forecast to grow just 2.3% (Yardi Matrix), there is no margin to give away."
+  },
+  {
+   "file": "081-blog-how-to-scale-leasing-without-adding-headcount.md",
+   "val": "70%",
+   "line": "<p><strong>2. After-hours leads that pile up overnight.</strong> ShowMojo's scheduling data shows 70% of rental inquiries arrive after business hours (ShowMojo, 2025). Research consistently indicates that 60% or more of renters go with the first operator who responds meaningfully. Every lead that sits unanswered from 6pm to 9am is a lead your competitor captured.</p>"
+  },
+  {
+   "file": "081-blog-how-to-scale-leasing-without-adding-headcount.md",
+   "val": "90%",
+   "line": "<p>The result: the same team handles materially more volume, and the peak does not require a seasonal hire that you let go in October. Leasey.AI automates approximately 90% of routine leasing tasks and reduces leasing team effort by roughly 70% (Leasey.AI, 2026).</p>"
+  },
+  {
+   "file": "081-blog-how-to-scale-leasing-without-adding-headcount.md",
+   "val": "100%",
+   "line": "<p>AI replaces the volume work that consumes coordinator time (first response, qualification, scheduling, listing maintenance) but not the judgment and relationship work. The goal is not fewer coordinators; it is coordinators spending 100% of their time on high-value work instead of 30%. Most operators find their existing team handles significantly more volume.</p>"
+  },
+  {
+   "file": "081-blog-how-to-scale-leasing-without-adding-headcount.md",
+   "val": "90%",
+   "line": "<p>Without automation, a coordinator typically handles 100 to 200 doors depending on turnover rate and market conditions. With leasing automation handling approximately 90% of routine tasks, the same coordinator can effectively manage 300 to 500 doors, focusing exclusively on qualified prospects and complex situations that require human judgment.</p>"
+  },
+  {
+   "file": "081-blog-how-to-scale-leasing-without-adding-headcount.md",
+   "val": "70%",
+   "line": "<p>ShowMojo data shows 70% of rental inquiries arrive after business hours. Research indicates 60% or more of renters go with the first operator who responds meaningfully. An AI agent responding in seconds at 11pm captures leads that would otherwise go to competitors who respond the next morning. This single capability often justifies the platform cost.</p>"
+  },
+  {
+   "file": "085-blog-ai-leasing-agent-vs-chat-widget-vs-scheduling-tool-a.md",
+   "val": "70%",
+   "line": "<p>\"If a prospect texts us about a unit, then follows up on Facebook Marketplace, does your agent know it is the same prospect?\" Category 1 and 2: usually no. The prospect starts a fresh conversation on each channel. Category 3: yes. The agent maintains a unified prospect profile across SMS, email, and marketplace messengers. In a market where ShowMojo data shows 70% of inquiries arrive after hours (ShowMojo, 2025), prospects often reach out on whichever channel is most convenient at the moment. An agent that loses context between channels loses conversions.</p>"
+  },
+  {
+   "file": "085-blog-ai-leasing-agent-vs-chat-widget-vs-scheduling-tool-a.md",
+   "val": "60%",
+   "line": "<p>\"What is the response latency at 11pm on a Saturday?\" Category 1: instant but FAQ-only. If the question is not in the knowledge base, silence. Category 2: usually instant for the booking flow. Category 3: instant, contextual, and capable of handling the full qualification and scheduling conversation. Research indicates 60% or more of renters go with the first operator who responds meaningfully. Latency at off-hours is where the categories separate most visibly.</p>"
+  },
+  {
+   "file": "085-blog-ai-leasing-agent-vs-chat-widget-vs-scheduling-tool-a.md",
+   "val": "70%",
+   "line": "<p>Prospects reach out on whichever channel is convenient: SMS, email, or Facebook Marketplace. An AI agent that loses context between channels forces the prospect to repeat themselves, creating friction that reduces conversion. ShowMojo data shows 70% of inquiries arrive after hours when prospects use whatever channel is at hand.</p>"
+  },
+  {
+   "file": "086-blog-leasey-ai-vs-eliseai-vs-knock-crm-ai-leasing-agents-.md",
+   "val": "5.1%",
+   "line": "<p><strong>Canadian operators.</strong> Native SingleKey screening, Realtor.ca and Kijiji syndication, and RTA/RTB compliance flows are built into the platform. In a market where Canada's vacancy reached 5.1% in Q1 2026 with Calgary at 7.3% (Yardi, 2026), Canadian-first tooling delivers more days-on-market improvement than a US-centric platform lacking these integrations.</p>"
+  },
+  {
+   "file": "086-blog-leasey-ai-vs-eliseai-vs-knock-crm-ai-leasing-agents-.md",
+   "val": "5,000",
+   "line": "<p>Leasey.AI is not a better enterprise voice autoresponder than EliseAI. That product category has mature competitive moats and twelve-figure portfolios behind it. If you are running 5,000+ doors and need voice-first automation, EliseAI has the head start.</p>"
+  },
+  {
+   "file": "086-blog-leasey-ai-vs-eliseai-vs-knock-crm-ai-leasing-agents-.md",
+   "val": "70%",
+   "line": "<p>5. Response latency: what happens at 11pm on a Saturday? ShowMojo data shows 70% of inquiries arrive after hours (ShowMojo, 2025).</p>"
+  },
+  {
+   "file": "086-blog-leasey-ai-vs-eliseai-vs-knock-crm-ai-leasing-agents-.md",
+   "val": "4.8%",
+   "line": "<p>US multifamily vacancy sat at 4.8% in Q1 2026 (CBRE, 2026), with Sun Belt markets like Austin (-7.2%), Denver (-4.8%), and Phoenix (-4.5%) experiencing significant rent declines (Yardi Matrix, Q2 2025). Roughly 323,000 US units are forecast for delivery in 2026 (Yardi Matrix, 2026). In Canada, vacancy reached 5.1% with rent growth at a four-year low of 2.7% (Yardi, 2026).</p>"
+  },
+  {
+   "file": "086-blog-leasey-ai-vs-eliseai-vs-knock-crm-ai-leasing-agents-.md",
+   "val": "1,000",
+   "line": "<p>They serve different portfolio profiles. EliseAI excels at enterprise-scale voice and text automation for large multifamily portfolios with deep PMS integrations. Leasey.AI excels at full-funnel leasing automation for mid-market portfolios (50 to 1,000 doors), especially those operating in Canada or relying on Facebook Marketplace as a primary lead channel.</p>"
+  },
+  {
+   "file": "086-blog-leasey-ai-vs-eliseai-vs-knock-crm-ai-leasing-agents-.md",
+   "val": "5.1%",
+   "line": "<p>Leasey.AI is built Canadian-first with native SingleKey screening, Kijiji and Realtor.ca syndication, and RTA/RTB compliance flows. Most US-built tools treat Canadian screening and marketplace integrations as secondary features. In a market where Canada's vacancy reached 5.1% in Q1 2026, Canadian-native tooling delivers measurable days-on-market advantages.</p>"
+  },
+  {
+   "file": "087-linkedin-founder-back-to-school-in-canada-the-leasing-peak-you-cannot.md",
+   "val": "70%",
+   "line": "Student housing portfolios see 70% of their annual lease activity compressed into a 6-week window. Mixed-use buildings near universities see lead volume 3 to 4x normal."
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "4.8%",
+   "line": "<p>In a tighter market, the instinct is to drop rent to fill faster. In the US, multifamily vacancy sat at 4.8% in Q1 2026 (CBRE, 2026), with Sun Belt markets absorbing the heaviest supply wave. Austin rents declined 7.2% year over year, Denver fell 4.8%, and Phoenix dropped 4.5% (Yardi Matrix, Q2 2025). Roughly 323,000 US units are forecast for delivery in 2026, down from the 477,000-unit annual average of 2023 to 2025 (Yardi Matrix, 2026).</p>"
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "2.3%",
+   "line": "<p>The better lever is to hold rent and compress days-on-market through operations. A unit filled in 22 days instead of 38 at the same rent yields more annualised income than a unit filled fast at a discount, because the discount follows the lease for its entire term while the vacancy days are a one-time cost. In a market where asking rents are forecast to grow only 2.3% nationally in the US (Yardi Matrix, 2026) and 2.7% in Canada (Yardi, 2026), there is no margin to give away.</p>"
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "8%",
+   "line": "<p><strong>Option A: Cut rent 8% to $2,024 to fill faster.</strong> Annualised income at the lower rent: roughly $24,288.</p>"
+  },
+  {
+   "file": "088-blog-the-real-roi-of-leasing-automation-a-days-on-market-.md",
+   "val": "2,200",
+   "line": "<p><strong>Option B: Hold rent at $2,200 and compress days-on-market through operations.</strong> Annualised income: roughly $26,400.</p>"
+  },
+  {
+   "file": "089-reddit-r-realestateinvesting-what-cmhc-2025-means-for-canadian-underwriting-vacan.md",
+   "val": "3.7%",
+   "line": "* Vancouver: 3.7% (highest since 1988)."
+  },
+  {
+   "file": "089-reddit-r-realestateinvesting-what-cmhc-2025-means-for-canadian-underwriting-vacan.md",
+   "val": "3.8%",
+   "line": "* Edmonton: 3.8%."
+  },
+  {
+   "file": "089-reddit-r-realestateinvesting-what-cmhc-2025-means-for-canadian-underwriting-vacan.md",
+   "val": "3%",
+   "line": "* Toronto: 3%."
+  },
+  {
+   "file": "089-reddit-r-realestateinvesting-what-cmhc-2025-means-for-canadian-underwriting-vacan.md",
+   "val": "5%",
+   "line": "* Calgary: 5%."
+  },
+  {
+   "file": "092-blog-leasey-ai-vs-showmojo-vs-funnel-leasing-where-the-le.md",
+   "val": "1,000",
+   "line": "<p>Leasey.AI wins for multifamily portfolios, mid-market property managers (100 to 1,000+ doors), and operators who want the full leasing funnel in one system rather than stitched together across tools.</p>"
+  },
+  {
+   "file": "092-blog-leasey-ai-vs-showmojo-vs-funnel-leasing-where-the-le.md",
+   "val": "5.1%",
+   "line": "<p><strong>Canadian operators.</strong> Native SingleKey screening, Kijiji and Realtor.ca syndication, and Canadian RTA/RTB compliance flows. Canada's vacancy reached 5.1% in Q1 2026 with Calgary at 7.3% (Yardi, 2026). Canadian-first tooling delivers measurable advantages in days-on-market.</p>"
+  },
+  {
+   "file": "092-blog-leasey-ai-vs-showmojo-vs-funnel-leasing-where-the-le.md",
+   "val": "60%",
+   "line": "<p><strong>Operators where Facebook Marketplace is a top-three rental channel.</strong> Liza, the AI agent, maintains cross-channel context across SMS, email, and Marketplace, recognising the same prospect regardless of channel. Research indicates 60% or more of renters go with the first operator who responds meaningfully.</p>"
+  },
+  {
+   "file": "092-blog-leasey-ai-vs-showmojo-vs-funnel-leasing-where-the-le.md",
+   "val": "5.1%",
+   "line": "<p>Leasey.AI is built Canadian-first with native SingleKey screening, Kijiji and Realtor.ca syndication, and RTA/RTB compliance flows. ShowMojo and Funnel Leasing are US-focused platforms that treat Canadian integrations as secondary. In a market where Canada's vacancy reached 5.1% in Q1 2026, Canadian-native tooling delivers measurable advantages.</p>"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+
+==============================================
+GSC SNAPSHOT
+==============================================
+Site:    https://blog.leasey.ai/
+Range:   2026-05-15 -> 2026-06-12 (28 days)
+Clicks:  3
+Impr.:   2.585
+CTR:     0.12%
+Avg pos: 32.5
+
+--- TOPIC CLUSTERS (by impressions) ---
+  Canada                       impr=  1313  clicks=   0  queries=200
+  Pricing & ROI                impr=    29  clicks=   0  queries=13
+  (other queries)              impr=    88  clicks=   0  queries=34
+
+--- STRIKING DISTANCE (pos 5-20, ≥20 impr) ---
+  (none — site is new or has low impression volume)
+
+--- UNTAPPED (≥50 impr, ≤1 click) ---
+  impr  112  pos 27.6  cost of living in toronto
+  impr  109  pos 35.3  cost of living in vancouver
+  impr   77  pos 26.2  cost of living toronto
+  impr   58  pos 29.3  toronto cost of living
+  impr   55  pos 20.5  cost of living vancouver
+  impr   50  pos 50.2  vancouver best neighborhoods
+
+--- TOP PAGES ---
+  clicks    1  impr    46  https://blog.leasey.ai/the-ultimate-guide-to-living-in-toronto-in-2024/
+  clicks    1  impr   444  https://blog.leasey.ai/what-are-10-best-neighbourhoods-to-move-to-in-quebec-city/
+  clicks    1  impr   517  https://blog.leasey.ai/what-are-the-best-universities-in-vancouver-here-are-10-options/
+

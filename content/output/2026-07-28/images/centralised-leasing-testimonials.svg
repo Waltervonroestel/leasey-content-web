@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img"
+     aria-label="Client testimonials from Aquilini Investment Group and Goldwynn Residences about centralising leasing operations with Leasey.AI">
+  <rect width="1200" height="560" fill="#F4F7FA"/>
+  <text x="600" y="66" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#00B4D8" letter-spacing="1.6" text-anchor="middle">IN PRACTICE</text>
+  <text x="600" y="100" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="27" font-weight="700" fill="#172640" text-anchor="middle">What operators report after centralising</text>
+
+  
+  <rect x="70" y="120" width="500" height="380" rx="14" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.5"/>
+  <rect x="70" y="120" width="500" height="6" rx="3" fill="#00B4D8"/>
+  <text x="110" y="184" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#00B4D8">&#8220;</text>
+  <text x="110" y="208" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">Scheduling showings used to be a major</text><text x="110" y="240" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">challenge, especially with no-shows, but</text><text x="110" y="272" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">we&#8217;re now seeing far more people actually</text><text x="110" y="304" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">attend our tours. In just a few months,</text><text x="110" y="336" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">we&#8217;ve already signed several leases through</text><text x="110" y="368" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">Leasey, and the platform has kept our team</text><text x="110" y="400" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">consistently busy.</text>
+  <line x1="110" y1="416" x2="530" y2="416" stroke="#D7DEE6"/>
+  <text x="110" y="450" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#172640">Robyn Lockhart</text>
+  <text x="110" y="474" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="14" fill="#5E6B7A">Aquilini Investment Group</text>
+
+  
+  <rect x="630" y="120" width="500" height="380" rx="14" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.5"/>
+  <rect x="630" y="120" width="500" height="6" rx="3" fill="#00B4D8"/>
+  <text x="670" y="184" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#00B4D8">&#8220;</text>
+  <text x="670" y="208" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">The team was extremely responsive to our</text><text x="670" y="240" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">questions, training was thorough and</text><text x="670" y="272" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">covered all key areas, and setting up</text><text x="670" y="304" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">showings by property was quick and</text><text x="670" y="336" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">convenient. The platform itself is very</text><text x="670" y="368" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#1B2430">intuitive and easy to use.</text>
+  <line x1="670" y1="416" x2="1090" y2="416" stroke="#D7DEE6"/>
+  <text x="670" y="450" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#172640">Carlos Torrubia</text>
+  <text x="670" y="474" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="14" fill="#5E6B7A">Director of Marketing, Goldwynn Residences</text>
+</svg>

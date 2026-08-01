@@ -1,0 +1,55 @@
+
+==============================================
+GSC SNAPSHOT
+==============================================
+Site:    https://blog.leasey.ai/
+Range:   2026-03-14 -> 2026-06-12 (90 days)
+Clicks:  39
+Impr.:   12.624
+CTR:     0.31%
+Avg pos: 18.6
+
+--- TOPIC CLUSTERS (by impressions) ---
+  Canada                       impr=  3902  clicks=   1  queries=253
+  Pricing & ROI                impr=    46  clicks=   0  queries=14
+  Vacancy & market             impr=    18  clicks=   1  queries=9
+  (other queries)              impr=   901  clicks=  10  queries=224
+
+--- STRIKING DISTANCE (pos 5-20, ≥20 impr) ---
+  pos  6.5  impr   64  ctr  0.0%   best neighborhoods for families
+  pos 12.1  impr   52  ctr  1.9%   quebec city neighborhoods
+  pos  5.7  impr   51  ctr  0.0%   neighborhoods in quebec city
+  pos 14.3  impr   48  ctr  0.0%   top universities in vancouver
+  pos  9.8  impr   40  ctr  0.0%   quebec neighborhoods
+  pos 19.0  impr   38  ctr  0.0%   living in vancouver pros and cons
+  pos  9.4  impr   36  ctr  0.0%   benefits of living in toronto canada 2024
+  pos  7.9  impr   30  ctr  0.0%   best neighborhoods in quebec city
+  pos  9.8  impr   30  ctr  0.0%   quebec city neighbourhoods
+  pos 18.7  impr   29  ctr  0.0%   best vancouver universities
+  pos  5.3  impr   26  ctr  0.0%   best area to stay in quebec city
+  pos 16.3  impr   23  ctr  0.0%   best university in vancouver
+  pos 11.3  impr   22  ctr  0.0%   neighborhoods of quebec city
+
+--- UNTAPPED (≥50 impr, ≤1 click) ---
+  impr  359  pos 30.7  cost of living in toronto
+  impr  328  pos 40.4  cost of living in vancouver
+  impr  204  pos 29.9  cost of living toronto
+  impr  197  pos  4.4  universities in vancouver
+  impr  194  pos 22.2  best universities in vancouver
+  impr  163  pos 32.4  toronto cost of living
+  impr  113  pos 48.3  best neighbourhoods in vancouver
+  impr  113  pos 49.1  cost of living in vancouver canada
+  impr  106  pos 23.6  best colleges in vancouver
+  impr   94  pos 31.5  is toronto expensive
+  impr   76  pos 25.7  cost of living vancouver
+  impr   67  pos 53.0  best neighborhoods in vancouver
+  impr   64  pos  6.5  best neighborhoods for families
+  impr   52  pos 12.1  quebec city neighborhoods
+  impr   51  pos  5.7  neighborhoods in quebec city
+
+--- TOP PAGES ---
+  clicks   32  impr  4462  https://blog.leasey.ai/what-are-10-best-neighbourhoods-to-move-to-in-quebec-city/
+  clicks    5  impr  2478  https://blog.leasey.ai/what-are-the-best-universities-in-vancouver-here-are-10-options/
+  clicks    1  impr   312  https://blog.leasey.ai/the-pros-and-cons-of-living-in-vancouver/
+  clicks    1  impr   222  https://blog.leasey.ai/the-ultimate-guide-to-living-in-toronto-in-2024/
+

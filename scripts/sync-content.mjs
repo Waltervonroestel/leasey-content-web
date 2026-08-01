@@ -10,7 +10,10 @@ const SRC = process.env.SOURCE_DIR || path.join(__dirname, "..", "..", "leasey-c
 const DEST = path.join(__dirname, "..", "content");
 
 // Qué copiamos (lo que la app necesita leer).
-const INCLUDE = ["CLAUDE.md", "context", "output", "PHASE-2-APP-PLAN.md", "START.md"];
+// ".claude/agents" entra porque las definiciones de los agentes SON el sistema:
+// cada una lleva dentro los casos reales que la hicieron fallar, y eso es lo
+// que hay que poder consultar desde la web sin abrir el repo.
+const INCLUDE = ["CLAUDE.md", "context", "output", "PHASE-2-APP-PLAN.md", "START.md", ".claude/agents"];
 
 function copyRecursive(src, dest) {
   const stat = fs.statSync(src);

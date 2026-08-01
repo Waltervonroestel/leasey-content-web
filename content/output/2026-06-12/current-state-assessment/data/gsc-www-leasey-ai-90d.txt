@@ -1,0 +1,70 @@
+
+==============================================
+GSC SNAPSHOT
+==============================================
+Site:    https://www.leasey.ai/
+Range:   2026-03-14 -> 2026-06-12 (90 days)
+Clicks:  2.352
+Impr.:   585.188
+CTR:     0.40%
+Avg pos: 13.2
+
+--- TOPIC CLUSTERS (by impressions) ---
+  Vacancy & market             impr=  6403  clicks=  30  queries=70
+  Leasing automation           impr=  1017  clicks=   9  queries=18
+  Facebook Marketplace         impr=   858  clicks=  16  queries=34
+  Listing syndication          impr=   785  clicks=   6  queries=15
+  Canada                       impr=   409  clicks=  10  queries=4
+  Tenant screening             impr=   325  clicks=   2  queries=1
+  Pricing & ROI                impr=    68  clicks=   3  queries=5
+  PMS integration              impr=     9  clicks=   0  queries=3
+  Fair Housing / compliance    impr=     6  clicks=   0  queries=2
+  Showings & tours             impr=     2  clicks=   0  queries=1
+  (other queries)              impr= 33649  clicks= 787  queries=347
+
+--- STRIKING DISTANCE (pos 5-20, ≥20 impr) ---
+  pos 11.0  impr 9787  ctr  0.0%   what is the best property management software?
+  pos  5.2  impr 5307  ctr  0.2%   lease ai
+  pos  5.9  impr 3546  ctr  0.1%   best software to manage rental property
+  pos 17.6  impr 2780  ctr  0.4%   best property management software
+  pos  6.7  impr 1384  ctr  8.8%   leasey
+  pos  6.6  impr 1210  ctr  0.6%   leadsy ai
+  pos 13.7  impr 1164  ctr  0.3%   top property management software
+  pos 13.7  impr 1103  ctr  2.5%   what is the best property management software
+  pos 19.9  impr 1030  ctr  0.3%   property management software
+  pos  9.4  impr 1027  ctr  0.1%   3x rent calculator
+  pos 14.3  impr  587  ctr  0.5%   leasing ai
+  pos 16.1  impr  413  ctr  0.2%   rental listing syndication
+  pos  5.7  impr  350  ctr  0.6%   single tenant triple net lease game
+  pos 10.9  impr  331  ctr  0.3%   lease takeover apartment
+  pos  8.8  impr  303  ctr  5.3%   leasy
+
+--- UNTAPPED (≥50 impr, ≤1 click) ---
+  impr 9787  pos 11.0  what is the best property management software?
+  impr 1027  pos  9.4  3x rent calculator
+  impr  732  pos 22.1  property management company valuation
+  impr  508  pos 77.9  1031 exchange real estate
+  impr  413  pos 16.1  rental listing syndication
+  impr  366  pos 34.5  lease takeover
+  impr  331  pos 10.9  lease takeover apartment
+  impr  301  pos 19.1  rental security deposit calculator
+  impr  279  pos 45.4  ai property management software
+  impr  251  pos 15.9  advertise apartment for rent
+  impr  242  pos 25.7  how to value a property management company
+  impr  224  pos 22.2  rental syndication
+  impr  185  pos 69.8  1031 exchange properties
+  impr  180  pos 15.2  rent estimate calculator
+  impr  153  pos 22.3  how to get tenants fast
+
+--- TOP PAGES ---
+  clicks  857  impr 26598  https://www.leasey.ai/
+  clicks  112  impr 12074  https://www.leasey.ai/resources/tools/security-deposit-calculator-free-tool/
+  clicks   90  impr 83185  https://www.leasey.ai/blog/whats-the-best-property-management-software-4-popular-options/
+  clicks   73  impr 18554  https://www.leasey.ai/resources/find-hidden-gems-facebook-marketplace-rentals/
+  clicks   68  impr 26004  https://www.leasey.ai/blog/frequently-asked-questions-about-facebook-marketplace-for-rental-properties/
+  clicks   62  impr  5189  https://www.leasey.ai/resources/toronto-lease-takeover-navigation/
+  clicks   53  impr 17020  https://www.leasey.ai/blog/the-property-managers-complete-guide-to-facebook-marketplace-for-rental-properties/
+  clicks   31  impr  5577  https://www.leasey.ai/marketplace-syndication/
+  clicks   31  impr 14674  https://www.leasey.ai/resources/tools/tenant-income-qualification-calculator/
+  clicks   27  impr 13937  https://www.leasey.ai/resources/complete-guide-property-lease-takeover/
+

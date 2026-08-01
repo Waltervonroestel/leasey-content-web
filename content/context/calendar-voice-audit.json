@@ -1,0 +1,620 @@
+[
+ {
+  "row": 5,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 5,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 5,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 6,
+  "channel": "LinkedIn-Founder",
+  "rule": "párrafo largo para voz de fundador",
+  "detail": "4 frases en un párrafo. La guía fija máximo 3"
+ },
+ {
+  "row": 9,
+  "channel": "LinkedIn-Founder",
+  "rule": "post demasiado corto",
+  "detail": "35 palabras"
+ },
+ {
+  "row": 10,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 10,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "4 frases, el máximo son 3"
+ },
+ {
+  "row": 10,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 10,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 11,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 11,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 11,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 16,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 16,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 16,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 17,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 17,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 17,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 17,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 21,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 21,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 21,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 22,
+  "channel": "LinkedIn-Founder",
+  "rule": "párrafo largo para voz de fundador",
+  "detail": "4 frases en un párrafo. La guía fija máximo 3"
+ },
+ {
+  "row": 25,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 25,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 25,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 25,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 28,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 28,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 28,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 28,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 32,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 32,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "4 frases, el máximo son 3"
+ },
+ {
+  "row": 32,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 35,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 35,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "6 frases, el máximo son 3"
+ },
+ {
+  "row": 35,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 37,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 37,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 37,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 37,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 43,
+  "channel": "Blog",
+  "rule": "sin H2",
+  "detail": "un blog sin jerarquía de encabezados no compite por nada"
+ },
+ {
+  "row": 43,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 43,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "4 frases, el máximo son 3"
+ },
+ {
+  "row": 43,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 43,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 46,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 46,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "4 frases, el máximo son 3"
+ },
+ {
+  "row": 46,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 47,
+  "channel": "LinkedIn-Founder",
+  "rule": "párrafo largo para voz de fundador",
+  "detail": "5 frases en un párrafo. La guía fija máximo 3"
+ },
+ {
+  "row": 49,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 49,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 50,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 50,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 50,
+  "channel": "Blog",
+  "rule": "sin CTA de cierre",
+  "detail": "toda pieza cierra con camino a Leasey (KPI máximo)"
+ },
+ {
+  "row": 53,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 53,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "4 frases, el máximo son 3"
+ },
+ {
+  "row": 53,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 55,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 57,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 57,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "4 frases, el máximo son 3"
+ },
+ {
+  "row": 57,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 57,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 59,
+  "channel": "LinkedIn-Founder",
+  "rule": "párrafo largo para voz de fundador",
+  "detail": "5 frases en un párrafo. La guía fija máximo 3"
+ },
+ {
+  "row": 61,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 64,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 64,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "4 frases, el máximo son 3"
+ },
+ {
+  "row": 64,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "4 párrafos de más de 4 frases"
+ },
+ {
+  "row": 64,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 69,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 69,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "6 frases, el máximo son 3"
+ },
+ {
+  "row": 69,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "5 párrafos de más de 4 frases"
+ },
+ {
+  "row": 69,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 71,
+  "channel": "LinkedIn-Founder",
+  "rule": "párrafo largo para voz de fundador",
+  "detail": "6 frases en un párrafo. La guía fija máximo 3"
+ },
+ {
+  "row": 73,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 73,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "5 frases, el máximo son 3"
+ },
+ {
+  "row": 73,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 77,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 77,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "5 frases, el máximo son 3"
+ },
+ {
+  "row": 77,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 77,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 81,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 81,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "6 frases, el máximo son 3"
+ },
+ {
+  "row": 81,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 81,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 83,
+  "channel": "LinkedIn-Founder",
+  "rule": "párrafo largo para voz de fundador",
+  "detail": "5 frases en un párrafo. La guía fija máximo 3"
+ },
+ {
+  "row": 85,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 85,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "6 frases, el máximo son 3"
+ },
+ {
+  "row": 85,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "8 párrafos de más de 4 frases"
+ },
+ {
+  "row": 85,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 86,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 86,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "5 frases, el máximo son 3"
+ },
+ {
+  "row": 86,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "4 párrafos de más de 4 frases"
+ },
+ {
+  "row": 86,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 88,
+  "channel": "Blog",
+  "rule": "enlace en la intro",
+  "detail": "la intro responde la intención y no lleva enlaces"
+ },
+ {
+  "row": 88,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "5 frases, el máximo son 3"
+ },
+ {
+  "row": 88,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "3 párrafos de más de 4 frases"
+ },
+ {
+  "row": 88,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 90,
+  "channel": "LinkedIn-Founder",
+  "rule": "párrafo largo para voz de fundador",
+  "detail": "4 frases en un párrafo. La guía fija máximo 3"
+ },
+ {
+  "row": 92,
+  "channel": "Blog",
+  "rule": "intro larga",
+  "detail": "4 frases, el máximo son 3"
+ },
+ {
+  "row": 92,
+  "channel": "Blog",
+  "rule": "párrafos largos",
+  "detail": "4 párrafos de más de 4 frases"
+ },
+ {
+  "row": 92,
+  "channel": "Blog",
+  "rule": "pocos enlaces internos",
+  "detail": "solo 1"
+ },
+ {
+  "row": 93,
+  "channel": "LinkedIn-Founder",
+  "rule": "párrafo largo para voz de fundador",
+  "detail": "4 frases en un párrafo. La guía fija máximo 3"
+ }
+]

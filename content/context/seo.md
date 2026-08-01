@@ -3,9 +3,18 @@
 El blog de Leasey se prioriza con datos de búsqueda, no a ojo. Esta es la misma metodología del sistema SEO de FastStrat, traída a la capa de agentes mientras no haya app en vivo.
 
 ## Dónde van los datos GSC
-Walter exporta queries de Google Search Console (Performance > Queries y Pages) y los pega en `data/gsc/AAAA-MM-DD.csv` (o `.md`). Columnas mínimas: query, clicks, impressions, CTR, position. El agente `seo-strategist` lee el archivo más reciente.
+GSC está **conectado en vivo** vía OAuth de la cuenta walter@leasey.ai. Cubre tres propiedades:
+- `https://www.leasey.ai/` (operator-facing, default)
+- `https://blog.leasey.ai/` (renter-facing)
+- `https://www.silverhomes.ai/`
 
-Mientras no haya export, el seo-strategist usa keyword research vía WebSearch y marca la priorización como provisional.
+Scripts en `scripts/`:
+- `node scripts/get-refresh-token.mjs` — solo una vez (ya hecho), guarda el `GOOGLE_REFRESH_TOKEN` en `.env.local`.
+- `node scripts/list-sites.mjs` — lista propiedades accesibles.
+- `node scripts/gsc-snapshot.mjs [days] [site]` — muestra snapshot en consola.
+- `node scripts/gsc-to-context.mjs [days]` — escribe `context/gsc-opportunities.md` con striking-distance, untapped, low-CTR pages, top pages (filtrando ruido como 1031 exchange y scraper queries).
+
+`context/gsc-opportunities.md` es la fuente de verdad de datos GSC. El `seo-strategist` y los writers la leen para priorizar contenido.
 
 ## Metodología de priorización (la de FastStrat)
 1. Striking distance: posición 5 a 20, >=20 impresiones. Lo que sube más rápido. Prioridad alta.

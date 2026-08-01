@@ -1,0 +1,51 @@
+
+==============================================
+GSC SNAPSHOT
+==============================================
+Site:    https://www.silverhomes.ai/
+Range:   2026-05-15 -> 2026-06-12 (28 days)
+Clicks:  29
+Impr.:   10.361
+CTR:     0.28%
+Avg pos: 19.5
+
+--- TOPIC CLUSTERS (by impressions) ---
+  Vacancy & market             impr=   674  clicks=   0  queries=154
+  Leasing automation           impr=   240  clicks=   0  queries=49
+  Tenant screening             impr=    55  clicks=   0  queries=15
+  Listing syndication          impr=    50  clicks=   0  queries=16
+  Fair Housing / compliance    impr=    20  clicks=   0  queries=6
+  Facebook Marketplace         impr=     4  clicks=   0  queries=2
+  PMS integration              impr=     4  clicks=   0  queries=1
+  Showings & tours             impr=     1  clicks=   0  queries=1
+  Canada                       impr=     1  clicks=   0  queries=1
+  (other queries)              impr=  1377  clicks=   5  queries=255
+
+--- STRIKING DISTANCE (pos 5-20, ≥20 impr) ---
+  pos  5.9  impr  374  ctr  0.0%   security deposit based on credit score
+  pos 10.7  impr  167  ctr  0.6%   what a landlord cannot do bc
+  pos  8.7  impr   65  ctr  0.0%   data analytics tips for renters
+  pos  7.2  impr   56  ctr  0.0%   copywriting tips for renters
+  pos  5.3  impr   45  ctr  8.9%   silver homes
+  pos  8.9  impr   44  ctr  0.0%   how to data analytics for renters
+  pos  7.5  impr   24  ctr  0.0%   impactful events related to the term "remote properties"
+
+--- UNTAPPED (≥50 impr, ≤1 click) ---
+  impr  374  pos  5.9  security deposit based on credit score
+  impr  167  pos 10.7  what a landlord cannot do bc
+  impr   71  pos 26.6  reasons to terminate lease
+  impr   65  pos  8.7  data analytics tips for renters
+  impr   56  pos  7.2  copywriting tips for renters
+
+--- TOP PAGES ---
+  clicks   10  impr   315  https://www.silverhomes.ai/
+  clicks    4  impr  1386  https://www.silverhomes.ai/determine-security-deposit-tenant-screening/
+  clicks    4  impr   801  https://www.silverhomes.ai/verify-tenant-insurance-coverage/
+  clicks    3  impr   253  https://www.silverhomes.ai/things-that-landlords-are-not-allowed-to-do-in-b-c/
+  clicks    2  impr    12  https://www.silverhomes.ai/contact
+  clicks    1  impr   371  https://www.silverhomes.ai/how-do-security-deposits-work-in-bc/
+  clicks    1  impr    14  https://www.silverhomes.ai/implement-tenant-referral-programs/
+  clicks    1  impr    30  https://www.silverhomes.ai/legal/
+  clicks    1  impr   221  https://www.silverhomes.ai/list-property-multiple-platforms-online/
+  clicks    1  impr    28  https://www.silverhomes.ai/tenants/
+

@@ -41,6 +41,13 @@ export const NAV_TABS: NavTab[] = [
   },
 
   {
+    href: "/rules",
+    label: "Rules",
+    icon: "🛡️",
+    description: "Cómo falla el contenido de Leasey y qué lo impide: los ocho casos reales del catálogo de errores, el tracker de hechos de fundadores, la compuerta de entrega y el roster de agentes de verificación.",
+    group: "Build",
+  },
+  {
     href: "/optimise",
     label: "Optimise",
     icon: "🛠",

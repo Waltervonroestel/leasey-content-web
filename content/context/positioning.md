@@ -9,7 +9,7 @@ Rules:
 - Refresh data with `news-researcher` when it ages (market numbers are Q1 2026).
 - ATTRIBUTION: name the source in the text (e.g. "according to Yardi's Q1 2026 report"). Leasey's own product numbers are self-sourced.
 
-## The 5 positioning pillars
+## The 6 positioning pillars
 
 ### Pillar 1: Speed wins in a cooling market
 - Position: in a soft market, response speed is the only lever the operator controls. Leasey maximizes it.
@@ -53,6 +53,20 @@ Rules:
   - Most AI vendor contracts put the compliance burden on the property manager, not the software.
   - Leasey already has published research: leasey.ai/resources/research on Fair Housing and algorithmic screening.
 - Leasey connection: screening that flags inconsistencies and fraud, with review. [VERIFY with product which screening decisions require human review today.]
+
+### Pillar 6: US-ready, operator-first (Sun Belt and secondary markets)
+- Position: in the US, the volume of search demand and the competition live in the Sun Belt and secondary markets where (a) supply is high, (b) Facebook Marketplace is the dominant rental channel, and (c) the operator's real bottleneck is leasing speed, not enterprise accounting. Leasey wins there because it is built around the leasing workflow itself, not bolted onto a PMS. P4 (Canadian-first) and P6 (US-ready, operator-first) are two sides of the dual-market positioning: P4 is the uncontested niche, P6 is where the volume lives and the head-on competition happens. They do not contradict each other; they alternate by piece. Do not mix CA and US data inside one piece (see `context/us-market.md`).
+- Who Leasey targets in the US: owner-operators and small-to-mid PMs (50 to ~3,000 units) whose constraint is leasing speed, after-hours response, and Marketplace handling. Not the AppFolio/Yardi/Entrata enterprise buyer who has accounting as their primary problem.
+- Supporting data (all US sources, never mix with CA data inside a piece):
+  - US multifamily vacancy 4.8% in Q1 2026, fell 20bps from Q4 2025 as absorption finally outpaced completions for the first time in three quarters (CBRE / Yardi Matrix). https://www.cbre.com/insights/figures/q1-2026-us-multifamily-figures
+  - 39% of the 69 markets CBRE tracks had negative YoY rent growth in Q2 2025 (up from 26% in Q1 2025). Steepest declines: Austin (-7.2%), Denver (-4.8%), Phoenix (-4.5%), with Tampa and Raleigh close behind.
+  - 2026 US asking rent growth forecast +2.3% (Yardi Matrix). 2026 deliveries forecast ~323,000 units, down roughly one-third from the 477,000-unit 2023-2025 annual average.
+  - 47% of US renters chose a less-than-ideal rental because it was easier to find and tour (Rently 2026 Renter Touring Expectations Report, 800 US renters). https://rently.com/blog/2026-renter-touring-expectations
+  - AI adoption in US property management rose from 21% in 2024 to 34% in 2025; 85% of AI adopters report measurable lead-to-lease improvements (AppFolio 2025 Property Management Benchmark Report).
+  - DOJ vs RealPage (Aug 2024 filed; Jan 2025 expanded to Greystar + 5 landlords; Greystar settled Aug 2025 $7M; RealPage settled Nov 2025) sets the US benchmark for what automated tools can legally do. Compliance pillar (P5) intersects here. https://www.justice.gov/atr/case-document/file/1768546/dl
+  - US synthetic identity fraud exposure $3.3B for the year ending 2024; 8.3% of digital account creation attempts suspected of fraud in 2025 (TransUnion H2 2025 Global Fraud Report). https://www.transunion.com/lp/global-fraud-report
+- US metros to anchor to (where the operational levers Leasey sells matter most): Austin, Dallas, Houston, Phoenix, Denver, Tampa, Orlando, Atlanta, Charlotte, Raleigh, Nashville, Miami, Fort Lauderdale.
+- Leasey connection: direct Facebook Marketplace syndication where Sun Belt and US secondary renters actually search; AI agent that responds in seconds at any hour, not a website chat widget; ID verification that is binary by design (fair-housing-clean post-DOJ); offices in New York and US clients including Rockwell Properties (NY), 847 Ray LLC (Chicago), The Rockingham Group (Hartford). Leasey is not a PMS replacement; it is the leasing layer that sits on top of whatever PMS the US operator already uses.
 
 ## How to use this when writing
 1. Pick the post angle and the pillar it fits.

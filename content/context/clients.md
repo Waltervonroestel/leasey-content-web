@@ -17,11 +17,23 @@ Carlos exige anclar TODO contenido a un escenario operativo real. Estos son los 
 - Mid-market mostly: 100+ doors (multifamily) o 100+ homes (SFR/BTR)
 - Institutional Canadian REITs como referencia de escala enterprise: CAPREIT, Killam, Boardwalk, QuadReal, Minto (Carlos viene de QuadReal y Aquilini)
 
-## Testimonios públicos del sitio (citables)
-- Diego Mendoza, Century21: "Leasey.AI has transformed our leasing process... user-friendly, intuitive and time-saving."
-- Jaycy Pierre, AEDN: comunicación con leads 24/7 vía AI, sobre todo en Facebook Marketplace.
-- Carlos Torrubia, Director of Marketing en Goldwynn: training completo, setup rápido por propiedad, plataforma intuitiva.
-- David Betesh, Rockwell: mantiene los leads organizados, mejora response time y follow-through.
+## Análisis profundo de clientes
+Para investigación por cliente (segmento, geografía, footprint), conteo de menciones por feature en las quotes, cobertura por pilar de posicionamiento y 15 ángulos de contenido nuevos derivados de los testimonios, ver `context/client-deep-dive.md`. Esto es la base del calendar-planner cuando priorice temas.
+
+## Testimonios citables
+Para citas verbatim, ver `context/testimonials-tracker.md` (fuente: Google Sheet "Testimonial Tracker" de concierge@leasey.ai). Resumen rápido:
+- Diego Mendoza (Century21): "Leasey.AI has transformed our leasing process..."
+- Jaycy Pierre (AEDN): comunicación con leads 24/7, Facebook Marketplace
+- Carlos Torrubia (Goldwynn): onboarding, setup rápido por propiedad
+- David Betesh (Rockwell): leads organizados, response time
+- **Robyn Lockhart (Aquilini Investment Group)**: showings, no-shows, leases signed (institucional, exempleador de Carlos)
+- **Victoria Reid (Landlord.net)**: testimonio largo, nombra a Tereza y founders (ideal case study/PR)
+- **Justin Rogers (The Rockingham Group)**: listing syndication + showing coordination, hours saved/week (mayo 2026)
+- **Tarun Chopra (847 Ray LLC)**: Facebook Marketplace automation
+
+## Otros clientes activos (sin testimonio citable aún)
+Anclar a ICP, NO citar. Lista del Testimonial Tracker:
+Excel Leasing, King Residences, Rent Panda, Seven Real Estate Group, Sutton PM, Three Shores, Cromwell Management, Freddy Beach PM, Locarno Legacy, The Bayshore Company, The Mendlo Team, Unity Leases, Walcott Properties, Apartment Hub.
 
 ## Personas objetivo (ICPs)
 - Enterprise Property Manager: portafolio de 100 a 1000+ doors, tiene equipo de leasing, usa Yardi/Buildium/RealPage. Necesita leasing centralizado, coordinación de equipo, integraciones, reporting.

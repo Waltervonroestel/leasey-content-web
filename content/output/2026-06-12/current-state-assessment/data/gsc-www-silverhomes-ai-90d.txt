@@ -1,0 +1,60 @@
+
+==============================================
+GSC SNAPSHOT
+==============================================
+Site:    https://www.silverhomes.ai/
+Range:   2026-03-14 -> 2026-06-12 (90 days)
+Clicks:  149
+Impr.:   58.198
+CTR:     0.26%
+Avg pos: 13.5
+
+--- TOPIC CLUSTERS (by impressions) ---
+  Vacancy & market             impr=  1261  clicks=   0  queries=151
+  Leasing automation           impr=   507  clicks=   0  queries=35
+  Tenant screening             impr=   141  clicks=   0  queries=25
+  Listing syndication          impr=    77  clicks=   0  queries=16
+  Fair Housing / compliance    impr=    65  clicks=   0  queries=17
+  PMS integration              impr=     9  clicks=   0  queries=2
+  Showings & tours             impr=     3  clicks=   0  queries=2
+  Facebook Marketplace         impr=     1  clicks=   0  queries=1
+  Canada                       impr=     1  clicks=   0  queries=1
+  (other queries)              impr=  2165  clicks=  28  queries=250
+
+--- STRIKING DISTANCE (pos 5-20, ≥20 impr) ---
+  pos  7.0  impr  660  ctr  1.1%   what a landlord cannot do bc
+  pos  7.9  impr  278  ctr  0.0%   copywriting tips for renters
+  pos  6.7  impr  175  ctr  4.6%   silver homes
+  pos  7.9  impr  162  ctr  0.0%   data analytics tips for renters
+  pos 11.2  impr  114  ctr  0.0%   agency tenant referrals
+  pos 10.9  impr   58  ctr  0.0%   data science tips for renters
+  pos 16.7  impr   34  ctr  0.0%   headline rents
+  pos  6.2  impr   29  ctr  0.0%   data analytics equipment for renters
+  pos 10.6  impr   28  ctr  0.0%   evaluate the tenant risk management company insurent on property management software
+  pos 16.4  impr   27  ctr  0.0%   automated leasing process
+  pos  5.6  impr   25  ctr  0.0%   find tenants in a slow rental market
+  pos 16.1  impr   24  ctr  0.0%   automating tenant screening processes
+  pos  6.0  impr   21  ctr  4.8%   silverhomes
+
+--- UNTAPPED (≥50 impr, ≤1 click) ---
+  impr  278  pos  7.9  copywriting tips for renters
+  impr  162  pos  7.9  data analytics tips for renters
+  impr  114  pos 11.2  agency tenant referrals
+  impr   77  pos 58.2  equifax rental history
+  impr   76  pos 20.6  automated tenant screening
+  impr   58  pos 10.9  data science tips for renters
+  impr   57  pos 26.1  automated leasing property management
+  impr   57  pos 22.9  automated showings
+
+--- TOP PAGES ---
+  clicks   35  impr  6030  https://www.silverhomes.ai/things-that-landlords-are-not-allowed-to-do-in-b-c/
+  clicks   31  impr  1229  https://www.silverhomes.ai/
+  clicks   15  impr  7527  https://www.silverhomes.ai/determine-security-deposit-tenant-screening/
+  clicks   10  impr  2360  https://www.silverhomes.ai/verify-tenant-insurance-coverage/
+  clicks    9  impr  1294  https://www.silverhomes.ai/list-property-multiple-platforms-online/
+  clicks    5  impr  3379  https://www.silverhomes.ai/craft-effective-rental-ad-headline/
+  clicks    5  impr   756  https://www.silverhomes.ai/create-tenant-selection-criteria-matrix/
+  clicks    4  impr   807  https://www.silverhomes.ai/avoid-tenants-poor-communication-habits/
+  clicks    4  impr    62  https://www.silverhomes.ai/contact
+  clicks    4  impr  2241  https://www.silverhomes.ai/how-do-security-deposits-work-in-bc/
+

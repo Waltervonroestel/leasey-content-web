@@ -10,5 +10,7 @@ Thumbs.db
 /.vercel
 
 .jobs/
-.claude/
+# SÍ se versiona: las definiciones de los agentes son el sistema de reglas que
+# la web muestra en /rules.
+/.claude/
 tsconfig.tsbuildinfo

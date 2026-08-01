@@ -1,0 +1,122 @@
+{
+  "t1": {
+    "date": "2026-08-01",
+    "slug": "consistent-tenant-experience",
+    "queries": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "position": null
+  },
+  "t3": {
+    "date": "2026-08-01",
+    "slug": "leasing-software-for-third-party-property-managers",
+    "queries": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "position": null
+  },
+  "t4": {
+    "date": "2026-08-01",
+    "slug": "leasing-compliance-risk-reduction",
+    "queries": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "position": null
+  },
+  "t5": {
+    "date": "2026-08-01",
+    "slug": "post-showing-feedback-rental-pricing-intelligence",
+    "queries": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "position": null
+  },
+  "t6": {
+    "date": "2026-08-01",
+    "slug": "multi-property-listing-consistency",
+    "queries": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "position": null
+  },
+  "t7": {
+    "date": "2026-08-01",
+    "slug": "student-housing-leasing-automation",
+    "queries": 9,
+    "impressions": 31,
+    "clicks": 0,
+    "position": 6.4
+  },
+  "t8": {
+    "date": "2026-08-01",
+    "slug": "lease-up-software-new-construction-acquisitions",
+    "queries": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "position": null
+  },
+  "lp1": {
+    "date": "2026-08-01",
+    "slug": "leasing-pipeline-visibility",
+    "queries": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "position": null
+  },
+  "lp2": {
+    "date": "2026-08-01",
+    "slug": "property-management-software-integration",
+    "queries": 1,
+    "impressions": 1,
+    "clicks": 0,
+    "position": 7
+  },
+  "lp3": {
+    "date": "2026-08-01",
+    "slug": "scale-leasing-operations-without-hiring",
+    "queries": 2,
+    "impressions": 3,
+    "clicks": 0,
+    "position": 24
+  },
+  "t10-outsourcing": {
+    "date": "2026-08-01",
+    "slug": "outsourcing-property-management",
+    "queries": 35,
+    "impressions": 411,
+    "clicks": 0,
+    "position": 31
+  },
+  "t11-security-deposit": {
+    "date": "2026-08-01",
+    "slug": "security-deposit-deduction-letter",
+    "queries": 38,
+    "impressions": 128,
+    "clicks": 1,
+    "position": 35.7
+  },
+  "t12-advertise-free": {
+    "date": "2026-08-01",
+    "slug": "advertise-rental-property-for-free",
+    "queries": 100,
+    "impressions": 422,
+    "clicks": 1,
+    "position": 44.4
+  },
+  "t2-fb-marketplace-scams": {
+    "date": "2026-08-01",
+    "slug": "facebook-marketplace-rental-scams",
+    "queries": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "position": null
+  },
+  "t9-pm-software-cost": {
+    "date": "2026-08-01",
+    "slug": "how-much-does-property-management-software-cost",
+    "queries": 29,
+    "impressions": 438,
+    "clicks": 0,
+    "position": 20.9
+  }
+}

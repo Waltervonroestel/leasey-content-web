@@ -1,0 +1,1332 @@
+{
+  "t1": {
+    "slug": "consistent-tenant-experience",
+    "url": "https://www.leasey.ai/resources/consistent-tenant-experience/",
+    "http": "200|0|https://www.leasey.ai/resources/consistent-tenant-experience/",
+    "title": "How Leasey.AI Delivers a Consistent Leasing Experience for Every Prospective Tenant",
+    "metaDescription": "Leasey.AI standardizes every leasing touchpoint from first inquiry to signed lease across all properties and agents. Consistent experiences reduce no-shows and improve tenant conversion.",
+    "h1": [
+      "Consistent Tenant Experience"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 17,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Consistent Tenant Experience"
+      ],
+      "h2": [
+        "The Leasing Experience Directly Shapes the Operator's Reputation",
+        "Leasey.AI Responds to Every Inquiry Immediately, Day or Night",
+        "Automated Reminders and Reconfirmations Reduce No-Shows",
+        "Auto-Filled Lease Documents Eliminate Errors at Signing",
+        "Leasey.AI Standardizes Every Touchpoint Across All Properties and Agents",
+        "See How Leasey.AI Standardizes the Tenant Leasing Experience"
+      ],
+      "h3": [
+        "How the leasing experience influences online reviews and referrals",
+        "The connection between leasing experience quality and tenant retention",
+        "What Liza the AI phone agent communicates to prospective tenants",
+        "How immediate AI response affects inquiry-to-showing conversion",
+        "How Leasey.AI's reconfirmation workflow reduces showing no-show rates",
+        "What automated showing communication signals to prospective tenants",
+        "What smart document auto-fill prevents at the lease signing stage",
+        "How document accuracy affects the prospective tenant's impression at signing",
+        "Why process consistency matters more than individual agent quality",
+        "How standardized leasing touchpoints protect the operator brand",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 8035,
+    "brandMentions": 41,
+    "brandDensity": "0.51%",
+    "emDashes": 25,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/consistent-tenant-experience/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fconsistent-tenant-experience%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fconsistent-tenant-experience%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27159",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/ai-agent-page/",
+      "/ai-chatbot/",
+      "/tenant-screening/",
+      "/advanced-reporting/",
+      "/team-collaboration/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "bestPosition": null,
+      "top": []
+    }
+  },
+  "t3": {
+    "slug": "leasing-software-for-third-party-property-managers",
+    "url": "https://www.leasey.ai/resources/leasing-software-for-third-party-property-managers/",
+    "http": "200|0|https://www.leasey.ai/resources/leasing-software-for-third-party-property-managers/",
+    "title": "Leasing Automation for Third-Party Property Management Companies | Leasey.AI",
+    "metaDescription": "Leasey.AI gives third-party property management companies standardized leasing processes, automatic client reporting, and a platform that differentiates their business when competing for contracts.",
+    "h1": [
+      "Third-Party Property Managers"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 7,
+      "h3": 19,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Third-Party Property Managers"
+      ],
+      "h2": [
+        "Third-Party Managers Are Accountable to Their Clients' Outcomes",
+        "Leasey.AI Generates Client Reports Without Manual Assembly",
+        "Standardized Processes Protect the Management Company Across All Client Assets",
+        "A Purpose-Built Platform Differentiates the Contract Pitch",
+        "Fast Implementation Supports Quick Ramp-Up on New Contracts",
+        "Operational Continuity Supports Long-Term Client Relationships",
+        "See How Leasey.AI Supports Third-Party Property Management Companies"
+      ],
+      "h3": [
+        "What property owners evaluate when assessing their management company",
+        "Why leasing performance is the most visible metric in third-party management",
+        "What property-level performance reports include for owner review",
+        "How reporting reduces owner inquiry calls and improves transparency",
+        "How platform standardization protects against service quality gaps",
+        "Why institutional property owners require auditable leasing processes",
+        "How to position Leasey.AI in a management contract pitch",
+        "What technology investment signals to property owners evaluating managers",
+        "How implementation timelines support new contract ramp-up",
+        "What setup involves when adding a new client property",
+        "What operational continuity means for long-term owner relationships",
+        "How structured leasing records benefit property owners across ownership transitions",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 8375,
+    "brandMentions": 50,
+    "brandDensity": "0.60%",
+    "emDashes": 27,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/leasing-software-for-third-party-property-managers/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fleasing-software-for-third-party-property-managers%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fleasing-software-for-third-party-property-managers%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27167",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/advanced-reporting/",
+      "/ai-agent-page/",
+      "/tenant-screening/",
+      "/marketplace-syndication/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 1,
+      "impressions": 1,
+      "clicks": 0,
+      "bestPosition": 31,
+      "top": [
+        {
+          "q": "property management contract ai",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 31
+        }
+      ]
+    }
+  },
+  "t4": {
+    "slug": "leasing-compliance-risk-reduction",
+    "url": "https://www.leasey.ai/resources/leasing-compliance-risk-reduction/",
+    "http": "200|0|https://www.leasey.ai/resources/leasing-compliance-risk-reduction/",
+    "title": "Leasing Compliance and Risk Reduction for Property Managers | Leasey.AI",
+    "metaDescription": "Leasey.AI standardizes tenant screening, maintains decision audit trails, and centralizes lease documents to reduce compliance risk. Consistent leasing processes protect residential property operators.",
+    "h1": [
+      "Compliance and Risk Reduction"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 17,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Compliance and Risk Reduction"
+      ],
+      "h2": [
+        "Inconsistent Tenant Screening Creates Fair Housing Exposure",
+        "Every Leasing Decision Gets a Timestamped Audit Trail",
+        "Leasey.AI's Screening Stack Detects Application Fraud Before Signing",
+        "Centralized Lease Templates Prevent Outdated Clause Errors",
+        "Centralizing Applicant Data Reduces Privacy Compliance Surface Area",
+        "Talk to Leasey.AI About Reducing Compliance Risk"
+      ],
+      "h3": [
+        "How standardized qualification criteria enforce applicant consistency",
+        "What documentation regulators and courts require from leasing operators",
+        "What Leasey.AI's audit trail captures in the leasing pipeline",
+        "How decision logs protect operators during applicant disputes",
+        "What each layer of the Leasey.AI screening stack verifies",
+        "How Discrepancy AI identifies document alterations in rental applications",
+        "How template version control works within Leasey.AI",
+        "The risk of decentralized document management at scale",
+        "Where applicant data typically resides in manual leasing operations",
+        "How centralized storage reduces data handling risk for operators",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 7756,
+    "brandMentions": 40,
+    "brandDensity": "0.52%",
+    "emDashes": 19,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/leasing-compliance-risk-reduction/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fleasing-compliance-risk-reduction%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fleasing-compliance-risk-reduction%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27146",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/lead-prequalification/",
+      "/tenant-screening/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "bestPosition": null,
+      "top": []
+    }
+  },
+  "t5": {
+    "slug": "post-showing-feedback",
+    "url": "https://www.leasey.ai/resources/post-showing-feedback/",
+    "http": "200|1|https://www.leasey.ai/resources/post-showing-feedback-rental-pricing-intelligence/",
+    "title": "Post-Showing Feedback Analysis for Smarter Rental Pricing Decisions | Leasey.AI",
+    "metaDescription": "Leasey.AI summarizes post-showing feedback using AI to reveal pricing objections and positioning gaps across a portfolio. Property managers use this data for faster rent pricing decisions.",
+    "h1": [
+      "Post-Showing Pricing Intelligence"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 17,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Post-Showing Pricing Intelligence"
+      ],
+      "h2": [
+        "Post-Showing Feedback Is Systematically Lost in Most Leasing Operations",
+        "Leasey.AI AI Summarizes Feedback Themes Across All Showings",
+        "Feedback Analysis Separates Pricing Problems From Lead Quality Problems",
+        "Portfolio-Level Feedback Reveals Market Positioning Patterns",
+        "Faster Pricing Responses Shorten Vacancy Duration",
+        "See Leasey.AI Post-Showing Feedback Intelligence in Action"
+      ],
+      "h3": [
+        "Where post-showing feedback goes in standard leasing operations",
+        "What pricing decisions operators make without showing feedback",
+        "How Leasey.AI collects and processes post-showing feedback",
+        "What a feedback theme summary looks like in the platform",
+        "How feedback patterns distinguish pricing issues from lead quality issues",
+        "How showing data informs rent adjustments at the individual unit level",
+        "Reading aggregated feedback trends across unit types and properties",
+        "How showing feedback shapes listing copy and pricing positioning",
+        "How pricing response speed affects vacancy duration and revenue recovery",
+        "How Leasey.AI live feedback enables pricing decisions without waiting for a review cycle",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 8016,
+    "brandMentions": 38,
+    "brandDensity": "0.47%",
+    "emDashes": 25,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/post-showing-feedback-rental-pricing-intelligence/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fpost-showing-feedback-rental-pricing-intelligence%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fpost-showing-feedback-rental-pricing-intelligence%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27163",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/advanced-reporting/",
+      "/smart-rent-pricing/",
+      "/learn-more-integrations/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "bestPosition": null,
+      "top": []
+    }
+  },
+  "t6": {
+    "slug": "multi-property-listing-consistency",
+    "url": "https://www.leasey.ai/resources/multi-property-listing-consistency/",
+    "http": "200|0|https://www.leasey.ai/resources/multi-property-listing-consistency/",
+    "title": "Leasey.AI Syndicates Consistent Property Listings Across 48+ Rental Channels",
+    "metaDescription": "Leasey.AI syndicates listings to 48+ rental marketplaces from one platform so every property goes to market with the same accuracy and channel coverage. No manual posting required.",
+    "h1": [
+      "Multi-Property Listing Consistency"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 17,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Multi-Property Listing Consistency"
+      ],
+      "h2": [
+        "Manual Listing Management Creates Inconsistent Portfolio Coverage",
+        "Leasey.AI Syndicates Every Listing to 48+ Platforms Simultaneously",
+        "AI Photo Enhancement Sets a Consistent Visual Standard Portfolio-Wide",
+        "Third-Party Managers Use Listing Consistency to Prove Client Value",
+        "Automated Inquiry Response Ensures No Lead Goes Unanswered",
+        "See Consistent Listing Distribution Across Your Entire Portfolio"
+      ],
+      "h3": [
+        "What inconsistent listing quality costs in lead volume",
+        "How agent-by-agent listing variability scales into a portfolio-level problem",
+        "Which rental marketplaces Leasey.AI syndicates to in North America",
+        "How single-click syndication removes channel coverage from agent behavior",
+        "What Leasey.AI AI photo enhancement does to a rental listing image",
+        "How visual quality affects listing engagement and lead generation",
+        "How consistent listing distribution becomes a client retention argument",
+        "What per-property listing performance data shows property owners",
+        "How Leasey.AI AI response covers 48+ inquiry channels simultaneously",
+        "The cost of unanswered inquiries across multiple platforms",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 7918,
+    "brandMentions": 45,
+    "brandDensity": "0.57%",
+    "emDashes": 10,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/multi-property-listing-consistency/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fmulti-property-listing-consistency%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fmulti-property-listing-consistency%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27160",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/marketplace-syndication/",
+      "/advanced-reporting/",
+      "/ai-agent-page/",
+      "/ai-chatbot/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "bestPosition": null,
+      "top": []
+    }
+  },
+  "t7": {
+    "slug": "student-housing-leasing-automation",
+    "url": "https://www.leasey.ai/resources/student-housing-leasing-automation/",
+    "http": "200|0|https://www.leasey.ai/resources/student-housing-leasing-automation/",
+    "title": "Student Housing Leasing Automation for Operators Managing 100 or More Beds | Leasey.AI",
+    "metaDescription": "Leasey.AI helps student housing operators manage peak leasing season with AI lead response, automated scheduling, and real-time reporting. Operators absorb seasonal volume without temporary staffing.",
+    "h1": [
+      "Student Housing and Seasonal Leasing"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 17,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Student Housing and Seasonal Leasing"
+      ],
+      "h2": [
+        "Student Housing Leasing Concentrates Into a Short Annual Window",
+        "Leasey.AI AI Agents Handle Peak Season Volume Without Additional Staff",
+        "Leasey.AI Supports Pre-Leasing Workflows That Build Qualified Pipelines Early",
+        "The Smart Route Planner Organizes High-Volume Showing Schedules Near Campus",
+        "Annual Re-Leasing Cycles Run Inside the Same Platform",
+        "See How Leasey.AI Manages Student Housing Leasing Seasons"
+      ],
+      "h3": [
+        "Why the student housing demand pattern creates staffing inefficiency",
+        "What peak season inquiry volume looks like for large student housing operators",
+        "How Leasey.AI AI agents handle student housing inquiry characteristics",
+        "What 24/7 AI availability means for student renters who search at night",
+        "How to run a pre-leasing campaign in Leasey.AI for student housing",
+        "Managing waitlists by unit type before availability opens in spring",
+        "How the Smart Route Planner applies to campus-adjacent student housing portfolios",
+        "Managing multi-building showing schedules during peak leasing weeks",
+        "How Leasey.AI handles annual re-leasing at student housing scale",
+        "How unit and tenant records carry forward across annual lease cycles",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 7801,
+    "brandMentions": 44,
+    "brandDensity": "0.56%",
+    "emDashes": 20,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/student-housing-leasing-automation/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fstudent-housing-leasing-automation%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fstudent-housing-leasing-automation%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27164",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/ai-agent-page/",
+      "/ai-chatbot/",
+      "/lead-prequalification/",
+      "/smart-route-planner/",
+      "/advanced-reporting/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 10,
+      "impressions": 40,
+      "clicks": 0,
+      "bestPosition": 1,
+      "top": [
+        {
+          "q": "best ai solutions for student housing leasing and operations",
+          "imp": 12,
+          "clicks": 0,
+          "pos": 16.8
+        },
+        {
+          "q": "student housing peak leasing season automation strategies",
+          "imp": 10,
+          "clicks": 0,
+          "pos": 3.1
+        },
+        {
+          "q": "ai automation for student housing leasing and inquiries",
+          "imp": 5,
+          "clicks": 0,
+          "pos": 4.4
+        },
+        {
+          "q": "ai for student housing leads",
+          "imp": 5,
+          "clicks": 0,
+          "pos": 15.4
+        },
+        {
+          "q": "leading ai platforms for student housing leasing.",
+          "imp": 2,
+          "clicks": 0,
+          "pos": 9.5
+        },
+        {
+          "q": "what’s the leading platform for pre-leasing and early demand capture?",
+          "imp": 2,
+          "clicks": 0,
+          "pos": 2.5
+        },
+        {
+          "q": "ai for student housing marketing",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 26
+        },
+        {
+          "q": "ai student housing agent",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 10
+        },
+        {
+          "q": "leasey ai",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 1
+        },
+        {
+          "q": "leasing automation platform for student housing applications",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 6
+        }
+      ]
+    }
+  },
+  "t8": {
+    "slug": "lease-up-software",
+    "url": "https://www.leasey.ai/resources/lease-up-software/",
+    "http": "200|1|https://www.leasey.ai/resources/lease-up-software-new-construction-acquisitions/",
+    "title": "Lease-Up Software for New Construction and Portfolio Acquisitions | Leasey.AI",
+    "metaDescription": "Leasey.AI helps developers and operators lease new buildings and acquired portfolios faster with pre-leasing campaigns, AI inquiry response, and live absorption reporting.",
+    "h1": [
+      "Faster Lease-Ups for New Construction and Acquisitions"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 17,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Faster Lease-Ups for New Construction and Acquisitions"
+      ],
+      "h2": [
+        "Lease-Up Periods Concentrate Inquiry Volume Into a Short Window",
+        "Leasey.AI Supports Pre-Leasing Before a Building Opens",
+        "AI Lead Response Handles Inquiry Surges Without Manual Triage",
+        "Live Absorption Reporting Is Available for Investors and Lenders",
+        "The Lease-Up Platform Becomes the Stabilized Operations Platform",
+        "Plan a Lease-Up or Acquisition? Talk to Leasey.AI"
+      ],
+      "h3": [
+        "Why high inquiry volume overwhelms manual leasing processes",
+        "How Leasey.AI absorbs high inquiry volume during launch periods",
+        "How to configure Leasey.AI for pre-leasing before occupancy",
+        "Building a qualified prospect waitlist before a building opens",
+        "How Leasey.AI AI agents handle inquiry volume at lease-up launch",
+        "What the first weeks of a lease-up look like in the Leasey.AI pipeline",
+        "What absorption and leasing velocity data Leasey.AI tracks live",
+        "How live reporting replaces manual lease-up status assembly for investors",
+        "How Leasey.AI covers the full lifecycle from pre-leasing to stabilization",
+        "How Leasey.AI integrates with PMS platforms at and after stabilization",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 7955,
+    "brandMentions": 51,
+    "brandDensity": "0.64%",
+    "emDashes": 19,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/lease-up-software-new-construction-acquisitions/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Flease-up-software-new-construction-acquisitions%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Flease-up-software-new-construction-acquisitions%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27152",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/marketplace-syndication/",
+      "/lead-prequalification/",
+      "/ai-agent-page/",
+      "/advanced-reporting/",
+      "/learn-more-integrations/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 6,
+      "impressions": 31,
+      "clicks": 0,
+      "bestPosition": 1,
+      "top": [
+        {
+          "q": "what’s the leading platform for pre-leasing and early demand capture?",
+          "imp": 9,
+          "clicks": 0,
+          "pos": 2.2
+        },
+        {
+          "q": "leasing automation software for high volume lease ups",
+          "imp": 7,
+          "clicks": 0,
+          "pos": 5.7
+        },
+        {
+          "q": "leading platform pre-leasing early demand capture",
+          "imp": 6,
+          "clicks": 0,
+          "pos": 4.2
+        },
+        {
+          "q": "how to get buy-in from leasing agents for new software",
+          "imp": 5,
+          "clicks": 0,
+          "pos": 45.8
+        },
+        {
+          "q": "\"pre-leasing\" \"early demand capture\" platform",
+          "imp": 2,
+          "clicks": 0,
+          "pos": 2
+        },
+        {
+          "q": "\"pre-leasing\" platform or software \"early demand\" or \"demand capture\" real estate",
+          "imp": 2,
+          "clicks": 0,
+          "pos": 1
+        }
+      ]
+    }
+  },
+  "lp1": {
+    "slug": "leasing-pipeline-visibility",
+    "url": "https://www.leasey.ai/resources/leasing-pipeline-visibility/",
+    "http": "200|0|https://www.leasey.ai/resources/leasing-pipeline-visibility/",
+    "title": "Real-Time Leasing Pipeline Visibility for Property Management Teams | Leasey.AI",
+    "metaDescription": "Leasey.AI gives property managers a live view of every lead, showing, and application across their portfolio in one dashboard. Teams use pipeline data to find bottlenecks and coach leasing agents.",
+    "h1": [
+      "Leasing Pipeline Visibility"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 17,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Leasing Pipeline Visibility"
+      ],
+      "h2": [
+        "Manual Leasing Operations Surface Problems Weeks After They Start",
+        "The Leasey.AI Pipeline Shows Every Deal at Every Stage",
+        "Channel Performance Data Shows Which Sources Produce Signed Leases",
+        "Agent-Level Metrics Enable Specific Performance Coaching",
+        "Finance and Leadership Access Leasing Data Without Requesting It",
+        "See Leasey.AI's Live Pipeline Dashboard in Action"
+      ],
+      "h3": [
+        "How reporting lag delays corrective action in manual leasing operations",
+        "What Leasey.AI's live pipeline makes visible that manual reports miss",
+        "Reading time-in-stage data as a leasing operations diagnostic",
+        "How stage-level conversion data identifies the correct intervention",
+        "Measuring lead-to-lease conversion by source channel",
+        "How channel performance data shapes rental listing distribution strategy",
+        "What agent-level pipeline metrics reveal about individual performance",
+        "How performance data helps leasing managers standardize best practices",
+        "What finance teams need from the leasing operation reporting system",
+        "How Leasey.AI dashboards replace the monthly manual reporting cycle",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 8002,
+    "brandMentions": 53,
+    "brandDensity": "0.66%",
+    "emDashes": 17,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/leasing-pipeline-visibility/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fleasing-pipeline-visibility%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fleasing-pipeline-visibility%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27148",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/advanced-reporting/",
+      "/marketplace-syndication/",
+      "/team-collaboration/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "bestPosition": null,
+      "top": []
+    }
+  },
+  "lp2": {
+    "slug": "property-management-software-integration",
+    "url": "https://www.leasey.ai/resources/property-management-software-integration/",
+    "http": "200|0|https://www.leasey.ai/resources/property-management-software-integration/",
+    "title": "Leasey.AI Integrates With Rent Manager, Buildium, DoorLoop, and AppFolio",
+    "metaDescription": "Leasey.AI connects with leading property management systems to close the gap between front-office leasing and back-office operations. Operators eliminate double data entry and sync unit availability.",
+    "h1": [
+      "Leasey.AI Integrates With Rent Manager, Buildium, DoorLoop, and AppFolio"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 17,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Leasey.AI Integrates With Rent Manager, Buildium, DoorLoop, and AppFolio"
+      ],
+      "h2": [
+        "Manual Data Transfer Between Leasing and PMS Introduces Errors",
+        "Leasey.AI Integrates Directly With Leading Property Management Systems",
+        "Unit Availability Stays Synchronized Across Leasing and Operations",
+        "Signed Lease Data Flows Into the PMS at Move-In Without Re-Entry",
+        "Leasey.AI Also Connects to Rental Marketplaces and Screening Tools",
+        "See How Leasey.AI Connects With Your Existing PMS"
+      ],
+      "h3": [
+        "Where manual data transfer creates the most risk",
+        "How the leasing-to-operations handoff fails without integration",
+        "How the Leasey.AI and Rent Manager integration works",
+        "What data syncs automatically between Leasey.AI and the PMS",
+        "What availability mismatches cost operators",
+        "How real-time availability sync prevents listing errors",
+        "What tenant data carries from Leasey.AI into the PMS",
+        "How automated move-in handoffs reduce onboarding errors",
+        "Which rental marketplaces Leasey.AI syndicates listings to",
+        "How SingleKey and Certn integrate with the Leasey.AI workflow",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 7882,
+    "brandMentions": 59,
+    "brandDensity": "0.75%",
+    "emDashes": 25,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/property-management-software-integration/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fproperty-management-software-integration%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fproperty-management-software-integration%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27156",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/learn-more-integrations/",
+      "/tenant-screening/",
+      "/marketplace-syndication/",
+      "/team-collaboration/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 14,
+      "impressions": 122,
+      "clicks": 0,
+      "bestPosition": 1,
+      "top": [
+        {
+          "q": "padmapper zumper relationship",
+          "imp": 84,
+          "clicks": 0,
+          "pos": 7.3
+        },
+        {
+          "q": "evaluate the rentals company padmapper on b2b/property management",
+          "imp": 19,
+          "clicks": 0,
+          "pos": 2.6
+        },
+        {
+          "q": "padmapper zumper relationship ownership",
+          "imp": 5,
+          "clicks": 0,
+          "pos": 9.8
+        },
+        {
+          "q": "evaluate the rentals company zumper on b2b/property management",
+          "imp": 2,
+          "clicks": 0,
+          "pos": 6.5
+        },
+        {
+          "q": "zumper b2b property management",
+          "imp": 2,
+          "clicks": 0,
+          "pos": 15
+        },
+        {
+          "q": "zumper listing feed api property managers",
+          "imp": 2,
+          "clicks": 0,
+          "pos": 10
+        },
+        {
+          "q": "hours saved per week with leasing automation",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 3
+        },
+        {
+          "q": "is it evaluate the rentals company padmapper on b2b/property management",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 1
+        },
+        {
+          "q": "padmapper for property managers landlords",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 7
+        },
+        {
+          "q": "padmapper reviews for landlords property managers",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 7
+        }
+      ]
+    }
+  },
+  "lp3": {
+    "slug": "scale-leasing-operations-without-hiring",
+    "url": "https://www.leasey.ai/resources/scale-leasing-operations-without-hiring/",
+    "http": "200|0|https://www.leasey.ai/resources/scale-leasing-operations-without-hiring/",
+    "title": "How Leasey.AI Helps Property Operators Scale Leasing Without Adding Staff",
+    "metaDescription": "",
+    "h1": [
+      "Scale Without Adding Headcount"
+    ],
+    "counts": {
+      "h1": 1,
+      "h2": 7,
+      "h3": 19,
+      "h6": 6
+    },
+    "headings": {
+      "h1": [
+        "Scale Without Adding Headcount"
+      ],
+      "h2": [
+        "Leasing Volume Does Not Have to Scale Linearly With Staff",
+        "Liza, the AI Phone Agent, Responds to Every Call Around the Clock",
+        "Each Leasing Agent Manages More Qualified Leads Per Day",
+        "The Smart Route Planner Increases Showing Capacity Per Agent",
+        "Inquiry Surges at Lease-Up and Acquisition Do Not Require Temporary Hires",
+        "Automation Redirects Leasing Staff to High-Value Relationship Work",
+        "See Leasey.AI Scale Your Portfolio Without Proportional Staff Growth"
+      ],
+      "h3": [
+        "Front-line leasing tasks Leasey.AI automates at scale",
+        "How AI response covers all inquiry channels without staff involvement",
+        "What Liza the AI phone agent does on a typical inquiry call",
+        "How after-hours AI response prevents lead loss overnight",
+        "How the structured leasing pipeline reduces per-agent cognitive load",
+        "What leasing agents focus on when front-line tasks are automated",
+        "How the Smart Route Planner builds optimized showing schedules",
+        "Applying route optimization to single-family and scattered-site portfolios",
+        "How Leasey.AI handles inquiry volume during lease-up periods",
+        "Managing seasonal demand spikes in student housing and corporate rental",
+        "What leasing agents do when AI handles front-line tasks",
+        "How operators communicate the role of automation to their leasing teams",
+        "Table of Contents",
+        "How Tariffs Impact The Rental Market: Challenges and Strategies for Navigating the 2025 Tariffs",
+        "Leasey.AI and Door Insight Announce Strategic Partnership to Revolutionize Rental Market Analysis",
+        "Leasey.AI Partners with Rental Beast to Streamline Rental Listing Syndication Across North America",
+        "The Future of Your Rental Business: Property Management Software and Centralized Leasing",
+        "How to Find a Tenant on Facebook Marketplace",
+        "AppFolio Reveals Key Strategies for Property Management in 2024"
+      ],
+      "h6": [
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live",
+        "Book a demo",
+        "Setup (5–7 days)",
+        "Go live"
+      ]
+    },
+    "bylineVisible": true,
+    "bylineJsonLd": "\"author\":{\"@id\":\"https://www.leasey.ai/author/admin/\",\"name\":\"Admin\"}",
+    "words": 8096,
+    "brandMentions": 49,
+    "brandDensity": "0.61%",
+    "emDashes": 30,
+    "externalLinks": 4,
+    "internalLinks": [
+      "/xmlrpc.php",
+      "/resources/scale-leasing-operations-without-hiring/",
+      "/feed/",
+      "/comments/feed/",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fscale-leasing-operations-without-hiring%2F",
+      "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.leasey.ai%2Fresources%2Fscale-leasing-operations-without-hiring%2F&#038;format=xml",
+      "/wp-json/",
+      "/wp-json/wp/v2/posts/27143",
+      "/xmlrpc.php?rsd",
+      "/wp-content/resources/favicon.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-150x150.png",
+      "/wp-content/uploads/2023/07/leasey_favicon-300x300.png",
+      "/",
+      "/a-features/",
+      "/a-price/",
+      "/a-integrations/",
+      "/author/admin/",
+      "/2026/05/12/",
+      "/ai-agent-page/",
+      "/lead-prequalification/",
+      "/smart-route-planner/",
+      "/team-collaboration/",
+      "/blog/how-tariffs-impact-rental-market-challenges-strategies/",
+      "/resources/leasey-ai-door-insight/",
+      "/resources/leasey-ai-partners-with-rental-beast-to-streamline-rental-listing-syndication-across-north-america/",
+      "/blog/the-future-of-your-rental-business-property-management-software-and-centralized-leasing/",
+      "/blog/how-to-find-a-tenant-on-facebook-marketplace/",
+      "/resources/appfolio-property-management-strategies-2024/",
+      "/privacy/",
+      "/terms/",
+      "/about-us/",
+      "/category/press/",
+      "/blog/",
+      "/contact-us/",
+      "/blog/whats-the-best-property-management-software-4-popular-options/",
+      "/llm-info/",
+      "/#features",
+      "/#integrations",
+      "/#pricing",
+      "/get-started/",
+      "/video-page/"
+    ],
+    "gsc": {
+      "window": "2026-04-29 a 2026-07-28",
+      "queries": 3,
+      "impressions": 7,
+      "clicks": 0,
+      "bestPosition": 9,
+      "top": [
+        {
+          "q": "what tools help leasing teams do more with the same headcount?",
+          "imp": 4,
+          "clicks": 0,
+          "pos": 9
+        },
+        {
+          "q": "site:leasey.ai",
+          "imp": 2,
+          "clicks": 0,
+          "pos": 100.5
+        },
+        {
+          "q": "scaling student housing operations without adding headcount",
+          "imp": 1,
+          "clicks": 0,
+          "pos": 65
+        }
+      ]
+    }
+  }
+}

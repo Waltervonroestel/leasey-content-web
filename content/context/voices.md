@@ -1,5 +1,7 @@
 # Guías de voz
 
+> **CUARENTENA, 1 de agosto de 2026.** Walter marcó como incorrectos los datos biográficos y profesionales de ambos fundadores que salieron de este archivo (cargos anteriores, empresas, años de experiencia, credenciales, qué construyó cada uno). **Ningún agente puede escribir un hecho biográfico o profesional de Juan o Carlos tomándolo de aquí.** Lo que sigue siendo utilizable de este archivo es SOLO la guía de VOZ: tono, longitud de párrafo, estructura, qué temas postea cada uno. Los hechos verificados viven en `context/founders-facts.md` y no hay otra fuente.
+
 Estas guías se refinan con ejemplos reales. Cuando Walter pegue posts aprobados, añadirlos en la sección "Ejemplos" de cada voz y replicarlos como few-shot dentro del agente correspondiente.
 
 ## Carlos Leal — COO (voz principal de LinkedIn)
@@ -8,10 +10,10 @@ Estas guías se refinan con ejemplos reales. Cuando Walter pegue posts aprobados
 - Personal y auténtico de fundador. Comparte observaciones reales de conversaciones con clientes, no anuncios pulidos de marca.
 - Tono: seguro, cálido, ocasionalmente autocrítico.
 - Contexto bilingüe Colombia/Canadá, referenciado de forma natural cuando aporta.
-- Perfil: licensed Realtor, 15+ años en real estate tech institucional (EY Consulting asesorando a Oxford Properties y QuadReal, QuadReal Property Group, Aquilini Investment Group). Estrategia y operaciones, fundraising, investor relations, client success, talent. Basado en Bogotá dirigiendo una empresa con HQ en Canadá (fuente: onboarding guide jun 2026); el contexto Colombia/Canadá es literal, no solo de origen.
+- ~~Perfil: licensed Realtor, 15+ años en real estate tech institucional (EY Consulting asesorando a Oxford Properties y QuadReal, QuadReal Property Group, Aquilini Investment Group). Estrategia y operaciones, fundraising, investor relations, client success, talent. Basado en Bogotá dirigiendo una empresa con HQ en Canadá (fuente: onboarding guide jun 2026); el contexto Colombia/Canadá es literal, no solo de origen.~~  **[EN CUARENTENA: no usar, ver aviso arriba]**
 
 ### Datos del perfil de LinkedIn (verificados, ca.linkedin.com/in/carlosaleal)
-- Headline público: "Entrepreneur at Leasey.AI". Base: Greater Vancouver. 8K followers.
+- Headline público: "Entrepreneur at Leasey.AI". Base: Greater Vancouver. 8K followers.  **[sin verificar]**
 - About (abre así): "I'm an entrepreneur driven to reshape industries where business, technology, and..."
 - Usa hashtags de forma consistente: #PropTech, #LeaseyAI, #Hiring.
 - Patrón de publicación observado (temas que realmente postea):
@@ -29,10 +31,10 @@ de posts aprobados para usarlos como few-shot en `.claude/agents/linkedin-carlos
 - Estilo "casual-urgent", alrededor de 60 palabras por post.
 - Lidera con hitos de producto, no con check-ins de relación.
 - Temas: lanzamientos de producto, datos de la industria de leasing, observaciones de PropTech.
-- Perfil: CPA-CA y full-stack engineer (KPMG, Wishpond, The DMZ). Arquitectó la capa de inteligencia nativa y lideró la migración a React.
+- ~~Perfil: CPA-CA y full-stack engineer (KPMG, Wishpond, The DMZ). Arquitectó la capa de inteligencia nativa y lideró la migración a React.~~  **[EN CUARENTENA: no usar, ver aviso arriba]**
 
 ### Datos del perfil de LinkedIn (verificados, ca.linkedin.com/in/lealjuan)
-- Headline público: "CPA, CA". Base: Vancouver. 2K followers, 500+ conexiones.
+- Headline público: "CPA, CA". Base: Vancouver. 2K followers, 500+ conexiones.  **[sin verificar]**
 - About (abre así): "I'm the founder of Leasey.AI, where we're using AI to streamline and humanize the..."
 - Trilingüe: inglés y español nativos, francés básico.
 - Presenta en escenarios de producto/integraciones (ej. Rent Manager Integrations Spotlight).

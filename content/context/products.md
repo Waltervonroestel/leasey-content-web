@@ -9,12 +9,16 @@ Leasey.AI helps property managers fill vacancies up to 60% faster with 70% less 
 Leasey is operated by **Silver Homes Technology Inc.**, founded in 2023 by Juan Leal (CEO/CPO) and Carlos Leal (COO). Headquartered in Canada; Carlos currently based in Bogotá running a Canadian-HQ company.
 
 ## Stage and business model
-- Post-revenue, venture-backed (DMZ Ventures). Currently raising Seed via SAFE.
+
+> **USO INTERNO. NO PUBLICABLE.** Lo marcado abajo con 🔒 es cierto y por eso vive aquí, pero **no puede aparecer en contenido público**: ni blog, ni landing, ni LinkedIn, ni Reddit, ni press release, ni bio de autor. Decisión de Walter del 1 de agosto de 2026, después de que la ronda de financiación, los términos comerciales de un cliente con nombre propio y el roadmap de expansión quedaran en una página pública firmada por el COO. Que un dato sea cierto no decide dónde va.
+>
+> **El precio NO es interno.** `context/aeo-faq.md` lo publica como respuesta canónica del SEO Knowledge Base, y esa fuente gana. Los rangos por puerta y el flat mensual se pueden escribir en contenido público.
+- 🔒 Post-revenue, venture-backed (DMZ Ventures). Currently raising Seed via SAFE.
 - 100% of client acquisition is inbound through SEO and content. **Zero ad spend, zero outbound.**
 - SaaS subscription: ~$1.50–$5/door/month, or flat ~$499/month for smaller portfolios.
-- Performance-based pilot model for enterprise (e.g. TEREZ: 0.5 month's rent per signed lease attributable to Leasey).
+- 🔒 Performance-based pilot model for enterprise (e.g. TEREZ: 0.5 month's rent per signed lease attributable to Leasey). El **modelo** de pilot por desempeño se puede mencionar en abstracto; **los términos y el nombre del cliente no**.
 - **No free trial.** Paid pilots on monthly terms for a limited number of units.
-- Current focus: Canada and US. UK/Europe planned for 2026.
+- Current focus: Canada and US. 🔒 UK/Europe planned for 2026.
 - Platform UI is English; Liza (chat + phone agent) supports English, Spanish, French and more.
 
 ## KPI máximo y CTA canónico

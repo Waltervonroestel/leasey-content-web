@@ -41,13 +41,28 @@ export function optimisationPillarCoverage(rows: OptRow[]) {
 }
 
 // Cluster health: clicks, URLs, dead-ratio (URLs with 0 GSC clicks / total)
+//
+// La columna D de la hoja son VISITAS de GA4 y la E son CLICS de Search
+// Console. Hasta el 1 de agosto de 2026 las visitas de GA4 se sumaban a un
+// campo llamado `impressions`, y el panel mostraba sesiones con la etiqueta de
+// impresiones. No son lo mismo ni se parecen: la home tiene 1.886 visitas GA4,
+// 252 clics y unas 19.000 impresiones reales. Con ese nombre, cualquier
+// decisión de "esta página no tiene alcance" se tomaba con un número diez veces
+// más pequeño del que se creía.
+//
+// Es el mismo error que ya había en la sheet de Clusterización, donde la
+// columna "Visitas GSC" eran clics y se leyeron como impresiones. Ahí llevó a
+// marcar para borrar páginas que estaban funcionando.
+//
+// El campo ahora se llama por lo que es. Las impresiones de verdad viven en
+// Search Console y se piden a la API, no a una hoja.
 export function clusterHealth(rows: OptRow[]) {
-  const m = new Map<string, { urls: number; clicks: number; impressions: number; dead: number; high: number; med: number }>();
+  const m = new Map<string, { urls: number; clicks: number; ga4Visits: number; dead: number; high: number; med: number }>();
   for (const r of rows) {
     const c = r.cluster || "Unclassified";
-    if (!m.has(c)) m.set(c, { urls: 0, clicks: 0, impressions: 0, dead: 0, high: 0, med: 0 });
+    if (!m.has(c)) m.set(c, { urls: 0, clicks: 0, ga4Visits: 0, dead: 0, high: 0, med: 0 });
     const x = m.get(c)!;
-    x.urls++; x.clicks += r.gsc; x.impressions += r.ga4;
+    x.urls++; x.clicks += r.gsc; x.ga4Visits += r.ga4;
     if (r.gsc === 0) x.dead++;
     if (r.priority === "High") x.high++;
     if (r.priority === "Medium") x.med++;

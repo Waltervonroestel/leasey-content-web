@@ -5,7 +5,7 @@ import { Card, SectionTitle } from "@/components/ui";
 import type { OptRow } from "@/lib/sheets";
 import { PILLAR_META, pillarCodeFrom, type PillarCode } from "@/lib/pillarStyle";
 
-type ClusterRow = { cluster: string; urls: number; clicks: number; impressions: number; dead: number; deadRatio: number; high: number; med: number; score: number };
+type ClusterRow = { cluster: string; urls: number; clicks: number; ga4Visits: number; dead: number; deadRatio: number; high: number; med: number; score: number };
 type LinkSuggestion = { url: string; reason: string };
 type Resp = { connected: boolean; count?: number; rows?: OptRow[]; clusters?: ClusterRow[]; pillars?: Record<string, number>; linkMap?: Record<string, LinkSuggestion[]>; sheet?: string };
 

@@ -31,20 +31,61 @@ async function tab(name, range) {
   return res.data.values || [];
 }
 
-// 1. Decision row from "Optimizacion de contenido"
-const opt = await tab('Optimizacion de contenido', 'A1:N400');
+// 1. Decision row.
+//
+// Dos correcciones aquí, y las dos daban datos mal SIN fallar:
+//
+//   - Apuntaba a la pestaña "Optimizacion de contenido", que quedó atrás. El
+//     resto del sistema ya lee "Optimizacion + Clusters (Daniel)", que es la
+//     que el equipo mantiene.
+//   - Leía por posición fija. Como la pestaña vieja tiene dos columnas menos,
+//     imprimía el valor de "Acción" bajo la etiqueta "Meta title" y devolvía
+//     Decisión y Trabajo como undefined. El brief salía con la metadata
+//     cambiada de sitio y nada avisaba: no hay error, solo campos mentirosos.
+//
+// Ahora las columnas se resuelven por NOMBRE de cabecera, así que reordenar o
+// renombrar una columna deja de mover los datos a la etiqueta equivocada.
+const OPT_TAB = 'Optimizacion + Clusters (Daniel)';
+const opt = await tab(OPT_TAB, 'A1:R400');
+const header = (opt[0] || []).map(h => String(h ?? '').trim().toLowerCase());
+const col = (...names) => {
+  for (const n of names) {
+    const i = header.findIndex(h => h === n);
+    if (i >= 0) return i;
+  }
+  for (const n of names) {
+    const i = header.findIndex(h => h.includes(n));
+    if (i >= 0) return i;
+  }
+  return -1;
+};
+const get = (row, ...names) => {
+  const i = col(...names);
+  return i >= 0 ? row[i] : undefined;
+};
+
 const optHit = opt.slice(1).find(r => (r[0] || '').includes(target));
 if (optHit) {
-  console.log('=== Optimizacion de contenido (decision) ===');
+  console.log(`=== ${OPT_TAB} (decision) ===`);
   console.log('URL:', optHit[0]);
-  console.log('GA4 visits:', optHit[1], '| GSC visits:', optHit[2], '| Ranks:', optHit[3], '| Keyword count:', optHit[4]);
-  console.log('Meta title:', optHit[7]);
-  console.log('Meta description:', optHit[8]);
-  console.log('Accion:', optHit[9], '| Primary pillar:', optHit[10], '| Secondary:', optHit[11]);
-  console.log('Decision:', optHit[12]);
-  console.log('Trabajo:', optHit[13]);
+  console.log(
+    'GA4 visits:', get(optHit, 'visitas ga4'),
+    '| GSC visits:', get(optHit, 'visitas gsc'),
+    '| Ranks:', get(optHit, 'posiciona en google'),
+    '| Keyword count:', get(optHit, 'cantidad de keywords'),
+  );
+  console.log('Meta title:', get(optHit, 'meta title'));
+  console.log('Meta description:', get(optHit, 'meta description'));
+  console.log(
+    'Accion:', get(optHit, 'acción', 'accion'),
+    '| Primary pillar:', get(optHit, 'primary pillar'),
+    '| Secondary:', get(optHit, 'secondary pillar'),
+  );
+  console.log('Decision:', get(optHit, 'decisión', 'decision'));
+  console.log('Trabajo:', get(optHit, 'trabajo'));
+  console.log('Cluster:', get(optHit, 'cluster'));
 } else {
-  console.log('(no row in Optimizacion de contenido for this URL)');
+  console.log(`(no row in ${OPT_TAB} for this URL)`);
 }
 
 // 2. Semrush ranking keywords (richest source: KD + intent + SERP features)

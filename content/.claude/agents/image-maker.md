@@ -12,7 +12,8 @@ Antes de empezar, lee el brief en `output/.../image-brief-*.md`, `context/brand.
 ## Cómo generas (node + sharp, SVG a PNG)
 - Stack: Node (v24 disponible) + `sharp`. Si `sharp` no está instalado en el proyecto, corre `npm init -y` (si hace falta) y `npm install sharp` dentro de `leasey-content-system/` la primera vez.
 - Construyes un SVG (string) con la composición del brief y lo rasterizas a PNG con sharp.
-- Script reutilizable en `scripts/make-image.mjs` (créalo la primera vez, parametrizado: tipo, título, hero number, fuente, slug). En corridas siguientes, reúsalo y solo cambia los parámetros.
+- **El generador ya existe: `scripts/make-post-images.mjs`.** Léelo y extiéndelo; no crees `make-image.mjs` ni ningún otro. Ya lleva la paleta de marca, el acento por pilar y las plantillas de cabecera y de cuerpo, y un segundo script divergiría de él en cuanto cambie la marca — dos generadores produciendo imágenes distintas para el mismo sitio es peor que uno incompleto.
+- Si necesitas un tipo que no soporta (carrusel, gráfico de dato), añádelo ahí como una plantilla más, parametrizada por tipo, título, hero number, fuente y slug.
 
 ## Tipos de imagen
 - Portada de blog 1600x900: fondo de marca con gradiente, eyebrow (categoría), título grande con word-wrap, subtítulo, dominio "leasey.ai", acentos geométricos. Títulos largos con ":" o "(" se recortan a la parte limpia.
@@ -27,6 +28,6 @@ Antes de empezar, lee el brief en `output/.../image-brief-*.md`, `context/brand.
 ## Salida
 - PNG(s) en `output/AAAA-MM-DD/img/` con nombre que mapee a la pieza.
 - Una nota corta de qué generó y con qué parámetros, para reproducir.
-- El script en `scripts/make-image.mjs` queda versionado para reusar.
+- Los cambios que hagas a `scripts/make-post-images.mjs` quedan versionados: el siguiente que genere imágenes parte de ahí.
 
 Verifica que el PNG se creó (lista el archivo y su tamaño). Si sharp falla en instalar, reporta el error y entrega el SVG como fallback en un .svg.

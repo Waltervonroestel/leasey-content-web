@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useT } from "@/lib/i18n";
 import PublishToWordPress from "@/components/PublishToWordPress";
+import QueueRange from "@/components/QueueRange";
 import { Card, SectionTitle } from "@/components/ui";
 import type { CalendarRow } from "@/lib/sheets";
 import { PILLAR_META, pillarCodeFrom, channelIcon, channelGroup, type PillarCode } from "@/lib/pillarStyle";
@@ -44,7 +46,16 @@ function isFeatureRelease(title: string) {
   return FEATURE_KEYWORDS.some((kw) => t.includes(kw));
 }
 
+// Estos valores se ESCRIBEN en la hoja de Google, así que no se traducen:
+// traducirlos dejaría el calendario con dos vocabularios de estado y rompería
+// los filtros que el equipo ya tiene montados. Se traduce solo lo que se ve.
 const STATUS_OPTIONS = ["Idea", "Escrito", "Programado", "Publicado"] as const;
+const STATUS_LABEL: Record<string, string> = {
+  Idea: "Idea",
+  Escrito: "Written",
+  Programado: "Scheduled",
+  Publicado: "Published",
+};
 const STATUS_COLOUR: Record<string, string> = {
   "": "bg-slate-100 text-slate",
   "Idea": "bg-slate-100 text-slate",
@@ -54,6 +65,7 @@ const STATUS_COLOUR: Record<string, string> = {
 };
 
 function PieceCard({ row, isToday, isPast }: { row: CalRow; isToday: boolean; isPast: boolean }) {
+  const t = useT();
   const code = pillarCodeFrom(row.positioningPillar || "") as PillarCode;
   const meta = PILLAR_META[code];
   const phase = PHASE_LABEL[row.phase] || row.phase || "—";
@@ -117,7 +129,7 @@ function PieceCard({ row, isToday, isPast }: { row: CalRow; isToday: boolean; is
           <PublishToWordPress sheetRow={row.sheetRow} title={row.title} />
         )}
         {channelGroup(row.channel) === "Blog" && !row.docLink && (
-          <p className="text-[11px] text-slate mt-1">Sin Google Doc enlazado: no hay qué publicar.</p>
+          <p className="text-[11px] text-slate mt-1">{t("No Google Doc linked: nothing to publish.")}</p>
         )}
 
         {/* Status quick-update */}
@@ -132,7 +144,7 @@ function PieceCard({ row, isToday, isPast }: { row: CalRow; isToday: boolean; is
                 status === s ? STATUS_COLOUR[s] + " font-medium" : "text-slate hover:bg-bg-soft"
               }`}
             >
-              {s}
+              {t(STATUS_LABEL[s] || s)}
             </button>
           ))}
           {error && <span className="text-[10px] text-rose-600 ml-1">error</span>}
@@ -161,6 +173,7 @@ function fmtWeekRange(monday: string) {
 }
 
 export default function CalendarView() {
+  const t = useT();
   const [data, setData] = useState<Resp | null>(null);
   const [loading, setLoading] = useState(true);
   const [pillar, setPillar] = useState<string>("");
@@ -232,9 +245,11 @@ export default function CalendarView() {
           </p>
         </div>
         <a href="/api/export/calendar" className="text-xs px-3 py-1.5 rounded-lg border border-line text-slate hover:text-ink hover:border-ink/40 transition-colors whitespace-nowrap">
-          ⬇ Descargar CSV
+          ⬇ {t("Download CSV")}
         </a>
       </div>
+
+      <QueueRange />
 
       <Card className="!p-4">
         <div className="flex flex-col gap-3">

@@ -98,25 +98,92 @@ export async function listCalendarRows(): Promise<CalendarRow[]> {
   });
 }
 
-// ── Optimisation map (723 old URLs with cluster + pillar + action + owner) ──
+// ── Clusterización 2026: la hoja maestra ────────────────────────────────────
+//
+// Es la que mantiene el equipo y la única que se actualiza. Antes esto leía una
+// hoja aparte con una foto de junio, así que el panel envejecía sin avisar.
+//
+// La pestaña buena es "Optimizacion + Clusters (Daniel)": trae lo mismo que las
+// otras más meta title, meta description y cluster, que es lo que hace falta
+// para decidir sin abrir la hoja.
+//
+// Dos avisos que vienen de haberse equivocado con ellos:
+//   - "Visitas GSC" son CLICS, no impresiones. Un número unas veinte veces más
+//     pequeño. Leerlo como impresiones llevó a marcar para borrar páginas que
+//     estaban funcionando.
+//   - "Visitas GA4" son sesiones. Tampoco son impresiones.
+// Los campos se llaman aquí por lo que contienen para que no vuelva a pasar.
+const CLUSTER_SHEET_ID =
+  process.env.CLUSTER_SHEET_ID || "1g5HW6gK1jfJdlt8U6E13KAQ75z5gax5uw3j1f-ia1dI";
+export const CLUSTER_TAB = process.env.CLUSTER_TAB || "Optimizacion + Clusters (Daniel)";
+
 export type OptRow = {
-  priority: string; cluster: string; url: string;
-  ga4: number; gsc: number;
-  primary: string; secondary: string;
-  action: string; owner: string;
+  url: string;
+  ga4Visits: number;
+  gscClicks: number;
+  /** false cuando la hoja dice NA: sin medir, que no es lo mismo que cero. */
+  hasData: boolean;
+  ranks: string;
+  keywordCount: number;
+  keywords: string;
+  content: string;
+  metaTitle: string;
+  metaDescription: string;
+  action: string;
+  primary: string;
+  secondary: string;
+  decision: string;
+  work: string;
+  cluster: string;
+  // Se conservan para no romper lo que ya leía estos nombres.
+  priority: string;
+  owner: string;
 };
+
+// Las celdas de métrica traen "NA" cuando no hay dato, y "NA" no es cero: una
+// página sin medir no es una página sin tráfico. Con +("NA") sale NaN, que al
+// serializar a JSON se convierte en null y arrastra a null cualquier suma que
+// lo toque, así que un cluster entero aparecía sin clics por una sola fila.
+//
+// Se devuelve 0 para poder sumar, y se guarda aparte si el dato existía.
+const num = (v: unknown): number => {
+  const n = Number(String(v ?? "").replace(/[^\d.-]/g, ""));
+  return Number.isFinite(n) ? n : 0;
+};
+const measured = (v: unknown) => /^\s*\d/.test(String(v ?? ""));
+
 export async function listOptimisationRows(): Promise<OptRow[]> {
-  if (!OPTIMISATION_SHEET_ID || !sheetsConfigured()) return [];
-  return cached(`opt:${OPTIMISATION_SHEET_ID}`, async () => {
-    const r = await sheetsClient().spreadsheets.values.get({ spreadsheetId: OPTIMISATION_SHEET_ID, range: "Optimisation map!A:I" });
+  if (!sheetsConfigured()) return [];
+  return cached(`cluster:${CLUSTER_SHEET_ID}`, async () => {
+    const r = await sheetsClient().spreadsheets.values.get({
+      spreadsheetId: CLUSTER_SHEET_ID,
+      range: `${CLUSTER_TAB}!A:O`,
+    });
     const rows = (r.data.values || []).slice(1);
     return rows
-      .filter((row) => row[2])
+      .filter((row) => row[0] && String(row[0]).includes("/"))
       .map((row) => ({
-        priority: row[0] || "", cluster: row[1] || "", url: row[2] || "",
-        ga4: +(row[3] || 0), gsc: +(row[4] || 0),
-        primary: row[5] || "", secondary: row[6] || "",
-        action: row[7] || "", owner: row[8] || "",
+        url: row[0] || "",
+        ga4Visits: num(row[1]),
+        gscClicks: num(row[2]),
+        // Sin esto, "0 clics" y "nunca se midió" se ven igual en el panel, y
+        // solo uno de los dos justifica borrar una página.
+        hasData: measured(row[1]) || measured(row[2]),
+        ranks: row[3] || "",
+        keywordCount: num(row[4]),
+        keywords: row[5] || "",
+        content: row[6] || "",
+        metaTitle: row[7] || "",
+        metaDescription: row[8] || "",
+        action: row[9] || "",
+        primary: row[10] || "",
+        secondary: row[11] || "",
+        decision: row[12] || "",
+        work: row[13] || "",
+        cluster: row[14] || "",
+        // "Trabajo" es quién y qué hay que hacer: es lo más cercano a un dueño.
+        priority: row[13] || "",
+        owner: row[13] || "",
       }));
   });
 }

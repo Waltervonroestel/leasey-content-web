@@ -29,7 +29,7 @@ export async function GET(req: Request, ctx: { params: Promise<{ type: string }>
       const rows = await listOptimisationRows();
       const flat = rows.map((r) => ({
         priority: r.priority, cluster: r.cluster, url: r.url,
-        gscClicks: r.gsc, ga4Sessions: r.ga4,
+        gscClicks: r.gscClicks, ga4Sessions: r.ga4Visits,
         primaryPillar: r.primary, secondaryPillar: r.secondary,
         action: r.action, owner: r.owner,
       }));

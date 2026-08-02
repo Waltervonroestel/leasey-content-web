@@ -9,13 +9,22 @@ type ClusterRow = { cluster: string; urls: number; clicks: number; ga4Visits: nu
 type LinkSuggestion = { url: string; reason: string };
 type Resp = { connected: boolean; count?: number; rows?: OptRow[]; clusters?: ClusterRow[]; pillars?: Record<string, number>; linkMap?: Record<string, LinkSuggestion[]>; sheet?: string };
 
-const PRIORITY_ORDER = ["High", "Medium", "Low", "Low (deprioritise)"];
-const PRIORITY_META: Record<string, { label: string; ring: string; dot: string; bg: string; text: string }> = {
-  "High":               { label: "High",     ring: "ring-red-200",   dot: "bg-red-500",    bg: "bg-red-50",    text: "text-red-700" },
-  "Medium":             { label: "Medium",   ring: "ring-amber-200", dot: "bg-amber-500",  bg: "bg-amber-50",  text: "text-amber-700" },
-  "Low":                { label: "Low",      ring: "ring-line",      dot: "bg-slate-300",  bg: "bg-bg-soft",   text: "text-slate" },
-  "Low (deprioritise)": { label: "Skip",     ring: "ring-line",      dot: "bg-slate-300",  bg: "bg-bg-soft",   text: "text-slate" },
+// Orden de urgencia por tipo de trabajo, de más a menos.
+const WORK_ORDER = ["Reescribir", "Landing reescribir", "Optimizar", "Landing optimizar", "Landing crear", "Ninguno", "No tocar por ahora"];
+// La hoja de Clusterización no clasifica por prioridad sino por TIPO DE TRABAJO.
+// Reescribir pesa más que optimizar porque es rehacer la pieza, no ajustarla, y
+// "Ninguno" o "No tocar por ahora" no son trabajo pendiente.
+const WORK_META: Record<string, { label: string; ring: string; dot: string; bg: string; text: string }> = {
+  "Reescribir":         { label: "Reescribir",  ring: "ring-red-200",   dot: "bg-red-500",    bg: "bg-red-50",    text: "text-red-700" },
+  "Landing reescribir": { label: "Landing: reescribir", ring: "ring-red-200", dot: "bg-red-500", bg: "bg-red-50", text: "text-red-700" },
+  "Optimizar":          { label: "Optimizar",   ring: "ring-amber-200", dot: "bg-amber-500",  bg: "bg-amber-50",  text: "text-amber-700" },
+  "Landing optimizar":  { label: "Landing: optimizar", ring: "ring-amber-200", dot: "bg-amber-500", bg: "bg-amber-50", text: "text-amber-700" },
+  "Landing crear":      { label: "Landing: crear", ring: "ring-blue-200", dot: "bg-blue-500",  bg: "bg-blue-50",   text: "text-blue-700" },
+  "Ninguno":            { label: "Sin trabajo", ring: "ring-line",      dot: "bg-slate-300",  bg: "bg-bg-soft",   text: "text-slate" },
+  "No tocar por ahora": { label: "No tocar",    ring: "ring-line",      dot: "bg-slate-300",  bg: "bg-bg-soft",   text: "text-slate" },
 };
+const REWRITE = ["Reescribir", "Landing reescribir"];
+const OPTIMISE = ["Optimizar", "Landing optimizar"];
 
 function FilterPill({ active, count, label, onClick, colour }: { active: boolean; count: number; label: string; onClick: () => void; colour?: string }) {
   return (
@@ -34,13 +43,13 @@ function FilterPill({ active, count, label, onClick, colour }: { active: boolean
 function URLCard({ r, links }: { r: OptRow; links?: LinkSuggestion[] }) {
   const code = pillarCodeFrom(r.primary) as PillarCode;
   const meta = PILLAR_META[code];
-  const prio = PRIORITY_META[r.priority] || PRIORITY_META["Low"];
+  const prio = WORK_META[r.work] || WORK_META["Ninguno"];
 
   return (
     <div className={`rounded-xl border border-line bg-white p-4 flex flex-col gap-3 hover:shadow-md transition-shadow relative`}>
       <div className="absolute left-0 top-3 bottom-3 w-1 rounded-r-full" style={{ background: meta.colour }} aria-hidden />
       <div className="pl-3 flex flex-col gap-2.5">
-        {/* Header: priority + cluster */}
+        {/* Cabecera: tipo de trabajo + cluster */}
         <div className="flex items-center gap-2 flex-wrap">
           <span className={`text-[10px] px-2 py-0.5 rounded-full font-medium ${prio.bg} ${prio.text}`}>
             <span className={`inline-block w-1.5 h-1.5 rounded-full mr-1 align-middle ${prio.dot}`} />
@@ -58,11 +67,11 @@ function URLCard({ r, links }: { r: OptRow; links?: LinkSuggestion[] }) {
         <div className="flex items-center gap-3 text-xs flex-wrap">
           <span className="flex items-center gap-1 text-slate">
             <span className="text-[10px] uppercase tracking-wide opacity-70">GSC</span>
-            <span className="text-ink font-medium tabular-nums">{r.gsc}</span>
+            <span className="text-ink font-medium tabular-nums">{r.gscClicks}</span>
           </span>
           <span className="flex items-center gap-1 text-slate">
             <span className="text-[10px] uppercase tracking-wide opacity-70">GA4</span>
-            <span className="text-ink font-medium tabular-nums">{r.ga4}</span>
+            <span className="text-ink font-medium tabular-nums">{r.ga4Visits}</span>
           </span>
           <span className={`ml-auto text-[10px] px-1.5 py-0.5 rounded border ${meta.border} ${meta.bg} ${meta.text} font-medium`}>
             {code === "—" ? meta.label : `${code} ${meta.short}`}
@@ -74,7 +83,7 @@ function URLCard({ r, links }: { r: OptRow; links?: LinkSuggestion[] }) {
           <span className="text-[10px] uppercase tracking-wide text-slate">Suggested action</span>
           <p className="text-xs text-ink leading-snug">{r.action}</p>
           {r.owner && r.owner !== "—" && (
-            <span className="text-[10px] text-slate">Owner: <span className="text-ink">{r.owner}</span></span>
+            <span className="text-[10px] text-slate">Trabajo: <span className="text-ink">{r.work}</span></span>
           )}
         </div>
 
@@ -99,9 +108,9 @@ function URLCard({ r, links }: { r: OptRow; links?: LinkSuggestion[] }) {
 
 function ClusterPanel({ cluster, rows, linkMap }: { cluster: string; rows: OptRow[]; linkMap?: Record<string, LinkSuggestion[]> }) {
   const [open, setOpen] = useState(false);
-  const high = rows.filter((r) => r.priority === "High").length;
-  const med = rows.filter((r) => r.priority === "Medium").length;
-  const dead = rows.filter((r) => r.gsc === 0).length;
+  const high = rows.filter((r) => REWRITE.includes(r.work)).length;
+  const med = rows.filter((r) => OPTIMISE.includes(r.work)).length;
+  const dead = rows.filter((r) => r.gscClicks === 0).length;
   const deadRatio = rows.length ? Math.round((dead / rows.length) * 100) : 0;
   const pillar = rows[0]?.primary || "—";
   const code = pillarCodeFrom(pillar) as PillarCode;
@@ -170,7 +179,7 @@ export default function OptimiseView() {
     });
   }, [rows, pillar, owner, q]);
 
-  const highImpact = useMemo(() => filtered.filter((r) => r.priority === "High").slice(0, 12), [filtered]);
+  const highImpact = useMemo(() => filtered.filter((r) => REWRITE.includes(r.work)).sort((a, b) => b.gscClicks - a.gscClicks).slice(0, 12), [filtered]);
   const byCluster = useMemo(() => {
     const m = new Map<string, OptRow[]>();
     for (const r of filtered) {
@@ -179,8 +188,8 @@ export default function OptimiseView() {
       m.get(c)!.push(r);
     }
     return [...m.entries()].sort((a, b) => {
-      const order = ["High", "Medium", "Low", "Low (deprioritise)"];
-      const score = (rs: OptRow[]) => rs.reduce((acc, r) => acc + (4 - order.indexOf(r.priority)) * 10, 0);
+      const order = ["Reescribir", "Landing reescribir", "Optimizar", "Landing optimizar", "Landing crear", "Ninguno", "No tocar por ahora"];
+      const score = (rs: OptRow[]) => rs.reduce((acc, r) => acc + (order.length - order.indexOf(r.work)) * 10, 0);
       return score(b[1]) - score(a[1]);
     });
   }, [filtered]);
@@ -199,7 +208,7 @@ export default function OptimiseView() {
         <div>
           <h1 className="text-2xl font-bold text-ink">Optimise old content</h1>
           <p className="text-slate text-sm mt-1">
-            {rows.length} published URLs classified into clusters and mapped to the 6 positioning pillars, each with a suggested action and owner.
+            {rows.length} published URLs classified into clusters and mapped to the 6 positioning pillars, con su decisión, tipo de trabajo y cluster. Fuente: la hoja de Clusterización 2026, la que mantiene el equipo.
             {data.sheet && (<> &middot; <a href={data.sheet} target="_blank" rel="noreferrer" className="text-blue hover:underline">Open the source sheet</a></>)}
           </p>
         </div>
@@ -211,10 +220,10 @@ export default function OptimiseView() {
       {/* Stat strip */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {([
-          { label: "High priority", value: rows.filter((r) => r.priority === "High").length, accent: true },
-          { label: "Medium priority", value: rows.filter((r) => r.priority === "Medium").length, accent: false },
-          { label: "Alejandra lane", value: rows.filter((r) => r.owner.includes("Alejandra")).length, accent: false },
-          { label: "Walter lane", value: rows.filter((r) => r.owner === "Walter" || r.owner === "Walter (decision)").length, accent: false },
+          { label: "Para reescribir", value: rows.filter((r) => REWRITE.includes(r.work)).length, accent: true },
+          { label: "Para optimizar", value: rows.filter((r) => OPTIMISE.includes(r.work)).length, accent: false },
+          { label: "Sin un solo clic", value: rows.filter((r) => r.hasData && r.gscClicks === 0).length, accent: false },
+          { label: "Sin medir (NA)", value: rows.filter((r) => !r.hasData).length, accent: false },
         ]).map((s) => (
           <div key={s.label} className={`rounded-xl border bg-white p-3 ${s.accent ? "border-red-200" : "border-line"}`}>
             <div className="text-[10px] uppercase tracking-wide text-slate">{s.label}</div>
@@ -259,7 +268,7 @@ export default function OptimiseView() {
         <section>
           <div className="flex items-baseline gap-3 mb-3">
             <h2 className="text-sm font-semibold text-ink">Work on this first</h2>
-            <span className="text-xs text-slate">{highImpact.length} high-priority pages bleeding impressions</span>
+            <span className="text-xs text-slate">{highImpact.length} páginas para reescribir, ordenadas por clics que ya traen</span>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {highImpact.map((r, i) => <URLCard key={i} r={r} links={data?.linkMap?.[r.url]} />)}

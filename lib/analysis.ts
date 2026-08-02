@@ -62,10 +62,12 @@ export function clusterHealth(rows: OptRow[]) {
     const c = r.cluster || "Unclassified";
     if (!m.has(c)) m.set(c, { urls: 0, clicks: 0, ga4Visits: 0, dead: 0, high: 0, med: 0 });
     const x = m.get(c)!;
-    x.urls++; x.clicks += r.gsc; x.ga4Visits += r.ga4;
-    if (r.gsc === 0) x.dead++;
-    if (r.priority === "High") x.high++;
-    if (r.priority === "Medium") x.med++;
+    x.urls++; x.clicks += r.gscClicks; x.ga4Visits += r.ga4Visits;
+    if (r.gscClicks === 0) x.dead++;
+    // high y med cuentan ahora TIPO DE TRABAJO, no prioridad: la hoja de
+    // Clusterización no tiene prioridades.
+    if (/reescribir/i.test(r.work)) x.high++;
+    if (/optimizar/i.test(r.work)) x.med++;
   }
   return [...m.entries()].map(([cluster, x]) => ({
     cluster,
@@ -82,9 +84,21 @@ export function pillarGap(cal: CalendarRow[], opt: OptRow[]) {
   return PILLARS.map((p) => ({ pillar: p, calendar: c[p] || 0, published: o[p] || 0 }));
 }
 
-// Top old pages by expected impact (impressions * CTR gap if rankable)
+// Las páginas donde hay trabajo pendiente y algo que perder.
+//
+// Antes esto filtraba por priority "High" o "Medium", que eran los valores de
+// la hoja vieja. La de Clusterización no usa prioridades: usa la columna
+// "Trabajo", con valores como Optimizar, Reescribir o Landing reescribir. Con
+// el filtro viejo esta función habría devuelto cero filas sin que nada fallara,
+// que es la peor forma de romperse.
+//
+// Se ordenan por clics, porque una página que ya trae tráfico y necesita
+// trabajo es más urgente que una que no trae nada.
+const NEEDS_WORK = /^(optimizar|reescribir|landing (optimizar|reescribir|crear))$/i;
+
 export function highImpactOldPages(rows: OptRow[], n = 30) {
   return rows
-    .filter((r) => r.priority === "High" || r.priority === "Medium")
+    .filter((r) => NEEDS_WORK.test((r.work || "").trim()))
+    .sort((a, b) => b.gscClicks - a.gscClicks)
     .slice(0, n);
 }

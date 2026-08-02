@@ -15,11 +15,11 @@ export function suggestInternalLinks(rows: OptRow[], target: OptRow, max = 3): L
   if (sameCluster.length === 0) return [];
 
   // Prefer pages that already get traffic (better link equity to flow from/to).
-  const ranked = [...sameCluster].sort((a, b) => b.gsc - a.gsc);
+  const ranked = [...sameCluster].sort((a, b) => b.gscClicks - a.gscClicks);
   return ranked.slice(0, max).map((r) => ({
     url: r.url,
-    reason: r.gsc > 0
-      ? `mismo cluster, ${r.gsc} clic${r.gsc === 1 ? "" : "s"} GSC`
+    reason: r.gscClicks > 0
+      ? `mismo cluster, ${r.gscClicks} clic${r.gscClicks === 1 ? "" : "s"} GSC`
       : `mismo cluster, refuerza profundidad temática`,
   }));
 }

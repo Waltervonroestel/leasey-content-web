@@ -58,7 +58,7 @@ export async function GET(req: Request) {
       available: [],
       empty: true,
       reason:
-        "Todavía no hay instantáneas. El cron semanal las genera cada lunes, y la primera solo registra la línea base porque un diff necesita dos fotos.",
+        "No snapshots yet. El cron semanal las genera cada lunes, y la primera solo registra la línea base porque un diff necesita dos fotos.",
     });
   }
 

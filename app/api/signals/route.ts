@@ -54,7 +54,7 @@ export async function GET(req: Request) {
       empty: true,
       // Decir por qué está vacío, no solo que lo está.
       reason:
-        "Todavía no hay instantáneas. El cron semanal las genera cada lunes; la primera corrida solo registra la línea base porque un diff necesita dos fotos.",
+        "No snapshots yet. El cron semanal las genera cada lunes; la primera corrida solo registra la línea base porque un diff necesita dos fotos.",
     });
   }
 

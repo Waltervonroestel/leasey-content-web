@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 import { Card } from "@/components/ui";
 import { PILLAR_META, pillarCodeFrom, type PillarCode } from "@/lib/pillarStyle";
 
@@ -33,6 +34,7 @@ function InsightCard({ date, title, summary, sources, pillar }: { date: string; 
 }
 
 export default function InsightsView() {
+  const t = useT();
   const [hist, setHist] = useState<InsightRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [generating, setGenerating] = useState(false);
@@ -102,7 +104,7 @@ export default function InsightsView() {
       )}
       {queued && (
         <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-          Tarea añadida a la Writing Queue. (Para generar in-page sin script, agrega <code className="font-mono text-xs">ANTHROPIC_API_KEY</code> en Render.) Corre en Claude Code:
+          {t("Task added to the Writing Queue. To generate in-page without a script, add ANTHROPIC_API_KEY in Render. Run it in Claude Code:")}
           <code className="block mt-1 font-mono text-xs bg-emerald-100 px-2 py-1 rounded">node scripts/process-content-queue.mjs</code>
         </div>
       )}

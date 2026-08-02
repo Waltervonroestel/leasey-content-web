@@ -63,8 +63,8 @@ export async function GET() {
       // No decir solo "no hay datos": decir qué falta y cuándo llega.
       reason:
         snaps.length === 0
-          ? "Todavía no hay instantáneas semanales. El cron las genera cada lunes."
-          : "Solo hay una instantánea. Un cambio de título se detecta comparando dos semanas, así que la medición empieza con la segunda corrida del cron.",
+          ? "No weekly snapshots yet. The cron generates one every Monday."
+          : "There is only one snapshot. A title change is detected by comparing two weeks, so measurement starts with the cron's second run.",
     });
   }
 
@@ -114,20 +114,23 @@ export async function GET() {
       const enoughVolume = b.impressions >= MIN_IMPRESSIONS && a.impressions >= MIN_IMPRESSIONS;
       const readable = enoughVolume && daysSince >= MIN_DAYS;
 
+      // El veredicto viaja como clave estable, no como frase: la interfaz tiene
+      // selector de idioma y comparar strings traducidos para contar los que
+      // funcionaron se rompería al primer cambio de redacción.
       let verdict: string;
       if (daysSince < MIN_DAYS) {
-        verdict = `demasiado pronto: ${daysSince} de ${MIN_DAYS} días`;
+        verdict = "too-early";
       } else if (!enoughVolume) {
-        verdict = "sin volumen suficiente para leer el CTR";
+        verdict = "low-volume";
       } else if (a.position - b.position > 3) {
         // La posición manda: si la página cayó, el CTR no es comparable.
-        verdict = "la página perdió posición, el CTR no se puede atribuir al título";
+        verdict = "position-moved";
       } else if (a.ctr > b.ctr * 1.2) {
-        verdict = "el título nuevo funciona";
+        verdict = "works";
       } else if (a.ctr < b.ctr * 0.8) {
-        verdict = "el título nuevo rinde peor que el anterior";
+        verdict = "worse";
       } else {
-        verdict = "sin cambio apreciable";
+        verdict = "no-change";
       }
 
       changes.push({ url, changedOn: cur.date, daysSince, before: b, after: a, verdict, readable });
@@ -150,7 +153,7 @@ export async function GET() {
     tracked: Object.keys(latest.titles || {}).length,
     changes: list,
     readable: list.filter((c) => c.readable).length,
-    working: list.filter((c) => c.verdict === "el título nuevo funciona").length,
-    worse: list.filter((c) => c.verdict.startsWith("el título nuevo rinde peor")).length,
+    working: list.filter((c) => c.verdict === "works").length,
+    worse: list.filter((c) => c.verdict === "worse").length,
   });
 }

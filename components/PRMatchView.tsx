@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 import { Card, Badge } from "@/components/ui";
 
 interface Match {
@@ -32,6 +33,7 @@ interface Resp {
 }
 
 export default function PRMatchView() {
+  const t = useT();
   const [data, setData] = useState<Resp | null>(null);
   const [tab, setTab] = useState<"match" | "write">("match");
   const [loading, setLoading] = useState(true);
@@ -46,12 +48,12 @@ export default function PRMatchView() {
       .catch(() => setLoading(false));
   }, []);
 
-  if (loading) return <p className="text-sm text-slate">Cruzando calendario y medios…</p>;
+  if (loading) return <p className="text-sm text-slate">Cross-referencing calendar and outlets…</p>;
   if (!data?.connected)
     return (
       <Card>
         <p className="text-sm text-slate">
-          Todavía no hay instantánea de medios. El cron la genera cada lunes.
+          {t("No outlet snapshot yet. The weekly cron generates it every Monday.")}
         </p>
       </Card>
     );
@@ -67,23 +69,22 @@ export default function PRMatchView() {
           onClick={() => setTab("match")}
           className={`text-xs px-3 py-1.5 rounded border ${tab === "match" ? "border-blue text-blue" : "border-border text-slate"}`}
         >
-          A qué medio va cada anuncio ({matches.length})
+          Which outlet fits each announcement ({matches.length})
         </button>
         <button
           onClick={() => setTab("write")}
           className={`text-xs px-3 py-1.5 rounded border ${tab === "write" ? "border-blue text-blue" : "border-border text-slate"}`}
         >
-          Qué deberíamos escribir ({ideas.length})
+          What we should write ({ideas.length})
         </button>
       </div>
 
       {tab === "match" && (
         <>
           <Card>
-            <h3 className="text-sm font-semibold text-ink mb-2">De qué viene hablando cada medio</h3>
+            <h3 className="text-sm font-semibold text-ink mb-2">What each outlet has been covering</h3>
             <p className="text-xs text-slate mb-3 leading-relaxed">
-              Deducido de sus propias URLs recientes, no de una taxonomía nuestra. Es el dato que falta cuando se
-              escribe un pitch: se manda el mismo texto a los cinco medios y no entra en ninguno.
+              {t("Derived from their own recent URLs, not from a taxonomy we imposed. This is the fact missing when someone writes a pitch: the same text goes to all five outlets and lands nowhere.")}
             </p>
             {readable.map((o) => (
               <div key={o.name} className="flex items-baseline gap-2 flex-wrap py-1 border-b border-border/40">
@@ -95,8 +96,7 @@ export default function PRMatchView() {
             ))}
             {(data.outlets || []).filter((o) => o.error).length > 0 && (
               <p className="text-[11px] text-slate mt-3 leading-relaxed">
-                {(data.outlets || []).filter((o) => o.error).map((o) => o.name).join(", ")} bloquean el acceso
-                automatizado. No se pudo leer, que no es lo mismo que no publicar.
+                {(data.outlets || []).filter((o) => o.error).map((o) => o.name).join(", ")}  {t("block automated access. We could not read them, which is not the same as them not publishing.")}
               </p>
             )}
           </Card>
@@ -137,22 +137,18 @@ export default function PRMatchView() {
         <>
           <Card>
             <div className="flex items-baseline gap-2 mb-2">
-              <h3 className="text-sm font-semibold text-ink">Qué deberíamos escribir</h3>
-              <Badge label="dos señales a la vez" />
+              <h3 className="text-sm font-semibold text-ink">What we should write</h3>
+              <Badge label="two signals at once" />
             </div>
             <p className="text-xs text-slate leading-relaxed">
-              Solo aparecen los temas donde <strong>coinciden dos cosas</strong>: un medio viene publicando sobre
-              ello, y la gente lo busca con demanda medida en Search Console. Una sola de las dos no basta. Que un
-              medio trate un tema no lo convierte en tema nuestro, y una consulta con volumen donde nadie del
-              sector escribe suele ser una consulta de otra categoría.
+              {t("Only topics where two things agree: an outlet is publishing on it, and people search for it with measured demand in Search Console. Either one alone is not enough. An outlet covering a topic does not make it ours, and a query with volume that nobody in the sector writes about is usually a query from another category.")}
             </p>
           </Card>
 
           {ideas.length === 0 ? (
             <Card>
               <p className="text-sm text-slate leading-relaxed">
-                Ningún tema cumple las dos condiciones ahora mismo. Con una sola instantánea de medios el perfil
-                temático es pobre; mejora en cuanto haya varias semanas.
+                {t("No topic meets both conditions right now. With a single outlet snapshot the topic profile is thin; it improves once there are several weeks.")}
               </p>
             </Card>
           ) : (
@@ -160,12 +156,12 @@ export default function PRMatchView() {
               <Card key={i.topic}>
                 <div className="flex items-baseline gap-2 flex-wrap mb-2">
                   <span className="text-sm font-medium text-ink">{i.topic}</span>
-                  <span className="text-[11px] text-slate">publican: {i.outlets.join(", ")}</span>
+                  <span className="text-[11px] text-slate">{t("publishing on it:")} {i.outlets.join(", ")}</span>
                 </div>
                 <table className="w-full text-[11px] tabular-nums">
                   <thead>
                     <tr className="text-slate border-b border-border">
-                      <th className="text-left font-medium py-1">Consulta con demanda</th>
+                      <th className="text-left font-medium py-1">Query with demand</th>
                       <th className="text-right font-medium">Impr.</th>
                       <th className="text-right font-medium">Pos</th>
                     </tr>

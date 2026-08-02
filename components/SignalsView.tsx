@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 import { Card, Stat, Badge } from "@/components/ui";
 
 type Row = { key: string; clicks: number; impressions: number; position: number; was?: number; delta?: number };
@@ -36,7 +37,7 @@ interface Resp {
 }
 
 function QueryTable({ rows, showDelta }: { rows: Row[]; showDelta?: boolean }) {
-  if (!rows.length) return <p className="text-xs text-slate">Nada en esta categoría esta semana.</p>;
+  if (!rows.length) return <p className="text-xs text-slate">Nothing in this category this week.</p>;
   return (
     <div className="overflow-x-auto">
       <table className="w-full text-xs">
@@ -71,6 +72,7 @@ function QueryTable({ rows, showDelta }: { rows: Row[]; showDelta?: boolean }) {
 }
 
 export default function SignalsView() {
+  const t = useT();
   const [data, setData] = useState<Resp | null>(null);
   const [date, setDate] = useState<string>("");
   const [loading, setLoading] = useState(true);
@@ -86,13 +88,13 @@ export default function SignalsView() {
       .catch(() => setLoading(false));
   }, [date]);
 
-  if (loading && !data) return <p className="text-sm text-slate">Cargando señales…</p>;
-  if (!data) return <p className="text-sm text-slate">No se pudieron cargar las señales.</p>;
+  if (loading && !data) return <p className="text-sm text-slate">Loading signals…</p>;
+  if (!data) return <p className="text-sm text-slate">Could not load signals.</p>;
 
   if (data.empty || !data.available.length) {
     return (
       <Card>
-        <p className="text-sm text-slate leading-relaxed">{data.reason || "Todavía no hay instantáneas."}</p>
+        <p className="text-sm text-slate leading-relaxed">{data.reason || "No snapshots yet."}</p>
       </Card>
     );
   }
@@ -103,10 +105,10 @@ export default function SignalsView() {
     <div className="flex flex-col gap-6">
       <div className="flex flex-wrap items-center gap-3">
         <div>
-          <h1 className="text-2xl font-bold text-ink">Qué se movió</h1>
+          <h1 className="text-2xl font-bold text-ink">What moved</h1>
           <p className="text-slate text-sm mt-1">
-            Ventana de 30 días{data.window ? `, ${data.window}` : ""}.{" "}
-            {d ? `Comparado con la instantánea del ${d.comparedWith}.` : "Sin semana anterior con la que comparar."}
+            30-day window{data.window ? `, ${data.window}` : ""}.{" "}
+            {d ? `Compared with the snapshot from ${d.comparedWith}.` : "No previous week to compare against."}
           </p>
         </div>
         <div className="ml-auto flex items-center gap-2">
@@ -119,12 +121,12 @@ export default function SignalsView() {
             {data.available.map((w, i) => (
               <option key={w} value={w}>
                 {w}
-                {i === 0 ? " (última)" : ""}
+                {i === 0 ? t(" (latest)") : ""}
               </option>
             ))}
           </select>
           {data.available.length > 1 && (
-            <span className="text-[11px] text-slate">{data.available.length} semanas guardadas</span>
+            <span className="text-[11px] text-slate">{data.available.length} weeks stored</span>
           )}
         </div>
       </div>
@@ -134,7 +136,7 @@ export default function SignalsView() {
         <Stat label="Impresiones" value={data.totals?.impressions.toLocaleString() ?? "0"} />
         <Stat label="Consultas" value={data.totals?.queries.toLocaleString() ?? "0"} />
         <Stat
-          label="Clics vs semana anterior"
+          label="Clicks vs previous week"
           value={d ? `${d.deltaClicks > 0 ? "+" : ""}${d.deltaClicks}` : "—"}
         />
       </div>
@@ -142,20 +144,18 @@ export default function SignalsView() {
       {data.isBaseline && (
         <Card>
           <p className="text-sm text-slate leading-relaxed">
-            Esta es la instantánea más antigua que hay, así que no tiene con qué compararse. Un total no dice
-            nada por sí solo: lo que sirve es el movimiento, y el movimiento necesita dos fotos.
+            {t("This is the oldest snapshot there is, so there is nothing to compare it with. A total says nothing on its own: what matters is the movement, and movement needs two photos.")}
           </p>
         </Card>
       )}
 
       <Card>
         <div className="flex items-baseline gap-3 mb-2">
-          <h2 className="text-sm font-semibold text-ink">Cerca y sin clics</h2>
-          <Badge label="lo más accionable" />
+          <h2 className="text-sm font-semibold text-ink">Close, and getting no clicks</h2>
+          <Badge label="most actionable" />
         </div>
         <p className="text-xs text-slate mb-3 leading-relaxed">
-          Posición 5 a 20, más de 100 impresiones, dos clics o menos. Google ya nos muestra y nadie entra: es
-          problema de título y meta, no de contenido.
+          {t("Position 5 to 20, over 100 impressions, two clicks or fewer. Google is already showing us and nobody clicks: that is a title and meta problem, not a content one.")}
         </p>
         <QueryTable rows={data.nearMiss || []} />
       </Card>
@@ -163,32 +163,30 @@ export default function SignalsView() {
       {d && (
         <>
           <Card>
-            <h2 className="text-sm font-semibold text-ink mb-2">Bajaron tres puestos o más</h2>
+            <h2 className="text-sm font-semibold text-ink mb-2">Dropped three places or more</h2>
             <p className="text-xs text-slate mb-3 leading-relaxed">
-              Por aquí conviene empezar. Una caída con volumen suele tener causa concreta, y a veces somos
-              nosotros: una consolidación, un cambio de título, una página borrada.
+              {t("Start here. A drop with volume behind it usually has a concrete cause, and sometimes it is us: a consolidation, a title change, a deleted page.")}
             </p>
             <QueryTable rows={d.down} showDelta />
           </Card>
 
           <Card>
-            <h2 className="text-sm font-semibold text-ink mb-3">Subieron tres puestos o más</h2>
+            <h2 className="text-sm font-semibold text-ink mb-3">Rose three places or more</h2>
             <QueryTable rows={d.up} showDelta />
           </Card>
 
           <Card>
-            <h2 className="text-sm font-semibold text-ink mb-2">Consultas nuevas</h2>
+            <h2 className="text-sm font-semibold text-ink mb-2">New queries</h2>
             <p className="text-xs text-slate mb-3">
-              Aparecen por primera vez con 30 impresiones o más. Google nos prueba en algo que antes no.
+              {t("Appearing for the first time with 30 impressions or more. Google is testing us on something it was not before.")}
             </p>
             <QueryTable rows={d.newQueries} />
           </Card>
 
           <Card>
-            <h2 className="text-sm font-semibold text-ink mb-2">Dejaron de aparecer</h2>
+            <h2 className="text-sm font-semibold text-ink mb-2">Stopped appearing</h2>
             <p className="text-xs text-slate mb-3">
-              Tenían 50 impresiones o más y ahora no salen. Puede ser estacionalidad, puede ser que perdimos la
-              página.
+              {t("They had 50 impressions or more and now do not show. Could be seasonality, could be that we lost the page.")}
             </p>
             <QueryTable rows={d.lost} />
           </Card>
@@ -198,11 +196,11 @@ export default function SignalsView() {
       {data.competitors && (
         <Card>
           <div className="flex items-baseline gap-3 mb-3">
-            <h2 className="text-sm font-semibold text-ink">Qué publicaron los competidores</h2>
+            <h2 className="text-sm font-semibold text-ink">What competitors published</h2>
             <span className="text-[11px] text-slate">
               {data.competitors.comparedWith
                 ? `desde el ${data.competitors.comparedWith}`
-                : "primera instantánea, sin comparación"}
+                : t("first snapshot, nothing to compare")}
             </span>
           </div>
           <div className="flex flex-col gap-3">
@@ -216,7 +214,7 @@ export default function SignalsView() {
                   ) : (
                     <span className="text-[11px] text-slate">
                       {c.newCount === null
-                        ? `${c.total} URLs registradas`
+                        ? `${c.total} URLs recorded`
                         : `${c.newCount} nueva(s) de ${c.total}`}
                     </span>
                   )}
@@ -229,7 +227,7 @@ export default function SignalsView() {
                     rel="noreferrer"
                     className="block text-[11px] text-blue hover:text-blue-hover truncate"
                   >
-                    {p.lastmod || "sin fecha"} · {p.url}
+                    {p.lastmod || t("no date")} · {p.url}
                   </a>
                 ))}
               </div>
@@ -239,19 +237,18 @@ export default function SignalsView() {
       )}
 
       <Card>
-        <h2 className="text-sm font-semibold text-ink mb-2">Cómo leer esto</h2>
+        <h2 className="text-sm font-semibold text-ink mb-2">How to read this</h2>
         <p className="text-xs text-slate leading-relaxed">
-          <strong>Sin impresiones no hay posición.</strong> Google solo la calcula donde la página apareció, así
-          que una consulta ausente no está en mala posición: es una consulta donde no salimos.
+          <strong>{t("No impressions means no position.")}</strong>{" "}
+          {t("Google only calculates it where the page appeared, so a missing query is not in a bad position: it is a query we do not show up for at all.")}
         </p>
         <p className="text-xs text-slate leading-relaxed mt-2">
-          <strong>Una caída no es necesariamente culpa nuestra.</strong> Antes de buscar la explicación en un
-          cambio propio, mira si cayó todo el bloque de consultas parecidas: eso apunta al mercado o al
-          algoritmo, no a la página.
+          <strong>{t("A drop is not necessarily our fault.")}</strong>{" "}
+          {t("Before looking for the explanation in something we changed, check whether the whole block of similar queries dropped: that points at the market or the algorithm, not at the page.")}
         </p>
         <p className="text-xs text-slate leading-relaxed mt-2">
-          <strong>Una URL nueva de un competidor no es una señal de que le funcione.</strong> Dice de qué han
-          decidido hablar, que es una decisión de recursos y sí informa. Si les rinde, solo se sabe con tiempo.
+          <strong>{t("A competitor's new URL is not a signal that it works for them.")}</strong>{" "}
+          {t("It says what they decided to talk about, which is a resource decision and does tell us something. Whether it pays off for them only shows with time.")}
         </p>
       </Card>
     </div>

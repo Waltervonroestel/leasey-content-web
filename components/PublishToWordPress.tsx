@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useT } from "@/lib/i18n";
 
 interface Result {
   ok?: boolean;
@@ -20,6 +21,7 @@ interface Result {
 // escribiendo el título: un botón junto a otro se pulsa por error, y publicar
 // no se deshace con un clic.
 export default function PublishToWordPress({ sheetRow, title }: { sheetRow: number; title: string }) {
+  const t = useT();
   const [busy, setBusy] = useState<"" | "draft" | "live">("");
   const [res, setRes] = useState<Result | null>(null);
   const [confirming, setConfirming] = useState(false);
@@ -52,28 +54,28 @@ export default function PublishToWordPress({ sheetRow, title }: { sheetRow: numb
           disabled={busy !== ""}
           className="text-[11px] px-2 py-1 rounded border border-border text-slate hover:text-ink disabled:opacity-50"
         >
-          {busy === "draft" ? "Creando…" : "→ Borrador en WordPress"}
+          {busy === "draft" ? "Creando…" : "→ Draft in WordPress"}
         </button>
         <button
           onClick={() => setConfirming(true)}
           disabled={busy !== ""}
           className="text-[11px] px-2 py-1 rounded border border-red-300 text-red-600 hover:bg-red-50 disabled:opacity-50"
         >
-          Publicar en directo
+          Publish live
         </button>
       </div>
 
       {confirming && (
         <div className="mt-2 p-2 rounded border border-red-200 bg-red-50/50">
           <p className="text-[11px] text-red-700 leading-relaxed">
-            Publicar en directo no se deshace. Escribe el título para confirmar:
+            {t("Publishing live does not undo. Type the title to confirm:")}
           </p>
           <p className="text-[10px] text-slate mt-1 mb-1 break-words">{title}</p>
           <div className="flex gap-2">
             <input
               value={typed}
               onChange={(e) => setTyped(e.target.value)}
-              placeholder="Pega el título aquí"
+              placeholder="Paste the title here"
               className="flex-1 text-[11px] border border-border rounded px-2 py-1 bg-white text-ink"
             />
             <button
@@ -112,19 +114,19 @@ export default function PublishToWordPress({ sheetRow, title }: { sheetRow: numb
       {res?.ok && (
         <div className="mt-2 p-2 rounded border border-teal/40 bg-teal/5">
           <p className="text-[11px] text-ink">
-            {res.status === "publish" ? "Publicado" : "Borrador creado"} ·{" "}
+            {res.status === "publish" ? t("Published") : "Draft created"} ·{" "}
             <a href={res.post?.link} target="_blank" rel="noreferrer" className="text-blue hover:text-blue-hover">
-              abrir en WordPress
+              open in WordPress
             </a>
           </p>
           {(res.warnings || []).length > 0 && (
             <p className="text-[11px] text-yellow-700 mt-1">
-              Con avisos abiertos: {(res.warnings || []).join(" · ")}
+              {t("With open warnings:")} {(res.warnings || []).join(" · ")}
             </p>
           )}
           {(res.pending || []).length > 0 && (
             <div className="mt-1">
-              <p className="text-[10px] uppercase tracking-wide text-slate">Sigue siendo manual</p>
+              <p className="text-[10px] uppercase tracking-wide text-slate">Still manual</p>
               {(res.pending || []).map((p) => (
                 <p key={p} className="text-[11px] text-slate">
                   · {p}

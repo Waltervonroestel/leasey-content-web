@@ -11,8 +11,8 @@ export default function PrPage() {
       <PRMatchView />
       <WatchView
         kind="medio"
-        title="Qué está publicando la prensa del sector"
-        blurb="Los medios de pm-publications.md. Sirve para dos cosas: saber de qué se habla, y ver qué acepta cada medio antes de escribir el pitch. Si un medio lleva tres semanas con historias de datos, un pitch de producto no va a entrar."
+        title="What the trade press is publishing"
+        blurb="The outlets in pm-publications.md. Good for two things: knowing what is being talked about, and seeing what each outlet accepts before writing the pitch. If an outlet has run three weeks of data stories, a product pitch is not getting in."
       />
     </div>
   );

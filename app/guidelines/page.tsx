@@ -13,7 +13,7 @@ export default function GuidelinesPage() {
         <h1 className="text-2xl font-bold text-ink">AEO Content Guidelines</h1>
         <p className="text-slate text-sm mt-1">
           El playbook maestro. Todo contenido de Leasey.AI publicado a partir del 30 de junio de 2026 sigue estas reglas.
-          Fuente canónica: <code className="text-[11px] bg-bg-soft px-1 py-0.5 rounded">context/aeo-guidelines.md</code> en <code className="text-[11px] bg-bg-soft px-1 py-0.5 rounded">leasey-content-system</code>.
+          Canonical source: <code className="text-[11px] bg-bg-soft px-1 py-0.5 rounded">context/aeo-guidelines.md</code> en <code className="text-[11px] bg-bg-soft px-1 py-0.5 rounded">leasey-content-system</code>.
         </p>
       </div>
 

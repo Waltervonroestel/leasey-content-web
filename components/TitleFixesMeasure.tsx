@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 import { Card, Stat } from "@/components/ui";
 
 interface Side {
@@ -32,14 +33,22 @@ interface Resp {
   worse?: number;
 }
 
+// La API manda una clave estable, no una frase: así el veredicto se traduce sin
+// que contar "los que funcionaron" dependa de la redacción.
+const VERDICT: Record<string, string> = {
+  "too-early": "too early to read",
+  "low-volume": "not enough volume to read the CTR",
+  "position-moved": "the page lost position, the CTR cannot be attributed to the title",
+  works: "the new title works",
+  worse: "the new title performs worse than the old one",
+  "no-change": "no appreciable change",
+};
+
 const tone = (v: string) =>
-  v === "el título nuevo funciona"
-    ? "text-teal"
-    : v.startsWith("el título nuevo rinde peor")
-      ? "text-red-600"
-      : "text-slate";
+  v === "works" ? "text-teal" : v === "worse" ? "text-red-600" : "text-slate";
 
 export default function TitleFixesMeasure() {
+  const t = useT();
   const [data, setData] = useState<Resp | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -59,11 +68,10 @@ export default function TitleFixesMeasure() {
   if (!data.ready) {
     return (
       <Card>
-        <h2 className="text-sm font-semibold text-ink mb-2">¿Funcionaron los títulos que ya cambiamos?</h2>
+        <h2 className="text-sm font-semibold text-ink mb-2">{t("Did the titles we already changed work?")}</h2>
         <p className="text-sm text-slate leading-relaxed">{data.reason}</p>
         <p className="text-xs text-slate leading-relaxed mt-2">
-          Nadie tiene que marcar nada a mano: cada instantánea semanal guarda el título real de las páginas con
-          más impresiones, así que un cambio se detecta solo comparando dos semanas.
+          {t("Nobody has to flag anything by hand: each weekly snapshot stores the real title of the pages with the most impressions, so a change detects itself by comparing two weeks.")}
         </p>
       </Card>
     );
@@ -74,22 +82,22 @@ export default function TitleFixesMeasure() {
   return (
     <Card>
       <div className="flex items-baseline gap-3 mb-3 flex-wrap">
-        <h2 className="text-sm font-semibold text-ink">¿Funcionaron los títulos que ya cambiamos?</h2>
+        <h2 className="text-sm font-semibold text-ink">{t("Did the titles we already changed work?")}</h2>
         <span className="text-[11px] text-slate">
-          {data.tracked} páginas vigiladas · {data.snapshots} semanas, de {data.from} a {data.to}
+          {data.tracked} {t("pages watched")} · {data.snapshots} {t("weeks, from")} {data.from} {t("to")} {data.to}
         </span>
       </div>
 
       <div className="grid gap-3 md:grid-cols-4 mb-4">
-        <Stat label="Cambios detectados" value={changes.length} accent />
-        <Stat label="Ya legibles" value={data.readable ?? 0} />
-        <Stat label="Funcionaron" value={data.working ?? 0} />
-        <Stat label="Rinden peor" value={data.worse ?? 0} />
+        <Stat label={t("Changes detected")} value={changes.length} accent />
+        <Stat label={t("Readable now")} value={data.readable ?? 0} />
+        <Stat label={t("Worked")} value={data.working ?? 0} />
+        <Stat label={t("Performing worse")} value={data.worse ?? 0} />
       </div>
 
       {changes.length === 0 ? (
         <p className="text-sm text-slate leading-relaxed">
-          Ningún título ha cambiado entre las instantáneas guardadas. Cuando cambies uno, aparecerá aquí solo.
+          {t("No title has changed between the stored snapshots. When you change one, it will show up here on its own.")}
         </p>
       ) : (
         <div className="flex flex-col gap-3">
@@ -105,25 +113,29 @@ export default function TitleFixesMeasure() {
                   {c.url.replace(/^https?:\/\/[^/]+/, "")}
                 </a>
                 <span className="text-[11px] text-slate">
-                  cambió el {c.changedOn}, hace {c.daysSince} días
+                  {t("changed on")} {c.changedOn}, {c.daysSince} {t("days ago")}
                 </span>
-                <span className={`text-[11px] font-medium ${tone(c.verdict)}`}>{c.verdict}</span>
+                <span className={`text-[11px] font-medium ${tone(c.verdict)}`}>
+                  {c.verdict === "too-early"
+                    ? `${t("too early to read")}: ${c.daysSince}/14 ${t("days")}`
+                    : t(VERDICT[c.verdict] || c.verdict)}
+                </span>
               </div>
 
               <div className="mt-1.5 grid gap-1 md:grid-cols-2 text-[11px]">
                 <div className="text-slate">
-                  <span className="uppercase tracking-wide text-[10px]">Antes</span>
+                  <span className="uppercase tracking-wide text-[10px]">{t("Before")}</span>
                   <p className="text-ink leading-snug">{c.before.title}</p>
                   <p className="tabular-nums">
-                    CTR {c.before.ctr}% · {c.before.clicks} clics de {c.before.impressions.toLocaleString()} ·
+                    CTR {c.before.ctr}% · {c.before.clicks} clicks of {c.before.impressions.toLocaleString()} ·
                     pos {c.before.position}
                   </p>
                 </div>
                 <div className="text-slate">
-                  <span className="uppercase tracking-wide text-[10px]">Después</span>
+                  <span className="uppercase tracking-wide text-[10px]">{t("After")}</span>
                   <p className="text-ink leading-snug">{c.after.title}</p>
                   <p className="tabular-nums">
-                    CTR {c.after.ctr}% · {c.after.clicks} clics de {c.after.impressions.toLocaleString()} · pos{" "}
+                    CTR {c.after.ctr}% · {c.after.clicks} clicks of {c.after.impressions.toLocaleString()} · pos{" "}
                     {c.after.position}
                   </p>
                 </div>
@@ -134,9 +146,8 @@ export default function TitleFixesMeasure() {
       )}
 
       <p className="text-[11px] text-slate leading-relaxed mt-4">
-        <strong>Si la página perdió posición, el CTR no se atribuye al título.</strong> Un título distinto y una
-        posición distinta son dos cambios a la vez, y no se puede saber cuál movió el clic. Hacen falta 14 días
-        para que Google reprocese y 200 impresiones en cada lado para que la diferencia signifique algo.
+        <strong>{t("If the page also lost position, the CTR is not attributed to the title.")}</strong>{" "}
+        {t("A different title and a different position are two changes at once, and there is no way to tell which moved the click. It takes 14 days for Google to reprocess and 200 impressions on each side for the difference to mean anything.")}
       </p>
     </Card>
   );

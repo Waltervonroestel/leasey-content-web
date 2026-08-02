@@ -1,6 +1,10 @@
 // Catálogo único de tabs del content system. Se usa en el nav (BrandHeader)
 // para mostrar el tooltip al pasar el cursor, y en el Dashboard home para el
 // grid de cards que explica cada sección.
+//
+// El texto base es inglés. El nav es un client component y pasa cada
+// descripción por t(), así que el selector EN/ES lo traduce; el grid del home
+// es server component y se queda en inglés.
 
 export interface NavTab {
   href: string;
@@ -15,28 +19,28 @@ export const NAV_TABS: NavTab[] = [
     href: "/",
     label: "Dashboard",
     icon: "🏠",
-    description: "Estado general del sistema: frescura de los datos, cantidad de drafts, slots del calendario e insights tracked.",
+    description: "Overall system state: how fresh the data is, how many drafts exist, calendar slots and insights tracked.",
     group: "Plan",
   },
   {
     href: "/calendar",
     label: "Calendar",
     icon: "📅",
-    description: "El calendario editorial de 90 días con las 95 piezas, mapeadas a los 6 pilares de posicionamiento. Marca el status de cada pieza (Idea / Escrito / Programado / Publicado).",
+    description: "The 90-day editorial calendar with its 95 pieces, mapped to the 6 positioning pillars. Set the status of each piece (Idea / Written / Scheduled / Published).",
     group: "Plan",
   },
   {
     href: "/ideas",
     label: "Ideas",
     icon: "💡",
-    description: "Ideas de contenido nuevo basadas en demanda real de GSC + gaps de pilar. Botón para encolar al sistema interno y ver lo que ya está en cola.",
+    description: "New content ideas based on real GSC demand plus pillar gaps. Button to queue them into the internal system and see what is already queued.",
     group: "Plan",
   },
   {
     href: "/reports",
     label: "Reports",
     icon: "📋",
-    description: "Reporte estructurado de qué escribir próximo. Toma cada query de Search Console, la clasifica por intent y oportunidad, y la convierte en una recomendación concreta.",
+    description: "A structured report of what to write next. Takes each Search Console query, classifies it by intent and opportunity, and turns it into a concrete recommendation.",
     group: "Plan",
   },
 
@@ -44,42 +48,42 @@ export const NAV_TABS: NavTab[] = [
     href: "/rules",
     label: "Rules",
     icon: "🛡️",
-    description: "Cómo falla el contenido de Leasey y qué lo impide: los ocho casos reales del catálogo de errores, el tracker de hechos de fundadores, la compuerta de entrega y el roster de agentes de verificación.",
+    description: "How Leasey content fails and what stops it: the eight real cases in the failure catalogue, the founder facts tracker, the delivery gate and the roster of verification agents.",
     group: "Build",
   },
   {
     href: "/signals",
     label: "Signals",
     icon: "📡",
-    description: "Que se movio de una semana a otra: consultas nuevas, caidas con volumen, lo que esta cerca sin clics, y que publicaron los competidores. Con selector de semana para ver el historico.",
+    description: "What moved from one week to the next: new queries, drops with volume behind them, what is close and getting no clicks, and what competitors published. With a week selector for the history.",
     group: "Analyse",
   },
   {
     href: "/optimise",
     label: "Optimise",
     icon: "🛠",
-    description: "Los 723 URLs ya publicados, clasificados por cluster y mapeados al pilar correspondiente, con acción sugerida, owner e internal links del mismo cluster.",
+    description: "The 723 published URLs, classified by cluster and mapped to their pillar, with a suggested action, owner and internal links from the same cluster.",
     group: "Build",
   },
   {
     href: "/title-fixes",
     label: "Title fixes",
     icon: "✏️",
-    description: "Sugerencias de reescritura de título y meta para las páginas que rankean en página 1 pero pierden el clic. Sin IA: reglas SEO determinísticas, gratis.",
+    description: "Title and meta rewrite suggestions for pages that rank on page 1 but lose the click. No AI: deterministic SEO rules, free.",
     group: "Build",
   },
   {
     href: "/insights",
     label: "Insights",
     icon: "🔍",
-    description: "Insights de mercado generados desde GSC + los 6 pilares — para informar la estrategia de contenido y el ángulo de cada pieza.",
+    description: "Market insights generated from GSC and the 6 pillars — to inform content strategy and the angle of each piece.",
     group: "Analyse",
   },
   {
     href: "/pr",
     label: "PR",
     icon: "📰",
-    description: "Sitios de publicación (proptech, PM trade press, Canadian RE, US Sun Belt) donde Leasey.AI puede publicar press releases o guest posts. Incluye el historial.",
+    description: "Publication sites (proptech, PM trade press, Canadian RE, US Sun Belt) where Leasey.AI can place press releases or guest posts. Includes the history.",
     group: "Build",
   },
 
@@ -87,21 +91,21 @@ export const NAV_TABS: NavTab[] = [
     href: "/analytics",
     label: "Analytics",
     icon: "📈",
-    description: "Performance de búsqueda en GSC (clics, impresiones, CTR, posición) con análisis interpretado: qué significan los números, qué hacer y por qué.",
+    description: "Search performance in GSC (clicks, impressions, CTR, position) with an interpreted analysis: what the numbers mean, what to do and why.",
     group: "Analyse",
   },
   {
     href: "/alerts",
     label: "Alerts",
     icon: "⚠️",
-    description: "Detección de anomalías semana a semana. Queries que subieron o cayeron más de 30% vs el promedio reciente, con una acción recomendada para cada una.",
+    description: "Week-over-week anomaly detection. Queries that rose or fell more than 30% against the recent average, each with a recommended action.",
     group: "Analyse",
   },
   {
     href: "/competitors",
     label: "Competitors",
     icon: "🏢",
-    description: "Últimas publicaciones de competidores (TurboTenant, Rent Manager, Zumper, RentCafe/Yardi) y medios proptech, PM trade press y Canadian RE. Incluye búsqueda libre y botón de refresh manual.",
+    description: "Latest posts from competitors (TurboTenant, Rent Manager, Zumper, RentCafe/Yardi) and proptech, PM trade press and Canadian RE outlets. Includes free search and a manual refresh button.",
     group: "Analyse",
   },
 
@@ -109,14 +113,14 @@ export const NAV_TABS: NavTab[] = [
     href: "/publish",
     label: "Publish",
     icon: "📝",
-    description: "Composer para crear un borrador directo en WordPress (leasey.ai). Soporta markdown. Los posts se publican siempre como draft — los revisas en WP-admin antes de salir al público.",
+    description: "Composer to create a draft straight into WordPress (leasey.ai). Supports markdown. Posts are always published as a draft — you review them in WP-admin before they go public.",
     group: "Publish",
   },
   {
     href: "/guidelines",
     label: "Guidelines",
     icon: "📖",
-    description: "El playbook maestro de AEO — las 5 reglas no negociables (respuesta directa, hook con dato/entidad, cita fuentes, FAQ 40-60 palabras, KB canónica), templates por canal, alineación de pilares y checklist pre-publicación.",
+    description: "The master AEO playbook — the 5 non-negotiable rules (direct answer, hook with a figure or entity, cite sources, 40-60 word FAQ, canonical KB), per-channel templates, pillar alignment and the pre-publication checklist.",
     group: "Plan",
   },
 ];
@@ -126,8 +130,8 @@ export const NAV_TABS: NavTab[] = [
 export const GROUP_ORDER: NavTab["group"][] = ["Plan", "Build", "Analyse", "Publish"];
 
 export const GROUP_LABELS: Record<NavTab["group"], string> = {
-  Plan: "Planear",
-  Build: "Construir",
-  Analyse: "Analizar",
-  Publish: "Publicar",
+  Plan: "Plan",
+  Build: "Build",
+  Analyse: "Analyse",
+  Publish: "Publish",
 };

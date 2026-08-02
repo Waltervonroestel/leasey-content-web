@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 import TitleFixesMeasure from "@/components/TitleFixesMeasure";
 import { Card } from "@/components/ui";
 
@@ -9,18 +10,20 @@ interface Fix { query: string; impressions: number; clicks: number; position: nu
 interface Resp { connected: boolean; fixes?: Fix[]; error?: string }
 
 function CopyButton({ text }: { text: string }) {
+  const t = useT();
   const [done, setDone] = useState(false);
   return (
     <button
       onClick={() => { navigator.clipboard.writeText(text); setDone(true); setTimeout(() => setDone(false), 1500); }}
       className="text-[10px] px-1.5 py-0.5 rounded border border-line text-slate hover:text-ink hover:border-ink/30 transition-colors"
     >
-      {done ? "✓ copiado" : "copiar"}
+      {done ? "✓ " + t("copied") : t("copy")}
     </button>
   );
 }
 
 function FixCard({ f }: { f: Fix }) {
+  const t = useT();
   return (
     <div className="rounded-xl border border-line bg-white p-4 flex flex-col gap-3">
       <div className="flex items-start justify-between gap-2 flex-wrap">
@@ -41,7 +44,7 @@ function FixCard({ f }: { f: Fix }) {
               <p className="text-xs text-slate flex-1 leading-relaxed">{s.meta}</p>
               <CopyButton text={s.meta} />
             </div>
-            <p className="text-[10px] text-slate italic">Razón: {s.rationale}</p>
+            <p className="text-[10px] text-slate italic">{t("Reason")}: {s.rationale}</p>
           </div>
         ))}
       </div>
@@ -50,6 +53,7 @@ function FixCard({ f }: { f: Fix }) {
 }
 
 export default function TitleFixesView() {
+  const t = useT();
   const [data, setData] = useState<Resp | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -57,24 +61,24 @@ export default function TitleFixesView() {
     fetch("/api/gsc/title-fixes?days=90").then((r) => r.json()).then((d) => { setData(d); setLoading(false); }).catch(() => setLoading(false));
   }, []);
 
-  if (loading) return <p className="text-slate text-sm">Generando sugerencias de título…</p>;
+  if (loading) return <p className="text-slate text-sm">{t("Generating title suggestions…")}</p>;
   if (!data || !data.connected) return <Card><p className="text-sm text-slate">Conecta GSC para sugerir reescrituras.</p></Card>;
   const fixes = data.fixes || [];
 
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-2xl font-bold text-ink">Sugerencias de título (CTR fixes)</h1>
+        <h1 className="text-2xl font-bold text-ink">{t("Title suggestions (CTR fixes)")}</h1>
         <p className="text-slate text-sm mt-1">
-          Páginas que ya rankean en página 1 pero pierden el clic. Para cada una, 3 títulos sugeridos por plantillas SEO probadas — copia y pega.
-          Sin IA: son reglas determinísticas (intent + posición + año + power-prefix). Cero costo.
+          {t("Pages that already rank on page 1 but lose the click. For each one, 3 titles suggested from proven SEO templates — copy and paste.")}
+          {t("No AI: these are deterministic rules (intent + position + year + power prefix). Zero cost.")}
         </p>
       </div>
 
       <TitleFixesMeasure />
 
       {fixes.length === 0 ? (
-        <Card><p className="text-sm text-slate text-center py-4">No hay queries con CTR-fix detectado en los últimos 90 días.</p></Card>
+        <Card><p className="text-sm text-slate text-center py-4">{t("No queries with a detected CTR fix in the last 90 days.")}</p></Card>
       ) : (
         <div className="grid gap-3 lg:grid-cols-2">
           {fixes.map((f, i) => <FixCard key={i} f={f} />)}

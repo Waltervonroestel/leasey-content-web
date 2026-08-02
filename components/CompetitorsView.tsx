@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 import { Card } from "@/components/ui";
 
 type FeedCategory = "Competitor" | "Proptech Media" | "PM Trade Press" | "Canadian RE";
@@ -54,6 +55,7 @@ function PostCard({ item, query }: { item: FeedItem; query: string }) {
 }
 
 export default function CompetitorsView() {
+  const t = useT();
   const [data, setData] = useState<Resp | null>(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -92,10 +94,9 @@ export default function CompetitorsView() {
     <div className="flex flex-col gap-6">
       <div className="flex items-start justify-between flex-wrap gap-3">
         <div>
-          <h1 className="text-2xl font-bold text-ink">¿Qué publican competidores y medios?</h1>
+          <h1 className="text-2xl font-bold text-ink">{t("What are competitors and outlets publishing?")}</h1>
           <p className="text-slate text-sm mt-1">
-            Últimas publicaciones de competidores (TurboTenant, Rent Manager, Zumper, RentCafe/Yardi) y medios
-            proptech, PM trade press y Canadian RE. Los feeds se cachean 1 hora; usa <span className="text-ink font-medium">Buscar ahora</span> para forzar fetch fresco. Algunos competidores (AppFolio, Buildium, DoorLoop) ya no exponen RSS público.
+            {t("Latest posts from competitors (TurboTenant, Rent Manager, Zumper, RentCafe/Yardi) and proptech, PM trade press and Canadian RE outlets. Feeds are cached for one hour; use Search now to force a fresh fetch. Some competitors (AppFolio, Buildium, DoorLoop) no longer expose a public RSS feed.")}
           </p>
         </div>
         <button
@@ -116,7 +117,7 @@ export default function CompetitorsView() {
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Buscar por título, contenido o medio…"
+          placeholder={t("Search by title, content or outlet…")}
           className="bg-white border border-line rounded-lg px-3 py-1.5 text-sm w-72 placeholder:text-slate focus:outline-none focus:border-ink/40"
         />
         {query && (
@@ -162,7 +163,7 @@ export default function CompetitorsView() {
 
       {/* Sources reference */}
       <details className="text-xs text-slate">
-        <summary className="cursor-pointer hover:text-ink">Fuentes que se están leyendo ({sources.length})</summary>
+        <summary className="cursor-pointer hover:text-ink">{t("Sources being read")} ({sources.length})</summary>
         <div className="mt-2 flex flex-col gap-2 pl-4 border-l border-line">
           {sourcesByCategory.map((g) => (
             <div key={g.category}>

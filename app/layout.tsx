@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import BrandHeader from "@/components/BrandHeader";
+import { I18nProvider } from "@/lib/i18n";
 import JobsProvider from "@/components/JobsProvider";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -17,8 +18,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <JobsProvider>
-          <BrandHeader />
-          <main className="flex-1 w-full max-w-6xl mx-auto px-5 py-8">{children}</main>
+          <I18nProvider>
+            <BrandHeader />
+            <main className="flex-1 w-full max-w-6xl mx-auto px-5 py-8">{children}</main>
+          </I18nProvider>
           <footer className="w-full max-w-6xl mx-auto px-5 py-6 text-xs text-slate border-t border-line mt-8">
             Leasey.AI Content System · read-only dashboard · content is generated in Claude Code and committed here · drafts are not auto-published
           </footer>

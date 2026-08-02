@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 import { Card } from "@/components/ui";
 
 type SiteRow = [string, string, string, string, string, string]; // date, name, url, category, relevance, notes
@@ -37,6 +38,7 @@ function SiteCard({ name, url, category, relevance, notes, date }: { name: strin
 }
 
 export default function PRView() {
+  const t = useT();
   const [hist, setHist] = useState<SiteRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [generating, setGenerating] = useState(false);
@@ -96,19 +98,19 @@ export default function PRView() {
           ) : queued ? (
             <>✓ En cola — corre el script en Claude Code</>
           ) : (
-            <><span aria-hidden>✦</span> Buscar nuevos sitios de publicación</>
+            <><span aria-hidden>✦</span> {t("Find new publication sites")}</>
           )}
         </button>
       </div>
 
       {generated && (
         <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-          ✓ Nuevos sitios de publicación encontrados con IA y guardados en el PR Log.
+          ✓ {t("New publication sites found with AI and saved to the PR Log.")}
         </div>
       )}
       {queued && (
         <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-          Tarea añadida a la Writing Queue. (Para generar in-page sin script, agrega <code className="font-mono text-xs">ANTHROPIC_API_KEY</code> en Render.) Corre en Claude Code:
+          {t("Task added to the Writing Queue. To generate in-page without a script, add ANTHROPIC_API_KEY in Render. Run it in Claude Code:")}
           <code className="block mt-1 font-mono text-xs bg-emerald-100 px-2 py-1 rounded">node scripts/process-content-queue.mjs</code>
         </div>
       )}

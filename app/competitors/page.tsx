@@ -9,8 +9,8 @@ export default function CompetitorsPage() {
       <CompetitorsView />
       <WatchView
         kind="competidor"
-        title="Qué han publicado, semana a semana"
-        blurb="Leído de sus sitemaps. Una URL nueva dice de qué han decidido hablar, que es una decisión de recursos y sí informa; no dice que les funcione. Una URL actualizada suele importar más: significa que reoptimizan algo que ya les rankea."
+        title="What they published, week by week"
+        blurb="Read from their sitemaps. A new URL says what they decided to talk about, which is a resource decision and does tell us something; it does not say it works for them. An updated URL usually matters more: it means they are reoptimising something that already ranks."
       />
     </div>
   );

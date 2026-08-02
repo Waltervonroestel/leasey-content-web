@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { LanguageToggle, useT } from "@/lib/i18n";
 import { NAV_TABS } from "@/lib/navMeta";
 
 export default function BrandHeader() {
+  const t = useT();
   return (
     <header className="w-full border-b border-line bg-white/70 backdrop-blur sticky top-0 z-10">
       <div className="max-w-6xl mx-auto px-5 py-3 flex items-center gap-6 flex-wrap">
@@ -16,13 +20,14 @@ export default function BrandHeader() {
             <Link
               key={n.href}
               href={n.href}
-              title={n.description}
+              title={t(n.description)}
               className="px-3 py-1.5 rounded-md text-slate hover:text-ink hover:bg-bg-2 transition-colors"
             >
               {n.label}
             </Link>
           ))}
         </nav>
+        <div className="ml-auto"><LanguageToggle /></div>
       </div>
     </header>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 import { Card } from "@/components/ui";
 
 interface WpDraft { id: number; title: string; status: string; link: string; date: string; modified: string }
@@ -13,6 +14,7 @@ interface Status {
 }
 
 export default function PublishView() {
+  const t = useT();
   const [status, setStatus] = useState<Status | null>(null);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -60,7 +62,7 @@ export default function PublishView() {
   if (!status) return <p className="text-slate text-sm">Conectando con WordPress…</p>;
   if (!status.connected) return (
     <Card>
-      <p className="text-sm text-slate mb-2">WordPress no está configurado en este entorno.</p>
+      <p className="text-sm text-slate mb-2">{t("WordPress is not configured in this environment.")}</p>
       <p className="text-xs text-slate">Agrega estas variables en Render para activar:</p>
       <ul className="text-xs text-slate mt-1 list-disc pl-5">
         <li><code>WORDPRESS_URL</code></li>
@@ -77,7 +79,7 @@ export default function PublishView() {
         <h1 className="text-2xl font-bold text-ink">Publicar a WordPress</h1>
         <p className="text-slate text-sm mt-1">
           Conectado a <a href={status.url} target="_blank" rel="noreferrer" className="text-blue hover:underline">{status.url}</a> como <span className="text-ink font-medium">{status.user?.name}</span>.
-          Los posts se publican siempre como <span className="text-ink font-medium">borrador</span> — los revisas en WP-admin antes de hacerlos públicos.
+          {t("Posts are always published as a draft — you review them in WP-admin before making them public.")}
         </p>
       </div>
 
@@ -88,7 +90,7 @@ export default function PublishView() {
           <a href={docLink} target="_blank" rel="noreferrer" className="text-blue hover:underline font-medium">
             Abrir el doc →
           </a>
-          <span className="text-xs text-slate ml-auto">Copia el contenido del doc y pégalo en el composer.</span>
+          <span className="text-xs text-slate ml-auto">{t("Copy the doc content and paste it into the composer.")}</span>
         </div>
       )}
 
@@ -96,7 +98,7 @@ export default function PublishView() {
       <Card>
         <div className="flex flex-col gap-3">
           <div>
-            <label className="text-[10px] uppercase tracking-wide text-slate">Título</label>
+            <label className="text-[10px] uppercase tracking-wide text-slate">{t("Title")}</label>
             <input
               value={title}
               onChange={(e) => setTitle(e.target.value)}
@@ -144,7 +146,7 @@ export default function PublishView() {
                 <>📝 Publicar como borrador</>
               )}
             </button>
-            <span className="text-xs text-slate">Quedará como draft en WP. No se publica al público desde acá.</span>
+            <span className="text-xs text-slate">{t("It stays as a draft in WP. Nothing goes public from here.")}</span>
           </div>
 
           {error && <div className="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">{error}</div>}
@@ -166,7 +168,7 @@ export default function PublishView() {
               <a key={d.id} href={d.link} target="_blank" rel="noreferrer" className="block">
                 <div className="rounded-xl border border-line bg-white px-4 py-3 flex items-center gap-3 flex-wrap hover:border-ink/30 transition-colors">
                   <span className="text-[10px] font-mono text-slate">#{d.id}</span>
-                  <span className="text-sm text-ink font-medium flex-1 min-w-0 truncate" dangerouslySetInnerHTML={{ __html: d.title || "(sin título)" }} />
+                  <span className="text-sm text-ink font-medium flex-1 min-w-0 truncate" dangerouslySetInnerHTML={{ __html: d.title || t("(untitled)") }} />
                   <span className="text-[10px] text-slate">modificado {d.modified.slice(0, 10)}</span>
                 </div>
               </a>

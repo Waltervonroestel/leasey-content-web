@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useT } from "@/lib/i18n";
 import { Card, SectionTitle } from "@/components/ui";
 import type { OptRow } from "@/lib/sheets";
 import { PILLAR_META, pillarCodeFrom, type PillarCode } from "@/lib/pillarStyle";
@@ -15,13 +16,13 @@ const WORK_ORDER = ["Reescribir", "Landing reescribir", "Optimizar", "Landing op
 // Reescribir pesa más que optimizar porque es rehacer la pieza, no ajustarla, y
 // "Ninguno" o "No tocar por ahora" no son trabajo pendiente.
 const WORK_META: Record<string, { label: string; ring: string; dot: string; bg: string; text: string }> = {
-  "Reescribir":         { label: "Reescribir",  ring: "ring-red-200",   dot: "bg-red-500",    bg: "bg-red-50",    text: "text-red-700" },
-  "Landing reescribir": { label: "Landing: reescribir", ring: "ring-red-200", dot: "bg-red-500", bg: "bg-red-50", text: "text-red-700" },
-  "Optimizar":          { label: "Optimizar",   ring: "ring-amber-200", dot: "bg-amber-500",  bg: "bg-amber-50",  text: "text-amber-700" },
-  "Landing optimizar":  { label: "Landing: optimizar", ring: "ring-amber-200", dot: "bg-amber-500", bg: "bg-amber-50", text: "text-amber-700" },
-  "Landing crear":      { label: "Landing: crear", ring: "ring-blue-200", dot: "bg-blue-500",  bg: "bg-blue-50",   text: "text-blue-700" },
-  "Ninguno":            { label: "Sin trabajo", ring: "ring-line",      dot: "bg-slate-300",  bg: "bg-bg-soft",   text: "text-slate" },
-  "No tocar por ahora": { label: "No tocar",    ring: "ring-line",      dot: "bg-slate-300",  bg: "bg-bg-soft",   text: "text-slate" },
+  "Reescribir":         { label: "Rewrite",  ring: "ring-red-200",   dot: "bg-red-500",    bg: "bg-red-50",    text: "text-red-700" },
+  "Landing reescribir": { label: "Landing: rewrite", ring: "ring-red-200", dot: "bg-red-500", bg: "bg-red-50", text: "text-red-700" },
+  "Optimizar":          { label: "Optimise",   ring: "ring-amber-200", dot: "bg-amber-500",  bg: "bg-amber-50",  text: "text-amber-700" },
+  "Landing optimizar":  { label: "Landing: optimise", ring: "ring-amber-200", dot: "bg-amber-500", bg: "bg-amber-50", text: "text-amber-700" },
+  "Landing crear":      { label: "Landing: create", ring: "ring-blue-200", dot: "bg-blue-500",  bg: "bg-blue-50",   text: "text-blue-700" },
+  "Ninguno":            { label: "No work", ring: "ring-line",      dot: "bg-slate-300",  bg: "bg-bg-soft",   text: "text-slate" },
+  "No tocar por ahora": { label: "Leave alone",    ring: "ring-line",      dot: "bg-slate-300",  bg: "bg-bg-soft",   text: "text-slate" },
 };
 const REWRITE = ["Reescribir", "Landing reescribir"];
 const OPTIMISE = ["Optimizar", "Landing optimizar"];
@@ -41,6 +42,7 @@ function FilterPill({ active, count, label, onClick, colour }: { active: boolean
 }
 
 function URLCard({ r, links }: { r: OptRow; links?: LinkSuggestion[] }) {
+  const t = useT();
   const code = pillarCodeFrom(r.primary) as PillarCode;
   const meta = PILLAR_META[code];
   const prio = WORK_META[r.work] || WORK_META["Ninguno"];
@@ -83,14 +85,14 @@ function URLCard({ r, links }: { r: OptRow; links?: LinkSuggestion[] }) {
           <span className="text-[10px] uppercase tracking-wide text-slate">Suggested action</span>
           <p className="text-xs text-ink leading-snug">{r.action}</p>
           {r.owner && r.owner !== "—" && (
-            <span className="text-[10px] text-slate">Trabajo: <span className="text-ink">{r.work}</span></span>
+            <span className="text-[10px] text-slate">{t("Work")}: <span className="text-ink">{r.work}</span></span>
           )}
         </div>
 
         {/* Internal links del mismo cluster */}
         {links && links.length > 0 && (
           <div className="border-t border-line pt-2.5 flex flex-col gap-1">
-            <span className="text-[10px] uppercase tracking-wide text-slate">Internal links sugeridos</span>
+            <span className="text-[10px] uppercase tracking-wide text-slate">{t("Suggested internal links")}</span>
             <ul className="flex flex-col gap-0.5">
               {links.map((l, i) => (
                 <li key={i} className="text-[11px] text-slate flex items-baseline gap-1.5">
@@ -142,6 +144,7 @@ function ClusterPanel({ cluster, rows, linkMap }: { cluster: string; rows: OptRo
 }
 
 export default function OptimiseView() {
+  const t = useT();
   const [data, setData] = useState<Resp | null>(null);
   const [loading, setLoading] = useState(true);
   const [pillar, setPillar] = useState<string>("");
@@ -208,22 +211,22 @@ export default function OptimiseView() {
         <div>
           <h1 className="text-2xl font-bold text-ink">Optimise old content</h1>
           <p className="text-slate text-sm mt-1">
-            {rows.length} published URLs classified into clusters and mapped to the 6 positioning pillars, con su decisión, tipo de trabajo y cluster. Fuente: la hoja de Clusterización 2026, la que mantiene el equipo.
+            {rows.length} published URLs classified into clusters and mapped to the 6 positioning pillars, {t("with their decision, work type and cluster. Source: the Clusterización 2026 sheet, the one the team maintains.")}
             {data.sheet && (<> &middot; <a href={data.sheet} target="_blank" rel="noreferrer" className="text-blue hover:underline">Open the source sheet</a></>)}
           </p>
         </div>
         <a href="/api/export/optimise" className="text-xs px-3 py-1.5 rounded-lg border border-line text-slate hover:text-ink hover:border-ink/40 transition-colors whitespace-nowrap">
-          ⬇ Descargar CSV
+          ⬇ {t("Download CSV")}
         </a>
       </div>
 
       {/* Stat strip */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {([
-          { label: "Para reescribir", value: rows.filter((r) => REWRITE.includes(r.work)).length, accent: true },
-          { label: "Para optimizar", value: rows.filter((r) => OPTIMISE.includes(r.work)).length, accent: false },
-          { label: "Sin un solo clic", value: rows.filter((r) => r.hasData && r.gscClicks === 0).length, accent: false },
-          { label: "Sin medir (NA)", value: rows.filter((r) => !r.hasData).length, accent: false },
+          { label: t("To rewrite"), value: rows.filter((r) => REWRITE.includes(r.work)).length, accent: true },
+          { label: t("To optimise"), value: rows.filter((r) => OPTIMISE.includes(r.work)).length, accent: false },
+          { label: t("Not one single click"), value: rows.filter((r) => r.hasData && r.gscClicks === 0).length, accent: false },
+          { label: t("Unmeasured (NA)"), value: rows.filter((r) => !r.hasData).length, accent: false },
         ]).map((s) => (
           <div key={s.label} className={`rounded-xl border bg-white p-3 ${s.accent ? "border-red-200" : "border-line"}`}>
             <div className="text-[10px] uppercase tracking-wide text-slate">{s.label}</div>
@@ -268,7 +271,7 @@ export default function OptimiseView() {
         <section>
           <div className="flex items-baseline gap-3 mb-3">
             <h2 className="text-sm font-semibold text-ink">Work on this first</h2>
-            <span className="text-xs text-slate">{highImpact.length} páginas para reescribir, ordenadas por clics que ya traen</span>
+            <span className="text-xs text-slate">{highImpact.length} {t("pages to rewrite, ordered by the clicks they already bring")}</span>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {highImpact.map((r, i) => <URLCard key={i} r={r} links={data?.linkMap?.[r.url]} />)}

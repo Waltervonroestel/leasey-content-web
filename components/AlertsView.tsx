@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 import { Card } from "@/components/ui";
 
 interface Anomaly {
@@ -59,6 +60,7 @@ function MiniChart({ data }: { data: { date: string; impressions: number }[] }) 
 }
 
 function AnomalyCard({ a }: { a: Anomaly }) {
+  const tr = useT();
   const isSpike = a.kind === "spike";
   const bg = isSpike ? "bg-emerald-50 border-emerald-200" : "bg-rose-50 border-rose-200";
   const dot = isSpike ? "bg-emerald-500" : "bg-rose-500";
@@ -68,7 +70,7 @@ function AnomalyCard({ a }: { a: Anomaly }) {
       <div className="flex items-center gap-2 flex-wrap">
         <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${bg} ${tag} flex items-center gap-1`}>
           <span className={`inline-block w-1.5 h-1.5 rounded-full ${dot}`} />
-          {isSpike ? "Subida" : "Caída"}
+          {isSpike ? tr("Spike") : tr("Drop")}
         </span>
         {a.delta.impressionsPct !== 0 && (
           <span className={`text-xs font-medium tabular-nums ${isSpike ? "text-emerald-700" : "text-rose-700"}`}>
@@ -83,12 +85,13 @@ function AnomalyCard({ a }: { a: Anomaly }) {
         {a.baseline.impressions > 0 && <> · <span className="text-slate">promedio: {a.baseline.impressions.toLocaleString()}</span></>}
       </div>
       <p className="text-xs text-ink leading-relaxed">{a.message}</p>
-      <p className="text-xs text-slate leading-relaxed border-t border-line pt-2"><span className="text-ink font-medium">Acción: </span>{a.action}</p>
+      <p className="text-xs text-slate leading-relaxed border-t border-line pt-2"><span className="text-ink font-medium">{tr("Action")}: </span>{a.action}</p>
     </div>
   );
 }
 
 export default function AlertsView() {
+  const tr = useT();
   const [data, setData] = useState<Resp | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -96,7 +99,7 @@ export default function AlertsView() {
     fetch("/api/gsc/anomalies").then((r) => r.json()).then((d) => { setData(d); setLoading(false); }).catch(() => setLoading(false));
   }, []);
 
-  if (loading) return <p className="text-slate text-sm">Detectando anomalías…</p>;
+  if (loading) return <p className="text-slate text-sm">{tr("Detecting anomalies…")}</p>;
   if (!data || !data.connected) return (
     <Card><p className="text-sm text-slate">Conecta GSC para activar las alertas.</p></Card>
   );
@@ -110,9 +113,9 @@ export default function AlertsView() {
       <div>
         <h1 className="text-2xl font-bold text-ink">Alertas</h1>
         <p className="text-slate text-sm mt-1">
-          Detección semanal de búsquedas que subieron o cayeron de forma anormal frente al promedio reciente.
+          {tr("Weekly detection of searches that rose or fell abnormally against the recent average.")}
           {!data.hasHistory && (
-            <span className="block mt-1 text-amber-700">Aún no hay historial — el primer snapshot semanal corre cada lunes 12:00 UTC. Por ahora ves un placeholder con las queries más visibles.</span>
+            <span className="block mt-1 text-amber-700">{tr("No history yet — the first weekly snapshot runs every Monday at 12:00 UTC. For now you see a placeholder with the most visible queries.")}</span>
           )}
         </p>
       </div>
@@ -123,13 +126,13 @@ export default function AlertsView() {
           <TrendStat label="Clics" current={t.current.clicks} previous={t.previous.clicks} delta={t.delta.clicksPct} />
           <TrendStat label="Impresiones" current={t.current.impressions} previous={t.previous.impressions} delta={t.delta.impressionsPct} />
           <TrendStat label="CTR" current={Math.round(t.current.ctr * 10000) / 100} previous={Math.round(t.previous.ctr * 10000) / 100} delta={t.delta.ctrPct} />
-          <TrendStat label="Posición media" current={t.current.avgPosition} previous={t.previous.avgPosition} delta={t.delta.positionAbs} isPosition />
+          <TrendStat label={tr("Average position")} current={t.current.avgPosition} previous={t.previous.avgPosition} delta={t.delta.positionAbs} isPosition />
         </div>
       )}
 
       {t && t.history.length >= 2 && (
         <Card>
-          <div className="text-sm font-semibold text-ink mb-1">Evolución de impresiones · últimos {t.history.length} snapshots</div>
+          <div className="text-sm font-semibold text-ink mb-1">{tr("Impressions over time")} · {tr("last")} {t.history.length} snapshots</div>
           <MiniChart data={t.history.map((s) => ({ date: s.date, impressions: s.impressions }))} />
           <div className="flex justify-between text-[10px] text-slate mt-1">
             <span>{t.history[0].date}</span>
@@ -140,7 +143,7 @@ export default function AlertsView() {
 
       {drops.length > 0 && (
         <section>
-          <h2 className="text-sm font-semibold text-ink mb-3">Caídas ({drops.length})</h2>
+          <h2 className="text-sm font-semibold text-ink mb-3">{tr("Drops")} ({drops.length})</h2>
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">{drops.map((a, i) => <AnomalyCard key={i} a={a} />)}</div>
         </section>
       )}
@@ -153,7 +156,7 @@ export default function AlertsView() {
       )}
 
       {(data.anomalies || []).length === 0 && (
-        <Card><p className="text-sm text-slate text-center py-4">No hay anomalías significativas esta semana.</p></Card>
+        <Card><p className="text-sm text-slate text-center py-4">{tr("No significant anomalies this week.")}</p></Card>
       )}
     </div>
   );

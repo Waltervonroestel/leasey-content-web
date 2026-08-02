@@ -6,7 +6,7 @@ import { NAV_TABS, GROUP_ORDER, GROUP_LABELS } from "@/lib/navMeta";
 export const dynamic = "force-dynamic";
 
 const GROUP_BLURB: Record<string, string> = {
-  Plan: "Decidir qué se va a escribir y mantener la vista del 90-day window.",
+  Plan: "Decide what gets written and keep the 90-day window in view.",
   Build: "Escribir, optimizar y dar forma a las piezas.",
   Analyse: "Medir, detectar oportunidades y seguir tendencias.",
   Publish: "Sacar el contenido al mundo.",
@@ -36,7 +36,7 @@ export default function Dashboard() {
       <div>
         <h1 className="text-2xl font-bold text-ink">Content Dashboard</h1>
         <p className="text-slate text-sm mt-1">
-          Estado general del sistema de contenido de Leasey.AI. Lee drafts, calendario, GSC y los publica/encola desde acá.
+          Overall state of the Leasey.AI content system. Reads drafts, calendar and GSC, and publishes or queues from here.
           Las tabs de abajo cubren las cuatro fases: planear, construir, analizar y publicar.
         </p>
       </div>

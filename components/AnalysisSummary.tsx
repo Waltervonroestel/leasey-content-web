@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n";
 
 type Severity = "win" | "opportunity" | "watch" | "risk";
 
@@ -48,6 +49,7 @@ const VERDICT_BANNER: Record<Severity, string> = {
 };
 
 function FindingCard({ f }: { f: Finding }) {
+  const t = useT();
   const s = SEV[f.severity];
   return (
     <div className={`rounded-xl border ${s.border} bg-white p-4 flex flex-col gap-3`}>
@@ -62,15 +64,15 @@ function FindingCard({ f }: { f: Finding }) {
 
       <div className="flex flex-col gap-2 text-xs leading-relaxed">
         <div>
-          <span className="text-slate uppercase tracking-wide text-[10px]">Qué significa</span>
+          <span className="text-slate uppercase tracking-wide text-[10px]">{t("What it means")}</span>
           <p className="text-ink mt-0.5">{f.meaning}</p>
         </div>
         <div>
-          <span className="text-slate uppercase tracking-wide text-[10px]">Qué hacer</span>
+          <span className="text-slate uppercase tracking-wide text-[10px]">{t("What to do")}</span>
           <p className="text-ink mt-0.5">{f.action}</p>
         </div>
         <div>
-          <span className="text-slate uppercase tracking-wide text-[10px]">Por qué</span>
+          <span className="text-slate uppercase tracking-wide text-[10px]">{t("Why")}</span>
           <p className="text-slate mt-0.5">{f.why}</p>
         </div>
       </div>
@@ -89,6 +91,7 @@ function FindingCard({ f }: { f: Finding }) {
 }
 
 export default function AnalysisSummary({ days }: { days: number }) {
+  const t = useT();
   const [data, setData] = useState<Analysis | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -101,7 +104,7 @@ export default function AnalysisSummary({ days }: { days: number }) {
       .finally(() => setLoading(false));
   }, [days]);
 
-  if (loading && !data) return <div className="rounded-xl border border-line bg-white p-4 text-sm text-slate">Analizando los datos de búsqueda…</div>;
+  if (loading && !data) return <div className="rounded-xl border border-line bg-white p-4 text-sm text-slate">{t("Analysing the search data…")}</div>;
   if (!data || !data.connected || !data.headline) return null;
 
   const h = data.headline;
@@ -112,7 +115,7 @@ export default function AnalysisSummary({ days }: { days: number }) {
       {/* Lectura general */}
       <div className={`rounded-xl border p-5 ${VERDICT_BANNER[h.verdict]}`}>
         <div className="flex items-center gap-2 mb-2">
-          <span className="text-xs uppercase tracking-wide text-slate font-medium">Lectura del período · {data.days} días</span>
+          <span className="text-xs uppercase tracking-wide text-slate font-medium">{t("Reading for the period")} · {data.days} {t("days")}</span>
           <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${SEV[h.verdict].bg} ${SEV[h.verdict].text} flex items-center gap-1`}>
             <span className={`inline-block w-1.5 h-1.5 rounded-full ${SEV[h.verdict].dot}`} />{SEV[h.verdict].label}
           </span>
@@ -126,7 +129,7 @@ export default function AnalysisSummary({ days }: { days: number }) {
               <div className="text-xl font-bold text-ink tabular-nums">+{pc.total.toLocaleString()} <span className="text-xs font-normal text-slate">clics/sin contenido nuevo</span></div>
             </div>
             <div>
-              <div className="text-[10px] uppercase tracking-wide text-slate">Arreglando títulos</div>
+              <div className="text-[10px] uppercase tracking-wide text-slate">{t("Fixing titles")}</div>
               <div className="text-xl font-bold text-ink tabular-nums">+{pc.ctrFix.toLocaleString()}</div>
             </div>
             <div>
@@ -140,7 +143,7 @@ export default function AnalysisSummary({ days }: { days: number }) {
       {/* Hallazgos accionables */}
       {data.findings && data.findings.length > 0 && (
         <div>
-          <h3 className="text-sm font-semibold text-ink mb-3">Qué hacer con estos números, en orden de prioridad</h3>
+          <h3 className="text-sm font-semibold text-ink mb-3">{t("What to do with these numbers, in priority order")}</h3>
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {data.findings.map((f) => <FindingCard key={f.id} f={f} />)}
           </div>

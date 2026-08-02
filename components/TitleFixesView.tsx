@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import TitleFixesMeasure from "@/components/TitleFixesMeasure";
 import { Card } from "@/components/ui";
 
 interface Suggestion { title: string; meta: string; rationale: string }
@@ -69,6 +70,8 @@ export default function TitleFixesView() {
           Sin IA: son reglas determinísticas (intent + posición + año + power-prefix). Cero costo.
         </p>
       </div>
+
+      <TitleFixesMeasure />
 
       {fixes.length === 0 ? (
         <Card><p className="text-sm text-slate text-center py-4">No hay queries con CTR-fix detectado en los últimos 90 días.</p></Card>

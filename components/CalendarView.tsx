@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import PublishToWordPress from "@/components/PublishToWordPress";
 import { Card, SectionTitle } from "@/components/ui";
 import type { CalendarRow } from "@/lib/sheets";
 import { PILLAR_META, pillarCodeFrom, channelIcon, channelGroup, type PillarCode } from "@/lib/pillarStyle";
@@ -31,6 +32,18 @@ function FilterPill({ active, count, label, onClick, colour }: { active: boolean
   );
 }
 
+const FEATURE_KEYWORDS = [
+  "singlekey", "rental beast", "facebook marketplace", "zillow",
+  "centrali", "messaging", "discrepancy ai", "id verification",
+  "calendar view", "calendar v2", "showing confirmation",
+  "billing tab", "doorinsight", "duuo", "product update",
+  "product recap",
+];
+function isFeatureRelease(title: string) {
+  const t = title.toLowerCase();
+  return FEATURE_KEYWORDS.some((kw) => t.includes(kw));
+}
+
 const STATUS_OPTIONS = ["Idea", "Escrito", "Programado", "Publicado"] as const;
 const STATUS_COLOUR: Record<string, string> = {
   "": "bg-slate-100 text-slate",
@@ -45,6 +58,7 @@ function PieceCard({ row, isToday, isPast }: { row: CalRow; isToday: boolean; is
   const meta = PILLAR_META[code];
   const phase = PHASE_LABEL[row.phase] || row.phase || "—";
   const phaseClr = PHASE_COLOUR[row.phase] || "bg-bg-soft text-slate";
+  const feature = isFeatureRelease(row.title);
   const [status, setStatus] = useState(row.status || "");
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState(false);
@@ -65,14 +79,15 @@ function PieceCard({ row, isToday, isPast }: { row: CalRow; isToday: boolean; is
   }
 
   return (
-    <div className={`relative group rounded-xl border bg-white p-4 transition-shadow hover:shadow-md ${isPast ? "opacity-60" : "border-line"}`}>
-      <div className="absolute left-0 top-3 bottom-3 w-1 rounded-r-full" style={{ background: meta.colour }} aria-hidden />
+    <div className={`relative group rounded-xl border p-4 transition-shadow hover:shadow-md ${feature ? "bg-amber-50/40 border-amber-200" : "bg-white border-line"} ${isPast ? "opacity-60" : ""}`}>
+      <div className="absolute left-0 top-3 bottom-3 w-1 rounded-r-full" style={{ background: feature ? "#f59e0b" : meta.colour }} aria-hidden />
       <div className="pl-3 flex flex-col gap-2">
         <div className="flex items-center gap-2 flex-wrap text-[11px] text-slate">
           <span className="font-mono tabular-nums">{row.date}</span>
           <span className="opacity-50">·</span>
           <span>{row.day}</span>
           {isToday && <span className="px-1.5 py-0.5 rounded-full bg-blue/10 text-blue text-[10px] font-medium">Today</span>}
+          {feature && <span className="px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 text-[10px] font-medium">Feature Release</span>}
           <span className="opacity-50">·</span>
           <span title={row.channel} className="inline-flex items-center gap-1">
             <span aria-hidden>{channelIcon(row.channel)}</span>
@@ -96,15 +111,13 @@ function PieceCard({ row, isToday, isPast }: { row: CalRow; isToday: boolean; is
           <span className="text-[10px] text-slate ml-auto">{row.voice}</span>
         </div>
 
-        {/* Publish to WordPress — solo para piezas de Blog */}
-        {channelGroup(row.channel) === "Blog" && (
-          <a
-            href={`/publish?title=${encodeURIComponent(row.title)}${row.docLink ? `&doc=${encodeURIComponent(row.docLink)}` : ""}`}
-            className="flex items-center justify-center gap-1.5 text-[11px] px-2 py-1.5 rounded-lg border border-line bg-white text-ink hover:border-ink/40 hover:bg-bg-soft transition-colors mt-1 font-medium"
-          >
-            <span aria-hidden>📝</span>
-            <span>Publicar a WordPress</span>
-          </a>
+        {/* A WordPress, solo para piezas de Blog. Dos vías: borrador, que es
+            reversible, y directo, que pide confirmación porque no lo es. */}
+        {channelGroup(row.channel) === "Blog" && row.docLink && (
+          <PublishToWordPress sheetRow={row.sheetRow} title={row.title} />
+        )}
+        {channelGroup(row.channel) === "Blog" && !row.docLink && (
+          <p className="text-[11px] text-slate mt-1">Sin Google Doc enlazado: no hay qué publicar.</p>
         )}
 
         {/* Status quick-update */}
@@ -153,6 +166,7 @@ export default function CalendarView() {
   const [pillar, setPillar] = useState<string>("");
   const [channel, setChannel] = useState<string>("");
   const [tense, setTense] = useState<"all" | "upcoming" | "past">("upcoming");
+  const [featureOnly, setFeatureOnly] = useState(false);
 
   useEffect(() => {
     fetch("/api/calendar/full").then((r) => r.json()).then((d) => { setData(d); setLoading(false); }).catch(() => setLoading(false));
@@ -182,11 +196,12 @@ export default function CalendarView() {
     return rows.filter((r) => {
       if (pillar && pillarCodeFrom(r.positioningPillar || "") !== pillar) return false;
       if (channel && channelGroup(r.channel) !== channel) return false;
+      if (featureOnly && !isFeatureRelease(r.title)) return false;
       if (tense === "upcoming" && r.date < today) return false;
       if (tense === "past" && r.date >= today) return false;
       return true;
     });
-  }, [rows, pillar, channel, tense, today]);
+  }, [rows, pillar, channel, tense, today, featureOnly]);
 
   const grouped = useMemo(() => {
     const m = new Map<string, CalRow[]>();
@@ -249,6 +264,12 @@ export default function CalendarView() {
             {(["Blog", "LinkedIn", "Press", "Reddit"] as const).map((c) => (
               <FilterPill key={c} active={channel === c} count={channelCounts[c] || 0} label={c} onClick={() => setChannel(channel === c ? "" : c)} />
             ))}
+          </div>
+
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-[11px] uppercase tracking-wide text-slate mr-1">Type</span>
+            <FilterPill active={!featureOnly} count={rows.length} label="All" onClick={() => setFeatureOnly(false)} />
+            <FilterPill active={featureOnly} count={rows.filter(r => isFeatureRelease(r.title)).length} label="Feature Release" onClick={() => setFeatureOnly(!featureOnly)} colour="#f59e0b" />
           </div>
         </div>
       </Card>

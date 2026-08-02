@@ -48,6 +48,13 @@ export const NAV_TABS: NavTab[] = [
     group: "Build",
   },
   {
+    href: "/signals",
+    label: "Signals",
+    icon: "📡",
+    description: "Que se movio de una semana a otra: consultas nuevas, caidas con volumen, lo que esta cerca sin clics, y que publicaron los competidores. Con selector de semana para ver el historico.",
+    group: "Analyse",
+  },
+  {
     href: "/optimise",
     label: "Optimise",
     icon: "🛠",

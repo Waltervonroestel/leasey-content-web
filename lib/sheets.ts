@@ -34,7 +34,7 @@ async function cached<T>(key: string, fn: () => Promise<T>): Promise<T> {
 // ── Calendar (95 pieces from the editorial calendar sheet) ───────────────────
 export type CalendarRow = {
   month: number; week: number; date: string; day: string;
-  channel: string; voice: string; title: string;
+  channel: string; voice: string; title: string; track: string;
   pillar: string; phase: string; status: string; docLink: string;
   sheetRow: number; // 1-based row number in the spreadsheet (incl. header row at 1)
 };
@@ -68,6 +68,7 @@ export async function listCalendarRows(): Promise<CalendarRow[]> {
       day: col("day"),
       channel: col("social network", "channel"),
       voice: col("responsible", "voice"),
+      track: col("track"),
       title: col("title of the blog", "working title", "title"),
       pillar: col("pillar"),
       phase: col("awareness phase", "phase"),
@@ -87,6 +88,7 @@ export async function listCalendarRows(): Promise<CalendarRow[]> {
         day: get(row, idx.day),
         channel: get(row, idx.channel),
         voice: get(row, idx.voice),
+        track: get(row, idx.track),
         title: get(row, idx.title),
         pillar: get(row, idx.pillar),
         phase: get(row, idx.phase),

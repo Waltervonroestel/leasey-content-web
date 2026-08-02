@@ -84,3 +84,68 @@ export async function listRecentDrafts(limit = 10): Promise<DraftListItem[]> {
     link: p.link, date: p.date, modified: p.modified,
   }));
 }
+
+// ── Media ───────────────────────────────────────────────────────────────────
+//
+// Se sube como multipart/form-data, no como POST binario crudo: Mod_Security
+// devuelve 406 al binario contra /wp/v2/media, y eso costó una tarde
+// averiguarlo la primera vez.
+//
+// El nombre de archivo y el alt text no son opcionales. Son dos de las reglas
+// que Walter fijó al publicar los primeros artículos, y un "image1.png" sin alt
+// no le dice nada ni a Google ni a un lector con lector de pantalla.
+export interface UploadedMedia {
+  id: number;
+  source_url: string;
+  alt_text?: string;
+}
+
+export async function uploadMedia(opts: {
+  bytes: Buffer;
+  filename: string;
+  mimeType: string;
+  altText: string;
+  title?: string;
+}): Promise<UploadedMedia> {
+  const base = (process.env.WORDPRESS_URL || "").replace(/\/$/, "");
+  const auth =
+    "Basic " +
+    Buffer.from(`${process.env.WORDPRESS_USER}:${process.env.WORDPRESS_APP_PASSWORD}`).toString("base64");
+
+  const form = new FormData();
+  form.append("file", new Blob([new Uint8Array(opts.bytes)], { type: opts.mimeType }), opts.filename);
+  form.append("alt_text", opts.altText);
+  if (opts.title) form.append("title", opts.title);
+
+  const r = await fetch(`${base}/wp-json/wp/v2/media`, {
+    method: "POST",
+    headers: { Authorization: auth },
+    body: form,
+  });
+  if (!r.ok) throw new Error(`Media upload failed (${r.status}): ${(await r.text()).slice(0, 160)}`);
+  const j = (await r.json()) as UploadedMedia;
+
+  // El alt text a veces no se aplica en la creación; se reafirma.
+  if (opts.altText) {
+    await fetch(`${base}/wp-json/wp/v2/media/${j.id}`, {
+      method: "POST",
+      headers: { Authorization: auth, "Content-Type": "application/json" },
+      body: JSON.stringify({ alt_text: opts.altText }),
+    }).catch(() => {});
+  }
+  return j;
+}
+
+/** Asigna la imagen destacada, que es la de cabecera del post. */
+export async function setFeaturedMedia(postId: number, mediaId: number): Promise<void> {
+  const base = (process.env.WORDPRESS_URL || "").replace(/\/$/, "");
+  const auth =
+    "Basic " +
+    Buffer.from(`${process.env.WORDPRESS_USER}:${process.env.WORDPRESS_APP_PASSWORD}`).toString("base64");
+  const r = await fetch(`${base}/wp-json/wp/v2/posts/${postId}`, {
+    method: "POST",
+    headers: { Authorization: auth, "Content-Type": "application/json" },
+    body: JSON.stringify({ featured_media: mediaId }),
+  });
+  if (!r.ok) throw new Error(`No se pudo asignar la imagen destacada (${r.status})`);
+}

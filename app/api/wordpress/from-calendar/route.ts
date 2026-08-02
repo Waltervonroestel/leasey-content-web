@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { google } from "googleapis";
 import { hasWordpress, publishPost } from "@/lib/wordpress";
 import { listCalendarRows } from "@/lib/sheets";
+import { embedImages, applyFeatured } from "@/lib/post-images";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -109,23 +110,33 @@ export async function POST(req: Request) {
       {
         needsConfirm: true,
         expected: row.title,
-        message: "Publicar en directo no se deshace. Confirma escribiendo el título de la pieza.",
+        message: "Publish live no se deshace. Confirma escribiendo el título de la pieza.",
       },
       { status: 428 }
     );
   }
 
   try {
+    // Las imágenes se suben antes de crear el post porque el cuerpo tiene que
+    // salir ya con las URLs dentro: insertarlas después obligaría a una segunda
+    // escritura y dejaría el post publicado sin ellas si esa segunda falla.
+    const img = await embedImages(body.sheetRow, row.title, html);
+
     const post = await publishPost({
       title: row.title,
-      content: html,
+      content: img.html,
       status: body.live ? "publish" : "draft",
       isMarkdown: false,
     });
+    await applyFeatured(post.id, img.featuredId);
+
     return NextResponse.json({
       ok: true,
       status: body.live ? "publish" : "draft",
       warnings,
+      images: img.missing
+        ? { generated: false, note: "No hay imágenes generadas para esta fila. Corre make-post-images.mjs." }
+        : { generated: true, uploaded: img.uploaded, featured: img.featuredId },
       post: { id: post.id, link: post.link, status: post.status },
       // Lo que el sistema NO hace y sigue siendo manual, para que nadie lo dé
       // por hecho: la meta de Rank Math no se expone por el REST estándar y va
@@ -133,7 +144,6 @@ export async function POST(req: Request) {
       // que se purga.
       pending: [
         "Meta title y description en Rank Math (namespace propio del plugin)",
-        "Nombres de archivo y alt text de las imágenes",
         "Purgar la caché de WP Rocket para que no sirva el título anterior",
         "Comprobar que el slug no cambió",
       ],

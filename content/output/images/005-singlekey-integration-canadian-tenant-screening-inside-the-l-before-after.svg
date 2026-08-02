@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 398" width="1200" height="398" role="img"
+     aria-label="What changes day to day">
+  <rect width="1200" height="398" fill="#FFFFFF"/>
+  <text x="70" y="80" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#1B2430">What changes day to day</text>
+  
+  <text x="70" y="146" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="17" font-weight="700"
+        fill="#5E6B7A" letter-spacing="1.6">BEFORE</text>
+  <rect x="70" y="164" width="480" height="162" rx="12"
+        fill="#F4F7FA" stroke="#D7DEE6"/>
+  <text x="92" y="202" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19"
+           fill="#1B2430">[Current situation]</text><text x="92" y="248" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19"
+           fill="#1B2430">[Operational cost]</text><text x="92" y="294" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19"
+           fill="#1B2430">[What gets lost]</text>
+  
+  <text x="650" y="146" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="17" font-weight="700"
+        fill="#E4572E" letter-spacing="1.6">WITH LEASEY.AI</text>
+  <rect x="650" y="164" width="480" height="162" rx="12"
+        fill="#EAF9FD" stroke="#D7DEE6"/>
+  <text x="672" y="202" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19"
+           fill="#1B2430">[What happens now]</text><text x="672" y="248" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19"
+           fill="#1B2430">[Time recovered]</text><text x="672" y="294" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19"
+           fill="#1B2430">[Measurable result]</text>
+</svg>

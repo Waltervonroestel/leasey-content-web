@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img"
+     aria-label="SingleKey integration: Canadian tenant screening inside the leasing funnel, with the report on the same screen as the application">
+  <rect width="1200" height="630" fill="#172640"/>
+  <path d="M0 470 C 300 400, 620 560, 1200 430 L1200 630 L0 630 Z" fill="#E4572E" opacity="0.12"/>
+  <path d="M0 530 C 340 470, 700 610, 1200 500 L1200 630 L0 630 Z" fill="#E4572E" opacity="0.2"/>
+  <rect x="72" y="72" width="54" height="5" rx="2.5" fill="#E4572E"/>
+  
+  <text x="72" y="222.96" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="52"
+           font-weight="700" fill="#FFFFFF">SingleKey integration: Canadian</text>
+  <text x="72" y="284.32" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="52"
+           font-weight="700" fill="#FFFFFF">tenant screening inside the</text>
+  <text x="72" y="345.68" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="52"
+           font-weight="700" fill="#FFFFFF">leasing funnel, with the report on</text>
+  <text x="72" y="407.03999999999996" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="52"
+           font-weight="700" fill="#FFFFFF">the same screen as the application</text>
+  <text x="72" y="562" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="24" font-weight="600"
+        fill="#FFFFFF" opacity="0.92">Leasey.AI</text>
+  <text x="1128" y="562" text-anchor="end" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="19"
+      fill="#E4572E">P4 Canadian-first</text>
+</svg>

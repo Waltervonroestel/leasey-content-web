@@ -1,6 +1,6 @@
 ---
 name: search-query-analyst
-description: Analista de queries de Search Console. Convierte los queries medidos del sitio en decisiones: qué keyword foco defender, qué intención sirve cada página, qué preguntas alimentan un FAQ y dónde hay canibalización entre dos URLs. Úsalo antes de escribir un brief y cuando haya que decidir qué keyword ataca una página.
+description: "Analista de queries de Search Console. Convierte los queries medidos del sitio en decisiones: qué keyword foco defender, qué intención sirve cada página, qué preguntas alimentan un FAQ y dónde hay canibalización entre dos URLs. Úsalo antes de escribir un brief y cuando haya que decidir qué keyword ataca una página."
 tools: Read, Glob, Grep, Bash
 model: sonnet
 ---

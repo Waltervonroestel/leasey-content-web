@@ -1,6 +1,6 @@
 ---
 name: brief-reviewer
-description: Revisa y aprueba (o rechaza) un brief SEO contra el SOP y las reglas de calidad de Leasey antes de que el equipo de contenido escriba el artículo. Es la compuerta de calidad: ningún brief pasa a redacción sin su visto bueno.
+description: "Revisa y aprueba (o rechaza) un brief SEO contra el SOP y las reglas de calidad de Leasey antes de que el equipo de contenido escriba el artículo. Es la compuerta de calidad: ningún brief pasa a redacción sin su visto bueno."
 tools: Read, Glob, Grep, Bash
 model: sonnet
 ---

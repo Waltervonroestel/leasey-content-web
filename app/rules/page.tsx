@@ -13,23 +13,33 @@ type Agent = { name: string; description: string; lines: number };
 // reales que la hicieron fallar. Se listan desde el snapshot sincronizado.
 function listAgents(): Agent[] {
   const dir = path.join(contentRoot(), ".claude", "agents");
+  let files: string[];
   try {
-    return fs
-      .readdirSync(dir)
-      .filter((f) => f.endsWith(".md"))
-      .map((f) => {
-        const raw = fs.readFileSync(path.join(dir, f), "utf8");
-        const { data } = matter(raw);
-        return {
-          name: String(data.name || f.replace(/\.md$/, "")),
-          description: String(data.description || ""),
-          lines: raw.split("\n").length,
-        };
-      })
-      .sort((a, b) => b.lines - a.lines);
+    files = fs.readdirSync(dir).filter((f) => f.endsWith(".md"));
   } catch {
     return [];
   }
+
+  // El try va por archivo, no alrededor del bucle. Con un solo try envolviendo
+  // todo, un frontmatter mal formado en un agente dejaba la página mostrando
+  // "0 agentes" — que se lee como "el sistema no tiene agentes", no como "uno
+  // de los 29 no parsea". Un agente ilegible se degrada a su nombre de archivo.
+  const out: Agent[] = [];
+  for (const f of files) {
+    const raw = fs.readFileSync(path.join(dir, f), "utf8");
+    const fallback = f.replace(/\.md$/, "");
+    try {
+      const { data } = matter(raw);
+      out.push({
+        name: String(data.name || fallback),
+        description: String(data.description || ""),
+        lines: raw.split("\n").length,
+      });
+    } catch {
+      out.push({ name: fallback, description: "", lines: raw.split("\n").length });
+    }
+  }
+  return out.sort((a, b) => b.lines - a.lines);
 }
 
 const VERIFIERS = new Set([
@@ -49,43 +59,43 @@ export default function RulesPage() {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-2xl font-bold text-ink">Reglas del sistema</h1>
+        <h1 className="text-2xl font-bold text-ink">System rules</h1>
         <p className="text-slate text-sm mt-1">
-          Cómo falla el contenido de Leasey.AI y qué impide que vuelva a pasar. Todo lo de esta página
-          viene de casos reales, no de teoría. Fuente canónica:{" "}
+          How Leasey.AI content fails and what stops it happening again. Everything on this page comes
+          from real cases, not theory. Canonical source:{" "}
           <code className="text-[11px] bg-bg-soft px-1 py-0.5 rounded">leasey-content-system</code>.
         </p>
       </div>
 
       <Card>
-        <h2 className="text-sm font-semibold text-ink mb-3">La compuerta de entrega</h2>
+        <h2 className="text-sm font-semibold text-ink mb-3">The delivery gate</h2>
         <p className="text-sm text-slate leading-relaxed">
-          Un hook <code className="text-[11px] bg-bg-soft px-1 py-0.5 rounded">PreToolUse</code> abre el
-          script que está a punto de correr y mira si habla con Drive, Docs, Sheets, WordPress o Notion.
-          Si empuja trabajo hacia afuera, revisa los archivos que ese script sube y bloquea la subida
-          cuando el documento afirma algo sin respaldo.
+          A <code className="text-[11px] bg-bg-soft px-1 py-0.5 rounded">PreToolUse</code> hook opens the
+          script about to run and checks whether it talks to Drive, Docs, Sheets, WordPress or Notion.
+          If it pushes work outward, it reads the files that script uploads and blocks the upload when
+          the document claims something it cannot back up.
         </p>
         <p className="text-sm text-slate leading-relaxed mt-2">
-          No tiene lista blanca de scripts: un script escrito mañana queda protegido el día que se
-          escribe. La versión anterior nombraba tres a mano, no incluía el que realmente subía los
-          briefs, y nunca llegó a dispararse.
+          There is no script allowlist: a script written tomorrow is covered the day it is written. The
+          previous version named three by hand, missed the one that actually uploaded the briefs, and
+          never fired once.
         </p>
       </Card>
 
       <Card>
         <h2 className="text-sm font-semibold text-ink mb-3">
-          Agentes de verificación <span className="text-slate font-normal">({verifiers.length})</span>
+          Verification agents <span className="text-slate font-normal">({verifiers.length})</span>
         </h2>
         <p className="text-xs text-slate mb-3">
-          Los cuatro primeros corren en paralelo. El quinto es la compuerta y sin su visto bueno no se
-          entrega. El sexto aplica los hallazgos y nadie toca el documento después de él.
+          The first four run in parallel. The fifth is the gate, and nothing is delivered without its
+          approval. The sixth applies the findings, and nobody touches the document after it.
         </p>
         <div className="flex flex-col gap-2">
           {verifiers.map((a) => (
             <div key={a.name} className="border-l-2 border-teal pl-3">
               <div className="flex items-baseline gap-2">
                 <span className="text-sm font-medium text-ink">{a.name}</span>
-                <span className="text-[11px] text-slate">{a.lines} líneas</span>
+                <span className="text-[11px] text-slate">{a.lines} lines</span>
               </div>
               <p className="text-xs text-slate leading-relaxed">{a.description}</p>
             </div>
@@ -95,7 +105,7 @@ export default function RulesPage() {
 
       <Card>
         <h2 className="text-sm font-semibold text-ink mb-3">
-          Resto de agentes <span className="text-slate font-normal">({rest.length})</span>
+          Other agents <span className="text-slate font-normal">({rest.length})</span>
         </h2>
         <div className="grid gap-2 md:grid-cols-2">
           {rest.map((a) => (

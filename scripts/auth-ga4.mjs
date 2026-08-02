@@ -6,10 +6,18 @@
 //
 // Uso:  node scripts/auth-ga4.mjs
 import http from "node:http";
+import fs from "node:fs";
 import { google } from "googleapis";
-import dotenv from "dotenv";
 
-dotenv.config({ path: ".env.local" });
+// Este repo no tiene dotenv: Next carga .env.local por su cuenta y nadie más lo
+// necesitaba. Para un script suelto es una dependencia de más, así que se lee
+// el archivo directamente.
+for (const line of fs.existsSync(".env.local")
+  ? fs.readFileSync(".env.local", "utf8").split(/\r?\n/)
+  : []) {
+  const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)$/);
+  if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "").trim();
+}
 
 const PORT = 53682;
 const REDIRECT = `http://localhost:${PORT}/oauth2callback`;

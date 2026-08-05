@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import Anthropic from "@anthropic-ai/sdk";
 import { appendToSheet, readSheetTab, sheetsConfigured } from "@/lib/sheets";
 
@@ -13,14 +14,14 @@ const QUEUE_TAB = "Writing Queue";
 const HISTORY_HEADER = ["Date Found", "Site Name", "URL", "Category", "Relevance", "Notes"];
 const QUEUE_HEADER = ["Queued At", "Title", "Angle", "Pillar", "Cluster", "Status", "Notes"];
 
-export async function GET() {
+export const GET = apiRoute(async () => {
   if (!sheetsConfigured()) return NextResponse.json({ connected: false, rows: [] });
   const rows = await readSheetTab(CALENDAR_SHEET_ID, HISTORY_TAB);
   const data = rows.filter((r) => r[0] !== "Date Found" && r[0] !== "Date Published" && r[0]);
   return NextResponse.json({ connected: true, rows: data, hasApiKey: Boolean(process.env.ANTHROPIC_API_KEY) });
-}
+});
 
-export async function POST() {
+export const POST = apiRoute(async () => {
   if (!sheetsConfigured()) return NextResponse.json({ error: "Sheets not configured." }, { status: 400 });
 
   const now = new Date().toISOString().slice(0, 10);
@@ -71,4 +72,4 @@ Respond with ONLY a JSON array (no markdown fences). Each object: name, url (dom
     `Run: node scripts/process-content-queue.mjs`,
   ]]);
   return NextResponse.json({ ok: true, queued: true });
-}
+});

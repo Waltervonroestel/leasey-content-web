@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { hasWordpress, publishPost } from "@/lib/wordpress";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
-export async function POST(req: Request) {
+export const POST = apiRoute(async (req: Request) => {
   if (!hasWordpress()) return NextResponse.json({ error: "WordPress not configured" }, { status: 400 });
   const body = await req.json() as {
     title?: string; content?: string; excerpt?: string;
@@ -26,4 +27,4 @@ export async function POST(req: Request) {
   } catch (e) {
     return NextResponse.json({ error: (e as Error).message }, { status: 500 });
   }
-}
+});

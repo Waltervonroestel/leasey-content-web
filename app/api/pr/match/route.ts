@@ -1,4 +1,5 @@
 import fs from "fs";
+import { apiRoute } from "@/lib/google-auth-state";
 import path from "path";
 import { NextResponse } from "next/server";
 import { contentRoot } from "@/lib/content";
@@ -56,7 +57,7 @@ const readWatch = (): Record<string, { kind?: string; tier?: string; error?: str
   }
 };
 
-export async function GET() {
+export const GET = apiRoute(async () => {
   const watch = readWatch();
   const calendar = await listCalendarRows();
 
@@ -160,4 +161,4 @@ export async function GET() {
     ideas,
     blocked: outlets.filter((o) => o.error).map((o) => o.name),
   });
-}
+});

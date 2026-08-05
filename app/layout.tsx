@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import BrandHeader from "@/components/BrandHeader";
+import GoogleAccessBanner from "@/components/GoogleAccessBanner";
 import { I18nProvider } from "@/lib/i18n";
 import JobsProvider from "@/components/JobsProvider";
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <JobsProvider>
           <I18nProvider>
             <BrandHeader />
+            <GoogleAccessBanner />
             <main className="flex-1 w-full max-w-6xl mx-auto px-5 py-8">{children}</main>
           </I18nProvider>
           <footer className="w-full max-w-6xl mx-auto px-5 py-6 text-xs text-slate border-t border-line mt-8">

@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { sheetsConfigured, listCalendarRows } from "@/lib/sheets";
 import { appendCalendarRows, nextFreeSlots, type NewPiece } from "@/lib/calendar-append";
 import { calendarPillarCoverage, PILLARS } from "@/lib/analysis";
@@ -18,7 +19,7 @@ export const runtime = "nodejs";
 // Dejar escribir una fecha a mano habría producido dos piezas el mismo día en
 // el mismo canal, que es justo lo que la cadencia existe para evitar.
 
-export async function POST(req: Request) {
+export const POST = apiRoute(async (req: Request) => {
   if (!sheetsConfigured()) return NextResponse.json({ error: "Sheets is not configured." }, { status: 400 });
 
   const body = (await req.json()) as {
@@ -94,4 +95,4 @@ export async function POST(req: Request) {
     written: res.written,
     sampleRow: res.sampleRow,
   });
-}
+});

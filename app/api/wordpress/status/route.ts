@@ -1,10 +1,11 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { hasWordpress, getCurrentUser, listRecentDrafts } from "@/lib/wordpress";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
-export async function GET() {
+export const GET = apiRoute(async () => {
   if (!hasWordpress()) return NextResponse.json({ connected: false });
   try {
     const [user, drafts] = await Promise.all([getCurrentUser(), listRecentDrafts(8)]);
@@ -17,4 +18,4 @@ export async function GET() {
   } catch (e) {
     return NextResponse.json({ connected: false, error: (e as Error).message }, { status: 500 });
   }
-}
+});

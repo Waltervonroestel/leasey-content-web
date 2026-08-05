@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { listCalendarRows, listOptimisationRows, sheetsConfigured } from "@/lib/sheets";
 import { queryIntel, hasGsc } from "@/lib/gsc";
 import { toCsv, csvResponse } from "@/lib/csv";
@@ -9,7 +10,7 @@ export const runtime = "nodejs";
 
 const VALID = new Set(["calendar", "optimise", "ideas"]);
 
-export async function GET(req: Request, ctx: { params: Promise<{ type: string }> }) {
+export const GET = apiRoute(async (req: Request, ctx: { params: Promise<{ type: string }> }) => {
   const { type } = await ctx.params;
   if (!VALID.has(type)) return NextResponse.json({ error: "type must be calendar, optimise, or ideas" }, { status: 400 });
 
@@ -50,4 +51,4 @@ export async function GET(req: Request, ctx: { params: Promise<{ type: string }>
     return NextResponse.json({ error: (e as Error).message }, { status: 500 });
   }
   return NextResponse.json({ error: "unhandled" }, { status: 500 });
-}
+});

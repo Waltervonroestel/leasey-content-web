@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { hasGsc, queryIntel } from "@/lib/gsc";
 import { suggestTitles } from "@/lib/titleSuggest";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
-export async function GET(req: Request) {
+export const GET = apiRoute(async (req: Request) => {
   if (!hasGsc()) return NextResponse.json({ connected: false });
   try {
     const days = Number(new URL(req.url).searchParams.get("days") || 90);
@@ -18,4 +19,4 @@ export async function GET(req: Request) {
   } catch (e) {
     return NextResponse.json({ connected: true, error: (e as Error).message }, { status: 500 });
   }
-}
+});

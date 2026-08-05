@@ -1,4 +1,5 @@
 import fs from "fs";
+import { apiRoute } from "@/lib/google-auth-state";
 import path from "path";
 import { NextResponse } from "next/server";
 import { contentRoot } from "@/lib/content";
@@ -53,7 +54,7 @@ const load = (): Snapshot[] => {
 const ctr = (p?: PageRow) => (p && p.impressions ? p.clicks / p.impressions : 0);
 const pageIn = (s: Snapshot, url: string) => (s.pages || []).find((p) => p.key === url);
 
-export async function GET() {
+export const GET = apiRoute(async () => {
   const snaps = load();
 
   if (snaps.length < 2) {
@@ -156,4 +157,4 @@ export async function GET() {
     working: list.filter((c) => c.verdict === "works").length,
     worse: list.filter((c) => c.verdict === "worse").length,
   });
-}
+});

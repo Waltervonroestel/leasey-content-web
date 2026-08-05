@@ -1,4 +1,5 @@
 import fs from "fs";
+import { apiRoute } from "@/lib/google-auth-state";
 import path from "path";
 import { NextResponse } from "next/server";
 import { contentRoot } from "@/lib/content";
@@ -48,7 +49,7 @@ const read = (date: string): Record<string, Entry> | null => {
   }
 };
 
-export async function GET(req: Request) {
+export const GET = apiRoute(async (req: Request) => {
   const url = new URL(req.url);
   const kind = url.searchParams.get("kind"); // "medio" | "competidor" | null
   const available = dates();
@@ -113,4 +114,4 @@ export async function GET(req: Request) {
     blocked: rows.filter((r) => r.error).map((r) => r.name),
     totalNew: rows.reduce((s, r) => s + (r.newCount ?? 0), 0),
   });
-}
+});

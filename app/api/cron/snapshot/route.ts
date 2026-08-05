@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { hasGsc, queryAnalytics } from "@/lib/gsc";
 import { appendSnapshot, appendQuerySnapshots } from "@/lib/snapshots";
 
@@ -37,7 +38,7 @@ function authorised(req: Request): boolean {
   return header === secret;
 }
 
-export async function GET(req: Request) {
+export const GET = apiRoute(async (req: Request) => {
   if (!hasGsc()) return NextResponse.json({ error: "GSC not configured" }, { status: 400 });
   if (!authorised(req)) return NextResponse.json({ error: "unauthorised" }, { status: 401 });
   try {
@@ -47,6 +48,6 @@ export async function GET(req: Request) {
   } catch (e) {
     return NextResponse.json({ error: (e as Error).message }, { status: 500 });
   }
-}
+});
 
 export const POST = GET;

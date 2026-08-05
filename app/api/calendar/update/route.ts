@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { google } from "googleapis";
 import { sheetsConfigured, CALENDAR_TAB } from "@/lib/sheets";
 
@@ -16,7 +17,7 @@ function sheetsClient() {
 
 const ALLOWED = new Set(["", "Idea", "Escrito", "Programado", "Publicado"]);
 
-export async function POST(req: Request) {
+export const POST = apiRoute(async (req: Request) => {
   if (!sheetsConfigured()) return NextResponse.json({ error: "Sheets not configured." }, { status: 400 });
   const body = await req.json() as { sheetRow?: number; status?: string };
   const { sheetRow, status } = body;
@@ -31,4 +32,4 @@ export async function POST(req: Request) {
     requestBody: { values: [[status]] },
   });
   return NextResponse.json({ ok: true, sheetRow, status });
-}
+});

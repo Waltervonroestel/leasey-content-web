@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { appendToSheet, readSheetTab, sheetsConfigured, listCalendarRows } from "@/lib/sheets";
 
 export const dynamic = "force-dynamic";
@@ -64,7 +65,7 @@ function rangeFor(scope: string, todayIso: string): { from: string; to: string; 
   return { from: iso(s), to: iso(e), label: "this month" };
 }
 
-export async function POST(req: Request) {
+export const POST = apiRoute(async (req: Request) => {
   if (!sheetsConfigured()) {
     return NextResponse.json({ error: "Sheets is not configured." }, { status: 400 });
   }
@@ -173,4 +174,4 @@ export async function POST(req: Request) {
     skipped,
     command: "node scripts/process-content-queue.mjs",
   });
-}
+});

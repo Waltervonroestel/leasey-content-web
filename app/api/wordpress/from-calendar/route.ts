@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { google } from "googleapis";
 import { hasWordpress, publishPost } from "@/lib/wordpress";
 import { listCalendarRows } from "@/lib/sheets";
@@ -64,7 +65,7 @@ async function docHtml(docId: string): Promise<string> {
     .trim();
 }
 
-export async function POST(req: Request) {
+export const POST = apiRoute(async (req: Request) => {
   if (!hasWordpress()) return NextResponse.json({ error: "WordPress no está configurado" }, { status: 400 });
 
   const body = (await req.json()) as { sheetRow?: number; live?: boolean; confirm?: string };
@@ -151,4 +152,4 @@ export async function POST(req: Request) {
   } catch (e) {
     return NextResponse.json({ error: (e as Error).message.slice(0, 200) }, { status: 500 });
   }
-}
+});

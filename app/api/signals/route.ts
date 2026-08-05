@@ -1,4 +1,5 @@
 import fs from "fs";
+import { apiRoute } from "@/lib/google-auth-state";
 import path from "path";
 import { NextResponse } from "next/server";
 import { contentRoot } from "@/lib/content";
@@ -41,7 +42,7 @@ interface Row {
   position: number;
 }
 
-export async function GET(req: Request) {
+export const GET = apiRoute(async (req: Request) => {
   const url = new URL(req.url);
   const weeks = dates(SIGNALS());
   const compWeeks = dates(COMPETITORS());
@@ -151,4 +152,4 @@ export async function GET(req: Request) {
     competitors,
     isBaseline: !previous,
   });
-}
+});

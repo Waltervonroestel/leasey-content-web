@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { listCalendarRows, sheetsConfigured } from "@/lib/sheets";
 import { appendCalendarRows, cadence } from "@/lib/calendar-append";
 import { hasGsc, queryIntel } from "@/lib/gsc";
@@ -57,7 +58,7 @@ function overlaps(a: string, b: string): boolean {
   return hits >= Math.max(2, Math.floor(wa.size * 0.6));
 }
 
-export async function POST(req: Request) {
+export const POST = apiRoute(async (req: Request) => {
   if (!sheetsConfigured()) return NextResponse.json({ error: "Sheets is not configured." }, { status: 400 });
   // Sin GSC todavía quedan los competidores y los medios, así que no se
   // bloquea: se avisa de que falta una de las dos fuentes.
@@ -265,4 +266,4 @@ export async function POST(req: Request) {
   if (!res.ok) return NextResponse.json({ ...result, ...res }, { status: 422 });
 
   return NextResponse.json({ ...result, dryRun: body.dryRun || false, ...res });
-}
+});

@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
+import { apiRoute } from "@/lib/google-auth-state";
 import { hasGa4, pagePerformance, byChannel, joinWithSearch } from "@/lib/ga4";
 import { hasGsc, queryAnalytics } from "@/lib/gsc";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-export async function GET(req: Request) {
+export const GET = apiRoute(async (req: Request) => {
   const days = Math.min(90, Math.max(7, Number(new URL(req.url).searchParams.get("days")) || 28));
 
   if (!hasGa4()) {
@@ -56,4 +57,4 @@ export async function GET(req: Request) {
       { status: 200 }
     );
   }
-}
+});
